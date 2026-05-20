@@ -1,0 +1,2266 @@
+[
+  {
+    "type": "single_choice",
+    "question": "下列关于光纤通信的优势的说法，不正确的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "损耗低，传输容量大"
+      },
+      {
+        "label": "B",
+        "text": "资源丰富，成本低廉"
+      },
+      {
+        "label": "C",
+        "text": "通信质量高"
+      },
+      {
+        "label": "D",
+        "text": "抗电磁，抗雷击，抗雨水，保密性好"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 1,
+    "category": "光纤传输"
+  },
+  {
+    "type": "single_choice",
+    "question": "光纤通信的原理是光的（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "折射原理"
+      },
+      {
+        "label": "B",
+        "text": "全反射原理"
+      },
+      {
+        "label": "C",
+        "text": "透视原理"
+      },
+      {
+        "label": "D",
+        "text": "反射原理"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 2,
+    "category": "光纤传输"
+  },
+  {
+    "type": "single_choice",
+    "question": "多模光纤的波长使用范围是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "850nm～1550nm"
+      },
+      {
+        "label": "B",
+        "text": "1310nm～1550nm"
+      },
+      {
+        "label": "C",
+        "text": "800nm～1800nm"
+      },
+      {
+        "label": "D",
+        "text": "1310nm～1800nm"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 3,
+    "category": "光纤传输"
+  },
+  {
+    "type": "single_choice",
+    "question": "（　）是用来完成各种速率接口适配功能的信息结构单元。",
+    "options": [
+      {
+        "label": "A",
+        "text": "虚容器"
+      },
+      {
+        "label": "B",
+        "text": "容器"
+      },
+      {
+        "label": "C",
+        "text": "支路单元"
+      },
+      {
+        "label": "D",
+        "text": "管理单元"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 4,
+    "category": "光纤传输"
+  },
+  {
+    "type": "single_choice",
+    "question": "光接收机的主要质量指标是灵敏度，影响灵敏度的主要因素是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "光接收机接收光信号的强弱"
+      },
+      {
+        "label": "B",
+        "text": "光接收机的放大器的倍数"
+      },
+      {
+        "label": "C",
+        "text": "光接收机的噪声"
+      },
+      {
+        "label": "D",
+        "text": "光信号的噪声"
+      }
+    ],
+    "answer": "C",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 5,
+    "category": "光纤传输"
+  },
+  {
+    "type": "single_choice",
+    "question": "下列说法正确的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "单模光能在多模光纤中传输，多模光能在单模光纤中传输"
+      },
+      {
+        "label": "B",
+        "text": "单模光能在多模光纤中传输，但多模光不能在单模光纤中传输"
+      },
+      {
+        "label": "C",
+        "text": "单模光不能在多模光纤中传输，但多模光能在单模光纤中传输"
+      },
+      {
+        "label": "D",
+        "text": "单模光不能在多模光纤中传输，多模光不能在单模光纤中传输"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】单模光纤是只能在指定波长下传输一种模式的光纤，中心玻璃芯很细；多模光纤允许不同模式 的光于一根光纤上传输，多模光纤的芯径较大。因而单模光纤能在多模光纤中传输，但多模光纤不能在单模 光纤中传输。",
+    "id": 6,
+    "category": "光纤传输"
+  },
+  {
+    "type": "single_choice",
+    "question": "光隔离器的作用是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "调节光信号的功率大小"
+      },
+      {
+        "label": "B",
+        "text": "保证光信号只能正向传输"
+      },
+      {
+        "label": "C",
+        "text": "分离同向传输的各路光信号"
+      },
+      {
+        "label": "D",
+        "text": "将光纤中传输的监控信号隔离开"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 7,
+    "category": "光纤传输"
+  },
+  {
+    "type": "single_choice",
+    "question": "下列说法正确的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "光纤的损耗决定光纤通信系统的通信容量"
+      },
+      {
+        "label": "B",
+        "text": "光纤的损耗决定光纤通信系统的传输速率"
+      },
+      {
+        "label": "C",
+        "text": "光纤的损耗决定光纤通信系统的传输距离"
+      },
+      {
+        "label": "D",
+        "text": "光纤的损耗决定光纤通信系统的传输模式"
+      }
+    ],
+    "answer": "C",
+    "analysis": "",
+    "id": 8,
+    "category": "光纤传输"
+  },
+  {
+    "type": "single_choice",
+    "question": "下列不属于准同步数字复接体系的缺点是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "PDH为语音业务设计，不适用现代通信宽带化、智能化和个人化的发展趋势"
+      },
+      {
+        "label": "B",
+        "text": "具有强大的网络管理功能"
+      },
+      {
+        "label": "C",
+        "text": "标准不统一，目前世界上有三种不同地区性的标准，三者互不兼容"
+      },
+      {
+        "label": "D",
+        "text": "PDH传输线路主要是点对点连接，不适应现代通信网灵活的拓扑接头"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 9,
+    "category": "光纤传输"
+  },
+  {
+    "type": "single_choice",
+    "question": "光纤的色散特性是光纤线路的重要参数。在多模光纤中，（　）是主要的色散成分。",
+    "options": [
+      {
+        "label": "A",
+        "text": "材料色散"
+      },
+      {
+        "label": "B",
+        "text": "模式色散"
+      },
+      {
+        "label": "C",
+        "text": "波导色散"
+      },
+      {
+        "label": "D",
+        "text": "极化色散"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考智学官网",
+    "id": 10,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "半导体激光器在（　）数字光纤通信系统中应用最为广泛。",
+    "options": [
+      {
+        "label": "A",
+        "text": "高速率"
+      },
+      {
+        "label": "B",
+        "text": "大容量"
+      },
+      {
+        "label": "C",
+        "text": "可靠性"
+      },
+      {
+        "label": "D",
+        "text": "小容量"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 11,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "多模光纤的纤芯直径为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "50μm"
+      },
+      {
+        "label": "B",
+        "text": "62.5μm"
+      },
+      {
+        "label": "C",
+        "text": "60.5μm"
+      },
+      {
+        "label": "D",
+        "text": "52.5μm"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 12,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "光纤传输，即以光导纤维为介质进行的（　）传输。",
+    "options": [
+      {
+        "label": "A",
+        "text": "数据"
+      },
+      {
+        "label": "B",
+        "text": "信号"
+      },
+      {
+        "label": "C",
+        "text": "数字信号"
+      },
+      {
+        "label": "D",
+        "text": "模拟信号"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 13,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "光纤按传输波长分类，可以分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "短波长光纤"
+      },
+      {
+        "label": "B",
+        "text": "长波长光纤"
+      },
+      {
+        "label": "C",
+        "text": "紧套光纤"
+      },
+      {
+        "label": "D",
+        "text": "松套光纤"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "慧考解析】光纤按传输波长分类，可分为短波长光纤、长波长光纤两大类。",
+    "id": 14,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "色度色散包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "材料色散"
+      },
+      {
+        "label": "B",
+        "text": "波导色散"
+      },
+      {
+        "label": "C",
+        "text": "模式色散"
+      },
+      {
+        "label": "D",
+        "text": "振膜色散"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 15,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "开关按其功能分类，可以分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "机械式光开关"
+      },
+      {
+        "label": "B",
+        "text": "电子式开关"
+      },
+      {
+        "label": "C",
+        "text": "手动式开关"
+      },
+      {
+        "label": "D",
+        "text": "自动式开关"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 16,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "按照光缆内光纤的芯数多少，光缆可以分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "单芯光缆"
+      },
+      {
+        "label": "B",
+        "text": "双芯光缆"
+      },
+      {
+        "label": "C",
+        "text": "四芯光缆"
+      },
+      {
+        "label": "D",
+        "text": "十芯光缆"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 17,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "F-P腔激光器从结构上划分，可分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "同质结半导体激光器"
+      },
+      {
+        "label": "B",
+        "text": "单异质结半导体激光器"
+      },
+      {
+        "label": "C",
+        "text": "双异质结半导体激光器"
+      },
+      {
+        "label": "D",
+        "text": "双质结半导体激光器"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 18,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "光纤按材料分类，可以分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "石英(玻璃)系列光纤"
+      },
+      {
+        "label": "B",
+        "text": "塑料光纤"
+      },
+      {
+        "label": "C",
+        "text": "液体(氟化物)光纤"
+      },
+      {
+        "label": "D",
+        "text": "铁质光纤"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 19,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "按照光缆内护层材料性质不同，光缆可以分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "聚乙烯护层普通光缆"
+      },
+      {
+        "label": "B",
+        "text": "聚氯乙烯护层阻燃光缆"
+      },
+      {
+        "label": "C",
+        "text": "尼龙防蚁防鼠光缆"
+      },
+      {
+        "label": "D",
+        "text": "管道光缆"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 20,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "光发射机由（　）组成。 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网",
+    "options": [
+      {
+        "label": "A",
+        "text": "光源"
+      },
+      {
+        "label": "B",
+        "text": "驱动器"
+      },
+      {
+        "label": "C",
+        "text": "调制器"
+      },
+      {
+        "label": "D",
+        "text": "解调器"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 21,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "激光器由（　）构成。",
+    "options": [
+      {
+        "label": "A",
+        "text": "工作物质"
+      },
+      {
+        "label": "B",
+        "text": "激励源"
+      },
+      {
+        "label": "C",
+        "text": "光学谐振腔"
+      },
+      {
+        "label": "D",
+        "text": "接收源"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 22,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "发光二极管的（　），在光纤传输距离要求不高、码元速率要求不高的数字光纤通信系统中应用最为广泛 。",
+    "options": [
+      {
+        "label": "A",
+        "text": "制造成本低廉"
+      },
+      {
+        "label": "B",
+        "text": "制造工艺简单"
+      },
+      {
+        "label": "C",
+        "text": "可靠性好"
+      },
+      {
+        "label": "D",
+        "text": "容量大"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 23,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "光纤由（　）构成。",
+    "options": [
+      {
+        "label": "A",
+        "text": "纤芯"
+      },
+      {
+        "label": "B",
+        "text": "包层"
+      },
+      {
+        "label": "C",
+        "text": "涂覆层"
+      },
+      {
+        "label": "D",
+        "text": "外包层"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 24,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "按照光缆内光纤的套塑方法不同，光缆可以分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "紧套光缆"
+      },
+      {
+        "label": "B",
+        "text": "松套光缆"
+      },
+      {
+        "label": "C",
+        "text": "束管式光缆"
+      },
+      {
+        "label": "D",
+        "text": "带状多芯单元光缆"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 25,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "光缆可以分为（　）。 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网",
+    "options": [
+      {
+        "label": "A",
+        "text": "市话光缆"
+      },
+      {
+        "label": "B",
+        "text": "长途光缆"
+      },
+      {
+        "label": "C",
+        "text": "海底光缆"
+      },
+      {
+        "label": "D",
+        "text": "用户光缆"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 26,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "SDH网络存在着一些问题，比如（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "频带利用率低"
+      },
+      {
+        "label": "B",
+        "text": "抖动性能劣化"
+      },
+      {
+        "label": "C",
+        "text": "软件权限过大"
+      },
+      {
+        "label": "D",
+        "text": "定时信息传送困难"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 27,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "光缆的典型结构有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "层绞式光缆"
+      },
+      {
+        "label": "B",
+        "text": "骨架式光缆"
+      },
+      {
+        "label": "C",
+        "text": "束管式光缆"
+      },
+      {
+        "label": "D",
+        "text": "带状光缆"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 28,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "SDH网常见的网元主要有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "终端复用器"
+      },
+      {
+        "label": "B",
+        "text": "分插复用器"
+      },
+      {
+        "label": "C",
+        "text": "同步数字交叉连接设备"
+      },
+      {
+        "label": "D",
+        "text": "再生中继器"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "慧考解析】SDH网常见的网元主要有终端复用器(TM)、分插复用器(ADM)、同步数字交叉连接设备(SDXC)、 再生中继器(REG)。",
+    "id": 29,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "光纤的机械特性主要包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "耐侧压力"
+      },
+      {
+        "label": "B",
+        "text": "抗拉强度"
+      },
+      {
+        "label": "C",
+        "text": "弯曲"
+      },
+      {
+        "label": "D",
+        "text": "扭绞性能"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 30,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "发光二极管的工作特性包括（　）。 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网",
+    "options": [
+      {
+        "label": "A",
+        "text": "光谱特性"
+      },
+      {
+        "label": "B",
+        "text": "输出光功率特性"
+      },
+      {
+        "label": "C",
+        "text": "温度特性"
+      },
+      {
+        "label": "D",
+        "text": "耦合效率特性"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 31,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "SDH技术是一套完整的标准化数字信号同步技术，可以完成信息的（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "同步传输"
+      },
+      {
+        "label": "B",
+        "text": "复用"
+      },
+      {
+        "label": "C",
+        "text": "分插"
+      },
+      {
+        "label": "D",
+        "text": "分叉连接"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 32,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "SDH的复用单元主要由（　）与管理单元组、同步传输模块等模块组成。",
+    "options": [
+      {
+        "label": "A",
+        "text": "容器"
+      },
+      {
+        "label": "B",
+        "text": "虚容器"
+      },
+      {
+        "label": "C",
+        "text": "支路单元与支路单元组"
+      },
+      {
+        "label": "D",
+        "text": "管理单元"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 33,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "半导体激光器的特性有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "阈值特性"
+      },
+      {
+        "label": "B",
+        "text": "光谱特性"
+      },
+      {
+        "label": "C",
+        "text": "温度特性"
+      },
+      {
+        "label": "D",
+        "text": "转换效率"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 34,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "激光器的参数主要有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "平均衰减系数"
+      },
+      {
+        "label": "B",
+        "text": "增益系数"
+      },
+      {
+        "label": "C",
+        "text": "阈值条件"
+      },
+      {
+        "label": "D",
+        "text": "谐振频率"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 35,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "按目前通信所用的不同类型的光缆，光缆可以分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "设备内光缆 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "B",
+        "text": "海底光缆"
+      },
+      {
+        "label": "C",
+        "text": "特种光缆"
+      },
+      {
+        "label": "D",
+        "text": "室内外光缆"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 36,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "下列关于光纤通信特点的描述中错误的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "光纤通信的传输频带宽，通信容量小，可以容纳很少的光信号"
+      },
+      {
+        "label": "B",
+        "text": "光纤通信的光中继器可以中继的距离较长，可以很长时间的补偿信号衰减和纠正信号失真"
+      },
+      {
+        "label": "C",
+        "text": "光纤通信的信道保密性能不好，信道串扰(同一系统内不同信道之间的干扰)大"
+      },
+      {
+        "label": "D",
+        "text": "光纤通信适应能力强，能快速应对突发情况"
+      }
+    ],
+    "answer": "AC",
+    "analysis": "",
+    "id": 37,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "光纤放大器又可分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "非线性光纤放大器"
+      },
+      {
+        "label": "B",
+        "text": "线性光纤放大器"
+      },
+      {
+        "label": "C",
+        "text": "掺铒光纤放大器"
+      },
+      {
+        "label": "D",
+        "text": "波分复用放大器"
+      }
+    ],
+    "answer": "AC",
+    "analysis": "",
+    "id": 38,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "MMF按折射率分布进行分类时，有哪两种？（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "渐变型"
+      },
+      {
+        "label": "B",
+        "text": "随机型"
+      },
+      {
+        "label": "C",
+        "text": "曲线型"
+      },
+      {
+        "label": "D",
+        "text": "阶跃型"
+      }
+    ],
+    "answer": "AD",
+    "analysis": "",
+    "id": 39,
+    "category": "光纤传输"
+  },
+  {
+    "type": "multi_choice",
+    "question": "光纤通信系统中，线性损耗主要包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "瑞利散射"
+      },
+      {
+        "label": "B",
+        "text": "受激拉曼散射"
+      },
+      {
+        "label": "C",
+        "text": "受激布里渊散射"
+      },
+      {
+        "label": "D",
+        "text": "材料不均匀引起的散射"
+      }
+    ],
+    "answer": "AD",
+    "analysis": "",
+    "id": 40,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "在OTN网络共定义了两种保护方式，即线性保护和子网连接保护。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 41,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "EDFA工作波长为1510nm，与光纤的低损耗波段一致。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】EDFA工作波长为1510nm，与光纤的低损耗波段不一致。",
+    "id": 42,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "EDFA可以放大全波长的光。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 43,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光纤的机械特性主要包括耐侧压力、抗拉强度、弯曲以及扭绞性能等，耐侧压力是目前使用者最关心的问 题。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】使用者最关心的是抗拉强度。",
+    "id": 44,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "滤波器属无源器件，故从严格意义上讲，可调谐滤波器属于无源器件。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 45,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "串口通信中8个bit也就是8个0或者1为1字节，可以表示成2个字符。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】串口通信中，数据是一个字节一个字节，并且每个字节都是高高低低的8位依次传输的。",
+    "id": 46,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "大家每天使用的电话与本地交换局间的连接属于线性总线型网络结构。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】星型结构是最古老的一种连接方式，电话就属于这种结构。环型结构在LAN中使用较多。这种结 构中的传输媒体从一个端用户到另一个端用户，直到将所有的端用户连成环型。",
+    "id": 47,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "数字光纤传输系统中常采用的码型是384B码和插入码。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】在光纤线路中传输的码型不是输入接口译码产生的NRZ码，而先要进行码型变换，变成适合在光 纤线路中传送的一种码型，即光纤线路码型。",
+    "id": 48,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "最大接收角θ0越大，即纤芯与包层的折射率之差越大，光纤捕捉光线的能力越弱，这种能力用数值孔径 NA来表示。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 49,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光放大器可以代替再生中继器。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】一般均衡器都有一定的放大倍数，只是在大音量的时候没有专业的前级效果好，专业的前级参 数都是固定的，从小音量到大音量不会有失真。而均衡设定一个值后，小音量到大音量是会有失真的。",
+    "id": 50,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光放大器是一种不需要经过光/电/光变换而直接对光信号进行放大的无源器件。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 51,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "发光二极管(LED)是相干光源，是无阈值器件，它的基本工作原理是自发辐射。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 52,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "随着激光器温度的上升，其输出光功率会增大。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】随着激光器温度的上升，其输出光功率会呈现不规律变化。",
+    "id": 53,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "发光二极管的工作原理与激光器相同。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】发光二极管的工作原理与激光器的工作原理不同，激光器发射的是受激辐射光，发光二极管发 射的是自发辐射光。",
+    "id": 54,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "自发辐射光是一种相干荧光，即是单一频率、相位和偏振方向相同的光。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 55,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "根据理论分析，只有当输出的光脉冲为严格的双曲正割脉冲时，光孤子才能稳定地传输。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 56,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光电检测器应具有单波长检测能力。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】一般可以通过调节电阻的阻值来调整，以适应设计。",
+    "id": 57,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "发光二极管的结构和激光器的结构相似，大多是采用单异质芯片。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】发光二极管的结构和激光器的结构相似，大多是采用双异质芯片。 慧考智学官网",
+    "id": 58,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "自脉冲现象是某些激光器在某些注入电流下发生的一种持续振荡，实际工作中常遇到这种器件，属正常现 象，无须更换。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 59,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光放大器是基于自发辐射或光子吸收原理来实现对微弱入射光进行光放大的，其机制与激光器类似。（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 60,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "延时差指的是传输同样的距离时，相同频率的信号成分所需的时间之差。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】延时差指的是传输同样的距离时，相同频率的信号成分所需的时间之和。",
+    "id": 61,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光中继器是在短距离的光纤通信系统中补偿光缆线路光信号的损耗和消除信号畸变及噪声影响的设备。 （　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】光中继器是在长距离的光纤通信系统中补偿光缆线路光信号的损耗，和消除信号畸变及噪声影 响的设备，是光纤通信设备的一种，其作用是延长通信距离。",
+    "id": 62,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "帧结构是由段开销和有效信息载荷组成的。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 63,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "表示光纤色散程度的物理量是速度差。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】表示光纤色散程度的物理量是时延差。",
+    "id": 64,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "前置放大器置于光发射机前面，放大非常微弱的光信号，以改善灵敏度。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】前置放大器置于光接收机前面，放大非常微弱的光信号，以改善灵敏度。",
+    "id": 65,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "固体光开关的优点是插入损耗小，串扰小，适合各种光纤，技术成熟；缺点是开关速度慢。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】机械光开关的优点是插入损耗小，串扰小，适合各种光纤，技术成熟；缺点是开关速度慢。固 体光开关正好相反，优点是开关速度快；缺点是插入损耗大，串扰大，只适合单模光纤。 慧考智学官网",
+    "id": 66,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "在没有到达阈值电流时，LD发的光也是激光。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 67,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光隔离器的作用是使光转换效率更高。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】光隔离器允许单向光通过。",
+    "id": 68,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光纤的温度特性，主要是指温度的高低对光纤损耗的影响。通常温度越高，光纤的损耗越大；温度越低 ，光纤的损耗越小。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 69,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "CWDM是密集波分复用。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 70,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光纤通信系统一般由光发射机、光纤光缆、光纤中继器、光接收机四部分构成。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 71,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "SDH环形网的某节点发生故障或光缆中断时，不能维持通信能力。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】SDH环形网的某节点发生故障或光缆中断时，能维持通信能力，因为SDH网络一个突出的优点就 是有自愈能力。",
+    "id": 72,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光传送网分为光通道层、光复用段层两个独立的层网络。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 73,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "SDH环型网的一个缺点是没有自愈能力。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】SDH环型网优点就是发生单个断纤或设备故障时，成环保护可以自动切换，缺点就是浪费一半的 时隙资源，比如2.5G的时隙，16个STM-1，前8个用来开业务，后8个用来做保护，不能开其他业务。 慧考智学官网",
+    "id": 74,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "激光振荡的相位条件为谐振腔的长度是激光波长的整数倍。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】L为光在谐振腔运行一周期的长度，如果是线性腔，则L=2×l，l为谐振腔长度，2l=L即为一周 期长度。此长度必须是波长一半的整数倍(lamda代表波长)，因此m为正整数，类似驻波。所以满足以上关系 式的波长的光才能在此谐振腔里生存下来。",
+    "id": 75,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "SDH的第一级传输速率为155.52Mbit/s，在北美地区常常采用SDH。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】SDH的第一级传输速率为155.52Mbit/s。在北美以外的其他国家和地区常常采用SDH。",
+    "id": 76,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光复用段层网络应完成光通道适配、光通道终端、光通道交叉连接和对光连接的监控功能。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 77,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "SDH环形网的一个突出优点是具有自愈能力。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 78,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "散粒噪声属于白噪声，为了降低它的影响，通常在判决电路之前使用低通滤波器，使得信道的带宽变窄。 （　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】散粒噪声属于白噪声，为了降低它的影响，通常在判决电路之前使用低通滤波器，使得信道的 带宽变窄。",
+    "id": 79,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光纤传输一般使用光缆进行，单根光导纤维的数据传输速率能达几Gbps，在不使用中继器的情况下，传输 距离能达几十公里。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 80,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "模拟信号转换为数字信号后会有精度的衰减，这是由于量化过程造成的。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 81,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光纤的色散可分为模式色散、色度色散、振模色散。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 82,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光纤中的孤子是光纤色散与非线性相互作用的产物。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 83,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光缆的典型结构有层绞式光缆、骨架式光缆、束管式光缆、带状光缆、单芯光缆、特殊光缆等。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 84,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光中继器由光检测器、光源和判决再生电路组成。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 85,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光纤光缆体积小、重量轻，施工和维护简单。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 86,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光通道层所接收的信号来自电通道层，它是OTN的主要功能的载体，由光通道净荷单元、光通道数据单元 、光通道传送单元三个电域子层和光域的光信道组成。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 87,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "TDM技术可以克服WDM技术中的一些固有限制，如光放大器级联导致的增益谱不平坦、信道串扰问题，非线 性效应的影响以及对光源波长稳定性的要求。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 88,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "激光器通常指的是能够产生激光的自激振荡器。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 89,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "电话网从设备上讲是由交换机、传输电路(用户线和局间中继电路)和用户终端设备(电话机)三分部组成的 。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 90,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光中继器主要有两个作用：一是用于补偿光信号在光纤中传输时受到的衰减；另一个作用是对波形失真的 脉冲进行整形。（　） 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 91,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "OTUk电交叉设备可完成ODUk级别的电路交叉功能。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 92,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "SDH的复用单元主要由容器(C)、虚容器(VC)、支路单元与支路单元组、管理单元与管理单元组、同步传输 模块等模块组成。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 93,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "段开销分为SOH和LOH，前者占前3行，后者占5～9行。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 94,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光纤通信的传输频带宽，通信容量大，可以容纳众多光信号。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 95,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光纤有着不同的结构形式。通信用的光纤绝大多数是用石英材料做成的横截面很小的双层同心圆柱体，外 层对光的折射率比内层对光的折射率低。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 96,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "激光器的横模决定了激光光束的空间分布，它直接影响到器件和光纤的耦合效率。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 97,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "OTN与SDH传送网的主要差异在于复用技术不同，但在很多方面又很相似。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 98,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "半导体光放大器与光纤的耦合损耗大，由于增益与偏振态、温度等因素有关，因此稳定性差；在高速光信 号的放大方面，仍存在问题；输出功率小，噪声系统较大。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 99,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "电光效应、热光效应等是利用材料的折射率随电压和温度的变化而变化的特性，从而实现光开关器件。 （　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 100,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光纤通信系统最适合的掺杂光纤放大器是工作在1550nm的掺铒光纤放大器和工作在1300nm的掺镨光纤放 大器。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 101,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "光发射机是实现电/光转换的光端机。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 102,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "半导体激光器指的是用半导体材料作为激活物质的激光器。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 103,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "PIN光检测器反向偏压可以取较小的值，因为其耗尽区厚度基本上是由Ⅰ区的宽度决定的。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 104,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "CWDM可采用不带冷却器的半导体激光器。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 105,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "半导体激光器可分为F-P腔激光器和分布反馈型激光器。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 106,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "电话网是开放电话业务为广大用户服务的通信网络。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 107,
+    "category": "光纤传输"
+  },
+  {
+    "type": "judge",
+    "question": "在多模光纤中，模式色散是其主要的色散因素。（　） 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】多模光纤中存在模式色散、材料色散、波导色散，其中，模式色散是其主要的色散因素。 慧考智学官网",
+    "id": 108,
+    "category": "光纤传输"
+  }
+]

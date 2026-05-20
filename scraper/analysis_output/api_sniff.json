@@ -1,0 +1,1189 @@
+{
+  "total_requests": 12,
+  "total_api_calls": 11,
+  "question_api_candidates": [
+    {
+      "url": "https://proxyweb.huikao8.com/huikao_pc/query_information_forIndex",
+      "method": "GET",
+      "type": "fetch",
+      "post_data": null,
+      "is_api": true,
+      "response_json": {
+        "code": 0,
+        "msg": "查询成功",
+        "data": [
+          {
+            "id": "2053684461048041472",
+            "title": "关于做好江西2026年度全国会计专业技术中级资格考试报名有关事项的公告",
+            "extend1": "ZXQ5BBpk"
+          },
+          {
+            "id": "2053682336842780672",
+            "title": "江西2026会计中级资格考试报名时间为6月12日9时至7月2日12时",
+            "extend1": "ZXQ5BBhK"
+          },
+          {
+            "id": "2053678164588236800",
+            "title": "2026年度山西省卫生系列和卫生管理研究 专业副高级职称专业考试有关事项的通知",
+            "extend1": "ZXQ5BBQj"
+          },
+          {
+            "id": "2053675701441269760",
+            "title": "关于做好2026年内蒙古自治区卫生系列正高级专业技术资格专业知识和实践能力考试通知",
+            "extend1": "ZXQ5BBGw"
+          },
+          {
+            "id": "2053674709328990208",
+            "title": "关于做好2026年内蒙古自治区卫生系列副高级专业技术资格专业知识和实践能力考试通知",
+            "extend1": "ZXQ5BBD1"
+          },
+          {
+            "id": "2053665594754076672",
+            "title": "关于做好2026年度天津市卫生系列副高级职称考试考务通知",
+            "extend1": "ZXQ5BAam"
+          },
+          {
+            "id": "2053660756418891776",
+            "title": "关于做好2026年度天津市卫生系列正高级职称考试考务通知",
+            "extend1": "ZXQ5BAHZ"
+          },
+          {
+            "id": "2053658228134383616",
+            "title": "关于做好2026年度福建省卫生系列正高级专业技术职务实践技能考试通知",
+            "extend1": "ZXQ5BA7W"
+          },
+          {
+            "id": "2053656924003635200",
+            "title": "关于做好2026年度福建省卫生系列副高级专业技术职务实践技能考试通知",
+            "extend1": "ZXQ5BA2L"
+          },
+          {
+            "id": "2053652666122375168",
+            "title": "2026-05-09 内容更新日志汇总表",
+            "extend1": "ZXQ5B9jQ"
+          },
+          {
+            "id": "2053651936590303232",
+            "title": "2026年辽宁省副高级卫生专业技术资格专业实践能力考试报名通知",
+            "extend1": "ZXQ5B9gW"
+          },
+          {
+            "id": "2053651175697420288",
+            "title": "2026年辽宁省正高级卫生专业技术资格专业实践能力考试报名通知",
+            "extend1": "ZXQ5B9dU"
+          },
+          {
+            "id": "2053041883122372608",
+            "title": "关于做好江西省2026年卫生正高级职称考试报名通知",
+            "extend1": "ZXQ59HIO"
+          },
+          {
+            "id": "2053037875020304384",
+            "title": "关于做好江西省2026年卫生副高级职称考试报名通知",
+            "extend1": "ZXQ59H2S"
+          },
+          {
+            "id": "2053036883734302720",
+            "title": "关于做好2026年度海南省卫生健康委员会卫生系列副高级职称考试工作的通知",
+            "extend1": "ZXQ59GwW"
+          },
+          {
+            "id": "2053032361729331200",
+            "title": "关于做好2026年度海南省卫生健康委员会卫生系列正高级职称考试工作的通知",
+            "extend1": "ZXQ59GeY"
+          },
+          {
+            "id": "2053030207689986048",
+            "title": "关于做好宁夏回族自治区2026年卫生系列正高级职称业务能力考试有关事宜的通知",
+            "extend1": "ZXQ59GW0"
+          },
+          {
+            "id": "2053029717220659200",
+            "title": "关于做好宁夏回族自治区2026年卫生系列副高级职称业务能力考试有关事宜的通知",
+            "extend1": "ZXQ59GU3"
+          },
+          {
+            "id": "2053026356488441856",
+            "title": "关于做好山东省2026年度卫生系列副高级职称考试工作的通知",
+            "extend1": "ZXQ59GGg"
+          },
+          {
+            "id": "2053024069200252928",
+            "title": "关于做好江苏省2026年度卫生正高级职称专业实践能力考核的通知",
+            "extend1": "ZXQ59G7b"
+          },
+          {
+            "id": "2053023390389899264",
+            "title": "关于做好江苏省2026年度卫生副高级职称专业实践能力考核的通知",
+            "extend1": "ZXQ59G4t"
+          },
+          {
+            "id": "2053021988414427136",
+            "title": "关于做好浙江省2026年度卫生副高级专业实践能力考试考生报名须知",
+            "extend1": "ZXQ59FxK"
+          },
+          {
+            "id": "2053021417842282496",
+            "title": "关于做好浙江省2026年度卫生正高级专业实践能力考试考生报名须知",
+            "extend1": "ZXQ59Fv4"
+          },
+          {
+            "id": "2053020085429342208",
+            "title": "关于2026年度河南省卫生系列正高级职称业务水平考试工作有关问题的通知",
+            "extend1": "ZXQ59Fpl"
+          },
+          {
+            "id": "2053019580292534272",
+            "title": "关于2026年度河南省卫生系列副高级职称业务水平考试工作有关问题的通知",
+            "extend1": "ZXQ59Fnk"
+          },
+          {
+            "id": "2053010590842097664",
+            "title": "关于做好新疆2026年度自治区副高级卫生专业技术资格考试工作安排的通告",
+            "extend1": "ZXQ59FE3"
+          },
+          {
+            "id": "2053009777264562176",
+            "title": "关于做好新疆2026年度自治区正高级卫生专业技术资格考试工作安排的通告",
+            "extend1": "ZXQ59FAn"
+          },
+          {
+            "id": "2052997132155228160",
+            "title": "关于做好青海省2026年度正高级卫生专业技术资格考试有关工作的通知",
+            "extend1": "ZXQ59EKY"
+          },
+          {
+            "id": "2052986822212063232",
+            "title": "关于做好青海省2026年度副高级卫生专业技术资格考试有关工作的通知",
+            "extend1": "ZXQ59Dda"
+          },
+          {
+            "id": "2052985221623713792",
+            "title": "关于做好贵州省2026年度副高级卫生专业技术资格考试有关事项的通知",
+            "extend1": "ZXQ59DXF"
+          },
+          {
+            "id": "2052984301292752896",
+            "title": "关于做好贵州省2026年度正高级卫生专业技术资格考试有关事项的通知",
+            "extend1": "ZXQ59DTZ"
+          },
+          {
+            "id": "2052961260479320064",
+            "title": "关于2026年度广西壮族自治区卫生系列正高级职称专业能力考试有关事项的通知",
+            "extend1": "ZXQ59Bw2"
+          },
+          {
+            "id": "2052960404912607232",
+            "title": "关于2026年度广西壮族自治区卫生系列副高级职称专业能力考试有关事项的通知",
+            "extend1": "ZXQ59Bsc"
+          },
+          {
+            "id": "2052956680731365376",
+            "title": "关于2026年河北省卫生系列副高级专业技术资格实践技能考试的通知",
+            "extend1": "ZXQ59Bdo"
+          },
+          {
+            "id": "2052955418816286720",
+            "title": "关于2026年河北省卫生系列正高级专业技术资格实践技能考试的通知",
+            "extend1": "ZXQ59BYn"
+          },
+          {
+            "id": "2052953885080948736",
+            "title": "关于2026年重庆市卫生技术正高级资格（含卫生管理研究）专业能力考试工作的通知",
+            "extend1": "ZXQ59BSh"
+          },
+          {
+            "id": "2052952490445508608",
+            "title": "关于2026年重庆市卫生技术副高级资格（含卫生管理研究）专业能力考试工作的通知",
+            "extend1": "ZXQ59BNB"
+          },
+          {
+            "id": "2052941695984734208",
+            "title": "关于做好甘肃省2026年全省副高级卫生专业技术资格实践技能考试的公告",
+            "extend1": "ZXQ59AeH"
+          },
+          {
+            "id": "2052940966964367360",
+            "title": "关于做好甘肃省2026年全省正高级卫生专业技术资格实践技能考试的公告",
+            "extend1": "ZXQ59AbN"
+          },
+          {
+            "id": "2052939809571344384",
+            "title": "关于做好江西吉安2026年卫生正高级职称考试报名工作的通知",
+            "extend1": "ZXQ59AWm"
+          },
+          {
+            "id": "2052938744473980928",
+            "title": "关于做好江西吉安2026年卫生副高级职称考试报名工作的通知",
+            "extend1": "ZXQ59ASY"
+          },
+          {
+            "id": "2052934495279124480",
+            "title": "2026-05-08 内容更新日志汇总表",
+            "extend1": "ZXQ59ABf"
+          },
+          {
+            "id": "2052925487382138880",
+            "title": "关于做好2026年度湖北黄石市卫生技术正高级职务水平能力测试工作的通知",
+            "extend1": "ZXQ599Zr"
+          },
+          {
+            "id": "2052923781827137536",
+            "title": "关于做好2026年度湖北黄石市卫生技术副高级职务水平能力测试工作的通知",
+            "extend1": "ZXQ599T6"
+          },
+          {
+            "id": "2052918831889911808",
+            "title": "关于2026年度陕西省副高级卫生专业技术资格考试考务工作安排的通知",
+            "extend1": "ZXQ5999Q"
+          },
+          {
+            "id": "2052917974813249536",
+            "title": "关于2026年度陕西省正高级卫生专业技术资格考试考务工作安排的通知",
+            "extend1": "ZXQ59962"
+          },
+          {
+            "id": "2052688744808583168",
+            "title": "关于做好广东省2026年度正高级卫生专业技术资格考试工作的通知",
+            "extend1": "ZXQ58Ht9"
+          },
+          {
+            "id": "2052687667287691264",
+            "title": "关于做好广东省2026年度副高级卫生专业技术资格考试工作的通知",
+            "extend1": "ZXQ58Hoq"
+          },
+          {
+            "id": "2052686199587475456",
+            "title": "关于做好2026年度上海市卫生系列社区卫生副高级职称资格考试的通知",
+            "extend1": "ZXQ58Hj2"
+          },
+          {
+            "id": "2052685701388046336",
+            "title": "关于做好2026年度上海市卫生系列社区卫生正高级职称资格考试的通知",
+            "extend1": "ZXQ58Hh3"
+          }
+        ]
+      },
+      "response_keys": [
+        "code",
+        "msg",
+        "data"
+      ],
+      "response_sample_keys": [
+        "id",
+        "title",
+        "extend1"
+      ],
+      "response_item_count": 50,
+      "relevance_score": 7
+    },
+    {
+      "url": "https://proxyweb.huikao8.com/huikao_pc/query_friendl_link",
+      "method": "GET",
+      "type": "fetch",
+      "post_data": null,
+      "is_api": true,
+      "response_json": {
+        "code": 0,
+        "msg": "查询成功",
+        "data": [
+          {
+            "id": "57836328576c45868f61150ae835cf22",
+            "lName": "代理后台",
+            "lAddress": "https://dls.huikao8.com",
+            "sort": 1,
+            "createName": "admin",
+            "updateName": "admin",
+            "createTime": "2020-12-23T08:50:07.000+0000",
+            "updateTime": "2021-05-27T05:05:41.000+0000"
+          },
+          {
+            "id": "1995804037043326976",
+            "lName": "课程顾问信息查询",
+            "lAddress": "https://www.huikao8.com/ccii",
+            "sort": 2,
+            "createName": "raolaoshi",
+            "updateName": null,
+            "createTime": "2025-12-02T10:35:37.000+0000",
+            "updateTime": null
+          }
+        ]
+      },
+      "response_keys": [
+        "code",
+        "msg",
+        "data"
+      ],
+      "response_sample_keys": [
+        "id",
+        "lName",
+        "lAddress",
+        "sort",
+        "createName",
+        "updateName",
+        "createTime",
+        "updateTime"
+      ],
+      "response_item_count": 2,
+      "relevance_score": 2
+    },
+    {
+      "url": "https://proxyweb.huikao8.com/huikao_pc/query_ad_forIndex?adLocation=1",
+      "method": "GET",
+      "type": "fetch",
+      "post_data": null,
+      "is_api": true,
+      "response_json": {
+        "code": 0,
+        "msg": "查询成功",
+        "data": [
+          {
+            "id": "1818143063781019648",
+            "adPicture": "https://img.huikao8.com/huixue_img/20240730/1818142950501257216/PC退费诈骗.jpg",
+            "adText": null,
+            "skipAddress": "https://www.huikao8.com/informationDetail/ZXO7UCTE",
+            "bindClass": null
+          },
+          {
+            "id": "68a04ce118c14055aa071a74778ad76e",
+            "adPicture": "https://img.huikao8.com/huixue_img/20210601/278b586b68e646e8bb6df195d9caddf9/hkbanner2.jpg",
+            "adText": null,
+            "skipAddress": "https://www.huikao8.com/question",
+            "bindClass": null
+          },
+          {
+            "id": "1664495461832200192",
+            "adPicture": "https://img.huikao8.com/huixue_img/20230602/1664495421113896960/9.jpg",
+            "adText": null,
+            "skipAddress": "",
+            "bindClass": null
+          },
+          {
+            "id": "1463083730112483328",
+            "adPicture": "https://img.huikao8.com/huixue_img/20211123/1463085042615062529/ban2.jpg",
+            "adText": null,
+            "skipAddress": "https://mp.weixin.qq.com/s/0D5gHKO25dQPwF2x76AleA",
+            "bindClass": null
+          }
+        ]
+      },
+      "response_keys": [
+        "code",
+        "msg",
+        "data"
+      ],
+      "response_sample_keys": [
+        "id",
+        "adPicture",
+        "adText",
+        "skipAddress",
+        "bindClass"
+      ],
+      "response_item_count": 4,
+      "relevance_score": 2
+    },
+    {
+      "url": "https://proxyweb.huikao8.com/huikao_pc/query_ad_forIndex?adLocation=3&size=3",
+      "method": "GET",
+      "type": "fetch",
+      "post_data": null,
+      "is_api": true,
+      "response_json": {
+        "code": 0,
+        "msg": "查询成功",
+        "data": [
+          {
+            "id": "2e4a65df896649cba093f953d8f3d625",
+            "adPicture": "https://img.huikao8.com/huixue_img/20210527/a74dc1330477455e8b1c456efd2af72a/shggtk.jpg",
+            "adText": null,
+            "skipAddress": "",
+            "bindClass": null
+          },
+          {
+            "id": "48529561699447dd9ee731b68bbf3170",
+            "adPicture": "https://img.huikao8.com/huixue_img/20220518/1526828868252602368/shggwk.jpg",
+            "adText": null,
+            "skipAddress": "",
+            "bindClass": null
+          },
+          {
+            "id": "25e5c8d06d7e4ea0bdff53741d10c408",
+            "adPicture": "https://img.huikao8.com/huixue_img/20210531/1a0752d7ff834e05be92cc73780ce7db/shggts.jpg",
+            "adText": null,
+            "skipAddress": "",
+            "bindClass": null
+          }
+        ]
+      },
+      "response_keys": [
+        "code",
+        "msg",
+        "data"
+      ],
+      "response_sample_keys": [
+        "id",
+        "adPicture",
+        "adText",
+        "skipAddress",
+        "bindClass"
+      ],
+      "response_item_count": 3,
+      "relevance_score": 2
+    },
+    {
+      "url": "https://proxyweb.huikao8.com/huikao_pc/query_ad_forIndex?adLocation=5",
+      "method": "GET",
+      "type": "fetch",
+      "post_data": null,
+      "is_api": true,
+      "response_json": {
+        "code": 0,
+        "msg": "查询成功",
+        "data": [
+          {
+            "id": "12f57c39de474e348945c3eb51057441",
+            "adPicture": "https://img.huikao8.com/huixue_img/20251216/2000769693832581120/fz.jpg",
+            "adText": null,
+            "skipAddress": "https://www.huikao8.com/informationDetail/ZXO7UCTE",
+            "bindClass": null
+          },
+          {
+            "id": "1468446386663067648",
+            "adPicture": "https://img.huikao8.com/huixue_img/20211208/1468446314076442625/tkxzzn.jpg",
+            "adText": null,
+            "skipAddress": "https://mp.weixin.qq.com/s/0D5gHKO25dQPwF2x76AleA",
+            "bindClass": null
+          }
+        ]
+      },
+      "response_keys": [
+        "code",
+        "msg",
+        "data"
+      ],
+      "response_sample_keys": [
+        "id",
+        "adPicture",
+        "adText",
+        "skipAddress",
+        "bindClass"
+      ],
+      "response_item_count": 2,
+      "relevance_score": 2
+    }
+  ],
+  "all_api_calls": [
+    {
+      "url": "https://proxyweb.huikao8.com/huikao_pc/query_setFastEnter",
+      "method": "GET",
+      "type": "fetch",
+      "post_data": null,
+      "is_api": true,
+      "relevance_score": 0
+    },
+    {
+      "url": "https://proxyweb.huikao8.com/huikao_pc/query_setBasic_message",
+      "method": "GET",
+      "type": "fetch",
+      "post_data": null,
+      "is_api": true,
+      "relevance_score": 0
+    },
+    {
+      "url": "https://proxyweb.huikao8.com/huikao_pc/query_setBasic_message",
+      "method": "GET",
+      "type": "fetch",
+      "post_data": null,
+      "is_api": true,
+      "relevance_score": 0
+    },
+    {
+      "url": "https://proxyweb.huikao8.com/huikao_pc/query_friendl_link",
+      "method": "GET",
+      "type": "fetch",
+      "post_data": null,
+      "is_api": true,
+      "response_json": {
+        "code": 0,
+        "msg": "查询成功",
+        "data": [
+          {
+            "id": "57836328576c45868f61150ae835cf22",
+            "lName": "代理后台",
+            "lAddress": "https://dls.huikao8.com",
+            "sort": 1,
+            "createName": "admin",
+            "updateName": "admin",
+            "createTime": "2020-12-23T08:50:07.000+0000",
+            "updateTime": "2021-05-27T05:05:41.000+0000"
+          },
+          {
+            "id": "1995804037043326976",
+            "lName": "课程顾问信息查询",
+            "lAddress": "https://www.huikao8.com/ccii",
+            "sort": 2,
+            "createName": "raolaoshi",
+            "updateName": null,
+            "createTime": "2025-12-02T10:35:37.000+0000",
+            "updateTime": null
+          }
+        ]
+      },
+      "response_keys": [
+        "code",
+        "msg",
+        "data"
+      ],
+      "response_sample_keys": [
+        "id",
+        "lName",
+        "lAddress",
+        "sort",
+        "createName",
+        "updateName",
+        "createTime",
+        "updateTime"
+      ],
+      "response_item_count": 2,
+      "relevance_score": 2
+    },
+    {
+      "url": "https://proxyweb.huikao8.com/huikao_pc/query_setBasic_message",
+      "method": "GET",
+      "type": "fetch",
+      "post_data": null,
+      "is_api": true,
+      "response_json": {
+        "code": 0,
+        "msg": "查询成功",
+        "data": {
+          "id": "03ec075fee8b46cf8c95f4be8206aae4",
+          "serviceLink": "https://mp.weixin.qq.com/s/KQWxUo2qRnw-MjPuxSCRpg",
+          "phone": "联系官网在线客服",
+          "email": "kf@huikao8.com",
+          "h5": "https://img.huikao8.com/yiwen_img/gzh.jpg",
+          "webLogo": "https://img.huikao8.com/yiwen_img/logo.png",
+          "weComId": "ww177bfc106536a950",
+          "weComUrl": "https://work.weixin.qq.com/kfid/kfc1204c4a5b93c12b2",
+          "weComIdCode": "https://img.huikao8.com/base/huikao8qywx.jpg",
+          "createTime": "2020-08-27T07:51:26.000+0000",
+          "updateTime": "2025-06-06T02:42:09.000+0000",
+          "createName": "admin",
+          "updateName": "seven188",
+          "isClassAd": 1,
+          "qrcode": "https://img.huikao8.com/huixue_img/20240429/1784732106149203968/APP.png"
+        }
+      },
+      "response_keys": [
+        "code",
+        "msg",
+        "data"
+      ],
+      "relevance_score": 0
+    },
+    {
+      "url": "https://proxyweb.huikao8.com/huikao_pc/query_ad_forIndex?adLocation=1",
+      "method": "GET",
+      "type": "fetch",
+      "post_data": null,
+      "is_api": true,
+      "response_json": {
+        "code": 0,
+        "msg": "查询成功",
+        "data": [
+          {
+            "id": "1818143063781019648",
+            "adPicture": "https://img.huikao8.com/huixue_img/20240730/1818142950501257216/PC退费诈骗.jpg",
+            "adText": null,
+            "skipAddress": "https://www.huikao8.com/informationDetail/ZXO7UCTE",
+            "bindClass": null
+          },
+          {
+            "id": "68a04ce118c14055aa071a74778ad76e",
+            "adPicture": "https://img.huikao8.com/huixue_img/20210601/278b586b68e646e8bb6df195d9caddf9/hkbanner2.jpg",
+            "adText": null,
+            "skipAddress": "https://www.huikao8.com/question",
+            "bindClass": null
+          },
+          {
+            "id": "1664495461832200192",
+            "adPicture": "https://img.huikao8.com/huixue_img/20230602/1664495421113896960/9.jpg",
+            "adText": null,
+            "skipAddress": "",
+            "bindClass": null
+          },
+          {
+            "id": "1463083730112483328",
+            "adPicture": "https://img.huikao8.com/huixue_img/20211123/1463085042615062529/ban2.jpg",
+            "adText": null,
+            "skipAddress": "https://mp.weixin.qq.com/s/0D5gHKO25dQPwF2x76AleA",
+            "bindClass": null
+          }
+        ]
+      },
+      "response_keys": [
+        "code",
+        "msg",
+        "data"
+      ],
+      "response_sample_keys": [
+        "id",
+        "adPicture",
+        "adText",
+        "skipAddress",
+        "bindClass"
+      ],
+      "response_item_count": 4,
+      "relevance_score": 2
+    },
+    {
+      "url": "https://proxyweb.huikao8.com/huikao_pc/query_ad_forIndex?adLocation=3&size=3",
+      "method": "GET",
+      "type": "fetch",
+      "post_data": null,
+      "is_api": true,
+      "response_json": {
+        "code": 0,
+        "msg": "查询成功",
+        "data": [
+          {
+            "id": "2e4a65df896649cba093f953d8f3d625",
+            "adPicture": "https://img.huikao8.com/huixue_img/20210527/a74dc1330477455e8b1c456efd2af72a/shggtk.jpg",
+            "adText": null,
+            "skipAddress": "",
+            "bindClass": null
+          },
+          {
+            "id": "48529561699447dd9ee731b68bbf3170",
+            "adPicture": "https://img.huikao8.com/huixue_img/20220518/1526828868252602368/shggwk.jpg",
+            "adText": null,
+            "skipAddress": "",
+            "bindClass": null
+          },
+          {
+            "id": "25e5c8d06d7e4ea0bdff53741d10c408",
+            "adPicture": "https://img.huikao8.com/huixue_img/20210531/1a0752d7ff834e05be92cc73780ce7db/shggts.jpg",
+            "adText": null,
+            "skipAddress": "",
+            "bindClass": null
+          }
+        ]
+      },
+      "response_keys": [
+        "code",
+        "msg",
+        "data"
+      ],
+      "response_sample_keys": [
+        "id",
+        "adPicture",
+        "adText",
+        "skipAddress",
+        "bindClass"
+      ],
+      "response_item_count": 3,
+      "relevance_score": 2
+    },
+    {
+      "url": "https://proxyweb.huikao8.com/huikao_pc/query_ad_forIndex?adLocation=5",
+      "method": "GET",
+      "type": "fetch",
+      "post_data": null,
+      "is_api": true,
+      "response_json": {
+        "code": 0,
+        "msg": "查询成功",
+        "data": [
+          {
+            "id": "12f57c39de474e348945c3eb51057441",
+            "adPicture": "https://img.huikao8.com/huixue_img/20251216/2000769693832581120/fz.jpg",
+            "adText": null,
+            "skipAddress": "https://www.huikao8.com/informationDetail/ZXO7UCTE",
+            "bindClass": null
+          },
+          {
+            "id": "1468446386663067648",
+            "adPicture": "https://img.huikao8.com/huixue_img/20211208/1468446314076442625/tkxzzn.jpg",
+            "adText": null,
+            "skipAddress": "https://mp.weixin.qq.com/s/0D5gHKO25dQPwF2x76AleA",
+            "bindClass": null
+          }
+        ]
+      },
+      "response_keys": [
+        "code",
+        "msg",
+        "data"
+      ],
+      "response_sample_keys": [
+        "id",
+        "adPicture",
+        "adText",
+        "skipAddress",
+        "bindClass"
+      ],
+      "response_item_count": 2,
+      "relevance_score": 2
+    },
+    {
+      "url": "https://proxyweb.huikao8.com/huikao_pc/query_information_forIndex",
+      "method": "GET",
+      "type": "fetch",
+      "post_data": null,
+      "is_api": true,
+      "response_json": {
+        "code": 0,
+        "msg": "查询成功",
+        "data": [
+          {
+            "id": "2053684461048041472",
+            "title": "关于做好江西2026年度全国会计专业技术中级资格考试报名有关事项的公告",
+            "extend1": "ZXQ5BBpk"
+          },
+          {
+            "id": "2053682336842780672",
+            "title": "江西2026会计中级资格考试报名时间为6月12日9时至7月2日12时",
+            "extend1": "ZXQ5BBhK"
+          },
+          {
+            "id": "2053678164588236800",
+            "title": "2026年度山西省卫生系列和卫生管理研究 专业副高级职称专业考试有关事项的通知",
+            "extend1": "ZXQ5BBQj"
+          },
+          {
+            "id": "2053675701441269760",
+            "title": "关于做好2026年内蒙古自治区卫生系列正高级专业技术资格专业知识和实践能力考试通知",
+            "extend1": "ZXQ5BBGw"
+          },
+          {
+            "id": "2053674709328990208",
+            "title": "关于做好2026年内蒙古自治区卫生系列副高级专业技术资格专业知识和实践能力考试通知",
+            "extend1": "ZXQ5BBD1"
+          },
+          {
+            "id": "2053665594754076672",
+            "title": "关于做好2026年度天津市卫生系列副高级职称考试考务通知",
+            "extend1": "ZXQ5BAam"
+          },
+          {
+            "id": "2053660756418891776",
+            "title": "关于做好2026年度天津市卫生系列正高级职称考试考务通知",
+            "extend1": "ZXQ5BAHZ"
+          },
+          {
+            "id": "2053658228134383616",
+            "title": "关于做好2026年度福建省卫生系列正高级专业技术职务实践技能考试通知",
+            "extend1": "ZXQ5BA7W"
+          },
+          {
+            "id": "2053656924003635200",
+            "title": "关于做好2026年度福建省卫生系列副高级专业技术职务实践技能考试通知",
+            "extend1": "ZXQ5BA2L"
+          },
+          {
+            "id": "2053652666122375168",
+            "title": "2026-05-09 内容更新日志汇总表",
+            "extend1": "ZXQ5B9jQ"
+          },
+          {
+            "id": "2053651936590303232",
+            "title": "2026年辽宁省副高级卫生专业技术资格专业实践能力考试报名通知",
+            "extend1": "ZXQ5B9gW"
+          },
+          {
+            "id": "2053651175697420288",
+            "title": "2026年辽宁省正高级卫生专业技术资格专业实践能力考试报名通知",
+            "extend1": "ZXQ5B9dU"
+          },
+          {
+            "id": "2053041883122372608",
+            "title": "关于做好江西省2026年卫生正高级职称考试报名通知",
+            "extend1": "ZXQ59HIO"
+          },
+          {
+            "id": "2053037875020304384",
+            "title": "关于做好江西省2026年卫生副高级职称考试报名通知",
+            "extend1": "ZXQ59H2S"
+          },
+          {
+            "id": "2053036883734302720",
+            "title": "关于做好2026年度海南省卫生健康委员会卫生系列副高级职称考试工作的通知",
+            "extend1": "ZXQ59GwW"
+          },
+          {
+            "id": "2053032361729331200",
+            "title": "关于做好2026年度海南省卫生健康委员会卫生系列正高级职称考试工作的通知",
+            "extend1": "ZXQ59GeY"
+          },
+          {
+            "id": "2053030207689986048",
+            "title": "关于做好宁夏回族自治区2026年卫生系列正高级职称业务能力考试有关事宜的通知",
+            "extend1": "ZXQ59GW0"
+          },
+          {
+            "id": "2053029717220659200",
+            "title": "关于做好宁夏回族自治区2026年卫生系列副高级职称业务能力考试有关事宜的通知",
+            "extend1": "ZXQ59GU3"
+          },
+          {
+            "id": "2053026356488441856",
+            "title": "关于做好山东省2026年度卫生系列副高级职称考试工作的通知",
+            "extend1": "ZXQ59GGg"
+          },
+          {
+            "id": "2053024069200252928",
+            "title": "关于做好江苏省2026年度卫生正高级职称专业实践能力考核的通知",
+            "extend1": "ZXQ59G7b"
+          },
+          {
+            "id": "2053023390389899264",
+            "title": "关于做好江苏省2026年度卫生副高级职称专业实践能力考核的通知",
+            "extend1": "ZXQ59G4t"
+          },
+          {
+            "id": "2053021988414427136",
+            "title": "关于做好浙江省2026年度卫生副高级专业实践能力考试考生报名须知",
+            "extend1": "ZXQ59FxK"
+          },
+          {
+            "id": "2053021417842282496",
+            "title": "关于做好浙江省2026年度卫生正高级专业实践能力考试考生报名须知",
+            "extend1": "ZXQ59Fv4"
+          },
+          {
+            "id": "2053020085429342208",
+            "title": "关于2026年度河南省卫生系列正高级职称业务水平考试工作有关问题的通知",
+            "extend1": "ZXQ59Fpl"
+          },
+          {
+            "id": "2053019580292534272",
+            "title": "关于2026年度河南省卫生系列副高级职称业务水平考试工作有关问题的通知",
+            "extend1": "ZXQ59Fnk"
+          },
+          {
+            "id": "2053010590842097664",
+            "title": "关于做好新疆2026年度自治区副高级卫生专业技术资格考试工作安排的通告",
+            "extend1": "ZXQ59FE3"
+          },
+          {
+            "id": "2053009777264562176",
+            "title": "关于做好新疆2026年度自治区正高级卫生专业技术资格考试工作安排的通告",
+            "extend1": "ZXQ59FAn"
+          },
+          {
+            "id": "2052997132155228160",
+            "title": "关于做好青海省2026年度正高级卫生专业技术资格考试有关工作的通知",
+            "extend1": "ZXQ59EKY"
+          },
+          {
+            "id": "2052986822212063232",
+            "title": "关于做好青海省2026年度副高级卫生专业技术资格考试有关工作的通知",
+            "extend1": "ZXQ59Dda"
+          },
+          {
+            "id": "2052985221623713792",
+            "title": "关于做好贵州省2026年度副高级卫生专业技术资格考试有关事项的通知",
+            "extend1": "ZXQ59DXF"
+          },
+          {
+            "id": "2052984301292752896",
+            "title": "关于做好贵州省2026年度正高级卫生专业技术资格考试有关事项的通知",
+            "extend1": "ZXQ59DTZ"
+          },
+          {
+            "id": "2052961260479320064",
+            "title": "关于2026年度广西壮族自治区卫生系列正高级职称专业能力考试有关事项的通知",
+            "extend1": "ZXQ59Bw2"
+          },
+          {
+            "id": "2052960404912607232",
+            "title": "关于2026年度广西壮族自治区卫生系列副高级职称专业能力考试有关事项的通知",
+            "extend1": "ZXQ59Bsc"
+          },
+          {
+            "id": "2052956680731365376",
+            "title": "关于2026年河北省卫生系列副高级专业技术资格实践技能考试的通知",
+            "extend1": "ZXQ59Bdo"
+          },
+          {
+            "id": "2052955418816286720",
+            "title": "关于2026年河北省卫生系列正高级专业技术资格实践技能考试的通知",
+            "extend1": "ZXQ59BYn"
+          },
+          {
+            "id": "2052953885080948736",
+            "title": "关于2026年重庆市卫生技术正高级资格（含卫生管理研究）专业能力考试工作的通知",
+            "extend1": "ZXQ59BSh"
+          },
+          {
+            "id": "2052952490445508608",
+            "title": "关于2026年重庆市卫生技术副高级资格（含卫生管理研究）专业能力考试工作的通知",
+            "extend1": "ZXQ59BNB"
+          },
+          {
+            "id": "2052941695984734208",
+            "title": "关于做好甘肃省2026年全省副高级卫生专业技术资格实践技能考试的公告",
+            "extend1": "ZXQ59AeH"
+          },
+          {
+            "id": "2052940966964367360",
+            "title": "关于做好甘肃省2026年全省正高级卫生专业技术资格实践技能考试的公告",
+            "extend1": "ZXQ59AbN"
+          },
+          {
+            "id": "2052939809571344384",
+            "title": "关于做好江西吉安2026年卫生正高级职称考试报名工作的通知",
+            "extend1": "ZXQ59AWm"
+          },
+          {
+            "id": "2052938744473980928",
+            "title": "关于做好江西吉安2026年卫生副高级职称考试报名工作的通知",
+            "extend1": "ZXQ59ASY"
+          },
+          {
+            "id": "2052934495279124480",
+            "title": "2026-05-08 内容更新日志汇总表",
+            "extend1": "ZXQ59ABf"
+          },
+          {
+            "id": "2052925487382138880",
+            "title": "关于做好2026年度湖北黄石市卫生技术正高级职务水平能力测试工作的通知",
+            "extend1": "ZXQ599Zr"
+          },
+          {
+            "id": "2052923781827137536",
+            "title": "关于做好2026年度湖北黄石市卫生技术副高级职务水平能力测试工作的通知",
+            "extend1": "ZXQ599T6"
+          },
+          {
+            "id": "2052918831889911808",
+            "title": "关于2026年度陕西省副高级卫生专业技术资格考试考务工作安排的通知",
+            "extend1": "ZXQ5999Q"
+          },
+          {
+            "id": "2052917974813249536",
+            "title": "关于2026年度陕西省正高级卫生专业技术资格考试考务工作安排的通知",
+            "extend1": "ZXQ59962"
+          },
+          {
+            "id": "2052688744808583168",
+            "title": "关于做好广东省2026年度正高级卫生专业技术资格考试工作的通知",
+            "extend1": "ZXQ58Ht9"
+          },
+          {
+            "id": "2052687667287691264",
+            "title": "关于做好广东省2026年度副高级卫生专业技术资格考试工作的通知",
+            "extend1": "ZXQ58Hoq"
+          },
+          {
+            "id": "2052686199587475456",
+            "title": "关于做好2026年度上海市卫生系列社区卫生副高级职称资格考试的通知",
+            "extend1": "ZXQ58Hj2"
+          },
+          {
+            "id": "2052685701388046336",
+            "title": "关于做好2026年度上海市卫生系列社区卫生正高级职称资格考试的通知",
+            "extend1": "ZXQ58Hh3"
+          }
+        ]
+      },
+      "response_keys": [
+        "code",
+        "msg",
+        "data"
+      ],
+      "response_sample_keys": [
+        "id",
+        "title",
+        "extend1"
+      ],
+      "response_item_count": 50,
+      "relevance_score": 7
+    },
+    {
+      "url": "https://proxyweb.huikao8.com/huikao_pc/query_setFastEnter",
+      "method": "GET",
+      "type": "fetch",
+      "post_data": null,
+      "is_api": true,
+      "response_json": {
+        "code": 0,
+        "msg": "查询成功",
+        "data": {
+          "under": [
+            {
+              "id": "55ffa95b9b79415895b4a9be0d247226",
+              "enterName": "选课中心",
+              "iconPicture": "https://img.huikao8.com/yiwen_img/sykjrkxfxk.png",
+              "location": 1,
+              "sort": 1,
+              "linkAddress": "https://www.huikao8.com/schoolCourse",
+              "createTime": "2020-08-27T07:57:06.000+0000",
+              "updateTime": "2023-02-20T10:24:18.000+0000",
+              "createName": "hepan",
+              "updateName": "raolaoshi"
+            },
+            {
+              "id": "00f123f9c5534ddb9baf761c0ea546c4",
+              "enterName": "题库软件",
+              "iconPicture": "https://img.huikao8.com/yiwen_img/sykjrkxftk.png",
+              "location": 1,
+              "sort": 2,
+              "linkAddress": "https://www.huikao8.com/question",
+              "createTime": "2020-08-27T07:58:41.000+0000",
+              "updateTime": "2023-02-20T10:24:27.000+0000",
+              "createName": "hepan",
+              "updateName": "raolaoshi"
+            },
+            {
+              "id": "db93375d37b14e5bb0d097df93bc816e",
+              "enterName": "图书商城",
+              "iconPicture": "https://img.huikao8.com/yiwen_img/sykjrkxfts.png",
+              "location": 1,
+              "sort": 3,
+              "linkAddress": "http://www.huikao8.com/bookShop",
+              "createTime": "2020-08-27T07:59:16.000+0000",
+              "updateTime": "2023-02-20T10:24:33.000+0000",
+              "createName": "hepan",
+              "updateName": "raolaoshi"
+            },
+            {
+              "id": "1460899ce8194691903bb58bfa4dbc5b",
+              "enterName": "资讯公告",
+              "iconPicture": "https://img.huikao8.com/yiwen_img/sykjrkxfzx.png",
+              "location": 1,
+              "sort": 4,
+              "linkAddress": "https://www.huikao8.com/information",
+              "createTime": "2020-08-27T08:00:18.000+0000",
+              "updateTime": "2023-02-20T10:24:44.000+0000",
+              "createName": "hepan",
+              "updateName": "raolaoshi"
+            },
+            {
+              "id": "0042d395bd454e9db1fdb7bbc06bf460",
+              "enterName": "手机APP",
+              "iconPicture": "https://img.huikao8.com/yiwen_img/sykjrkxfsjapp.png",
+              "location": 1,
+              "sort": 5,
+              "linkAddress": "https://www.huikao8.com/appDownload",
+              "createTime": "2020-08-27T08:00:55.000+0000",
+              "updateTime": "2023-02-20T10:24:52.000+0000",
+              "createName": "hepan",
+              "updateName": "raolaoshi"
+            },
+            {
+              "id": "65508157e81b4d84a3abe75573a62cb8",
+              "enterName": "考试月历",
+              "iconPicture": "https://img.huikao8.com/yiwen_img/sykjrkxfyl.png",
+              "location": 1,
+              "sort": 6,
+              "linkAddress": "https://www.huikao8.com/informationDetail/ZXP1DBEX",
+              "createTime": "2020-08-27T08:02:48.000+0000",
+              "updateTime": "2025-01-13T03:21:23.000+0000",
+              "createName": "hepan",
+              "updateName": "cilaoshi"
+            },
+            {
+              "id": "0b33c9e2b6b24527b1ffea42dc9fe55e",
+              "enterName": "加盟合作",
+              "iconPicture": "https://img.huikao8.com/yiwen_img/sykjrkxfjm.png",
+              "location": 1,
+              "sort": 7,
+              "linkAddress": "https://dls.huikao8.com/",
+              "createTime": "2020-08-27T08:03:47.000+0000",
+              "updateTime": "2023-02-20T10:25:04.000+0000",
+              "createName": "hepan",
+              "updateName": "raolaoshi"
+            },
+            {
+              "id": "b4b3c5b59e8b4a98803e04877be79365",
+              "enterName": "领优惠券",
+              "iconPicture": "https://img.huikao8.com/yiwen_img/sykjrkxfkthy.png",
+              "location": 1,
+              "sort": 10,
+              "linkAddress": "http://www.huikao8.com/receiveCoupon",
+              "createTime": "2020-08-27T08:06:07.000+0000",
+              "updateTime": "2023-02-20T10:25:15.000+0000",
+              "createName": "hepan",
+              "updateName": "raolaoshi"
+            }
+          ],
+          "on": [
+            {
+              "id": "98d0085a35af4c16b5b8d646db6f2045",
+              "enterName": "学习中心",
+              "iconPicture": "https://img.huikao8.com/yiwen_img/sykjrkysxxzx.png",
+              "location": 2,
+              "sort": 1,
+              "linkAddress": "http://www.huikao8.com/studyCenter/homePage",
+              "createTime": "2020-08-27T08:07:10.000+0000",
+              "updateTime": "2023-02-20T10:25:49.000+0000",
+              "createName": "hepan",
+              "updateName": "raolaoshi"
+            },
+            {
+              "id": "4ca598d6658d4ed5adb2c5da8520aaa4",
+              "enterName": "加盟合作",
+              "iconPicture": "https://img.huikao8.com/yiwen_img/sykjrkysjm.png",
+              "location": 2,
+              "sort": 2,
+              "linkAddress": "https://dls.huikao8.com/",
+              "createTime": "2020-08-27T08:08:19.000+0000",
+              "updateTime": "2023-02-20T10:25:20.000+0000",
+              "createName": "hepan",
+              "updateName": "raolaoshi"
+            },
+            {
+              "id": "08a7a88acefa4fe7ad661ca19ff9b5dd",
+              "enterName": "快捷开通",
+              "iconPicture": "https://img.huikao8.com/yiwen_img/sykjrkyskjkt.png",
+              "location": 2,
+              "sort": 3,
+              "linkAddress": "http://www.huikao8.com/quickOpening",
+              "createTime": "2020-08-27T08:10:01.000+0000",
+              "updateTime": "2023-02-20T10:25:28.000+0000",
+              "createName": "hepan",
+              "updateName": "raolaoshi"
+            },
+            {
+              "id": "f100b4c5d1414062a1d6925f483caf23",
+              "enterName": "在线客服",
+              "iconPicture": "https://img.huikao8.com/yiwen_img/sykjrkyskf.png",
+              "location": 2,
+              "sort": 4,
+              "linkAddress": "https://work.weixin.qq.com/kfid/kfc1204c4a5b93c12b2",
+              "createTime": "2020-08-27T08:09:32.000+0000",
+              "updateTime": "2023-07-05T02:54:05.000+0000",
+              "createName": "hepan",
+              "updateName": "raolaoshi"
+            }
+          ]
+        }
+      },
+      "response_keys": [
+        "code",
+        "msg",
+        "data"
+      ],
+      "relevance_score": 0
+    },
+    {
+      "url": "https://proxyweb.huikao8.com/huikao_pc/query_secKill_products",
+      "method": "GET",
+      "type": "fetch",
+      "post_data": null,
+      "is_api": true,
+      "response_json": {
+        "code": -1,
+        "msg": "暂无秒杀活动！",
+        "data": null
+      },
+      "response_keys": [
+        "code",
+        "msg",
+        "data"
+      ],
+      "relevance_score": 0
+    }
+  ]
+}

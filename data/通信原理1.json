@@ -1,0 +1,1908 @@
+[
+  {
+    "type": "single_choice",
+    "question": "串行数据传输的特点是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "在一条线上，一次传输一位"
+      },
+      {
+        "label": "B",
+        "text": "在不同线上，同时传输几位"
+      },
+      {
+        "label": "C",
+        "text": "由于存在移位寄存器，位不可能传输"
+      },
+      {
+        "label": "D",
+        "text": "在系统存储器中，但按矩阵形式传输"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 1,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "对于M进制的离散消息源，其平均信息量最大时的概率分布为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "均匀分布"
+      },
+      {
+        "label": "B",
+        "text": "正态分布"
+      },
+      {
+        "label": "C",
+        "text": "瑞利分布"
+      },
+      {
+        "label": "D",
+        "text": "指数分布"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 2,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "数字通信相对于模拟通信具有（　）的特点。",
+    "options": [
+      {
+        "label": "A",
+        "text": "占用频带小"
+      },
+      {
+        "label": "B",
+        "text": "抗干扰能力强"
+      },
+      {
+        "label": "C",
+        "text": "传输容量大"
+      },
+      {
+        "label": "D",
+        "text": "易于频分复用"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 3,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "设高斯信道带宽为4kHz，输入信噪比为7，则该信道的信道容量为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "8kHz"
+      },
+      {
+        "label": "B",
+        "text": "12kb/s"
+      },
+      {
+        "label": "C",
+        "text": "13Mb/s"
+      },
+      {
+        "label": "D",
+        "text": "12kb"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 4,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "通断键控信号(OOK)的带宽是基带脉冲波形带宽的（　）倍。",
+    "options": [
+      {
+        "label": "A",
+        "text": "1"
+      },
+      {
+        "label": "B",
+        "text": "2"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "2/3"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 5,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "在模拟通信系统中，传输带宽属于通信系统性能指标中的（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "可靠性"
+      },
+      {
+        "label": "B",
+        "text": "有效性"
+      },
+      {
+        "label": "C",
+        "text": "适应性"
+      },
+      {
+        "label": "D",
+        "text": "标准性"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 6,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "设某随参信道的最大多径时延差等于5ms，为了避免发生选择性衰落，试估算在该信道上传输的数字信号的 码元脉冲宽度（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "1～10ms"
+      },
+      {
+        "label": "B",
+        "text": "0～15ms"
+      },
+      {
+        "label": "C",
+        "text": "15～25ms"
+      },
+      {
+        "label": "D",
+        "text": "20～35ms"
+      }
+    ],
+    "answer": "C",
+    "analysis": "",
+    "id": 7,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "改善恒参信道对信号传输影响的措施是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "采用分集技术"
+      },
+      {
+        "label": "B",
+        "text": "提高信噪比"
+      },
+      {
+        "label": "C",
+        "text": "采用均衡技术"
+      },
+      {
+        "label": "D",
+        "text": "降低信息速率"
+      }
+    ],
+    "answer": "C",
+    "analysis": "",
+    "id": 8,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "产生频率选择性衰落的原因是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "幅频畸变"
+      },
+      {
+        "label": "B",
+        "text": "相频畸变"
+      },
+      {
+        "label": "C",
+        "text": "多径传播"
+      },
+      {
+        "label": "D",
+        "text": "瑞利衰落"
+      }
+    ],
+    "answer": "C",
+    "analysis": "",
+    "id": 9,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "对于AM调制系统，在大信噪比情况，采用包络检波器解调时的性能比同步检测器时的性能（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "高"
+      },
+      {
+        "label": "B",
+        "text": "低"
+      },
+      {
+        "label": "C",
+        "text": "相等"
+      },
+      {
+        "label": "D",
+        "text": "无法判断"
+      }
+    ],
+    "answer": "C",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 10,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "在抗加性高斯白噪声性能方面，2ASK、2FSK、2PSK从差到优的次序是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "2FSK、2ASK、2PSK"
+      },
+      {
+        "label": "B",
+        "text": "2ASK、2PSK、2FSK"
+      },
+      {
+        "label": "C",
+        "text": "2ASK、2FSK、2PSK"
+      },
+      {
+        "label": "D",
+        "text": "2PSK、2FSK、2ASK"
+      }
+    ],
+    "answer": "D",
+    "analysis": "",
+    "id": 11,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "下列选项属于恒参信道的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "微波对流层散射信道"
+      },
+      {
+        "label": "B",
+        "text": "超短波电离层散射信道"
+      },
+      {
+        "label": "C",
+        "text": "短波电离层反射信道"
+      },
+      {
+        "label": "D",
+        "text": "微波中继信道"
+      }
+    ],
+    "answer": "D",
+    "analysis": "",
+    "id": 12,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "下列不属于线性调制的调制方式是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "AM"
+      },
+      {
+        "label": "B",
+        "text": "DSB"
+      },
+      {
+        "label": "C",
+        "text": "SSB"
+      },
+      {
+        "label": "D",
+        "text": "FM"
+      }
+    ],
+    "answer": "D",
+    "analysis": "",
+    "id": 13,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "已知一个八进制信号的符号速率为每秒4800波特，则其对应的信息速率是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "4800bit/s"
+      },
+      {
+        "label": "B",
+        "text": "2400bit/s"
+      },
+      {
+        "label": "C",
+        "text": "9600bit/s"
+      },
+      {
+        "label": "D",
+        "text": "14400bit/s"
+      }
+    ],
+    "answer": "D",
+    "analysis": "",
+    "id": 14,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "正弦波调制中的数字调制包含（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "标准调幅AM"
+      },
+      {
+        "label": "B",
+        "text": "双边带调制DSB"
+      },
+      {
+        "label": "C",
+        "text": "增量调制△M"
+      },
+      {
+        "label": "D",
+        "text": "差分脉码调制DPCM"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 15,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "通常将信道中传输模拟信号的通信系统称为（　）；将信道中传输数字信号的通信系统称为（　）。 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网",
+    "options": [
+      {
+        "label": "A",
+        "text": "模拟通信系统"
+      },
+      {
+        "label": "B",
+        "text": "数字通信系统"
+      },
+      {
+        "label": "C",
+        "text": "模拟信号系统"
+      },
+      {
+        "label": "D",
+        "text": "数字信号系统"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 16,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "下列各项不属于数字基带传输系统组成部分的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "发送滤波器"
+      },
+      {
+        "label": "B",
+        "text": "卷积"
+      },
+      {
+        "label": "C",
+        "text": "解调器"
+      },
+      {
+        "label": "D",
+        "text": "接收滤波器"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 17,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "模拟调制不包括以下哪种调制？（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "基带调制"
+      },
+      {
+        "label": "B",
+        "text": "频带调制"
+      },
+      {
+        "label": "C",
+        "text": "幅度调制"
+      },
+      {
+        "label": "D",
+        "text": "角度调制"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 18,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "信号可分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "确知信号"
+      },
+      {
+        "label": "B",
+        "text": "随机信号"
+      },
+      {
+        "label": "C",
+        "text": "能量信号"
+      },
+      {
+        "label": "D",
+        "text": "周期信号"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 19,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "在AM调制中，要求M0+M(t)（　）0， 否则经过调制，会使包络失真。",
+    "options": [
+      {
+        "label": "A",
+        "text": "大于"
+      },
+      {
+        "label": "B",
+        "text": "等于"
+      },
+      {
+        "label": "C",
+        "text": "小于"
+      },
+      {
+        "label": "D",
+        "text": "不等于"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 20,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "下列说法正确的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "数字通信系统的可靠性指标有误码率 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "B",
+        "text": "数字通信系统的可靠性指标有误信率"
+      },
+      {
+        "label": "C",
+        "text": "模拟通信系统可采用的一种复用方式为时分复用"
+      },
+      {
+        "label": "D",
+        "text": "数字通信系统可采用的一种复用方式为频分复用"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 21,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "关于信道的表述，下列表述正确的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "信道是发射端和接收端之间的介质"
+      },
+      {
+        "label": "B",
+        "text": "信道分为有线信道和无线信道"
+      },
+      {
+        "label": "C",
+        "text": "信道内不含干扰和噪声"
+      },
+      {
+        "label": "D",
+        "text": "信道可有可无"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 22,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "残留边带调制是位于（　）之间的一种折中的调制方式。",
+    "options": [
+      {
+        "label": "A",
+        "text": "SSB"
+      },
+      {
+        "label": "B",
+        "text": "DSB"
+      },
+      {
+        "label": "C",
+        "text": "DCB"
+      },
+      {
+        "label": "D",
+        "text": "VSB"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "慧考解析】残留边带调制是介于DSB和SSB之间折中的一种技术。",
+    "id": 23,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "数字调制通常称为数字键控，数字键控方式有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "ASK"
+      },
+      {
+        "label": "B",
+        "text": "FSK"
+      },
+      {
+        "label": "C",
+        "text": "PSK"
+      },
+      {
+        "label": "D",
+        "text": "MSK"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 24,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "通信系统常用的复用技术有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "频分复用"
+      },
+      {
+        "label": "B",
+        "text": "时分复用"
+      },
+      {
+        "label": "C",
+        "text": "码分复用"
+      },
+      {
+        "label": "D",
+        "text": "多分复用"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 25,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "通信系统载波同步分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "直接提取法"
+      },
+      {
+        "label": "B",
+        "text": "插入导频法 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "C",
+        "text": "非线性变换法"
+      },
+      {
+        "label": "D",
+        "text": "线性变换法"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 26,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "关于AM、DSB、SSB、FM，下列说法正确的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "SSB的有效性最好"
+      },
+      {
+        "label": "B",
+        "text": "FM的可靠性最好"
+      },
+      {
+        "label": "C",
+        "text": "AM的有效性与DSB相同"
+      },
+      {
+        "label": "D",
+        "text": "AM的有效性与DSB不相同"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 27,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "按同步功能分类，同步分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "载波同步"
+      },
+      {
+        "label": "B",
+        "text": "码元同步"
+      },
+      {
+        "label": "C",
+        "text": "帧同步"
+      },
+      {
+        "label": "D",
+        "text": "模拟同步"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 28,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "根据对载波控制的参数不同，调制可以分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "调幅"
+      },
+      {
+        "label": "B",
+        "text": "调频"
+      },
+      {
+        "label": "C",
+        "text": "调相"
+      },
+      {
+        "label": "D",
+        "text": "位移"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 29,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "随参信道的三个特点分别是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "传输损耗随时间变化"
+      },
+      {
+        "label": "B",
+        "text": "衰落"
+      },
+      {
+        "label": "C",
+        "text": "传输延时随时间变化"
+      },
+      {
+        "label": "D",
+        "text": "传输延时不随时间变化"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 30,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "位同步方法中的直接法包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "微分整流滤波法"
+      },
+      {
+        "label": "B",
+        "text": "包络检波法"
+      },
+      {
+        "label": "C",
+        "text": "数字锁相法 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "D",
+        "text": "集中插入法"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 31,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "调频应用举例包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "调频广播"
+      },
+      {
+        "label": "B",
+        "text": "电视伴音"
+      },
+      {
+        "label": "C",
+        "text": "卫星广播电视"
+      },
+      {
+        "label": "D",
+        "text": "天线"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 32,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "帧同步的方法主要有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "起止式同步法"
+      },
+      {
+        "label": "B",
+        "text": "连贯式插入法"
+      },
+      {
+        "label": "C",
+        "text": "间隔式插入法"
+      },
+      {
+        "label": "D",
+        "text": "连接式插入法"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 33,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "通信系统中的噪声可以分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "单频噪声"
+      },
+      {
+        "label": "B",
+        "text": "脉冲噪声"
+      },
+      {
+        "label": "C",
+        "text": "起伏噪声"
+      },
+      {
+        "label": "D",
+        "text": "双频噪声"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 34,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "脉冲数字调制包含的内容有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "脉码调制PCM"
+      },
+      {
+        "label": "B",
+        "text": "增量调制△M"
+      },
+      {
+        "label": "C",
+        "text": "差分脉码调制DPCM"
+      },
+      {
+        "label": "D",
+        "text": "标准调幅AM"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "慧考解析】脉冲数字调制包含的内容有脉码调制PCM、增量调制AM、差分脉码调制DPCM。",
+    "id": 35,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "通信系统按消息的物理特征，可分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "电报系统"
+      },
+      {
+        "label": "B",
+        "text": "电话系统"
+      },
+      {
+        "label": "C",
+        "text": "数据系统"
+      },
+      {
+        "label": "D",
+        "text": "图像系统 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "慧考解析】通信系统按消息的物理特征分为电报系统、电话系统、数据系统和图像系统。",
+    "id": 36,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "多电平调幅MASK主要形式有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "多电平残留边带调制"
+      },
+      {
+        "label": "B",
+        "text": "多电平相关编码"
+      },
+      {
+        "label": "C",
+        "text": "单边带调制"
+      },
+      {
+        "label": "D",
+        "text": "多电平正交调幅"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 37,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "噪声按照种类，可分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "单频噪声"
+      },
+      {
+        "label": "B",
+        "text": "脉冲噪声"
+      },
+      {
+        "label": "C",
+        "text": "热噪声"
+      },
+      {
+        "label": "D",
+        "text": "散弹噪声"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "慧考解析】通信系统中的噪声可以分为单频噪声、脉冲噪声、起伏噪声。起伏噪声通常包括宇宙噪声、散 弹噪声、热噪声等。这些噪声都是影响通信质量的关键因素。",
+    "id": 38,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "PSK和DPSK只是载波相位的表示不同，因此应用中选用哪种均可。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 39,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "检错重发方式(ARQ)内层使用FEC，纠正随机差错，减少重发次数，但外层使用ARQ，重发无法纠正突发差 （　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 40,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "按最佳接收准则构成的接收机可以获得加性干扰下的最小差错率。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 41,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "平稳随机过程的自相关函数具有任意的形状。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 42,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "不管m(t)是什么信号，在m(t)coswct的频谱中都没有离散谱fc。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考智学官网 【慧考解析】",
+    "id": 43,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "不管m(t)是什么信号，在m(t)coswet的频谱中都没有离散谱fc.（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 44,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "PCM的编码采用折叠二进制，其优点是简化编码电路和增加量化噪声。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 45,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "在大信噪比情况下，AM信号检波器的调制制度增益随基带信号的支流分量的减少而减少。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 46,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "单极性和双极性基带波形的值A相等，噪声均方根值σ n也相同时，单极性基带系统的抗噪声性能优于双 极性基带系统。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 47,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "抑制载波的双边带幅度调制相干解调的信噪比增益为1，单边带幅度调制相干解调的信噪比增益为2。（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 48,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "DSB信号的频带比AM信号的频带要小。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 49,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "超短波及微波视距传播信道是随参信道。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 50,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "帧同步的方法与网同步的方法完全相同。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 51,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "在数字通信中，若无码间串扰，则误码率为0。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 52,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "随参信道对信号传输的影响可以采用均衡技术来改善。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 53,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "所谓无失真，是指信道的输入信号与输出信号相比，只是大小与出现的时间相同，而波形上无变化。（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 54,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "信息与消息在概念上是一致的，即信息就是消息，消息就是信息。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】信息与消息在概念上是一致的，但是信息不是消息，消息不是信息。",
+    "id": 55,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "由于单极性归零码的功率谱中含有线谱分量，因此可以作为传输码型。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 56,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "线性滤波器又称为匹配滤波器。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 57,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "通过观察眼图可以判断码间干扰的影响大小。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 58,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "直接法位同步的原理就是用滤波器从接收到的信号中滤出时钟频率。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 59,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "由香农公式C＝Blog2[1＋S/(n0B)]，可知保持S/n0一定，使信道带宽B→∞，则传递容量C→∞。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】信道带宽B→∞，且S/n0保持一定，则 S/(n0B)→1/∞，[1＋S/(n0B)]→1/∞，log2[1＋S/(n0B)]→1/∞，Blog2[1＋S/(n0B)]两者的乘积是极限为 慧考智学官网 1的函数，C≠∞也≠1/∞。",
+    "id": 60,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "随机过程的自相关函数与其功率谱密度是傅里叶变换关系。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 61,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "单极性和双极性基带波形的峰值A相等，噪声均方根值δn也相同时，单极性基带系统的抗噪声性能优于双 极性基带系统。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 62,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "当传输信道的带宽一定，传输信道的最大信道容量将固定为一常数。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 63,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "数据信号在信道中传输可能出现随机差错和应急差错。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 64,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "恒参信道对信号传输的影响是变化极其缓慢的，因此可以认为它等效于一个时变的线性网络（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 65,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "部分响应系统是无码间干扰的系统。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 66,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "小信噪比时，调频系统抗噪声性能将比调幅系统优越，且其优越程度将随传输带宽的增加而增加。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 67,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "带通型抽样定理可以适用于低通型信号的抽样。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 68,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "对于受到高斯白噪声干扰的连续信道，若增加信道宽带B，则信道容量C无限制地增加。（　） 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 69,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "在数字信号传输过程中，码间干扰的产生是由于传输通道中存在非线性过程。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 70,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "包络检波器因解调的线性特征，而存在门限效应。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 71,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "由于理想低通无法实现，因而码间干扰总是存在。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 72,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "通信系统的有效性衡量指标对应模拟通信系统为传输速率，对应数字通信系统为传输带宽。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 73,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "最佳接收的背景条件是存在码间干扰。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 74,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "只有相干解调才会有门限效应。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 75,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "幅度调制方式的解调可以采用包络检波方式。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 76,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "若宽带调频信号的基带信号最高频率增大一倍，则调频信号带宽也增大一倍。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 77,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "单边带调制(SSB)缺点是解调设备容易损坏。（　） 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 78,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "抽样定理是采样频率fs大于或等于被采样信号最高频率fH的3倍时，就可把采样信号不失真地还原为被采 样信号。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 79,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "采用A律13折线编码时，抽样脉冲值为-1025A的段落码为101。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 80,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "事件出现的概率越大表示该事件的信息量越大。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 81,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "时域内信号的总能量等于频域内各个分量能量的连续差。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 82,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "对于调频信号，也可以用其上边带或下边带传输信息。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 83,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "时域内能量信号的总能量不等于频域内各个频率分量单独贡献的能量的连续和。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 84,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "平稳随机过程的自相关函数是时间间隔t的函数，与所选的时间起点有关。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 85,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "白噪声是根据其概率密度函数的特点定义的。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 86,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "密勒码用“10”和“01”交替表示“0”。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 87,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "光纤的色散有无数种。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 88,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "SSB的产生方法包括滤波法和位移法。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考智学官网",
+    "id": 89,
+    "category": "通信原理"
+  }
+]

@@ -1,0 +1,399 @@
+{
+  "url": "https://www.huikao8.com/",
+  "title": "【官方网站】职业考证教育在线网络平台 - 慧考智学",
+  "total_links": 127,
+  "text_links_sample": [
+    {
+      "text": "网校课程",
+      "href": "/schoolCourse",
+      "class": ""
+    },
+    {
+      "text": "基础题库",
+      "href": "/question",
+      "class": ""
+    },
+    {
+      "text": "VIP题库",
+      "href": "/vipQuestion",
+      "class": ""
+    },
+    {
+      "text": "资料下载",
+      "href": "/dataDownload",
+      "class": ""
+    },
+    {
+      "text": "图书商城",
+      "href": "/bookShop",
+      "class": ""
+    },
+    {
+      "text": "资讯公告",
+      "href": "/information",
+      "class": ""
+    },
+    {
+      "text": "手机APP",
+      "href": "/appDownload",
+      "class": ""
+    },
+    {
+      "text": "您好，请登录",
+      "href": "/login",
+      "class": "select"
+    },
+    {
+      "text": "免费注册",
+      "href": "/register",
+      "class": ""
+    },
+    {
+      "text": "帮助中心",
+      "href": "/helpCenter",
+      "class": ""
+    },
+    {
+      "text": "加盟合作",
+      "href": "https://dls.huikao8.com/",
+      "class": ""
+    },
+    {
+      "text": "快捷开通",
+      "href": "http://www.huikao8.com/quickOpening",
+      "class": ""
+    },
+    {
+      "text": "在线客服",
+      "href": "https://work.weixin.qq.com/kfid/kfc1204c4a5b93c12b2",
+      "class": ""
+    },
+    {
+      "text": "初级会计师",
+      "href": "/examInformation?eCode=ksK8RF3L",
+      "class": "cateItem"
+    },
+    {
+      "text": "中级会计师",
+      "href": "/examInformation?eCode=ksK8RF3b",
+      "class": "cateItem"
+    },
+    {
+      "text": "注册会计师",
+      "href": "/examInformation?eCode=ksK8RF4S",
+      "class": "cateItem"
+    },
+    {
+      "text": "初级经济师",
+      "href": "/examInformation?eCode=ksK8RF5Y",
+      "class": "cateItem"
+    },
+    {
+      "text": "中级经济师",
+      "href": "/examInformation?eCode=ksK8RF5n",
+      "class": "cateItem"
+    },
+    {
+      "text": "二级建造师",
+      "href": "/examInformation?eCode=ksK8RF7R",
+      "class": "cateItem"
+    },
+    {
+      "text": "一级建造师",
+      "href": "/examInformation?eCode=ksK8RF7h",
+      "class": "cateItem"
+    },
+    {
+      "text": "咨询工程师",
+      "href": "/examInformation?eCode=ksK8RF8A",
+      "class": "cateItem"
+    },
+    {
+      "text": "监理工程师",
+      "href": "/examInformation?eCode=ksK8RF8Q",
+      "class": "cateItem"
+    },
+    {
+      "text": "一级造价工程师",
+      "href": "/examInformation?eCode=ksK8RF8q",
+      "class": "cateItem"
+    },
+    {
+      "text": "一级消防工程师",
+      "href": "/examInformation?eCode=ksK8RF98",
+      "class": "cateItem"
+    },
+    {
+      "text": "中级安全工程师",
+      "href": "/examInformation?eCode=ksK8RFAo",
+      "class": "cateItem"
+    },
+    {
+      "text": "执业药师",
+      "href": "/examInformation?eCode=ksK8RFC8",
+      "class": "cateItem"
+    },
+    {
+      "text": "护士资格",
+      "href": "/examInformation?eCode=ksK8RHIo",
+      "class": "cateItem"
+    },
+    {
+      "text": "副高卫生职称",
+      "href": "/examInformation?eCode=ksKBGMF4",
+      "class": "cateItem"
+    },
+    {
+      "text": "临床执业医师",
+      "href": "/examInformation?eCode=ksK8RFCU",
+      "class": "cateItem"
+    },
+    {
+      "text": "社会工作者",
+      "href": "/examInformation?eCode=ksK8RFMV",
+      "class": "cateItem"
+    }
+  ],
+  "containers_sample": [
+    {
+      "tag": "div",
+      "class": "",
+      "id": "__next",
+      "text_preview": "首页\n网校课程\n基础题库\nVIP题库\n资料下载\n图书商城\n资讯公告\n手机APP\n您好，请登录\n丨\n免费注册\n帮助中心\n搜 索\n学习中心\n加盟合作\n快捷开通\n在线客服\n在线\n咨询\nAPP\n公众号\n财会经"
+    },
+    {
+      "tag": "div",
+      "class": "mainBody",
+      "id": "",
+      "text_preview": "首页\n网校课程\n基础题库\nVIP题库\n资料下载\n图书商城\n资讯公告\n手机APP\n您好，请登录\n丨\n免费注册\n帮助中心"
+    },
+    {
+      "tag": "div",
+      "class": "left",
+      "id": "",
+      "text_preview": "首页\n网校课程\n基础题库\nVIP题库\n资料下载\n图书商城\n资讯公告\n手机APP"
+    },
+    {
+      "tag": "div",
+      "class": "right",
+      "id": "",
+      "text_preview": "您好，请登录\n丨\n免费注册\n帮助中心"
+    },
+    {
+      "tag": "div",
+      "class": "mainBody",
+      "id": "",
+      "text_preview": "搜 索\n学习中心\n加盟合作\n快捷开通\n在线客服"
+    },
+    {
+      "tag": "div",
+      "class": "left",
+      "id": "",
+      "text_preview": "搜 索"
+    },
+    {
+      "tag": "div",
+      "class": "right",
+      "id": "",
+      "text_preview": "学习中心\n加盟合作\n快捷开通\n在线客服"
+    },
+    {
+      "tag": "div",
+      "class": "menu",
+      "id": "",
+      "text_preview": "学习中心"
+    },
+    {
+      "tag": "div",
+      "class": "title",
+      "id": "",
+      "text_preview": "学习中心"
+    },
+    {
+      "tag": "div",
+      "class": "menu",
+      "id": "",
+      "text_preview": "加盟合作"
+    },
+    {
+      "tag": "div",
+      "class": "title",
+      "id": "",
+      "text_preview": "加盟合作"
+    },
+    {
+      "tag": "div",
+      "class": "menu",
+      "id": "",
+      "text_preview": "快捷开通"
+    },
+    {
+      "tag": "div",
+      "class": "title",
+      "id": "",
+      "text_preview": "快捷开通"
+    },
+    {
+      "tag": "div",
+      "class": "menu",
+      "id": "",
+      "text_preview": "在线客服"
+    },
+    {
+      "tag": "div",
+      "class": "title",
+      "id": "",
+      "text_preview": "在线客服"
+    },
+    {
+      "tag": "div",
+      "class": "rightQrcode",
+      "id": "",
+      "text_preview": "在线\n咨询\nAPP\n公众号"
+    },
+    {
+      "tag": "div",
+      "class": "qrBox",
+      "id": "",
+      "text_preview": "在线\n咨询\nAPP\n公众号"
+    },
+    {
+      "tag": "div",
+      "class": "right notSelect",
+      "id": "",
+      "text_preview": "在线\n咨询\nAPP\n公众号"
+    },
+    {
+      "tag": "div",
+      "class": "service",
+      "id": "",
+      "text_preview": "在线\n咨询"
+    },
+    {
+      "tag": "div",
+      "class": "app notSelect",
+      "id": "",
+      "text_preview": "APP"
+    },
+    {
+      "tag": "div",
+      "class": "public notSelect",
+      "id": "",
+      "text_preview": "公众号"
+    },
+    {
+      "tag": "div",
+      "class": "indexPage",
+      "id": "",
+      "text_preview": "财会经济\n初级会计师\n中级会计师\n注册会计师\n税务师\n初级经济师\n中级经济师\n审计师\n建筑工程\n二级建造师\n一级建造师\n咨询工程师\n监理工程师\n一级造价工程师\n一级消防工程师\n中级安全工程师\n医药卫生"
+    },
+    {
+      "tag": "div",
+      "class": "topChose",
+      "id": "",
+      "text_preview": "财会经济\n初级会计师\n中级会计师\n注册会计师\n税务师\n初级经济师\n中级经济师\n审计师\n建筑工程\n二级建造师\n一级建造师\n咨询工程师\n监理工程师\n一级造价工程师\n一级消防工程师\n中级安全工程师\n医药卫生"
+    },
+    {
+      "tag": "div",
+      "class": "mainBox",
+      "id": "",
+      "text_preview": "财会经济\n初级会计师\n中级会计师\n注册会计师\n税务师\n初级经济师\n中级经济师\n审计师\n建筑工程\n二级建造师\n一级建造师\n咨询工程师\n监理工程师\n一级造价工程师\n一级消防工程师\n中级安全工程师\n医药卫生"
+    },
+    {
+      "tag": "div",
+      "class": "showInfo",
+      "id": "",
+      "text_preview": "财会经济\n初级会计师\n中级会计师\n注册会计师\n税务师\n初级经济师\n中级经济师\n审计师\n建筑工程\n二级建造师\n一级建造师\n咨询工程师\n监理工程师\n一级造价工程师\n一级消防工程师\n中级安全工程师\n医药卫生"
+    },
+    {
+      "tag": "div",
+      "class": "examInfoBox customScroll",
+      "id": "",
+      "text_preview": "财会经济\n初级会计师\n中级会计师\n注册会计师\n税务师\n初级经济师\n中级经济师\n审计师\n建筑工程\n二级建造师\n一级建造师\n咨询工程师\n监理工程师\n一级造价工程师\n一级消防工程师\n中级安全工程师\n医药卫生"
+    },
+    {
+      "tag": "div",
+      "class": "exItem",
+      "id": "",
+      "text_preview": "财会经济\n初级会计师\n中级会计师\n注册会计师\n税务师\n初级经济师\n中级经济师\n审计师"
+    },
+    {
+      "tag": "div",
+      "class": "cateH",
+      "id": "",
+      "text_preview": "财会经济"
+    },
+    {
+      "tag": "div",
+      "class": "cateBox",
+      "id": "",
+      "text_preview": "初级会计师\n中级会计师\n注册会计师\n税务师\n初级经济师\n中级经济师\n审计师"
+    },
+    {
+      "tag": "div",
+      "class": "exItem",
+      "id": "",
+      "text_preview": "建筑工程\n二级建造师\n一级建造师\n咨询工程师\n监理工程师\n一级造价工程师\n一级消防工程师\n中级安全工程师"
+    },
+    {
+      "tag": "div",
+      "class": "cateH",
+      "id": "",
+      "text_preview": "建筑工程"
+    },
+    {
+      "tag": "div",
+      "class": "cateBox",
+      "id": "",
+      "text_preview": "二级建造师\n一级建造师\n咨询工程师\n监理工程师\n一级造价工程师\n一级消防工程师\n中级安全工程师"
+    },
+    {
+      "tag": "div",
+      "class": "exItem",
+      "id": "",
+      "text_preview": "医药卫生\n执业药师\n护士资格\n副高卫生职称\n临床执业医师"
+    },
+    {
+      "tag": "div",
+      "class": "cateH",
+      "id": "",
+      "text_preview": "医药卫生"
+    },
+    {
+      "tag": "div",
+      "class": "cateBox",
+      "id": "",
+      "text_preview": "执业药师\n护士资格\n副高卫生职称\n临床执业医师"
+    },
+    {
+      "tag": "div",
+      "class": "exItem",
+      "id": "",
+      "text_preview": "职业资格\n社会工作者\n证券从业及专项\n银行职业资格\n教师资格证\n保育员\n养老护理员"
+    },
+    {
+      "tag": "div",
+      "class": "cateH",
+      "id": "",
+      "text_preview": "职业资格"
+    },
+    {
+      "tag": "div",
+      "class": "cateBox",
+      "id": "",
+      "text_preview": "社会工作者\n证券从业及专项\n银行职业资格\n教师资格证\n保育员\n养老护理员"
+    },
+    {
+      "tag": "div",
+      "class": "exItem",
+      "id": "",
+      "text_preview": "招录招聘\n省考公务员\n文职\n时事政治"
+    },
+    {
+      "tag": "div",
+      "class": "cateH",
+      "id": "",
+      "text_preview": "招录招聘"
+    }
+  ]
+}

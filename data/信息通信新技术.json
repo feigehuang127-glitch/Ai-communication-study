@@ -1,0 +1,2506 @@
+[
+  {
+    "type": "single_choice",
+    "question": "从网络角度来看，（　）是指以宽带IP为技术核心，可同时提供语音、数据、多媒体等服务的开放式基础 电信网络。",
+    "options": [
+      {
+        "label": "A",
+        "text": "物联网"
+      },
+      {
+        "label": "B",
+        "text": "移动互联网"
+      },
+      {
+        "label": "C",
+        "text": "因特网"
+      },
+      {
+        "label": "D",
+        "text": "万维网"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 1,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "（　）是基于感知技术建立起来的网络。",
+    "options": [
+      {
+        "label": "A",
+        "text": "因特网"
+      },
+      {
+        "label": "B",
+        "text": "传感网"
+      },
+      {
+        "label": "C",
+        "text": "互联网"
+      },
+      {
+        "label": "D",
+        "text": "万维网"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 2,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "我国移动互联网技术采用的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "IP协议"
+      },
+      {
+        "label": "B",
+        "text": "LAM协议"
+      },
+      {
+        "label": "C",
+        "text": "MAC协议"
+      },
+      {
+        "label": "D",
+        "text": "WAP协议"
+      }
+    ],
+    "answer": "D",
+    "analysis": "慧考解析】我国移动互联网技术采用的是WAP协议。我国使用手机上网的用户多数采用WAP接入的方式。",
+    "id": 3,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "（　）与效用计算、塑料电子、人体仿生一起被称为全球未来四大高科技产业。",
+    "options": [
+      {
+        "label": "A",
+        "text": "无线传感器网络"
+      },
+      {
+        "label": "B",
+        "text": "互联网"
+      },
+      {
+        "label": "C",
+        "text": "物联网"
+      },
+      {
+        "label": "D",
+        "text": "传感器"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 4,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "软件定义网络其核心技术（　）通过将网络设备控制面与数据面分离开来，从而实现了网络流量的灵活控 制，为核心网络及应用的创新提供了良好的平台。",
+    "options": [
+      {
+        "label": "A",
+        "text": "NvGRE"
+      },
+      {
+        "label": "B",
+        "text": "OpenFlow"
+      },
+      {
+        "label": "C",
+        "text": "Overlay"
+      },
+      {
+        "label": "D",
+        "text": "VxLAN"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考智学官网 【慧考解析】",
+    "id": 5,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "物联网的核心和基础仍然是（　），是在它的基础上的延伸和扩展的网络。",
+    "options": [
+      {
+        "label": "A",
+        "text": "因特网"
+      },
+      {
+        "label": "B",
+        "text": "智能网"
+      },
+      {
+        "label": "C",
+        "text": "互联网"
+      },
+      {
+        "label": "D",
+        "text": "万维网"
+      }
+    ],
+    "answer": "C",
+    "analysis": "",
+    "id": 6,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "SDN的核心是（　），其本质是网络对业务的快速灵活响应和快速业务创新。",
+    "options": [
+      {
+        "label": "A",
+        "text": "软件编程"
+      },
+      {
+        "label": "B",
+        "text": "软件优化"
+      },
+      {
+        "label": "C",
+        "text": "软件定义"
+      },
+      {
+        "label": "D",
+        "text": "软件可执行"
+      }
+    ],
+    "answer": "C",
+    "analysis": "",
+    "id": 7,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "（　）的一个重要任务是使网管知道网络的拓扑结构。",
+    "options": [
+      {
+        "label": "A",
+        "text": "网络管理协议"
+      },
+      {
+        "label": "B",
+        "text": "组播路由协议"
+      },
+      {
+        "label": "C",
+        "text": "按需距离矢量的组播路由协议"
+      },
+      {
+        "label": "D",
+        "text": "轻量的自适应组播路由协议"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 8,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "在（　）时代，任何时间、任何地点的人与人之间的沟通连接扩展到人与物和物与物之间的沟通连接。",
+    "options": [
+      {
+        "label": "A",
+        "text": "物联网"
+      },
+      {
+        "label": "B",
+        "text": "传感网"
+      },
+      {
+        "label": "C",
+        "text": "互联网"
+      },
+      {
+        "label": "D",
+        "text": "万维网"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】根据ITU的描述，在物联网时代，通过在各种各样的日常用品上嵌入一种短距离的移动收发器 ，人类在信息与通信世界里将获得一个新的沟通维度，从任何时间、任何地点的人与人之间的沟通连接扩展 到人与物和物与物之间的沟通连接。",
+    "id": 9,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "在无线传感器网络中，（　）是重要的基本参数之一，它常常被作为不同无线多跳网络路由协议性能对比 的关键尺度。",
+    "options": [
+      {
+        "label": "A",
+        "text": "网络的平均跳数"
+      },
+      {
+        "label": "B",
+        "text": "网络名称"
+      },
+      {
+        "label": "C",
+        "text": "无线频道 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "D",
+        "text": "网络模式"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 10,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "无线自组织网络中，（　）可以基于当前的链路参数、网络和业务量状况选择合适的路由.实现对网络资 源的有效分配。",
+    "options": [
+      {
+        "label": "A",
+        "text": "控制层"
+      },
+      {
+        "label": "B",
+        "text": "网络层"
+      },
+      {
+        "label": "C",
+        "text": "应用层"
+      },
+      {
+        "label": "D",
+        "text": "运输层"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 11,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "电力线高速数据通信技术，简称（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "PLC或PLT"
+      },
+      {
+        "label": "B",
+        "text": "HFC"
+      },
+      {
+        "label": "C",
+        "text": "ADSL"
+      },
+      {
+        "label": "D",
+        "text": "PCL"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 12,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "PLC技术，由于充分利用最为普及的电力网络资源，建设速度快、投资少、户内不用布线，能够通过遍布 各个房间的电源插座进行高速上网，实现（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "无线移动"
+      },
+      {
+        "label": "B",
+        "text": "宽带移动"
+      },
+      {
+        "label": "C",
+        "text": "有线移动"
+      },
+      {
+        "label": "D",
+        "text": "蓝牙移动"
+      }
+    ],
+    "answer": "C",
+    "analysis": "",
+    "id": 13,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "目前在保证用户接入带宽和接入稳定性前提下，最经济的PLC接入系统采用（　）的方式。",
+    "options": [
+      {
+        "label": "A",
+        "text": "光纤十五类缆十电力线"
+      },
+      {
+        "label": "B",
+        "text": "802.11无线局域网接入"
+      },
+      {
+        "label": "C",
+        "text": "HFC接入及PLC"
+      },
+      {
+        "label": "D",
+        "text": "ADSL"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 14,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "（　）是目前应用的主要宽带接入方式，其优势是借用已有的电话线，不干扰普通电话使用，频带专用 ，接入速度快。",
+    "options": [
+      {
+        "label": "A",
+        "text": "光纤十五类缆 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "B",
+        "text": "802.11无线局域网接入"
+      },
+      {
+        "label": "C",
+        "text": "HFC接入及PLC"
+      },
+      {
+        "label": "D",
+        "text": "ADSL"
+      }
+    ],
+    "answer": "D",
+    "analysis": "",
+    "id": 15,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "传感器网络的发展历程分为三个阶段，分别为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "无线传感器→传感器→无线传感器网络"
+      },
+      {
+        "label": "B",
+        "text": "传感器→无线传感器→无线传感器网络"
+      },
+      {
+        "label": "C",
+        "text": "无线传感器网络→无线传感器→传感器"
+      },
+      {
+        "label": "D",
+        "text": "传感器→无线传感器→有线传感器网络"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 16,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "由于PLC技术的传输速度和传输距离有一定限制，它的主要用途不是核心主干网络，而是通信网的（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "末端"
+      },
+      {
+        "label": "B",
+        "text": "外围"
+      },
+      {
+        "label": "C",
+        "text": "外围和开始端"
+      },
+      {
+        "label": "D",
+        "text": "内侧和开始端"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 17,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "无线传感器网络是由大量的（　）组成，以数据为中心的无线自组织网络。",
+    "options": [
+      {
+        "label": "A",
+        "text": "集成传感器"
+      },
+      {
+        "label": "B",
+        "text": "数据处理单元"
+      },
+      {
+        "label": "C",
+        "text": "短距离无线通信模块的节点"
+      },
+      {
+        "label": "D",
+        "text": "数据集成单元"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 18,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "基于网格的组播路由协议有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "按需组播路由协议"
+      },
+      {
+        "label": "B",
+        "text": "核心辅助的网格协议"
+      },
+      {
+        "label": "C",
+        "text": "前向转发组组播路由协议"
+      },
+      {
+        "label": "D",
+        "text": "利用递增序号的组播路由协议"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 19,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "移动互联网在技术层面的发展趋势（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "网络接入技术多元化"
+      },
+      {
+        "label": "B",
+        "text": "移动终端解决方案多样化 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "C",
+        "text": "网络浏览Web化"
+      },
+      {
+        "label": "D",
+        "text": "光纤连接飞速化"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 20,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "移动互联网在业务层面的发展趋势是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "商业模式多元化"
+      },
+      {
+        "label": "B",
+        "text": "业务类型“长尾化”"
+      },
+      {
+        "label": "C",
+        "text": "业务产品融合化"
+      },
+      {
+        "label": "D",
+        "text": "取代桌面互联网"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 21,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "5G时代为一个泛技术时代，（　）成为5G的重要特征。",
+    "options": [
+      {
+        "label": "A",
+        "text": "多业务系统"
+      },
+      {
+        "label": "B",
+        "text": "多接入技术"
+      },
+      {
+        "label": "C",
+        "text": "多层次覆盖融合"
+      },
+      {
+        "label": "D",
+        "text": "穿透能力强"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 22,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "NFC具有（　）特点。",
+    "options": [
+      {
+        "label": "A",
+        "text": "距离近"
+      },
+      {
+        "label": "B",
+        "text": "带宽高"
+      },
+      {
+        "label": "C",
+        "text": "能耗低"
+      },
+      {
+        "label": "D",
+        "text": "费用低"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 23,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "传感器网络节点一般由（　）组成。",
+    "options": [
+      {
+        "label": "A",
+        "text": "数据采集单元"
+      },
+      {
+        "label": "B",
+        "text": "数据处理单元"
+      },
+      {
+        "label": "C",
+        "text": "数据传输单元"
+      },
+      {
+        "label": "D",
+        "text": "数据输入单元"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 24,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "（　）是传感器网络的三个基本要素。",
+    "options": [
+      {
+        "label": "A",
+        "text": "传感器"
+      },
+      {
+        "label": "B",
+        "text": "感知对象"
+      },
+      {
+        "label": "C",
+        "text": "观察者 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "D",
+        "text": "蓝牙"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 25,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "无线传感器网络存在许多的问题，如（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "覆盖问题，网络中的数据融合问题"
+      },
+      {
+        "label": "B",
+        "text": "邻居节点辨识问题，网络中的安全问题"
+      },
+      {
+        "label": "C",
+        "text": "连通问题，能效问题"
+      },
+      {
+        "label": "D",
+        "text": "网络中的网络跳数问题，使用模式问题"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 26,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "无线传感器网络的研究将主要集中在（　）方向。",
+    "options": [
+      {
+        "label": "A",
+        "text": "传感器网络安全性问题和抗干扰问题"
+      },
+      {
+        "label": "B",
+        "text": "节点微型化"
+      },
+      {
+        "label": "C",
+        "text": "寻求系统节能策略"
+      },
+      {
+        "label": "D",
+        "text": "低成本、节点的自动配置"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 27,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "NFC主要可分为哪几个基本类型？（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "用于付款和购票"
+      },
+      {
+        "label": "B",
+        "text": "用于电子票证"
+      },
+      {
+        "label": "C",
+        "text": "用于智能媒体"
+      },
+      {
+        "label": "D",
+        "text": "用于交换、传输数据"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 28,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "5G的核心技术至少应包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "高密度异构网络"
+      },
+      {
+        "label": "B",
+        "text": "大规模MIMO"
+      },
+      {
+        "label": "C",
+        "text": "毫米波、可见光传输"
+      },
+      {
+        "label": "D",
+        "text": "同时同频全双工通信"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "慧考解析】5G的核心技术至少应包括高密度异构网络，大规模MIMO，同时同频全双工通信，毫米波、可见 光传输，此外，还包括传输波形设计，网络架构虚拟化，频谱效率和能量效率提升技术等。",
+    "id": 29,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "OpenFlow规范主要由（　）组成。",
+    "options": [
+      {
+        "label": "A",
+        "text": "端口"
+      },
+      {
+        "label": "B",
+        "text": "流表"
+      },
+      {
+        "label": "C",
+        "text": "通信信道 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "D",
+        "text": "数据结构"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 30,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "移动互联的特点有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "终端移动性"
+      },
+      {
+        "label": "B",
+        "text": "终端和网络的局限性"
+      },
+      {
+        "label": "C",
+        "text": "业务与终端、网络的强关联性"
+      },
+      {
+        "label": "D",
+        "text": "业务使用的私密性"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 31,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "无线传感器由（　）组成。",
+    "options": [
+      {
+        "label": "A",
+        "text": "温度芯片"
+      },
+      {
+        "label": "B",
+        "text": "湿度芯片"
+      },
+      {
+        "label": "C",
+        "text": "气压芯片"
+      },
+      {
+        "label": "D",
+        "text": "红外传感器"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 32,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "目前，在无线自组织网络中MAC协议面临着（　）问题。",
+    "options": [
+      {
+        "label": "A",
+        "text": "隐藏终端"
+      },
+      {
+        "label": "B",
+        "text": "暴露终端"
+      },
+      {
+        "label": "C",
+        "text": "信道分配"
+      },
+      {
+        "label": "D",
+        "text": "单向链路"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 33,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "无线传感器网络集多种学科的知识于一体，融合了（　）为一体。",
+    "options": [
+      {
+        "label": "A",
+        "text": "无线通信技术"
+      },
+      {
+        "label": "B",
+        "text": "嵌入式计算技术"
+      },
+      {
+        "label": "C",
+        "text": "分布式低功耗信息处理技术"
+      },
+      {
+        "label": "D",
+        "text": "弱能源依赖等高科技技术"
+      }
+    ],
+    "answer": "ABD",
+    "analysis": "",
+    "id": 34,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "（　）是SDN区别于传统网络架构的关键技术。",
+    "options": [
+      {
+        "label": "A",
+        "text": "OpenFlow协议"
+      },
+      {
+        "label": "B",
+        "text": "网络虚拟化技术"
+      },
+      {
+        "label": "C",
+        "text": "网络硬件技术"
+      },
+      {
+        "label": "D",
+        "text": "网络操作系统 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      }
+    ],
+    "answer": "ABD",
+    "analysis": "",
+    "id": 35,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "NFC是优于（　）的方式。",
+    "options": [
+      {
+        "label": "A",
+        "text": "红外"
+      },
+      {
+        "label": "B",
+        "text": "紫外"
+      },
+      {
+        "label": "C",
+        "text": "蓝牙传输"
+      },
+      {
+        "label": "D",
+        "text": "RFID"
+      }
+    ],
+    "answer": "AC",
+    "analysis": "",
+    "id": 36,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "数据处理单元一般由（　）组成，负责将采集到的目标信息进行处理。",
+    "options": [
+      {
+        "label": "A",
+        "text": "单片机或微处理器"
+      },
+      {
+        "label": "B",
+        "text": "系统软件"
+      },
+      {
+        "label": "C",
+        "text": "应用软件"
+      },
+      {
+        "label": "D",
+        "text": "嵌入式操作系统"
+      }
+    ],
+    "answer": "ACD",
+    "analysis": "",
+    "id": 37,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "无线自组织网络组播路由协议可分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "基于栈的组播路由协议"
+      },
+      {
+        "label": "B",
+        "text": "基于树的组播路由协议"
+      },
+      {
+        "label": "C",
+        "text": "基于网格的组播路由协议"
+      },
+      {
+        "label": "D",
+        "text": "混合的组播路由协议"
+      }
+    ],
+    "answer": "BCD",
+    "analysis": "",
+    "id": 38,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "物联网的特性主要体现在（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "功能全、操作简单、安全可靠"
+      },
+      {
+        "label": "B",
+        "text": "互联网特征，即对需要联网的“物”一定要能够实现互联互通的互联网络"
+      },
+      {
+        "label": "C",
+        "text": "识别与通信特征，即纳人物联网的“物”一定要具备自动识别与物物通信(M2M)的功能"
+      },
+      {
+        "label": "D",
+        "text": "智能化特征，即网络系统应具有自动化、自我反馈与智能控制的特点"
+      }
+    ],
+    "answer": "BCD",
+    "analysis": "",
+    "id": 39,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "5G，即第五代移动通信技术，国际电联已经将5G的具体应用场景划分为（　）和（　）两大类。",
+    "options": [
+      {
+        "label": "A",
+        "text": "物联网"
+      },
+      {
+        "label": "B",
+        "text": "移动互联网"
+      },
+      {
+        "label": "C",
+        "text": "互联网"
+      },
+      {
+        "label": "D",
+        "text": "万维网"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "慧考智学官网 【慧考解析】",
+    "id": 40,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "按照路由协议建立和维护方式的不同，可以将无线自组织网络路由协议分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "先应式路由协议"
+      },
+      {
+        "label": "B",
+        "text": "反应式路由协议"
+      },
+      {
+        "label": "C",
+        "text": "后应式路由协议"
+      },
+      {
+        "label": "D",
+        "text": "混合式路由协议"
+      }
+    ],
+    "answer": "ABD",
+    "analysis": "",
+    "id": 41,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "信息由光功率承载，OFDM光调制在发端基于（　），在收端采用（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "强度调制"
+      },
+      {
+        "label": "B",
+        "text": "直接检测"
+      },
+      {
+        "label": "C",
+        "text": "相位调制"
+      },
+      {
+        "label": "D",
+        "text": "偏振调制"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 42,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "报文的典型协议有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "利用递增序号的组播路由协议"
+      },
+      {
+        "label": "B",
+        "text": "按需距离矢量的组播路由协议"
+      },
+      {
+        "label": "C",
+        "text": "轻量的自适应组播路由协议"
+      },
+      {
+        "label": "D",
+        "text": "前向转发组组播路由协议"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 43,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "无线传感器网络是由散布在工作区域中大量的（　）的传感器节点组成的。",
+    "options": [
+      {
+        "label": "A",
+        "text": "体积小"
+      },
+      {
+        "label": "B",
+        "text": "成本低"
+      },
+      {
+        "label": "C",
+        "text": "具有无线通信能力"
+      },
+      {
+        "label": "D",
+        "text": "具有传感和数据处理能力"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 44,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "移动互联网的应用包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "手机个性DIY"
+      },
+      {
+        "label": "B",
+        "text": "资讯"
+      },
+      {
+        "label": "C",
+        "text": "沟通娱乐"
+      },
+      {
+        "label": "D",
+        "text": "手机上网业务"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 45,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "和传统的互联网相比，物联网的特征有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "是各种感知技术的广泛应用"
+      },
+      {
+        "label": "B",
+        "text": "是一种建立在互联网上的泛在网络"
+      },
+      {
+        "label": "C",
+        "text": "提供了传感器的连接"
+      },
+      {
+        "label": "D",
+        "text": "本身也具有智能处理的能力，能够对物体实施智能控制"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 46,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "无线传感器网络作为当今信息领域新的研究热点，涉及多学科交叉的研究领域，有非常多的关键技术有待 发现和研究，例如（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "网络拓扑控制"
+      },
+      {
+        "label": "B",
+        "text": "网络协议、网络管理"
+      },
+      {
+        "label": "C",
+        "text": "网络安全技术、定位技术、无线通信技术"
+      },
+      {
+        "label": "D",
+        "text": "时间同步技术、数据融合技术"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 47,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "PLC技术得天独厚的优势有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "PLC的网络建设灵活，由于建设规模和投资规模小而灵活，因此运行费用低"
+      },
+      {
+        "label": "B",
+        "text": "利用室内电源插座安装简单、设置灵活，能够为电力公司的自动抄表、配用电自动化、负荷控制、需求侧 管理等提供传输通道"
+      },
+      {
+        "label": "C",
+        "text": "能方便实现智能家庭自动化和家庭联网"
+      },
+      {
+        "label": "D",
+        "text": "带宽较宽，可满足当前一段时间宽带接入业务的需要，实现电力线的增值服务，进而实现数据、话音、视 频、电力的“四线合一”"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 48,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "典型的混合组播路由协议有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "AdHoc组播路由协议"
+      },
+      {
+        "label": "B",
+        "text": "核心提取的分布式组播AdHoc路由协议"
+      },
+      {
+        "label": "C",
+        "text": "核心辅助的网格协议"
+      },
+      {
+        "label": "D",
+        "text": "轻量的自适应组播路由协议"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 49,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "数据采集单元包括（　）负责目标信息的采集。",
+    "options": [
+      {
+        "label": "A",
+        "text": "观察者"
+      },
+      {
+        "label": "B",
+        "text": "A/D转换设备"
+      },
+      {
+        "label": "C",
+        "text": "传感器"
+      },
+      {
+        "label": "D",
+        "text": "输入设备 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      }
+    ],
+    "answer": "BC",
+    "analysis": "",
+    "id": 50,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "物联网将使（　）得到更加广泛的应用。",
+    "options": [
+      {
+        "label": "A",
+        "text": "射频识别技术"
+      },
+      {
+        "label": "B",
+        "text": "传感器技术"
+      },
+      {
+        "label": "C",
+        "text": "纳米技术"
+      },
+      {
+        "label": "D",
+        "text": "智能嵌入技术"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 51,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "宽带接入技术除正在发展中的电力线接入系统以外，还有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "XDSL接入(以ADSL为主)、无源光纤接入"
+      },
+      {
+        "label": "B",
+        "text": "光纤十五类缆接入、无线LMDS宽带接入"
+      },
+      {
+        "label": "C",
+        "text": "802.11无线局域网接入、卫星接入"
+      },
+      {
+        "label": "D",
+        "text": "HFC接入、HomePNA等"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 52,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "一个传感器网络只能有一个观察者。一个观察者也只能是一个传感器网络的用户。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】一个传感器网络可以有多个观察者。",
+    "id": 53,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "NFC与蓝牙相比，NFC面向近距离交易，适用于交换财务信息或敏感的个人信息等重要数据；蓝牙能够弥补 NFC通信距离不足的缺点，适用于短距离数据通信。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】与蓝牙相比，NFC面向近距离交易，适用于较长距离数据通信。",
+    "id": 54,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "无线自组织网络中，通过拓扑发现技术节点可以学习到全部拓扑信息。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】通过拓扑发现技术节点可以学习到局部拓扑信息。",
+    "id": 55,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "控制信道和数据信道的划分只能是时间上的，不能是空间上的。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】控制信道和数据信道的划分可能是时间上的，也可能是空间上的。",
+    "id": 56,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "无线传感器网络不是每一个汇聚节点都具有存储、处理、传输数据的能力。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】无线传感网络每一个汇聚节点都具有存储、处理、传输数据的能力。 慧考智学官网",
+    "id": 57,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "无线传感器网络是一种能量和通信带宽不受限的网络。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】无线传感器网络是一种能量和通信带宽严格受限的网络。",
+    "id": 58,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "可见光通信不可用作照明，但可用于提供宽带无线通信连接。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】可见光通信既可用作照明，也可用于提供宽带无线通信连接。",
+    "id": 59,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "不可见光通信用LED作为信号发射器，用本征光电二极管(PD)或雪崩光电二极管(APD)作为信号接收器。 （　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】可见光通信用LED作为信号发射器，用本征光电二极管(PD)或雪崩光电二极管(APD)作为信号接 收器。",
+    "id": 60,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "NFC是一种远距离连接协议，提供各种设备间轻松、安全、迅速而自动的通信。与无线世界中的其他连接 方式相比，NFC是一种远距离的私密通信方式。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】NFC是一种近距离连接协议。",
+    "id": 61,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "NFC比红外更快、更可靠而且简单得多，但是与红外一样，必须严格地对齐才能传输数据。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】NFC不用和红外一样必须严格地对齐才能传输数据。",
+    "id": 62,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "物联网是1990年由MITAuto-ID中心的Ashton教授在研究RFID时最早提出来的。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】物联网是1999年由MITAuto-ID中心的Ashton教授在研究RFID时最早提出来的。",
+    "id": 63,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "跨层协同设计中，网络各层之间不能共享相关的信息，需要对无线自组织网络进行整体设计。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】跨层协同设计中，网络各层共享与其他层相关的信息。",
+    "id": 64,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "观察者不可以主动地查询或收集传感器网络的感知信息，只可以被动地接收传感器网络发布的信息。（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】观察者可以主动地查询或收集传感器网络的感知信息，也可以被动地接收传感器网络发布的信 息。 慧考智学官网",
+    "id": 65,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "物联网的定义和范围只是指基于RFID技术的物联网。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】物联网的定义和范围已经发生了变化，覆盖范围有了较大的拓展，不再只是指基于RFID技术的 物联网。",
+    "id": 66,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "数据传输单元一般是由有线收发模块组成，负责数据的接收和发送。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】数据传输单元一般是由无线收发模块组成。",
+    "id": 67,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "传感器只是单个的能够交换信息、协调控制的感知单元。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】传感器不再只是单个的感知单元，而是能够交换信息、协调控制的有机结合体，实现物与物的 互联，把感知触角深入世界各个角落，成为新时期互联网的重要组成部分。",
+    "id": 68,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "RFID更多地被应用在生产、物流、跟踪、资产管理上，而NFC则在门禁、公交、手机支付等领域发挥着巨 大的作用。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 69,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "PLC技术在美国的主要应用是家庭联网。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 70,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "无线自组织网络，即MANET，是一种不同于传统无线通信网络的技术。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 71,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "CDMA编码器实际上就是一个从二进制域到多维复数域的编码过程。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 72,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "有线或无线网络是传感器与传感器之间、传感器与观察者之间的通信方式，用于在传感器与观察者之间建 立通信路径。协作地感知、采集、处理、发布感知信息是传感器网络的基本功能。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 73,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "基于网格的组播路由协议一般包括两个过程：加入组播网格和维护组播网格。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 74,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "SDN的产生与OpenFlow协议密切相关。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 75,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "通过NFC手机，人们可以在任何地点、任何时间，通过任何设备，与他们希望得到的娱乐服务与交易联系 在一起，从而完成付款，获取信息等操作。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 76,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "在无线传感器网络的研究中，能效问题一直是热点问题。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 77,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "无线传感器网络可以用于对被监控区域进行实时监测，并进行数据的有效传送。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 78,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "网络连通是无线传感器网络正常运行所必需的前提条件。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 79,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "无线传感器网络通过无线网络，传感器节点之间可以相互交换信息，也可以把信息传送到远程端。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 80,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "物联网就是“物物相连的互联网”。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 81,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "混合组播路由协议一般包括两个过程：建立网格和建立组播树。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 82,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "无线自组织网络具有带宽有限、链路容易改变、节点的移动性，以及由此带来的网络拓扑的动态性、物理 安全有限、受设备限制等特点。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 83,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "电力负荷的波动对PLC接入网络的吞吐量也有一定影响，由于多个用户共享信道带宽，当用户增加到一定 程度时，网络性能和用户可用带宽有所下降，但通过合理的组网可加以解决。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 84,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "物联网是实时共享的实物互联网。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 85,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "无线自组织网络中的数据转发不能仅依靠网络层路由功能，必须结合链路层及物理层实施跨层联合设计。 （　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 86,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "基于树的组播路由协议一般包括两个过程：组播树形成和组播树维护。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 87,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "移动互联网是相对于固定互联网而言的。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 88,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "电力线是电力系统的基础设施，但目前的PLC技术应用还停留在低压电力线接入应用上，主要解决宽带接 入问题。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 89,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "无线自组织网络目前的研究主要集中在如何利用局部拓扑信息在自组织网中实现高效广播传输、减小路由 发现开销、改进路由维护等。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 90,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "在无线传输技术方面，将会着重提升频谱资源利用效率和挖掘频谱资源使用潜能，如多天线技术、编码调 制技术、多址接入技术等。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 91,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "节点需要的不仅仅是局部的拓扑信息，还会需要更多的局部网络、链路参数。综合考虑各协议层之间的信 息进行路由协议设计，是无线自组织网络跨层协同设计的重点和技术难点之一。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 92,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "一个传感器网络可以感知网络分布区域内的多个对象。一个对象也可以被多个传感器网络所感知。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 93,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "AdHoc网络的网络管理是与传统网络不同的，要解决的问题包括如何有效地收集网络的拓扑信息，如何处 理动态的网络配置和安全保密问题。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 94,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "NFC和蓝牙互为补充，共同存在。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 95,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "无线传感器网络对网络层协议的研究主要是对路由技术的研究。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 96,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "4G系统能够以100Mbps的速度下载，比拨号上网快2000倍，上传的速度也能达到20Mbps。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 97,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "一组功能有限的传感器协作地完成大的感知任务是传感器网络的重要特点。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 98,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "ADSL、光纤十五类缆、802.11无线局域网接入、HFC接入及PLC是目前的主要接入方式。（　） 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 99,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "我国使用手机上网的用户多数采用WAP接入的方式。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 100,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "对于可以移动的节点，传感器网络可以根据分析结果对运动机构(如机器人)进行控制，使之朝着靠近目 标的方向前进。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 101,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "无线自组织网络是一个由几十到上百个节点组成的、采用有线通信方式的、动态组网的、多跳的移动性 对等网络。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】无线自组织网络采用无线通信方式。",
+    "id": 102,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "SDN的网络架构基础设施层主要由支持OpenFlow协议的SDN交换机组成。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 103,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "OpenFlow协议、网络虚拟化技术和网络操作系统是SDN区别于传统网络架构的关键技术。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 104,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "物联网技术被称为是信息产业的第三次革命性创新。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 105,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "网管不必询问物理层，但这样会违反OSI的层次管理结构。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】网管需定期收集节点的连接信息。",
+    "id": 106,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "NFC即远场通信，电子钱包在世界有了广泛的应用，从超市购物到出门乘车。与RFID一样，NFC信息也是 通过频谱中无线频率部分的电磁感应耦合方式传递，但两者之间还是存在很大的区别。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】NFC是近场通信。 慧考智学官网",
+    "id": 107,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "空分多址机制可以将信道按照时间片划分为多个时隙，节点按照静态或者动态分配方式占用其中的一个 或者几个时隙。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】时分多址机制可以将信道按照时间片划分为多个时隙，节点按照静态或者动态分配方式占用其 中的一个或者几个时隙。",
+    "id": 108,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "移动网络中，节点的移动导致拓扑结构变化太频繁。在有线网络中，网络变化也频繁。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】在有线网络中，网络变化不频繁。",
+    "id": 109,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "数据传输单元只是节点之间的通信。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】数据传输单元可以是节点之间的通信，也可以是节点和基站之间的通信。",
+    "id": 110,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "PLC按应用的配电网电压等级划分为低压PLC和高压PLC。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】PLC按应用的配电网电压等级划分为低压PLC和中压PLC",
+    "id": 111,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "CDMA作为一种优良的多址接入技术，在发端利用正交或准正交序列对数据符号进行扩展，在收端再利用 其正交特性从扩展序列中提取原始数据符号。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 112,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "HFC接入系统借助有线电视系统进行宽带接入，特点是充分利用已有的基础资源，接入速率慢。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】HFC接入系统的接入速率快。",
+    "id": 113,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "物联网已被贴上“中国式”标签。物联网的概念与其说是一个外来概念，不如说它已经是一个“中国制 造”的概念。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 114,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "无线传感器网络的目的是协作感知、采集和处理网络覆盖区域中各种环境或监测对象的信息，并发送给 发送者。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】无线传感器网络是将信息发送给观察者。 慧考智学官网",
+    "id": 115,
+    "category": "信息通信新技术"
+  },
+  {
+    "type": "judge",
+    "question": "物联网技术的定义：通过射频识别(RFID)、红外感应器、全球定位系统、激光扫描器等信息传感设备 ，按约定的协议，把任何物体与互联网相连接，进行信息交换和通信，以实现对物体的智能化识别、定位、 跟踪、监控和管理的一种网络。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考智学官网",
+    "id": 116,
+    "category": "信息通信新技术"
+  }
+]

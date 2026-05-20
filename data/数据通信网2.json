@@ -1,0 +1,2316 @@
+[
+  {
+    "type": "multi_choice",
+    "question": "用以使发送方确认接收方是否正确收到了由它发送的数据信息的方法称为反馈差错控制。通常采用（ ）两种基本方法来实现。",
+    "options": [
+      {
+        "label": "A",
+        "text": "自动发送"
+      },
+      {
+        "label": "B",
+        "text": "自动重发请求ARQ"
+      },
+      {
+        "label": "C",
+        "text": "自动检测"
+      },
+      {
+        "label": "D",
+        "text": "反馈检测"
+      }
+    ],
+    "answer": "BD",
+    "analysis": "",
+    "id": 1,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "下列说法错误的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "以太网交换机可以对通过的信息进行过滤"
+      },
+      {
+        "label": "B",
+        "text": "以太网交换机中端口的速率可能不同"
+      },
+      {
+        "label": "C",
+        "text": "利用多个以太网交换机组成的局域网不能出现环路"
+      },
+      {
+        "label": "D",
+        "text": "在以太网中最好使用Hub作为中心设备"
+      }
+    ],
+    "answer": "CD",
+    "analysis": "",
+    "id": 2,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "常见的阻塞控制方法有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "缓冲区预分配法"
+      },
+      {
+        "label": "B",
+        "text": "分组丢弃法"
+      },
+      {
+        "label": "C",
+        "text": "定额控制法"
+      },
+      {
+        "label": "D",
+        "text": "定额分配法"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "慧考解析】阻塞现象是指到达通信子网中某一部分的分组数量过多，使得该部分网络来不及处理，以致引 起这部分乃至整个网络性能下降的现象，严重时甚至导致网络通信业务陷入停顿，即出现死锁现象。在死锁 状态下，网络的有效吞吐量接近于零。常见的阻塞控制方法为缓冲区预分配法、分组丢弃法、定额控制法。",
+    "id": 3,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "提供虚电路服务的通信子网内部的实际操作的方式包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "虚电路方式"
+      },
+      {
+        "label": "B",
+        "text": "报文"
+      },
+      {
+        "label": "C",
+        "text": "单工通信"
+      },
+      {
+        "label": "D",
+        "text": "数据报"
+      }
+    ],
+    "answer": "AD",
+    "analysis": "慧考解析】在分组交换方式中，通信子网有虚电路和数据报两种操作方式，提供虚电路和数据报两种服务 。",
+    "id": 4,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "以下属于局域网协议的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "PPP"
+      },
+      {
+        "label": "B",
+        "text": "X.25"
+      },
+      {
+        "label": "C",
+        "text": "EthernetSNAP 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "D",
+        "text": "EthernetⅡ"
+      }
+    ],
+    "answer": "CD",
+    "analysis": "",
+    "id": 5,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "下列哪几个地址是不能设置在主机上的IP地址？（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "127.0.0.1"
+      },
+      {
+        "label": "B",
+        "text": "192.168.1.255"
+      },
+      {
+        "label": "C",
+        "text": "10.23.45.67"
+      },
+      {
+        "label": "D",
+        "text": "172.168.0.1"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 6,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "在传输层采用了以下哪些方法来保证接收缓冲区不溢出？（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "数据分段"
+      },
+      {
+        "label": "B",
+        "text": "确认机制"
+      },
+      {
+        "label": "C",
+        "text": "流量控制"
+      },
+      {
+        "label": "D",
+        "text": "滑动窗口"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 7,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "网络协议的三要素分别为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "语法"
+      },
+      {
+        "label": "B",
+        "text": "时序"
+      },
+      {
+        "label": "C",
+        "text": "定义"
+      },
+      {
+        "label": "D",
+        "text": "语义"
+      }
+    ],
+    "answer": "ABD",
+    "analysis": "",
+    "id": 8,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "OSI采用了分层的结构化技术，其分层的原则是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "层次的划分应该从逻辑上将功能分组，每层应当实现一个定义明确的功能"
+      },
+      {
+        "label": "B",
+        "text": "每层功能的选择应该有助于制定网络协议的国际化标准"
+      },
+      {
+        "label": "C",
+        "text": "层次应该足够多，但也不能太多"
+      },
+      {
+        "label": "D",
+        "text": "各层边界的选择应尽量减少跨过接口的通信量"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 9,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "一个IP地址由（　）组成。",
+    "options": [
+      {
+        "label": "A",
+        "text": "网络号"
+      },
+      {
+        "label": "B",
+        "text": "端口号"
+      },
+      {
+        "label": "C",
+        "text": "主机号"
+      },
+      {
+        "label": "D",
+        "text": "地址号 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      }
+    ],
+    "answer": "AC",
+    "analysis": "",
+    "id": 10,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "工作组组网模型中，工作组可分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "个人组"
+      },
+      {
+        "label": "B",
+        "text": "总体组"
+      },
+      {
+        "label": "C",
+        "text": "全局组"
+      },
+      {
+        "label": "D",
+        "text": "本地组"
+      }
+    ],
+    "answer": "CD",
+    "analysis": "",
+    "id": 11,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "利用分组交换网络连接为广域网提供服务的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "X.25"
+      },
+      {
+        "label": "B",
+        "text": "帧中继"
+      },
+      {
+        "label": "C",
+        "text": "专用线路"
+      },
+      {
+        "label": "D",
+        "text": "MODEM拨号"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 12,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "星型拓扑结构的优点包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "方便服务"
+      },
+      {
+        "label": "B",
+        "text": "每个连接只接一个设备"
+      },
+      {
+        "label": "C",
+        "text": "集中控制和便于故障诊断"
+      },
+      {
+        "label": "D",
+        "text": "简单的访问协议"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "慧考解析】星型拓扑结构的优点包括：可靠性高、时延小、排除故障容易、管理方便、便于集中控制，某 个站点的故障并不会影响其他站点的通信，访问协议也十分简单。",
+    "id": 13,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "DNS服务器类型有（　）三种。",
+    "options": [
+      {
+        "label": "A",
+        "text": "主要DNS服务器"
+      },
+      {
+        "label": "B",
+        "text": "辅助DNS服务器"
+      },
+      {
+        "label": "C",
+        "text": "缓存专用服务器"
+      },
+      {
+        "label": "D",
+        "text": "辅助缓存服务器"
+      }
+    ],
+    "answer": "ABD",
+    "analysis": "",
+    "id": 14,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "网络硬件系统包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "计算机系统"
+      },
+      {
+        "label": "B",
+        "text": "终端"
+      },
+      {
+        "label": "C",
+        "text": "通信设备"
+      },
+      {
+        "label": "D",
+        "text": "网络通信协议 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 15,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "关于对等网络与基于服务器网络的说法正确的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "对等网络中每台计算机的地位平等"
+      },
+      {
+        "label": "B",
+        "text": "对等网络中计算机的台数一般不超过10台"
+      },
+      {
+        "label": "C",
+        "text": "基于服务器的网络中，如果想与某人共享一份文件，就必须先把文件从工作站拷贝到文件服务器上，或者 一开始就把文件安装在服务器上"
+      },
+      {
+        "label": "D",
+        "text": "对等网与基于服务器网络是计算机网络按网络的所有权划分成的两种不同的网络类型"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 16,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "在数据传输中，需要建立连接的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "电路交换"
+      },
+      {
+        "label": "B",
+        "text": "报文交换"
+      },
+      {
+        "label": "C",
+        "text": "信元交换"
+      },
+      {
+        "label": "D",
+        "text": "数据报交换"
+      }
+    ],
+    "answer": "AC",
+    "analysis": "",
+    "id": 17,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "报文分组交换技术的两种实现方法分别是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "虚电路"
+      },
+      {
+        "label": "B",
+        "text": "线路交换"
+      },
+      {
+        "label": "C",
+        "text": "数据报"
+      },
+      {
+        "label": "D",
+        "text": "交叉开关"
+      }
+    ],
+    "answer": "AC",
+    "analysis": "",
+    "id": 18,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "数据链路层分为两个子层，分别为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "逻辑链路控制子层"
+      },
+      {
+        "label": "B",
+        "text": "接入层"
+      },
+      {
+        "label": "C",
+        "text": "介质访问控制子层"
+      },
+      {
+        "label": "D",
+        "text": "核心层"
+      }
+    ],
+    "answer": "AC",
+    "analysis": "",
+    "id": 19,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "下列属于物理层的设备有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "交换机"
+      },
+      {
+        "label": "B",
+        "text": "路由器"
+      },
+      {
+        "label": "C",
+        "text": "中继器"
+      },
+      {
+        "label": "D",
+        "text": "集线器 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      }
+    ],
+    "answer": "CD",
+    "analysis": "慧考解析】中继器和集线器工作在物理层。",
+    "id": 20,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "环型拓扑结构的优点包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "电缆长度短"
+      },
+      {
+        "label": "B",
+        "text": "适应于光纤"
+      },
+      {
+        "label": "C",
+        "text": "网络实时性好"
+      },
+      {
+        "label": "D",
+        "text": "网络扩展容易"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 21,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "TCP/IP的层次包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "应用层"
+      },
+      {
+        "label": "B",
+        "text": "运输层"
+      },
+      {
+        "label": "C",
+        "text": "网际层IP"
+      },
+      {
+        "label": "D",
+        "text": "网络接口层"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "慧考解析】TCP/IP的体系结构包括应用层、运输层、网际层IP和网络接口层。",
+    "id": 22,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "星型拓扑结构的缺点包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "电缆长度和安装"
+      },
+      {
+        "label": "B",
+        "text": "扩展困难"
+      },
+      {
+        "label": "C",
+        "text": "依赖于中央节点"
+      },
+      {
+        "label": "D",
+        "text": "星型拓扑的交换方式以电路交换更为普遍"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 23,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "有线传输媒体包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "双绞线"
+      },
+      {
+        "label": "B",
+        "text": "同轴电缆"
+      },
+      {
+        "label": "C",
+        "text": "光纤"
+      },
+      {
+        "label": "D",
+        "text": "激光"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 24,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "以下各项属于网络操作系统基本功能的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "文件服务"
+      },
+      {
+        "label": "B",
+        "text": "打印服务"
+      },
+      {
+        "label": "C",
+        "text": "数据库服务"
+      },
+      {
+        "label": "D",
+        "text": "通信服务"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "慧考智学官网 【慧考解析】",
+    "id": 25,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "在配置帧中继子接口时，可配的子接口类型有哪些？（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "Point-to-Point"
+      },
+      {
+        "label": "B",
+        "text": "NBMA"
+      },
+      {
+        "label": "C",
+        "text": "Multipoint"
+      },
+      {
+        "label": "D",
+        "text": "BroADCAst"
+      }
+    ],
+    "answer": "AC",
+    "analysis": "",
+    "id": 26,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "若主机A需要知道主机B的MAC地址，则属于ARP的工作流程为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "主机A在网络中广播ARP请求报文"
+      },
+      {
+        "label": "B",
+        "text": "主机B接收到请求报文后将自己的IP地址到MAC地址的映射发送给主机A"
+      },
+      {
+        "label": "C",
+        "text": "主机B接收到请求报文后将主机A的IP地址和MAC地址映射存储到自己的Cache中"
+      },
+      {
+        "label": "D",
+        "text": "主机A缓存主机B的IP地址到MAC地址的映射"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 27,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "数据链路控制协议可分为异步协议和同步协议两大类，而同步协议又可分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "面向字符的同步协议"
+      },
+      {
+        "label": "B",
+        "text": "面向字的同步协议"
+      },
+      {
+        "label": "C",
+        "text": "面向比特的同步协议及"
+      },
+      {
+        "label": "D",
+        "text": "面向字节计数的同步协议"
+      }
+    ],
+    "answer": "ACD",
+    "analysis": "",
+    "id": 28,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "划分VLAN的方法有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "基于交换机端口"
+      },
+      {
+        "label": "B",
+        "text": "基于网络连接"
+      },
+      {
+        "label": "C",
+        "text": "基于网络层地址"
+      },
+      {
+        "label": "D",
+        "text": "基于MAC地址"
+      }
+    ],
+    "answer": "ACD",
+    "analysis": "",
+    "id": 29,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "总线型拓扑结构的优点包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "电缆长度短，易于布线和维护"
+      },
+      {
+        "label": "B",
+        "text": "可靠性高"
+      },
+      {
+        "label": "C",
+        "text": "可扩充性强"
+      },
+      {
+        "label": "D",
+        "text": "费用开支少"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 30,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "以下IP地址中，在默认情况下不能分配给主机的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "131.107.255.80"
+      },
+      {
+        "label": "B",
+        "text": "231.255.0.11"
+      },
+      {
+        "label": "C",
+        "text": "126.1.0.255"
+      },
+      {
+        "label": "D",
+        "text": "198.121.254.255"
+      }
+    ],
+    "answer": "BD",
+    "analysis": "",
+    "id": 31,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "以太网交换机的帧转发方式有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "数元交换"
+      },
+      {
+        "label": "B",
+        "text": "信元交换"
+      },
+      {
+        "label": "C",
+        "text": "直接交换"
+      },
+      {
+        "label": "D",
+        "text": "存储转发交换"
+      }
+    ],
+    "answer": "CD",
+    "analysis": "",
+    "id": 32,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "网络中通常使用的三种数据交换技术是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "电路交换"
+      },
+      {
+        "label": "B",
+        "text": "报文交换"
+      },
+      {
+        "label": "C",
+        "text": "分组交换"
+      },
+      {
+        "label": "D",
+        "text": "数据交换"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 33,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "对于这样一个地址，192.168.19.255/20，下列说法正确的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "是一个私有地址"
+      },
+      {
+        "label": "B",
+        "text": "地址在192.168.19.0网段上"
+      },
+      {
+        "label": "C",
+        "text": "是一个网络地址"
+      },
+      {
+        "label": "D",
+        "text": "地址在192.168.16.O网段上"
+      }
+    ],
+    "answer": "AD",
+    "analysis": "",
+    "id": 34,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "DTE与DCE接口的电气连接方式有（　）三种。",
+    "options": [
+      {
+        "label": "A",
+        "text": "采用差动发送器的非平衡方式"
+      },
+      {
+        "label": "B",
+        "text": "非平衡方式"
+      },
+      {
+        "label": "C",
+        "text": "采用差动接收器的非平衡方式"
+      },
+      {
+        "label": "D",
+        "text": "平衡方式"
+      }
+    ],
+    "answer": "BCD",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 35,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "下列哪些选项是物理层的基本功能？（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "在终端设备之间传送比特流"
+      },
+      {
+        "label": "B",
+        "text": "建立、维护虚电路，进行差错检验和流量控制"
+      },
+      {
+        "label": "C",
+        "text": "定义电压、接口、线缆标准、传输距离等特性"
+      },
+      {
+        "label": "D",
+        "text": "进行最佳路由选择"
+      }
+    ],
+    "answer": "AC",
+    "analysis": "",
+    "id": 36,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "以太网交换机端口的工作模式可以被设置为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "全双工"
+      },
+      {
+        "label": "B",
+        "text": "Trunk模式"
+      },
+      {
+        "label": "C",
+        "text": "半双工"
+      },
+      {
+        "label": "D",
+        "text": "自动协商方式"
+      }
+    ],
+    "answer": "ACD",
+    "analysis": "",
+    "id": 37,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "下列属于数据链路层的设备有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "中继器"
+      },
+      {
+        "label": "B",
+        "text": "以太网交换机"
+      },
+      {
+        "label": "C",
+        "text": "网桥"
+      },
+      {
+        "label": "D",
+        "text": "网关"
+      }
+    ],
+    "answer": "BC",
+    "analysis": "慧考解析】交换机和网桥工作在数据链路层。",
+    "id": 38,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "根据数据信息在传输线上的传送方向，数据通信方式有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "单工通信"
+      },
+      {
+        "label": "B",
+        "text": "半双工通信"
+      },
+      {
+        "label": "C",
+        "text": "全双工通信"
+      },
+      {
+        "label": "D",
+        "text": "无线通信"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 39,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "以下说法正确的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "星型拓扑易于扩展，故障的诊断和隔离方便，安装电缆方便"
+      },
+      {
+        "label": "B",
+        "text": "星型拓扑的主要缺点是环上需要智能的集中器，以依赖于实现网络的故障自动诊断和故障节点的隔离"
+      },
+      {
+        "label": "C",
+        "text": "拓扑结构的选择往往和传输介质的选择和介质访问控制方法的确定密切相关"
+      },
+      {
+        "label": "D",
+        "text": "拓扑结构的选择规则有可靠性、扩充性和费用高低"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 40,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "下列有关NAT的叙述中正确的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "NAT是英文“网络地址转换”的缩写，又称地址"
+      },
+      {
+        "label": "B",
+        "text": "NAT用来实现私有地址与公用网络地址之间的转换"
+      },
+      {
+        "label": "C",
+        "text": "当内部网络的主机访问外部网络的时候，一定不需要NAT"
+      },
+      {
+        "label": "D",
+        "text": "NAT的提出为解决IP地址紧张的问题提供了一个有效途径"
+      }
+    ],
+    "answer": "ABD",
+    "analysis": "",
+    "id": 41,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "下列说法正确的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "对于交互式通信来说，报文交换是不合适的"
+      },
+      {
+        "label": "B",
+        "text": "数据报分组交换适用于短报文和具有灵活性的报文"
+      },
+      {
+        "label": "C",
+        "text": "虚电路分组交换适用于大批量数据交换和减轻各站的处理负担"
+      },
+      {
+        "label": "D",
+        "text": "信元交换适用于对带宽要求高和对服务质量(QoS)要求高的应用"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 42,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "信号主要有以下哪几种形式？（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "脉冲信号"
+      },
+      {
+        "label": "B",
+        "text": "数字信号"
+      },
+      {
+        "label": "C",
+        "text": "模拟信号"
+      },
+      {
+        "label": "D",
+        "text": "连续信号"
+      }
+    ],
+    "answer": "BC",
+    "analysis": "",
+    "id": 43,
+    "category": "数据通信网"
+  },
+  {
+    "type": "multi_choice",
+    "question": "物理层实现的主要功能在于提出了物理层的（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "比特流传输中的差错控制方法"
+      },
+      {
+        "label": "B",
+        "text": "机械特性"
+      },
+      {
+        "label": "C",
+        "text": "电气特性"
+      },
+      {
+        "label": "D",
+        "text": "功能特性"
+      }
+    ],
+    "answer": "BCD",
+    "analysis": "",
+    "id": 44,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "HDLC帧格式中的控制字段定义了三种帧的类型，分别是信息帧、监控帧和无编号帧。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 45,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "如果局域网交换机的一个端口只能连接一个节点，并且该节点可以占用该端口的全部带宽，那么通常将这 个端口称为专用端口。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 46,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "域名系统采用分级系统创建域名数据库，从而提供域名解析服务。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 47,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "网络层负责完成主机之间的“报文”传输，传送的协议数据单元称为数据报或分组。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 48,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "IP地址就是给每个连接在因特网上的主机(或路由器)分配一个在全世界范围是唯一的32位的标识符。（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 49,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "RIP协议最大的优点就是实现简单，开销较小。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 50,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "Internet采用分组交换技术作为通信方式，把数据分割成一定大小的信息包进行传输。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 51,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "集线器使用了大规模集成电路芯片，因此这样的硬件设备的可靠性已大大提高了。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 52,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "edu既可以做顶级域名，又可以做二级域名。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 53,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "物理层传输的信息单元为比特流，简称“流”，实现比特流的透明传输。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 54,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "FTP服务的任务是实现文件传输。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 55,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "gov既可以做顶级域名，又可以做二级域名。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 56,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "数据链路层要处理数据出错、丢失、重复之类的问题。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 57,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "HFC(混合光纤同轴电缆网)是一种发展前景广阔的通信技术，基于CATV的混合光纤/同轴电缆的宽带综合业 务接入网络。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 58,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "划分子网在一定程度上缓解了因特网在发展中遇到的困难。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 59,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "PING使用了ICMP回送请求与回送回答报文。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 60,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "数据链路层像个数字管道，常常在两个对等的数据链路层之间画出一个数字管道，而在这条数字管道上传 输的数据单位是帧。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 61,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "网关的主要功能是完成运输层以上的协议转换。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 62,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "TCP采用三次握手的方法来建立连接，就是在连接建立和终止过程中，通信的双方需要交换3个报文。（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 63,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "计算机网络向用户提供的最重要的功能是连通性和共享。（　） 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 64,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "分层是计算机网络系统的一个重要概念。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 65,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "在B类IP地址中，网络号所占的二进制位数为14。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 66,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "物理层的基本作用是在物理介质上提供传输原始比特流的物理连接。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 67,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "网络管理协议一般为应用层级协议，它定义了网络管理信息的类别及其相应的确切格式，并且提供了网络 管理站和网络管理节点间进行通讯的标准或规则。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 68,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "计算机网络的分层：RLC和MAC层。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 69,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "数据链路层传输的信息单元为“帧”。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 70,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "网络层的主要功能包括：处理来自运输层的分组发送请求，将分组封装在IP数据报之中，填入报头；处理 接收的数据报；处理网络的路径、流控与拥塞问题，并提出差错报告。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 71,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "在网络互连时，代理就是一个提供替代连接并充当服务的网关。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 72,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "CIDR使用“斜线记法”，它又称为CIDR记法，即在IP地址面加上一个斜线“/”，然后写上网络前缀所占 的位数(这个数值对应于三级编址中子网掩码中1的个数)。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 73,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "透明网桥的转发表要记录三项信息，即站地址、端口号与时间。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 74,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "网际协议解决的是网际的通信问题，而不是同一网段内部的通信。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 75,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "TCP/IP实际并未定义任何数据链路层协议和物理层协议，它可运行在现有的任何一种数据链路层和物理层 之上。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 76,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "TCP连接的每一方都有固定大小的缓冲空间。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 77,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "FDDI是总线型局域网。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 78,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "Linux与传统网络操作系统最大的区别是它开放源代码。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 79,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "停止一等待协议、后退N帧协议和选择重传协议三个协议都实现了流量控制，是保证数据可靠传输常采用 的协议。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 80,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "ICMP是IP层协议。（　） 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】网际控制报文协议(ICMP)属于网络层协议。",
+    "id": 81,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "OSI模型在网络层支持无连接和面向连接的两种服务，而在传输层仅支持面向连接的服务。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 82,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "网络出现的拥塞不会使源主机的发送速率降低。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 83,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "知名端口即众所周知的端口号，范围从0到1025，这些端口号一般固定分配给一些服务。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 84,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "国际标准化组织ISO在80年代提出了开放系统互联参考模型OSI，这个模型将计算机网络通信协议分为七层 。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 85,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "应用层将用户接入网络，给用户提供了接口和服务支持，如发送电子邮件，远程文件存取和传送等。（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 86,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "PPP协议有三个组成部分：一个将IP数据报封装到串行链路的方法；链路控制协议LCP；网络控制协议 NCP。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 87,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "局域网具的主要优点：具有广播功能，从一个站点可很方便地访问全网。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 88,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "数据链路层只存在于节点与节点之间，在节点与节点之间传送数据。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 89,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "当域处于混合模式时，不能把安全组转化为通信组。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 90,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "当发送数据的速率高于接收数据的速率时，必须采取适当的措施，限制发送速率，否则会由于来不及接收 而造成数据丢失。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 91,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "局域网的特点是范围小、数据传输速率高，但误码率高。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】局域网速率高，误码率低。",
+    "id": 92,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "虚拟局域网与传统局域网的主要区别表现在组网方面。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 93,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "QQ的TCP的端口号为8000。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 94,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "传统总线型以太网的核心技术是CSMA/CD方法。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 95,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "网络层是负责把数据从一个网络传到另外一个网络。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 96,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "TCP/IP协议使用的以太网多播地址块的范围是：从00-00-SE-00-00-00到00-00-5E-FF-FF-FF。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 97,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "VLAN是建立在路由器的基础上的，不同VLAN的站点必须连接在路由器的不同端口。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考智学官网 【慧考解析】",
+    "id": 98,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "误码率描述了数据传输系统正常工作状态下传输的可靠性。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 99,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "ISO是国际标准化组织的简称。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 100,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "应用层的功能是：网络虚拟终端；文件传送、存取和管理；邮件服务；会话服务。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 101,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "端口是网络层和运输层之间的接口。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 102,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "只能通过IP地址和端口号在一台服务器上维持多个FTP站点。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 103,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "通信在对等层的实体之间进行。划分原则：不能太多，不能太少。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 104,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "MPLSVPN针对一般用户可以提供虚电路级的安全性。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 105,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "Internet的网络层含有四个重要的协议，分别为IP、ICMP、ARP、UDP。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 106,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "要想总站点主目录以外的文件夹发布消息，则必须在Web站点上创建虚拟目录。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考智学官网 【慧考解析】",
+    "id": 107,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "在物理层扩展局域网：主机使用光纤和一对光纤调制解调器连接到集线器。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 108,
+    "category": "数据通信网"
+  },
+  {
+    "type": "judge",
+    "question": "最短路径算法中的最短是指实际距离最短。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考智学官网",
+    "id": 109,
+    "category": "数据通信网"
+  }
+]

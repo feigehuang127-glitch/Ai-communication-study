@@ -1,0 +1,1360 @@
+[
+  {
+    "id": 1,
+    "type": "single_choice",
+    "question": "下列不能无限制地增大信道容量的方法是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "无限制提高信噪比"
+      },
+      {
+        "label": "B",
+        "text": "无限制减小噪声"
+      },
+      {
+        "label": "C",
+        "text": "无限制提高信号功率"
+      },
+      {
+        "label": "D",
+        "text": "无限制增加带宽"
+      }
+    ],
+    "answer": "D",
+    "analysis": ""
+  },
+  {
+    "id": 2,
+    "type": "single_choice",
+    "question": "一个二进制数字信号码元时间长度为0.1μs，在传输过程中平均2.5s产生一个错码，其平均误码率近似为（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "5×10-6"
+      },
+      {
+        "label": "B",
+        "text": "2×10-8"
+      },
+      {
+        "label": "C",
+        "text": "2×10-7"
+      },
+      {
+        "label": "D",
+        "text": "4×10-8"
+      }
+    ],
+    "answer": "D",
+    "analysis": ""
+  },
+  {
+    "id": 3,
+    "type": "single_choice",
+    "question": "通信系统的信噪比指的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "信号的电压与噪声功率之比"
+      },
+      {
+        "label": "B",
+        "text": "信号的功率与噪声电压之比"
+      },
+      {
+        "label": "C",
+        "text": "信号的电压与噪声电压之比"
+      },
+      {
+        "label": "D",
+        "text": "信号的功率与噪声功率之比"
+      }
+    ],
+    "answer": "D",
+    "analysis": ""
+  },
+  {
+    "id": 4,
+    "type": "single_choice",
+    "question": "如下图所示的四条函数曲线，哪一条不是平稳过程的自相关函数曲线？（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "A"
+      },
+      {
+        "label": "B",
+        "text": "B"
+      },
+      {
+        "label": "C",
+        "text": "C"
+      },
+      {
+        "label": "D",
+        "text": "D"
+      }
+    ],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 5,
+    "type": "single_choice",
+    "question": "若采用空间分集技术，抗选择性衰落较差合并方式为（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "最佳选择方式"
+      },
+      {
+        "label": "B",
+        "text": "最大功率合并方式"
+      },
+      {
+        "label": "C",
+        "text": "最小色散合并方式"
+      },
+      {
+        "label": "D",
+        "text": "最大信噪比合并方式"
+      }
+    ],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 6,
+    "type": "single_choice",
+    "question": "采用同步解调残留边带信号时，只要残留边带滤波器的截止特性在载频处具有（ ）特性，就能够准确地恢复所需的基带信号。",
+    "options": [
+      {
+        "label": "A",
+        "text": "互补"
+      },
+      {
+        "label": "B",
+        "text": "对称"
+      },
+      {
+        "label": "C",
+        "text": "互补对称"
+      },
+      {
+        "label": "D",
+        "text": "奇偶"
+      }
+    ],
+    "answer": "C",
+    "analysis": "采用同步解调残留边带信号时，只要残留边带滤波器的截止特性在载频处具有互补对称特性"
+  },
+  {
+    "id": 7,
+    "type": "single_choice",
+    "question": "下列方法中，（ ）不能作为增大视距传播的方法。",
+    "options": [
+      {
+        "label": "A",
+        "text": "中继通信"
+      },
+      {
+        "label": "B",
+        "text": "卫星通信"
+      },
+      {
+        "label": "C",
+        "text": "平流层通信"
+      },
+      {
+        "label": "D",
+        "text": "地波通信"
+      }
+    ],
+    "answer": "D",
+    "analysis": ""
+  },
+  {
+    "id": 8,
+    "type": "single_choice",
+    "question": "随机过程的样本函数是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "确定的时间函数"
+      },
+      {
+        "label": "B",
+        "text": "随机函数"
+      },
+      {
+        "label": "C",
+        "text": "随机变量的函数"
+      },
+      {
+        "label": "D",
+        "text": "随机变量"
+      }
+    ],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 9,
+    "type": "single_choice",
+    "question": "通信系统可分为基带传输和频带传输，下列选项属于基带传输方式的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "PSK传输方式"
+      },
+      {
+        "label": "B",
+        "text": "PCM传输方式"
+      },
+      {
+        "label": "C",
+        "text": "QAM传输方式"
+      },
+      {
+        "label": "D",
+        "text": "SSB传输方式"
+      }
+    ],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 10,
+    "type": "single_choice",
+    "question": "改善随参信道对信号传输影响的措施是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "提高信噪比"
+      },
+      {
+        "label": "B",
+        "text": "采用分集技术"
+      },
+      {
+        "label": "C",
+        "text": "采用均衡技术"
+      },
+      {
+        "label": "D",
+        "text": "降低信息速率"
+      }
+    ],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 11,
+    "type": "single_choice",
+    "question": "已知二进制离散信源(0，1)，每一符号波形等概独率立发送，传送二进制波形之一的信息量为（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "1bit/s"
+      },
+      {
+        "label": "B",
+        "text": "1bit"
+      },
+      {
+        "label": "C",
+        "text": "2bit/s"
+      },
+      {
+        "label": "D",
+        "text": "2bit"
+      }
+    ],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 12,
+    "type": "single_choice",
+    "question": "下列描述正确的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "数字通信系统的主要性能指标是传输速率和差错率"
+      },
+      {
+        "label": "B",
+        "text": "从研究消息的传输角度来说，通信系统的主要性能指标是其标准性和可靠性"
+      },
+      {
+        "label": "C",
+        "text": "对于数字通信系统，传码率和传信率是数值相等而单位不同的两个性能指标"
+      },
+      {
+        "label": "D",
+        "text": "所谓误码率是指错误接收的信息量在传送信息总量中所占的比例"
+      }
+    ],
+    "answer": "A",
+    "analysis": "数字通信系统的主要性能指标是传输速率和差错率。"
+  },
+  {
+    "id": 13,
+    "type": "single_choice",
+    "question": "下列选项属于码元速率单位的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "波特"
+      },
+      {
+        "label": "B",
+        "text": "比特"
+      },
+      {
+        "label": "C",
+        "text": "波特/秒"
+      },
+      {
+        "label": "D",
+        "text": "比特/秒"
+      }
+    ],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 14,
+    "type": "single_choice",
+    "question": "通信系统按信号特征可分为模拟通信系统和数字通信系统，下列选项为数字通信系统的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "采用PAM方式的通信系统"
+      },
+      {
+        "label": "B",
+        "text": "采用SSB方式的通信系统"
+      },
+      {
+        "label": "C",
+        "text": "采用VSB方式的通信系统"
+      },
+      {
+        "label": "D",
+        "text": "采用PCM方式的通信系统"
+      }
+    ],
+    "answer": "D",
+    "analysis": ""
+  },
+  {
+    "id": 15,
+    "type": "multi_choice",
+    "question": "下列哪项属于高质量通信？（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "高保真音乐广播"
+      },
+      {
+        "label": "B",
+        "text": "电视伴音"
+      },
+      {
+        "label": "C",
+        "text": "卫星通信"
+      },
+      {
+        "label": "D",
+        "text": "蜂窝电话系统"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 16,
+    "type": "multi_choice",
+    "question": "数字通信的特点有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "集成化"
+      },
+      {
+        "label": "B",
+        "text": "小型化，再生中继"
+      },
+      {
+        "label": "C",
+        "text": "抗干扰能力强"
+      },
+      {
+        "label": "D",
+        "text": "保密性强，差错控制"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "数字通信的特点有：抗干扰能力强，可消除噪声的积累(利用中继手段)，便于差错控制，改善"
+  },
+  {
+    "id": 17,
+    "type": "multi_choice",
+    "question": "网同步的方法主要有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "码速调整法"
+      },
+      {
+        "label": "B",
+        "text": "水库法"
+      },
+      {
+        "label": "C",
+        "text": "主从同步"
+      },
+      {
+        "label": "D",
+        "text": "相互同步"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 18,
+    "type": "multi_choice",
+    "question": "作为传输码型应具有（ ）等特点。",
+    "options": [
+      {
+        "label": "A",
+        "text": "易于时钟提取"
+      },
+      {
+        "label": "B",
+        "text": "无直流、高频和低频分量要少"
+      },
+      {
+        "label": "C",
+        "text": "尽可能提高传输码的传输效率"
+      },
+      {
+        "label": "D",
+        "text": "设备简单"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 19,
+    "type": "multi_choice",
+    "question": "最简单的通信系统通常由（ ）组成。",
+    "options": [
+      {
+        "label": "A",
+        "text": "信息源"
+      },
+      {
+        "label": "B",
+        "text": "发送设备和接收设备"
+      },
+      {
+        "label": "C",
+        "text": "信道"
+      },
+      {
+        "label": "D",
+        "text": "噪声"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 20,
+    "type": "multi_choice",
+    "question": "下列各项表述中，属于数字通信技术的优点的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "抗干扰能力强"
+      },
+      {
+        "label": "B",
+        "text": "可消除噪声的积累"
+      },
+      {
+        "label": "C",
+        "text": "易于集成"
+      },
+      {
+        "label": "D",
+        "text": "便于差错控制，改善通信质量"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 21,
+    "type": "multi_choice",
+    "question": "关于数字通信的优点，说法正确的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "抗干扰能力强，可消除噪声的积累(利用中继手段)"
+      },
+      {
+        "label": "B",
+        "text": "便于差错控制，改善通信质量"
+      },
+      {
+        "label": "C",
+        "text": "支持复杂的信号处理技术，便于信号处理、存储和交换"
+      },
+      {
+        "label": "D",
+        "text": "可将不同类型的信息(如语音、数据、视频、图像等)综合到一个信道中进行多路传输"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 22,
+    "type": "multi_choice",
+    "question": "差错控制方法中，前向纠错方式(FEC)有以下哪些特点？（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "使用纠错编码难度大"
+      },
+      {
+        "label": "B",
+        "text": "实时性好，适合于随机信道"
+      },
+      {
+        "label": "C",
+        "text": "只需要正向信道"
+      },
+      {
+        "label": "D",
+        "text": "用于单工和广播通信中"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 23,
+    "type": "multi_choice",
+    "question": "若想将模拟信号转换成数字信号，则要通过（ ）步骤。",
+    "options": [
+      {
+        "label": "A",
+        "text": "采样"
+      },
+      {
+        "label": "B",
+        "text": "量化"
+      },
+      {
+        "label": "C",
+        "text": "保持"
+      },
+      {
+        "label": "D",
+        "text": "编码"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 24,
+    "type": "multi_choice",
+    "question": "评价一个通信系统的好与坏，要考虑到许多性能指标，如系统的（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "有效性"
+      },
+      {
+        "label": "B",
+        "text": "可靠性"
+      },
+      {
+        "label": "C",
+        "text": "适应性"
+      },
+      {
+        "label": "D",
+        "text": "保密性"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 25,
+    "type": "multi_choice",
+    "question": "恒参信道对信号传输的影响主要体现在（ ）特性和（ ）特性的不理想，其影响可以采用（ ）措施来加以改善。",
+    "options": [
+      {
+        "label": "A",
+        "text": "幅频"
+      },
+      {
+        "label": "B",
+        "text": "相频"
+      },
+      {
+        "label": "C",
+        "text": "不均衡"
+      },
+      {
+        "label": "D",
+        "text": "均衡"
+      }
+    ],
+    "answer": "ABD",
+    "analysis": ""
+  },
+  {
+    "id": 26,
+    "type": "multi_choice",
+    "question": "通信系统按消息传送的方向和时间，可分为（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "单工"
+      },
+      {
+        "label": "B",
+        "text": "半双工"
+      },
+      {
+        "label": "C",
+        "text": "并序"
+      },
+      {
+        "label": "D",
+        "text": "全双工"
+      }
+    ],
+    "answer": "ABD",
+    "analysis": ""
+  },
+  {
+    "id": 27,
+    "type": "multi_choice",
+    "question": "起伏噪声是加性噪声的典型代表，起伏噪声包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "热噪声"
+      },
+      {
+        "label": "B",
+        "text": "散弹噪声"
+      },
+      {
+        "label": "C",
+        "text": "大海噪声"
+      },
+      {
+        "label": "D",
+        "text": "宇宙噪声"
+      }
+    ],
+    "answer": "ABD",
+    "analysis": ""
+  },
+  {
+    "id": 28,
+    "type": "multi_choice",
+    "question": "HDB3码与AMI码相比，弥补了AMI 码中（ ），其方法是用（ ）代（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "长串连零"
+      },
+      {
+        "label": "B",
+        "text": "取代节"
+      },
+      {
+        "label": "C",
+        "text": "四连一"
+      },
+      {
+        "label": "D",
+        "text": "四连零"
+      }
+    ],
+    "answer": "ABD",
+    "analysis": ""
+  },
+  {
+    "id": 29,
+    "type": "multi_choice",
+    "question": "用来度量通信系统性能的参量有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "有效性"
+      },
+      {
+        "label": "B",
+        "text": "经济性"
+      },
+      {
+        "label": "C",
+        "text": "可靠性"
+      },
+      {
+        "label": "D",
+        "text": "耐用性"
+      }
+    ],
+    "answer": "AC",
+    "analysis": ""
+  },
+  {
+    "id": 30,
+    "type": "multi_choice",
+    "question": "以下说法不正确的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "在HDB中每当出现4个连续“0”码时，要用取代节代替"
+      },
+      {
+        "label": "B",
+        "text": "在HDB中每当出现4个连续“0”码时，不用取代节代替"
+      },
+      {
+        "label": "C",
+        "text": "模拟通信的多路复用多采用频分复用技术，数字通信的多路复用多采用时分复用技术"
+      },
+      {
+        "label": "D",
+        "text": "模拟通信的多路复用多采用时分复用技术，数字通信的多路复用多采用频分复用技术"
+      }
+    ],
+    "answer": "AC",
+    "analysis": ""
+  },
+  {
+    "id": 31,
+    "type": "multi_choice",
+    "question": "经过调制后的信号称为已调信号，它具有两个基本特征：（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "携带信息"
+      },
+      {
+        "label": "B",
+        "text": "允许高损耗"
+      },
+      {
+        "label": "C",
+        "text": "失真小"
+      },
+      {
+        "label": "D",
+        "text": "能放大"
+      }
+    ],
+    "answer": "AC",
+    "analysis": ""
+  },
+  {
+    "id": 32,
+    "type": "multi_choice",
+    "question": "下列说法不正确的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "码元速率相同时，八进制的信息速率是二进制的2倍"
+      },
+      {
+        "label": "B",
+        "text": "点对点多路模拟通信系统只能采用频分多路复用技术"
+      },
+      {
+        "label": "C",
+        "text": "随机过程的样本函数是不确定的时间函数"
+      },
+      {
+        "label": "D",
+        "text": "白噪声在任意两个时刻上的随机变量之间相关"
+      }
+    ],
+    "answer": "AC",
+    "analysis": ""
+  },
+  {
+    "id": 33,
+    "type": "multi_choice",
+    "question": "抑制载波双边带调幅DSB-SC的缺点不包括以下哪点？（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "已调信号带宽增大2倍"
+      },
+      {
+        "label": "B",
+        "text": "信道利用率仍然偏低"
+      },
+      {
+        "label": "C",
+        "text": "与AM信号带宽相同，仍然占有调制信号带宽的3倍"
+      },
+      {
+        "label": "D",
+        "text": "已调信号带宽增大一倍"
+      }
+    ],
+    "answer": "AC",
+    "analysis": ""
+  },
+  {
+    "id": 34,
+    "type": "multi_choice",
+    "question": "以下说法正确的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "广义信道可以分为调制信道和编码信道"
+      },
+      {
+        "label": "B",
+        "text": "调制信道一般可以看成是一种数字信道"
+      },
+      {
+        "label": "C",
+        "text": "原始信号是数字信号时必须经过调制后才能通过模拟通信系统进行传输"
+      },
+      {
+        "label": "D",
+        "text": "编码信道则可以看成是一种模拟信道"
+      }
+    ],
+    "answer": "AC",
+    "analysis": ""
+  },
+  {
+    "id": 35,
+    "type": "multi_choice",
+    "question": "数字基带传输系统中，常用的码型包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "单极不归零码"
+      },
+      {
+        "label": "B",
+        "text": "BCD码"
+      },
+      {
+        "label": "C",
+        "text": "双极不归零码"
+      },
+      {
+        "label": "D",
+        "text": "卷积码"
+      }
+    ],
+    "answer": "AC",
+    "analysis": ""
+  },
+  {
+    "id": 36,
+    "type": "multi_choice",
+    "question": "以下说法不正确的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "数字调制可以视作是模拟调制的特例，利用数字信号的开关特性对载波进行控制的方式称为键控"
+      },
+      {
+        "label": "B",
+        "text": "数字调制可以视作是模拟调制的开关，利用数字信号的特例特性对载波进行控制的方式称为键控"
+      },
+      {
+        "label": "C",
+        "text": "多进制数字调制与二进制调制相比，具有频谱利用率高、抗干扰能力差的特点"
+      },
+      {
+        "label": "D",
+        "text": "多进制数字调制与二进制调制相比，具有抗干扰能力高、频谱利用率低的特点"
+      }
+    ],
+    "answer": "AC",
+    "analysis": ""
+  },
+  {
+    "id": 37,
+    "type": "multi_choice",
+    "question": "差错控制方法中，关于反馈检验方式说法错误的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "不用差错控制编码"
+      },
+      {
+        "label": "B",
+        "text": "效率低"
+      },
+      {
+        "label": "C",
+        "text": "用差错控制编码"
+      },
+      {
+        "label": "D",
+        "text": "效率高"
+      }
+    ],
+    "answer": "AC",
+    "analysis": ""
+  },
+  {
+    "id": 38,
+    "type": "multi_choice",
+    "question": "PCM方式的模拟信号数字化要经过（ ）过程。",
+    "options": [
+      {
+        "label": "A",
+        "text": "抽样"
+      },
+      {
+        "label": "B",
+        "text": "调制"
+      },
+      {
+        "label": "C",
+        "text": "编码"
+      },
+      {
+        "label": "D",
+        "text": "量化"
+      }
+    ],
+    "answer": "ACD",
+    "analysis": ""
+  },
+  {
+    "id": 39,
+    "type": "true_false",
+    "question": "由于DSB信号的调制制度增益是SSB的两倍，所以抗噪声性能比SSB好一倍。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 40,
+    "type": "true_false",
+    "question": "随机过程广义平稳则必将严格平稳。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": "随机过程广义平稳则不一定严格平稳。"
+  },
+  {
+    "id": 41,
+    "type": "true_false",
+    "question": "对于调频信号，可以用其上边带或下边带传输信息。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 42,
+    "type": "true_false",
+    "question": "平稳随机过程是指它的概率密度函数与时间起点有关。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 43,
+    "type": "true_false",
+    "question": "数字信号的参量是集中取值的。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 44,
+    "type": "true_false",
+    "question": "前向纠错方式(FEC)使用纠错编码，难度大，但实时性好，适于随机信道，并且只需要正向信道，可用于单工和广播通信中。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 45,
+    "type": "true_false",
+    "question": "随机过程最常用的数字特征是数学期望、方差和相关函数。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 46,
+    "type": "true_false",
+    "question": "非线性调制又称角度调制，是指用调制信号控制高频载波的频率或相位。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 47,
+    "type": "true_false",
+    "question": "冲激响应的定义是以单位冲激信号δ(t)为激励时，系统的零状态响应。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 48,
+    "type": "true_false",
+    "question": "平稳随机过程通过线性系统是平稳的。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 49,
+    "type": "true_false",
+    "question": "对于受到高斯白噪声干扰的连续信道，若no→0，则信道容量C→∞。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 50,
+    "type": "true_false",
+    "question": "有些数字基带信号的功率谱中不含有线谱分量。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 51,
+    "type": "true_false",
+    "question": "在数字相位调制的应用中只能采用相对调相。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 52,
+    "type": "true_false",
+    "question": "通信的目的就是传递消息。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 53,
+    "type": "true_false",
+    "question": "采用非均匀量化，是为了提高小信号的量化信噪比。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 54,
+    "type": "true_false",
+    "question": "相位调制(PM)的瞬时相位偏移随调制信号做线性变化。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 55,
+    "type": "true_false",
+    "question": "位同步又称码元同步或比特同步。为了正确判决，必须在接收端产生一个与接收码元序列频率和相位一致的定时脉冲序列，在接收端产生定时脉冲序列的过程称为位同步。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 56,
+    "type": "true_false",
+    "question": "数字信号是指具有时间上和幅度取值上离散的信号。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": "数字信号是指具有时间上和幅度取值上离散的信号。"
+  },
+  {
+    "id": 57,
+    "type": "true_false",
+    "question": "高斯过程在任一时刻上的取值是一个正态分布的随机变量，也称高斯随机变量。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 58,
+    "type": "true_false",
+    "question": "随参信道的传输介质存在多径传播。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 59,
+    "type": "true_false",
+    "question": "对数字基带信号进行差分编码可以克服2PSK中载波相位模糊带来的数字码反转。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 60,
+    "type": "true_false",
+    "question": "使用HDB3码的目的是解决原信码中出现连“0”串扰时所带来的问题。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 61,
+    "type": "true_false",
+    "question": "用双相码的下降沿去触发双稳电路，即可输出密勒码。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 62,
+    "type": "true_false",
+    "question": "一种编码，若其最小距离为d0，能检测e个错误时，e+1≤d0.（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 63,
+    "type": "true_false",
+    "question": "时域均衡器的均衡效果一般用峰值畸变准则和均方畸变准则来衡量。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 64,
+    "type": "true_false",
+    "question": "最大似然算法译码是把已接收序列与所有可能的发送序列比较，选择码距最小的作为发送序列。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 65,
+    "type": "true_false",
+    "question": "在数字基带信号的功率谱中，连续谱是一定存在的，而离散谱不一定存在。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 66,
+    "type": "true_false",
+    "question": "作为数字基带信号，其功率谱中一定含连续谱分量。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 67,
+    "type": "true_false",
+    "question": "窄带噪声可由高斯白噪声经过窄带滤波器得到。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 68,
+    "type": "true_false",
+    "question": "2ASK和2FSK都可以进行非相干解调。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 69,
+    "type": "true_false",
+    "question": "增量调制系统中的量化噪声，分为一般量化噪声和过载量化噪声。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 70,
+    "type": "true_false",
+    "question": "系统模型的求解方法分为时域法和变换域法。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 71,
+    "type": "true_false",
+    "question": "在频带利用率方面，QPSK通信系统优于2PSK通信系统。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 72,
+    "type": "true_false",
+    "question": "采用相对调相可以解决载波相位模糊的问题。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 73,
+    "type": "true_false",
+    "question": "通信系统按传输媒介分类，可分为有线通信系统和无线通信系统。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 74,
+    "type": "true_false",
+    "question": "时分多路通信是指各路信号在信道上占有不同时间间隔进行通信。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 75,
+    "type": "true_false",
+    "question": "周期信号平均功率是各个谐波分量幅值的平方。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 76,
+    "type": "true_false",
+    "question": "起伏噪声、热噪声、散弹噪声均可认为是加性高斯噪声。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 77,
+    "type": "true_false",
+    "question": "根据香农公式，当信道容量一定时，信道的带宽越宽，则对信噪比要求就越小。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 78,
+    "type": "true_false",
+    "question": "恒参信道的特性是可以通过线性网络来补偿。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 79,
+    "type": "true_false",
+    "question": "低通信号的抽样定理为，一个连续模拟信号m(t)中的最高频率小于fH， 则以间隔时间为T≤1/2fH的周期性冲激脉冲对它抽样时，m(t)将被这些抽样值所完全确定。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 80,
+    "type": "true_false",
+    "question": "平稳随机过程的自相关函数和功率谱密度服从维纳一辛钦关系。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 81,
+    "type": "true_false",
+    "question": "一种编码的检错和纠错能力与该编码的最小码距的大小有直接关系。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 82,
+    "type": "true_false",
+    "question": "数字调制中三种调制方式占用频带大小的关系是2FSK＞2PSK=2ASK。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 83,
+    "type": "true_false",
+    "question": "一种编码，若其最小距离为d0，能纠正t个错误，并同时检测出e个错误时，e+t+1< d0(e>t)。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 84,
+    "type": "true_false",
+    "question": "恒参信道对信号传输的影响可以分为乘性干扰和加性干扰两部分。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": "信道对信号的影响可分为两类，一类是乘性干扰，另一类为加性干扰。"
+  },
+  {
+    "id": 85,
+    "type": "true_false",
+    "question": "采用非均匀量化是为了解决均匀量化时，小信号量化误差过大的问题。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 86,
+    "type": "true_false",
+    "question": "调相指数βFM= KPMAM/fm。",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 87,
+    "type": "true_false",
+    "question": "在实际的数据传输中，通常是将若干个数据码元组成帧进行传输。接收端要正确地恢复数据分组，就必须知道帧的起止时刻。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 88,
+    "type": "true_false",
+    "question": "量化是把抽象信号在幅度上离散化，变成有限个量化电平。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 89,
+    "type": "true_false",
+    "question": "产生调频信号的两种方法是直接调频法和倍频法。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  }
+]

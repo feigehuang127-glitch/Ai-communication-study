@@ -1,0 +1,1990 @@
+[
+  {
+    "type": "single_choice",
+    "question": "下列关于无线局域网(WLAN)主要工作过程的描述，不正确的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "扫频就是无线工作站发现可用的无线访问点的过程"
+      },
+      {
+        "label": "B",
+        "text": "关联过程用于建立无线工作站与访问点之间的映射关系"
+      },
+      {
+        "label": "C",
+        "text": "当无线工作站从一个服务区移动到另一个服务区时，需要重新扫频"
+      },
+      {
+        "label": "D",
+        "text": "无线工作站在一组AP之间移动并保持无缝连接的过程称为漫游"
+      }
+    ],
+    "answer": "C",
+    "analysis": "",
+    "id": 1,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "“最后一公里”可理解为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "局端到用户端之间的接入部分"
+      },
+      {
+        "label": "B",
+        "text": "局端到用户端之间的距离为1公里"
+      },
+      {
+        "label": "C",
+        "text": "数字用户线为1公里"
+      },
+      {
+        "label": "D",
+        "text": "数字用户环路为1公里"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 2,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "下列选项中属于光纤接入网缺点的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "光纤接入网能满足用户对各种业务的需求"
+      },
+      {
+        "label": "B",
+        "text": "光纤可以克服铜线电缆无法克服的一些限制因素"
+      },
+      {
+        "label": "C",
+        "text": "光纤接入网的性能不断提升，价格不断下降，而铜缆的价格在不断上涨"
+      },
+      {
+        "label": "D",
+        "text": "光节点离用户越近，每个用户分摊的接入设备成本就越高"
+      }
+    ],
+    "answer": "D",
+    "analysis": "",
+    "id": 3,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "无源光网络适用于点对多点通信，用（　）实现光功率的分配。",
+    "options": [
+      {
+        "label": "A",
+        "text": "无源分光器"
+      },
+      {
+        "label": "B",
+        "text": "有源分光器"
+      },
+      {
+        "label": "C",
+        "text": "无源分光器和有源分光器"
+      },
+      {
+        "label": "D",
+        "text": "光网络单元"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】无源光网络适用于点对多点通信，仅利用无源分光器实现光功率的分配。",
+    "id": 4,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "无线局域网采用直序扩频接入技术，使用户可以在（　）GHz的ISM频段上进行无线Internet连接。",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.O"
+      },
+      {
+        "label": "B",
+        "text": "2.4"
+      },
+      {
+        "label": "C",
+        "text": "2.5"
+      },
+      {
+        "label": "D",
+        "text": "5.0"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 5,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "LAN参考模型可分为物理层、（　）三层。",
+    "options": [
+      {
+        "label": "A",
+        "text": "MAC、LLC"
+      },
+      {
+        "label": "B",
+        "text": "LLC、MHS"
+      },
+      {
+        "label": "C",
+        "text": "MAC、FTAM"
+      },
+      {
+        "label": "D",
+        "text": "LLC、VT"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 6,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "CSMA介质访问控制标准是IEEE（　）委员会制定的。",
+    "options": [
+      {
+        "label": "A",
+        "text": "802.2"
+      },
+      {
+        "label": "B",
+        "text": "802.3"
+      },
+      {
+        "label": "C",
+        "text": "802.4"
+      },
+      {
+        "label": "D",
+        "text": "802.5"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 7,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "下列属于V5.1接口的子协议的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "保护协议"
+      },
+      {
+        "label": "B",
+        "text": "控制协议"
+      },
+      {
+        "label": "C",
+        "text": "链路控制协议"
+      },
+      {
+        "label": "D",
+        "text": "BCC协议"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 8,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "G.902定义的接入网是传统意义上的接入网，区别于（　）定义的IP接入网。",
+    "options": [
+      {
+        "label": "A",
+        "text": "CCITT"
+      },
+      {
+        "label": "B",
+        "text": "ITU-T"
+      },
+      {
+        "label": "C",
+        "text": "Y.1231"
+      },
+      {
+        "label": "D",
+        "text": "TMN"
+      }
+    ],
+    "answer": "C",
+    "analysis": "",
+    "id": 9,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "广域网的重要组成部分是通信子网，一般由公用网络系统充当通信子网。下列不属于广域网的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "公用电话交换网"
+      },
+      {
+        "label": "B",
+        "text": "数字数据网"
+      },
+      {
+        "label": "C",
+        "text": "分组交换网"
+      },
+      {
+        "label": "D",
+        "text": "FDDI网络"
+      }
+    ],
+    "answer": "D",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 10,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "宽带无线接入技术一般不包含（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "WPAN"
+      },
+      {
+        "label": "B",
+        "text": "WLAN"
+      },
+      {
+        "label": "C",
+        "text": "WWAN"
+      },
+      {
+        "label": "D",
+        "text": "CWAN"
+      }
+    ],
+    "answer": "D",
+    "analysis": "慧考解析】宽带无线接入技术一般包含无线个人域网(WPAN)、无线局域网(WLAN)、无线城域网(WMAN)和无 线广域网(WWAN)四个大类。",
+    "id": 11,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "下列选项中，防范网络监听最有效的方法是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "安装防火墙"
+      },
+      {
+        "label": "B",
+        "text": "采用无线网络传输"
+      },
+      {
+        "label": "C",
+        "text": "数据加密"
+      },
+      {
+        "label": "D",
+        "text": "漏洞扫描"
+      }
+    ],
+    "answer": "C",
+    "analysis": "",
+    "id": 12,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "用户端口是指在AN中实现V5接入的物理端口，用来提供朝向用户的相关接口功能。用户端口和用户是（ ）关系。",
+    "options": [
+      {
+        "label": "A",
+        "text": "一对一"
+      },
+      {
+        "label": "B",
+        "text": "多对一"
+      },
+      {
+        "label": "C",
+        "text": "一对多"
+      },
+      {
+        "label": "D",
+        "text": "多对多"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 13,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "CDMA系统中使用的多路复用技术是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "时分多路"
+      },
+      {
+        "label": "B",
+        "text": "波分多路"
+      },
+      {
+        "label": "C",
+        "text": "码分多址"
+      },
+      {
+        "label": "D",
+        "text": "空分多址"
+      }
+    ],
+    "answer": "C",
+    "analysis": "",
+    "id": 14,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "关于FTP协议，下列描述不正确的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "FTP协议使用多个端口号"
+      },
+      {
+        "label": "B",
+        "text": "FTP可以上传文件，也可以下载文件"
+      },
+      {
+        "label": "C",
+        "text": "FTP报文通过UDP报文传送"
+      },
+      {
+        "label": "D",
+        "text": "FTP是应用层协议"
+      }
+    ],
+    "answer": "C",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 15,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "当网络出现连接故障时，一般应首先检查（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "系统病毒"
+      },
+      {
+        "label": "B",
+        "text": "路由配置"
+      },
+      {
+        "label": "C",
+        "text": "物理连通性"
+      },
+      {
+        "label": "D",
+        "text": "主机故障"
+      }
+    ],
+    "answer": "C",
+    "analysis": "",
+    "id": 16,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "接入网支持的方式有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "PPP方式和VC12的串联方式"
+      },
+      {
+        "label": "B",
+        "text": "PPP方式和VC12的级联方式"
+      },
+      {
+        "label": "C",
+        "text": "VC12的级联方式"
+      },
+      {
+        "label": "D",
+        "text": "PPP的级联方式"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 17,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "IPPON的上层是（　），这种方式可更加充分地利用网络资源，容易实现系统带宽的动态分配，简化中间 层的复杂设备。",
+    "options": [
+      {
+        "label": "A",
+        "text": "数据链路层"
+      },
+      {
+        "label": "B",
+        "text": "物理层"
+      },
+      {
+        "label": "C",
+        "text": "IP层"
+      },
+      {
+        "label": "D",
+        "text": "网络层"
+      }
+    ],
+    "answer": "C",
+    "analysis": "",
+    "id": 18,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "V5.1接口的测试项目有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "V5.1接口物理层测试、PSTN业务功能测试"
+      },
+      {
+        "label": "B",
+        "text": "系统启动程序测试、ISDN业务功能测试"
+      },
+      {
+        "label": "C",
+        "text": "PSTN呼叫协议测试"
+      },
+      {
+        "label": "D",
+        "text": "控制协议测试"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 19,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "V5接口定义的巨大影响和深远意义有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "促进接入网的迅速发展(接入网设备互联、数字化、光纤化)"
+      },
+      {
+        "label": "B",
+        "text": "使接入网的配置灵活，提供综合业务"
+      },
+      {
+        "label": "C",
+        "text": "增强接入网的网管能力"
+      },
+      {
+        "label": "D",
+        "text": "降低系统成本"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 20,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "宽带用户接入技术主要有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "高速数字环路"
+      },
+      {
+        "label": "B",
+        "text": "光纤接入方式"
+      },
+      {
+        "label": "C",
+        "text": "双向混合光纤/同轴电缆"
+      },
+      {
+        "label": "D",
+        "text": "宽带无线接入网"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 21,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "以下属于异步传输模式(ATM)特点的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "信元长度固定"
+      },
+      {
+        "label": "B",
+        "text": "具有统计时分复用能力"
+      },
+      {
+        "label": "C",
+        "text": "采用无连接方式"
+      },
+      {
+        "label": "D",
+        "text": "可综合多种业务"
+      }
+    ],
+    "answer": "ABD",
+    "analysis": "",
+    "id": 22,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "ODN位于（　）之间，为它们提供光传输手段，完成光信号的传输和功率分配业务。",
+    "options": [
+      {
+        "label": "A",
+        "text": "OLT"
+      },
+      {
+        "label": "B",
+        "text": "ODN"
+      },
+      {
+        "label": "C",
+        "text": "ONU"
+      },
+      {
+        "label": "D",
+        "text": "ODT"
+      }
+    ],
+    "answer": "AC",
+    "analysis": "",
+    "id": 23,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "光纤接入网，从系统分配上可分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "有源光网络"
+      },
+      {
+        "label": "B",
+        "text": "SDH"
+      },
+      {
+        "label": "C",
+        "text": "无源光网络"
+      },
+      {
+        "label": "D",
+        "text": "PDH"
+      }
+    ],
+    "answer": "AC",
+    "analysis": "",
+    "id": 24,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "TCP/IP协议的层次结构分为（　）以及网络接口层四个层次。",
+    "options": [
+      {
+        "label": "A",
+        "text": "应用层"
+      },
+      {
+        "label": "B",
+        "text": "网络层"
+      },
+      {
+        "label": "C",
+        "text": "运输层"
+      },
+      {
+        "label": "D",
+        "text": "网际层"
+      }
+    ],
+    "answer": "ACD",
+    "analysis": "",
+    "id": 25,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "下列媒体共享技术中，属于静态划分信道类型的有（　）。 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网",
+    "options": [
+      {
+        "label": "A",
+        "text": "波分复用"
+      },
+      {
+        "label": "B",
+        "text": "随机接入"
+      },
+      {
+        "label": "C",
+        "text": "时分复用"
+      },
+      {
+        "label": "D",
+        "text": "频分复用"
+      }
+    ],
+    "answer": "ACD",
+    "analysis": "",
+    "id": 26,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "下列说法中，不正确的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "服务器只能由大型主机、小型机构成"
+      },
+      {
+        "label": "B",
+        "text": "服务器可以由装配有安腾处理器的计算机构成"
+      },
+      {
+        "label": "C",
+        "text": "服务器不能由个人计算机构成"
+      },
+      {
+        "label": "D",
+        "text": "服务器只能由装配有奔腾、安腾处理器的计算机构成"
+      }
+    ],
+    "answer": "ACD",
+    "analysis": "慧考解析】服务器必须具有很强的安全性、可靠性、联网特性以及远程管理、自动监控功能。原则上，高 档微机以上的机器，包括小型机、大型机、巨型机都可以当服务器使用。",
+    "id": 27,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "接入网按传输介质分为（　）两类。",
+    "options": [
+      {
+        "label": "A",
+        "text": "有线接入"
+      },
+      {
+        "label": "B",
+        "text": "光纤接入"
+      },
+      {
+        "label": "C",
+        "text": "电信接入"
+      },
+      {
+        "label": "D",
+        "text": "无线接入"
+      }
+    ],
+    "answer": "AD",
+    "analysis": "",
+    "id": 28,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "局域网的数据链路层可划分为两个层次，它们是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "逻辑链路控制子层(LLC)"
+      },
+      {
+        "label": "B",
+        "text": "介质控制子层(MC)"
+      },
+      {
+        "label": "C",
+        "text": "访问模式控制子层(AMC)"
+      },
+      {
+        "label": "D",
+        "text": "媒体接入控制子层(MAC)"
+      }
+    ],
+    "answer": "AD",
+    "analysis": "",
+    "id": 29,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "下列哪个操作系统是局域网操作系统？（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "DOS"
+      },
+      {
+        "label": "B",
+        "text": "UNIX"
+      },
+      {
+        "label": "C",
+        "text": "Netware"
+      },
+      {
+        "label": "D",
+        "text": "WindowsNT"
+      }
+    ],
+    "answer": "BCD",
+    "analysis": "慧考解析】WindowsNTServer是企业级的网络操作系统。Netware是NOVELL公司推出的网络操作系统。 UNIX是一个强大的多用户、多任务操作系统。UNIX、WindowsNTServer既可以作为网络操作系统，又可作为操 作系统。 慧考智学官网",
+    "id": 30,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "三网融合指的是（　）的融合。",
+    "options": [
+      {
+        "label": "A",
+        "text": "光纤网"
+      },
+      {
+        "label": "B",
+        "text": "电信网"
+      },
+      {
+        "label": "C",
+        "text": "广电网"
+      },
+      {
+        "label": "D",
+        "text": "计算机网"
+      }
+    ],
+    "answer": "BCD",
+    "analysis": "",
+    "id": 31,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "无源光网络分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "基于SDH的AON"
+      },
+      {
+        "label": "B",
+        "text": "基于PDH的AON"
+      },
+      {
+        "label": "C",
+        "text": "基于ATM的无源光网络APON"
+      },
+      {
+        "label": "D",
+        "text": "基于IP的PON"
+      }
+    ],
+    "answer": "CD",
+    "analysis": "",
+    "id": 32,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "胖AP除无线接入功能外，一般具备（　）两个接口，多支持DHCP服务器、DNS和MAC地址克隆，以及VPN接 入、防火墙等安全功能。",
+    "options": [
+      {
+        "label": "A",
+        "text": "WAN"
+      },
+      {
+        "label": "B",
+        "text": "LAN"
+      },
+      {
+        "label": "C",
+        "text": "WLAN"
+      },
+      {
+        "label": "D",
+        "text": "MAC"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 33,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "下列说法中，不正确的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "Internet中的一台主机只能有一个IP地址"
+      },
+      {
+        "label": "B",
+        "text": "一个合法的IP地址在一个时刻只能分配给一台主机"
+      },
+      {
+        "label": "C",
+        "text": "Internet中的一台主机只能有一个主机名"
+      },
+      {
+        "label": "D",
+        "text": "IP地址与主机名是一一对应的"
+      }
+    ],
+    "answer": "ACD",
+    "analysis": "慧考解析】B选项错的原因是IP地址分为内网和外网，如果是外网，对于B选项而言是正确的，但是，对于 内网来说就不正确了，因为专用地址是在内网中使用，专用地址，任何主机都可以使用。每个主机都是有自 己一个主机名，这样的话，当主机连到网络的过程当中，才可以唯一地对应上网的用户。",
+    "id": 34,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "接入网的管理应在TMN的管理范围内，接入网应通过Q3接口与电信管理网TMN相连，以便协调不同的网元对 （　）进行统一的管理，形成用户所需求的接入能力和承载能力。",
+    "options": [
+      {
+        "label": "A",
+        "text": "UPF"
+      },
+      {
+        "label": "B",
+        "text": "CF"
+      },
+      {
+        "label": "C",
+        "text": "TF"
+      },
+      {
+        "label": "D",
+        "text": "SPF 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "慧考解析】Q3接口是TMN(电信管理网)与电信网各部分连接的标准接口。接入网的管理应在TMN的管理范围 内，接入网应通过Q3接口与电信管理网TMN相连，以便协调不同的网元对UPF、CF、TF和SPF进行统一的管理 ，形成用户所需求的接入能力和承载能力。",
+    "id": 35,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "无线局域网物理层的主要标准有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "802.11"
+      },
+      {
+        "label": "B",
+        "text": "802.11b"
+      },
+      {
+        "label": "C",
+        "text": "802.11a"
+      },
+      {
+        "label": "D",
+        "text": "802.11g"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 36,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "光纤接入网包括（　），它们通过传输设备实现连接。",
+    "options": [
+      {
+        "label": "A",
+        "text": "远端设备(光网络单元ONU)"
+      },
+      {
+        "label": "B",
+        "text": "局端设备(光线路终端OLT)"
+      },
+      {
+        "label": "C",
+        "text": "光线路终端"
+      },
+      {
+        "label": "D",
+        "text": "光分配网"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 37,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "有源光网络包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "基于SDH的AON"
+      },
+      {
+        "label": "B",
+        "text": "基于PDH的AON"
+      },
+      {
+        "label": "C",
+        "text": "基于ATM的无源光网络APON"
+      },
+      {
+        "label": "D",
+        "text": "基于IP的PON"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "慧考解析】有源光网络包括基于SDH的AON和基于PDH的AON两类。有源光网络的局端设备(CE)和远端设备 (RE)通过有源光传输设备相连，传输技术是骨干网中已大量采用的SDH和PDH技术，但以SDH技术为主。",
+    "id": 38,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "宽带无线接入技术所采用的调制方式与微波传输相似，主要为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "相移键控PSK(包括BPSK、DQPSK、QPSK等)"
+      },
+      {
+        "label": "B",
+        "text": "正交幅度调制QAM(包括4-QAM、16-QAM、64-QAM等)"
+      },
+      {
+        "label": "C",
+        "text": "腔内调制"
+      },
+      {
+        "label": "D",
+        "text": "腔外调制"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 39,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "V5接口是本地数字交换机(LE)和接入网(AN)之间开放的、标准的数字接口，包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "V5.1接口"
+      },
+      {
+        "label": "B",
+        "text": "V5.2接口 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "C",
+        "text": "V5.3接口"
+      },
+      {
+        "label": "D",
+        "text": "V5.4接口"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "慧考解析】V5接口包括V5.1接口和V5.2接口。",
+    "id": 40,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "用户接口功能模块主要功能包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "终结UNI，用户网络接口的测试和用户接口功能的维护"
+      },
+      {
+        "label": "B",
+        "text": "模数转换和信令转换，管理和控制功能"
+      },
+      {
+        "label": "C",
+        "text": "用户网络接口的激活/去激活"
+      },
+      {
+        "label": "D",
+        "text": "处理用户网络接口承载通路和容量"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 41,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "有源双星型结构在（　）之间增加了一个有源节点。",
+    "options": [
+      {
+        "label": "A",
+        "text": "中心局"
+      },
+      {
+        "label": "B",
+        "text": "网络"
+      },
+      {
+        "label": "C",
+        "text": "设备"
+      },
+      {
+        "label": "D",
+        "text": "用户"
+      }
+    ],
+    "answer": "AD",
+    "analysis": "慧考解析】有源双星型结构在中心局与用户之间增加了一个有源节点。中心局与有源节点共用光纤，利用 时分复用(TDM)或频分复用(FDM)传送较大容量的信息，到有源节点再换成较小容量的信息流，传到千家万户 。",
+    "id": 42,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "V5接入的物理层实现（　）之间的物理连接。",
+    "options": [
+      {
+        "label": "A",
+        "text": "用户"
+      },
+      {
+        "label": "B",
+        "text": "本地数字交换机"
+      },
+      {
+        "label": "C",
+        "text": "端口"
+      },
+      {
+        "label": "D",
+        "text": "模拟交换机"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 43,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "电信接入网具有（　）功能。",
+    "options": [
+      {
+        "label": "A",
+        "text": "用户接口功能"
+      },
+      {
+        "label": "B",
+        "text": "业务接口功能"
+      },
+      {
+        "label": "C",
+        "text": "传送功能"
+      },
+      {
+        "label": "D",
+        "text": "接入网系统管理和MAC功能"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 44,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "AN系统管理功能(SMF)有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "配置和控制功能 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "B",
+        "text": "业务的协调功能"
+      },
+      {
+        "label": "C",
+        "text": "故障检测与指示功能"
+      },
+      {
+        "label": "D",
+        "text": "用户信息和性能数据的采集"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 45,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "接入网的拓扑结构有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "铜线接入网拓扑结构"
+      },
+      {
+        "label": "B",
+        "text": "无线接入网拓扑结构"
+      },
+      {
+        "label": "C",
+        "text": "HFC接入网拓扑结构"
+      },
+      {
+        "label": "D",
+        "text": "光纤接入网拓扑结构"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 46,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "IP接入网允许用户动态选择不同的ISP。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 47,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "VLAN的一个基本功能是隔离广播域。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 48,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "无线接入技术(也称空中接口)是无线通信的关键问题。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 49,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "单纯性无线AP可对装有无线网卡的电脑做必要的控制和管理。单纯性无线AP既可以通过10BASE-T(WAN)端 口与内置路由功能的ADSLModem或CABLEModem(CM)直接相连，也可以在使用时通过交换机、集线器、宽带路由 器再接入有线网络。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 50,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "多数单纯性无线AP本身不具备路由功能，包括DNS、DHCP、Firewall在内的服务器功能都必须由独立的路 由或是计算机来完成。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 51,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "基于PON的OAN不需要在外部站内安装昂贵的有源电子设备，因此使服务提供商可以按高性价比向企业用户 提供所需的带宽。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考智学官网 【慧考解析】",
+    "id": 52,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "每个V5接口都有接口ID(身份标志)。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 53,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "目前的无线控制器已经有了长足的发展，集成了三层交换机以及认证系统等众多功能，成为运营商以及企 业部署无线局域网的必备设备。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 54,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "WLAN是目前全球重点应用的宽带无线接入技术之一，用于点对多点的无线连接，解决用户群内部的信息交 流和网际接入。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 55,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "V5接口协议分为五层五个子协议。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】V5接口协议分为三层五个子协议。",
+    "id": 56,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "V5.2接口固定分配时隙，有集线功能。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 57,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "C通路是V5.2接口上指配用来运载C路径的一个64kbit/s时隙，一般是TS16。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 58,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "WMAN主要用于解决城域网的接入问题，目前商用的主要是多点多信道分配系统和本地多点分配业务技术。 （　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 59,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "当无线网络中安装有无线AP时，除了必须设置无线路由和无线AP外，客户端的设置也和安装无线AP时稍有 区别。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 60,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "光纤接入网使用光纤作为传输媒质，实现接入网的信息传送功能。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 61,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "光纤接入网的优点是传输速率高、频带宽、适合各种业务传输、传输质量高。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 62,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "G.902定义的电信接入网有交叉连接、复用、传输和交换功能。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】G.902定义的电信接入网不含交叉连接功能。",
+    "id": 63,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "单模光纤比多模光纤细，所以传输速率低。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】单模光纤的纤芯做得极细，接近光波波长，光信号只能与光纤轴成单个可辨角度传输。多模光 纤的纤芯比单模的粗，光信号与光纤轴成多个可辨角度传输。单模光纤成本较高，但性能很好，在几十千米 内能以几千兆比特率的速率传输数据。",
+    "id": 64,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "胖AP的应用场合仅限于SOHO或大型无线网络，大规模无线部署时胖AP是不错的选择。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】胖AP的应用场合仅限于SOHO或小型无线网络，小规模无线部署时胖AP是不错的选择。",
+    "id": 65,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "瘦AP是“代表自身不能单独配置或者使用的无线AP产品，这种产品仅仅是一个WLAN系统的一部分，负责管 理安装和操作”。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 66,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "传统的三网指的是电话网、电报网和互联网，随着技术的发展，网络融合是必然的趋势。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 67,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "随着蜂窝技术的成熟，MMDS和LMDS的频率利用率得到较大的提高。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 68,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "电信网按信息类型分类，可分为公用通信网和专用通信网。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】电信网按信息类型分类，可分为电话通信网和数据通信网。",
+    "id": 69,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "接入网具有相对独立性和完整性，能传送数据流并承载多种业务，能进行认证、授权和记账，接入网可以 不依附于网络接入设备而独立存在，用户可以接入不同的运营商。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 70,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "有源光网络是一种纯介质网络，避免了外部设备带来的电磁干扰和雷电的影响，降低了线路和外部设备的 故障率，提高了系统可靠性，同时节省了维护成本。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】无源光网络(PON)是一种纯介质网络，避免了外部设备带来的电磁干扰和雷电的影响，降低了线 路和外部设备的故障率，提高了系统可靠性，同时节省了维护成本。",
+    "id": 71,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "V5.1接口的协议包括PSTN控制。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 72,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "接入网不同于远端模块，接入网是端局和远端模块之间的部分。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】接入网不同于远端模块，接入网不是端局和远端模块之间的部分。",
+    "id": 73,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "无源双星型结构保持了有源双星型结构带来的光纤共享的优点，将有源接点换成了无源分路器，维护方便 ，可靠性高，成本较低。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 74,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "0LT的作用是为接入网提供与本地交换机之间的接口，并通过光传输与用户端的光网络单元(ONU)进行通信 。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 75,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "电信接入网通过Q3接口接入到电信管理网，实施对电信接入网的管理。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 76,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "ONU的主要功能是终结来自光线路终端OLT的光纤，处理光信号并为多个企业、事业用户和居民住宅用户提 供业务接口。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 77,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "接入网是一个传输网。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 78,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "V5.1接口由单个4M链路构成，接口时隙和业务通道一一对应，接入网内无集线功能。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】V5.1接口由单个2M链路构成，接口时隙和业务通道一一对应，接入网内无集线功能。",
+    "id": 79,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "接入网系统管理功能(SMF)指的是对UPF、SPF、CF以及TF功能进行管理，进而通过UNI与SNI来协调用户终 端和业务节点的操作。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 80,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "对于电信接入网，用户可以通过信令选择不同的SN。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】用户可以通过信令选择相同的SN。",
+    "id": 81,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "单纯性无线AP就是一个无线的交换机，不仅仅提供一个无线信号发射的功能。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】单纯性无线AP就是一个无线的交换机，仅仅提供一个无线信号发射的功能。",
+    "id": 82,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "V5接口是接入网和基站之间的接口。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】V5接口是本地数字交换机(LE)和接入网(AN)之间开放的、标准的数字接口。",
+    "id": 83,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "V5.2接口的协议包括PSTN控制、链路控制、BCC保护。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 84,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "GPON网络比EPON网络的QoS(服务质量)要低。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】GPON网络比EPON网络的QoS(服务质量)要高。 慧考智学官网",
+    "id": 85,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "总线型结构是以光纤作为公共总线、各用户终端通过某种耦合器与总线直接连接所构成的网络结构。（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 86,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "宽带网建设中，除了增加骨干网传输通路的带宽、网上服务器的处理能力及路由器速度以外，还要缓解用 户接入网瓶颈。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 87,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "Z接口对应于UNI的模拟2线音频接口，可提供普通电话业务。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 88,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "物理C通路是指已经分配用来运载C通路的32kbit/s时隙。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】物理C通路是指已经分配用来运载C通路的64kbit/s时隙。",
+    "id": 89,
+    "category": "宽带接入技术"
+  },
+  {
+    "type": "judge",
+    "question": "无线接入技术与有线接入技术的一个重要区别在于可以向用户提供移动接入业务。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考智学官网",
+    "id": 90,
+    "category": "宽带接入技术"
+  }
+]

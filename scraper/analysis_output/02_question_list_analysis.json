@@ -1,0 +1,310 @@
+{
+  "url": "https://www.huikao8.com/question",
+  "title": "【题库软件】综合的职业教育刷题平台 - 慧考智学",
+  "total_links": 31,
+  "sample_links": [
+    {
+      "text": "首页",
+      "href": "/",
+      "class": ""
+    },
+    {
+      "text": "网校课程",
+      "href": "/schoolCourse",
+      "class": ""
+    },
+    {
+      "text": "基础题库",
+      "href": "/question",
+      "class": "select"
+    },
+    {
+      "text": "VIP题库",
+      "href": "/vipQuestion",
+      "class": ""
+    },
+    {
+      "text": "资料下载",
+      "href": "/dataDownload",
+      "class": ""
+    },
+    {
+      "text": "图书商城",
+      "href": "/bookShop",
+      "class": ""
+    },
+    {
+      "text": "资讯公告",
+      "href": "/information",
+      "class": ""
+    },
+    {
+      "text": "手机APP",
+      "href": "/appDownload",
+      "class": ""
+    },
+    {
+      "text": "您好，请登录",
+      "href": "/login",
+      "class": "select"
+    },
+    {
+      "text": "免费注册",
+      "href": "/register",
+      "class": ""
+    },
+    {
+      "text": "帮助中心",
+      "href": "/helpCenter",
+      "class": ""
+    },
+    {
+      "text": "加盟合作",
+      "href": "https://dls.huikao8.com/",
+      "class": ""
+    },
+    {
+      "text": "快捷开通",
+      "href": "http://www.huikao8.com/quickOpening",
+      "class": ""
+    },
+    {
+      "text": "在线客服",
+      "href": "https://work.weixin.qq.com/kfid/kfc1204c4a5b93c12b2",
+      "class": ""
+    },
+    {
+      "text": "注册/登录",
+      "href": "/helpCenter?type=1",
+      "class": ""
+    },
+    {
+      "text": "支付方式",
+      "href": "/helpCenter?type=2",
+      "class": ""
+    },
+    {
+      "text": "在线购买",
+      "href": "/helpCenter?type=3",
+      "class": ""
+    },
+    {
+      "text": "客户端下载",
+      "href": "/helpCenter?type=4",
+      "class": ""
+    },
+    {
+      "text": "我的购物车",
+      "href": "/helpCenter?type=5",
+      "class": ""
+    },
+    {
+      "text": "关于慧考",
+      "href": "/helpCenter?type=6",
+      "class": ""
+    },
+    {
+      "text": "公司资质",
+      "href": "/helpCenter?type=7",
+      "class": ""
+    },
+    {
+      "text": "联系我们",
+      "href": "/helpCenter?type=8",
+      "class": ""
+    },
+    {
+      "text": "人才招聘",
+      "href": "/helpCenter?type=9",
+      "class": ""
+    },
+    {
+      "text": "版权申明",
+      "href": "/helpCenter?type=10",
+      "class": ""
+    },
+    {
+      "text": "推广合作",
+      "href": "/helpCenter?type=11",
+      "class": ""
+    },
+    {
+      "text": "代理加盟",
+      "href": "/helpCenter?type=12",
+      "class": ""
+    },
+    {
+      "text": "师资合作",
+      "href": "/helpCenter?type=13",
+      "class": ""
+    },
+    {
+      "text": "皖ICP备2021007385号-1",
+      "href": "https://beian.miit.gov.cn",
+      "class": ""
+    },
+    {
+      "text": "皖公网安备 34020302000192号",
+      "href": "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34020302000192",
+      "class": ""
+    },
+    {
+      "text": "营业执照",
+      "href": "/helpCenter?type=7",
+      "class": ""
+    }
+  ],
+  "forms": [],
+  "containers": [
+    {
+      "tag": "div",
+      "class": "",
+      "text_preview": "首页\n网校课程\n基础题库\nVIP题库\n资料下载\n图书商城\n资讯公告\n手机APP\n您好，请登录\n丨\n免费注册\n帮助中心"
+    },
+    {
+      "tag": "div",
+      "class": "mainBody",
+      "text_preview": "首页\n网校课程\n基础题库\nVIP题库\n资料下载\n图书商城\n资讯公告\n手机APP\n您好，请登录\n丨\n免费注册\n帮助中心"
+    },
+    {
+      "tag": "div",
+      "class": "left",
+      "text_preview": "首页\n网校课程\n基础题库\nVIP题库\n资料下载\n图书商城\n资讯公告\n手机APP"
+    },
+    {
+      "tag": "div",
+      "class": "right",
+      "text_preview": "您好，请登录\n丨\n免费注册\n帮助中心"
+    },
+    {
+      "tag": "div",
+      "class": "mainBody",
+      "text_preview": "基础题库\n搜 索\n学习中心\n加盟合作\n快捷开通\n在线客服"
+    },
+    {
+      "tag": "div",
+      "class": "left",
+      "text_preview": "基础题库\n搜 索"
+    },
+    {
+      "tag": "div",
+      "class": "right",
+      "text_preview": "学习中心\n加盟合作\n快捷开通\n在线客服"
+    },
+    {
+      "tag": "div",
+      "class": "questionHome",
+      "text_preview": "财会经济\n建筑工程\n医药卫生\n职业资格\n招录招聘\n综合其他"
+    },
+    {
+      "tag": "div",
+      "class": "topExam ",
+      "text_preview": "财会经济\n建筑工程\n医药卫生\n职业资格\n招录招聘\n综合其他"
+    },
+    {
+      "tag": "div",
+      "class": "texamInfoBox",
+      "text_preview": "财会经济\n建筑工程\n医药卫生\n职业资格\n招录招聘\n综合其他"
+    },
+    {
+      "tag": "div",
+      "class": "texamMain",
+      "text_preview": "财会经济\n建筑工程\n医药卫生\n职业资格\n招录招聘\n综合其他"
+    },
+    {
+      "tag": "div",
+      "class": "ant-tabs ant-tabs-top ant-tabs-line",
+      "text_preview": "财会经济\n建筑工程\n医药卫生\n职业资格\n招录招聘\n综合其他"
+    },
+    {
+      "tag": "div",
+      "class": "ant-tabs-bar ant-tabs-top-bar",
+      "text_preview": "财会经济\n建筑工程\n医药卫生\n职业资格\n招录招聘\n综合其他"
+    },
+    {
+      "tag": "div",
+      "class": "ant-tabs-nav-container",
+      "text_preview": "财会经济\n建筑工程\n医药卫生\n职业资格\n招录招聘\n综合其他"
+    },
+    {
+      "tag": "div",
+      "class": "ant-tabs-nav-wrap",
+      "text_preview": "财会经济\n建筑工程\n医药卫生\n职业资格\n招录招聘\n综合其他"
+    },
+    {
+      "tag": "div",
+      "class": "ant-tabs-nav-scroll",
+      "text_preview": "财会经济\n建筑工程\n医药卫生\n职业资格\n招录招聘\n综合其他"
+    },
+    {
+      "tag": "div",
+      "class": "ant-tabs-nav ant-tabs-nav-animated",
+      "text_preview": "财会经济\n建筑工程\n医药卫生\n职业资格\n招录招聘\n综合其他"
+    },
+    {
+      "tag": "div",
+      "class": "bottomNavigation",
+      "text_preview": "新手指南\n注册/登录\n支付方式\n在线购买\n客户端下载\n我的购物车\n关于我们\n关于慧考\n公司资质\n联系我们\n人才招聘\n版权申明\n商务合作\n推广合作\n代理加盟\n师资合作\n慧考智学APP\n微信公众账号\n咨询电话：联系官网在线客服\n客服邮箱：kf@"
+    },
+    {
+      "tag": "div",
+      "class": "mainContent",
+      "text_preview": "新手指南\n注册/登录\n支付方式\n在线购买\n客户端下载\n我的购物车\n关于我们\n关于慧考\n公司资质\n联系我们\n人才招聘\n版权申明\n商务合作\n推广合作\n代理加盟\n师资合作\n慧考智学APP\n微信公众账号\n咨询电话：联系官网在线客服\n客服邮箱：kf@"
+    },
+    {
+      "tag": "div",
+      "class": "left",
+      "text_preview": "新手指南\n注册/登录\n支付方式\n在线购买\n客户端下载\n我的购物车\n关于我们\n关于慧考\n公司资质\n联系我们\n人才招聘\n版权申明\n商务合作\n推广合作\n代理加盟\n师资合作"
+    },
+    {
+      "tag": "div",
+      "class": "right",
+      "text_preview": "慧考智学APP\n微信公众账号\n咨询电话：联系官网在线客服\n客服邮箱：kf@huikao8.com\n在线客服"
+    },
+    {
+      "tag": "div",
+      "class": "imgBox",
+      "text_preview": "慧考智学APP\n微信公众账号"
+    },
+    {
+      "tag": "div",
+      "class": "infoBox",
+      "text_preview": "咨询电话：联系官网在线客服\n客服邮箱：kf@huikao8.com\n在线客服"
+    },
+    {
+      "tag": "div",
+      "class": "footer",
+      "text_preview": "Copyright © 2018 - 现在 www.huikao8.com All Rights Reserved.　安徽慧考教育咨询有限公司版权所有\n皖ICP备2021007385号-1\n  \n皖公网安备 34020302000192号\n"
+    }
+  ],
+  "lists": [
+    {
+      "items_count": 5,
+      "sample": [
+        "注册/登录",
+        "支付方式",
+        "在线购买",
+        "客户端下载",
+        "我的购物车"
+      ]
+    },
+    {
+      "items_count": 5,
+      "sample": [
+        "关于慧考",
+        "公司资质",
+        "联系我们",
+        "人才招聘",
+        "版权申明"
+      ]
+    },
+    {
+      "items_count": 3,
+      "sample": [
+        "推广合作",
+        "代理加盟",
+        "师资合作"
+      ]
+    }
+  ]
+}

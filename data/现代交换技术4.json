@@ -1,0 +1,1912 @@
+[
+  {
+    "type": "single_choice",
+    "question": "实现在同一传输线上同时传输多路不同信号而互不干扰的技术称为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "电路交换技术"
+      },
+      {
+        "label": "B",
+        "text": "复用技术"
+      },
+      {
+        "label": "C",
+        "text": "分组交换技术"
+      },
+      {
+        "label": "D",
+        "text": "ATM技术"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】实现在同一传输线上同时传输多路不同信号而互不干扰的技术称为复用技术。",
+    "id": 1,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "光交换技术的关键之一：当传输的光信号进入交换机时，不再需要（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "电/光接口"
+      },
+      {
+        "label": "B",
+        "text": "光/电接口"
+      },
+      {
+        "label": "C",
+        "text": "模/数接口"
+      },
+      {
+        "label": "D",
+        "text": "数/模接口"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 2,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "用于连接数字程控交换系统和数字用户终端设备之间的接口电路是（　）接口。",
+    "options": [
+      {
+        "label": "A",
+        "text": "模拟用户"
+      },
+      {
+        "label": "B",
+        "text": "数字用户"
+      },
+      {
+        "label": "C",
+        "text": "模拟中继"
+      },
+      {
+        "label": "D",
+        "text": "数字中继"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 3,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "电路交换的概念始于（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "报文交换"
+      },
+      {
+        "label": "B",
+        "text": "电话交换"
+      },
+      {
+        "label": "C",
+        "text": "数据交换"
+      },
+      {
+        "label": "D",
+        "text": "广播电视"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 4,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "程控交换系统是对（　）进行交换的设备。",
+    "options": [
+      {
+        "label": "A",
+        "text": "模拟信号"
+      },
+      {
+        "label": "B",
+        "text": "数字信号"
+      },
+      {
+        "label": "C",
+        "text": "模拟信号和数字信号"
+      },
+      {
+        "label": "D",
+        "text": "话音信号"
+      }
+    ],
+    "answer": "C",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 5,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "复用器是将每条传输线上的（　）数据变成（　）数据，再进行时分复用的器件。",
+    "options": [
+      {
+        "label": "A",
+        "text": "串行；并行"
+      },
+      {
+        "label": "B",
+        "text": "并行；串行"
+      },
+      {
+        "label": "C",
+        "text": "并行或串行；串行"
+      },
+      {
+        "label": "D",
+        "text": "并行或串行；并行"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】复用器是将每条传输线上的串行数据变成并行数据，再进行时分复用的器件。",
+    "id": 6,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "光交换网络与电交换网络相比，电交换网络中没有（　）交换网络。",
+    "options": [
+      {
+        "label": "A",
+        "text": "空分"
+      },
+      {
+        "label": "B",
+        "text": "波分"
+      },
+      {
+        "label": "C",
+        "text": "时分"
+      },
+      {
+        "label": "D",
+        "text": "频分"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 7,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "电路交换系统在呼叫接续过程中当接收到被叫号码后，就可以（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "主被叫通话"
+      },
+      {
+        "label": "B",
+        "text": "向被叫用户振铃"
+      },
+      {
+        "label": "C",
+        "text": "检测被叫的忙闲"
+      },
+      {
+        "label": "D",
+        "text": "送回铃音"
+      }
+    ],
+    "answer": "C",
+    "analysis": "",
+    "id": 8,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "当7号信令应用于公用交换电话网中，必须具有（　）模块。",
+    "options": [
+      {
+        "label": "A",
+        "text": "MAP"
+      },
+      {
+        "label": "B",
+        "text": "SCCP"
+      },
+      {
+        "label": "C",
+        "text": "TCAP"
+      },
+      {
+        "label": "D",
+        "text": "TUP"
+      }
+    ],
+    "answer": "D",
+    "analysis": "",
+    "id": 9,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "在电路交换的数据网中，数字传输即PCM传输，用户接口电路是数字用户接口电路，计算机接入网络不必 附加（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "调制解调器"
+      },
+      {
+        "label": "B",
+        "text": "网络适配器"
+      },
+      {
+        "label": "C",
+        "text": "声卡"
+      },
+      {
+        "label": "D",
+        "text": "总线接口"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 10,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "当7号信令应用于智能网中，可不具有（　）模块。",
+    "options": [
+      {
+        "label": "A",
+        "text": "MAP"
+      },
+      {
+        "label": "B",
+        "text": "SCCP"
+      },
+      {
+        "label": "C",
+        "text": "TCAP"
+      },
+      {
+        "label": "D",
+        "text": "MTP"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 11,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "电路交换系统可用于（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "电话通信"
+      },
+      {
+        "label": "B",
+        "text": "数据通信"
+      },
+      {
+        "label": "C",
+        "text": "电话通信和数据通信"
+      },
+      {
+        "label": "D",
+        "text": "模拟通信"
+      }
+    ],
+    "answer": "C",
+    "analysis": "",
+    "id": 12,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "single_choice",
+    "question": "通信网中采用的信令方式与通信网中的（　）密切相关。",
+    "options": [
+      {
+        "label": "A",
+        "text": "交换技术和接口电路"
+      },
+      {
+        "label": "B",
+        "text": "传输技术"
+      },
+      {
+        "label": "C",
+        "text": "任意选定"
+      },
+      {
+        "label": "D",
+        "text": "交换技术和传输技术"
+      }
+    ],
+    "answer": "D",
+    "analysis": "",
+    "id": 13,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "一个完整的电路交换过程，可分为三部分：（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "呼叫建立"
+      },
+      {
+        "label": "B",
+        "text": "呼叫保持"
+      },
+      {
+        "label": "C",
+        "text": "传送信息"
+      },
+      {
+        "label": "D",
+        "text": "呼叫拆除"
+      }
+    ],
+    "answer": "ACD",
+    "analysis": "",
+    "id": 14,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "关于并行码，下列表述正确的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "并行码每时隙的8位码分开在8条线上传送，8条线为一组"
+      },
+      {
+        "label": "B",
+        "text": "并行码传送顺序按时隙序号传送"
+      },
+      {
+        "label": "C",
+        "text": "并行码每时隙的16位码分开在16条线上传送，8条线为一组"
+      },
+      {
+        "label": "D",
+        "text": "并行码传送顺序按脉冲到达的时间长短传送"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 15,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "交换技术分类有（　）。 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网",
+    "options": [
+      {
+        "label": "A",
+        "text": "模拟/数字交换"
+      },
+      {
+        "label": "B",
+        "text": "布控/程控交换"
+      },
+      {
+        "label": "C",
+        "text": "电路/分组交换"
+      },
+      {
+        "label": "D",
+        "text": "报文/帧交换"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 16,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "以下说法正确的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "控制存储器用来控制交叉点开关状态"
+      },
+      {
+        "label": "B",
+        "text": "控制存储器的数量等于入线数或出线数"
+      },
+      {
+        "label": "C",
+        "text": "每个控制存储器所含有的单元数等于输入线或输出线所复用的时隙数"
+      },
+      {
+        "label": "D",
+        "text": "S接线器能完成空间交换，也进行时隙的交换"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 17,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "7号信令系统采用不等长度的信令单元格式传送信令消息，根据信令单元的来源不同，分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "消息信令单元"
+      },
+      {
+        "label": "B",
+        "text": "链路状态信令单元"
+      },
+      {
+        "label": "C",
+        "text": "传递信令单元"
+      },
+      {
+        "label": "D",
+        "text": "填充信令单元"
+      }
+    ],
+    "answer": "ABD",
+    "analysis": "",
+    "id": 18,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "ATM交换机依据所用信元交换结构的不同分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "共享存储型交换机"
+      },
+      {
+        "label": "B",
+        "text": "共享媒体型"
+      },
+      {
+        "label": "C",
+        "text": "空分型交换机"
+      },
+      {
+        "label": "D",
+        "text": "时分型交换机"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 19,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "关于复用，下列表述正确的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "复用的功能是将低次的PCM群系统通过一定的电路转换，复用成高次的PCM群系统"
+      },
+      {
+        "label": "B",
+        "text": "复用的基本功能是将串行码转换成并行码"
+      },
+      {
+        "label": "C",
+        "text": "复用的目的是减低数据传输速率，提高数字通道的利用率"
+      },
+      {
+        "label": "D",
+        "text": "复用的分散处理交换信息"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 20,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "以下说法正确的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "T接线器的功能是实现一对复用线上的时隙交换 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "B",
+        "text": "T接线器的功能是实现一对复用线上的实时交换"
+      },
+      {
+        "label": "C",
+        "text": "S接线器的功能是实现对传送同步时分复用信号在不同复用线之间的空间交换"
+      },
+      {
+        "label": "D",
+        "text": "S接线器的功能是实现对传送同步时分复用信号在不同复用线之间的时间交换"
+      }
+    ],
+    "answer": "AC",
+    "analysis": "慧考解析】T接线器的主要功能是实现一对复用线上的时隙交换；S接线器的主要功能是实现对传送同步时 分复用信号在不同复用线之间的空间交换。",
+    "id": 21,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "关于报文交换的说法正确的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "报文交换传送的是数据报"
+      },
+      {
+        "label": "B",
+        "text": "分组数据长度大"
+      },
+      {
+        "label": "C",
+        "text": "传送的距离较远"
+      },
+      {
+        "label": "D",
+        "text": "传送的时延较长"
+      }
+    ],
+    "answer": "ACD",
+    "analysis": "",
+    "id": 22,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "关于S接线器，下列表述正确的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "S接线器能够实现对传送同步时分复用信号在不同复用线之间的空间交换"
+      },
+      {
+        "label": "B",
+        "text": "S接线器由m×n交叉点矩阵与一组控制存储器构成"
+      },
+      {
+        "label": "C",
+        "text": "S接线器只完成空间交换，不进行时隙的交换"
+      },
+      {
+        "label": "D",
+        "text": "S接线器按空分方式工作"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 23,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "关于光开关，下列表述正确的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "光开关可以随时切断或者开通光纤通道中正在传输的光信号"
+      },
+      {
+        "label": "B",
+        "text": "光开关将波长光信号在两个光纤通道中任意转换"
+      },
+      {
+        "label": "C",
+        "text": "光开关在同一个光纤通道中，可转换波长光信号的波长"
+      },
+      {
+        "label": "D",
+        "text": "光开关可用于光信号的存储转发"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 24,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "关于光波长转换器，下列表述正确的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "光波长转换器在波长转换器输出波长的时候，能将带有信号的光波做出转换，可转换出不同光波的波长"
+      },
+      {
+        "label": "B",
+        "text": "光波长转换器能解决相同波长争用同一端口的信息拥塞问题"
+      },
+      {
+        "label": "C",
+        "text": "光波长转换器速率高、波长宽"
+      },
+      {
+        "label": "D",
+        "text": "光波长转换器信噪比高、消光比高，并且与偏振有关"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 25,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "程控交换软件的基本特点有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "实时性强 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "B",
+        "text": "适应性强"
+      },
+      {
+        "label": "C",
+        "text": "具有并发性"
+      },
+      {
+        "label": "D",
+        "text": "可靠性和可维护性要求高"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 26,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "基于容量分担的分散控制方式的交换机主要由（　）组成。",
+    "options": [
+      {
+        "label": "A",
+        "text": "交换模块"
+      },
+      {
+        "label": "B",
+        "text": "通信模块"
+      },
+      {
+        "label": "C",
+        "text": "网络模块"
+      },
+      {
+        "label": "D",
+        "text": "管理模块"
+      }
+    ],
+    "answer": "ABD",
+    "analysis": "",
+    "id": 27,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "关于S接线器的输出控制方式，下列表述正确的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "控制存储器按照输出复用线配置"
+      },
+      {
+        "label": "B",
+        "text": "话音存储器控制每条输出复用线上应该打开的交叉点开关"
+      },
+      {
+        "label": "C",
+        "text": "话音存储器按照输出复用线配置"
+      },
+      {
+        "label": "D",
+        "text": "控制存储器控制每条输出复用线上应该打开的交叉点开关"
+      }
+    ],
+    "answer": "AD",
+    "analysis": "",
+    "id": 28,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "电路/分组交换的特点有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "传统"
+      },
+      {
+        "label": "B",
+        "text": "多速率"
+      },
+      {
+        "label": "C",
+        "text": "快速解决固定带宽的缺点"
+      },
+      {
+        "label": "D",
+        "text": "稳定"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 29,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "数据通信系统由（　）构成。",
+    "options": [
+      {
+        "label": "A",
+        "text": "数据终端设备(DTE)"
+      },
+      {
+        "label": "B",
+        "text": "数据电路"
+      },
+      {
+        "label": "C",
+        "text": "计算机系统"
+      },
+      {
+        "label": "D",
+        "text": "传输信道"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 30,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "呼叫转移的功能参数是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "CFU"
+      },
+      {
+        "label": "B",
+        "text": "CFNRC 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "C",
+        "text": "CFB"
+      },
+      {
+        "label": "D",
+        "text": "CAW"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 31,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "以下属于电路交换特点的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "主、被叫用户开始通信之前，建立连接"
+      },
+      {
+        "label": "B",
+        "text": "双方进行通信时，信息在通话线路中的传输时延小，实时性好"
+      },
+      {
+        "label": "C",
+        "text": "交换节点对传输错误不进行纠正，节点处理效率高"
+      },
+      {
+        "label": "D",
+        "text": "通信期间，任何一方的连接都占用一条通话线路，电路利用率低"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 32,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "关于分组交换，下列表述正确的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "分组交换以分组数据为单位"
+      },
+      {
+        "label": "B",
+        "text": "分组交换将统计复用和存储转发作为工作方式"
+      },
+      {
+        "label": "C",
+        "text": "分组交换以报文数据为单元"
+      },
+      {
+        "label": "D",
+        "text": "分组交换将统计复用和分路复用作为工作方式"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 33,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "交换单元根据出入线数目，可以分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "集中型"
+      },
+      {
+        "label": "B",
+        "text": "分散型"
+      },
+      {
+        "label": "C",
+        "text": "分配型"
+      },
+      {
+        "label": "D",
+        "text": "扩散型"
+      }
+    ],
+    "answer": "ACD",
+    "analysis": "慧考解析】交换单元根据出入线数目，可以分为集中型、分配型、扩散型。",
+    "id": 34,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "T接线器主要由（　）组成。",
+    "options": [
+      {
+        "label": "A",
+        "text": "话音存储器SM"
+      },
+      {
+        "label": "B",
+        "text": "必要的输出电路"
+      },
+      {
+        "label": "C",
+        "text": "必要的接口电路"
+      },
+      {
+        "label": "D",
+        "text": "控制存储器CM"
+      }
+    ],
+    "answer": "ACD",
+    "analysis": "",
+    "id": 35,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "交换机的硬件系统由用户电路、中继器和（　）组成。",
+    "options": [
+      {
+        "label": "A",
+        "text": "交换网络"
+      },
+      {
+        "label": "B",
+        "text": "信令设备"
+      },
+      {
+        "label": "C",
+        "text": "转换设备 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "D",
+        "text": "交换设备"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 36,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "程控数据交换机中的用户电路功能主要可归纳为BORSCHT这七项功能，即（　）等。",
+    "options": [
+      {
+        "label": "A",
+        "text": "馈电"
+      },
+      {
+        "label": "B",
+        "text": "过压保护"
+      },
+      {
+        "label": "C",
+        "text": "振铃"
+      },
+      {
+        "label": "D",
+        "text": "编译码和滤波器"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 37,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "在物理层面，GSM系统将无线信道分为两类，即（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "业务信道"
+      },
+      {
+        "label": "B",
+        "text": "应用信道"
+      },
+      {
+        "label": "C",
+        "text": "控制信道"
+      },
+      {
+        "label": "D",
+        "text": "信令信道"
+      }
+    ],
+    "answer": "AC",
+    "analysis": "",
+    "id": 38,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "程控交换机中主要的中断类型有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "用户中断"
+      },
+      {
+        "label": "B",
+        "text": "时钟中断"
+      },
+      {
+        "label": "C",
+        "text": "故障中断"
+      },
+      {
+        "label": "D",
+        "text": "I/O中断"
+      }
+    ],
+    "answer": "BCD",
+    "analysis": "慧考解析】程控交换机中主要的中断类型有故障中断、时钟中断、1/（ ）中断。",
+    "id": 39,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "关于信令路由设置原则，下列表述正确的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "首要原则是先选择正常工作的路由，只有当所有正常工作的路由由于故障原因不能正常工作时，再选择替 换路由"
+      },
+      {
+        "label": "B",
+        "text": "按优先级的原则选择替换路由，优先选择优先级比较高的替换路由"
+      },
+      {
+        "label": "C",
+        "text": "路由选择时，即使路由不发生故障，也可以随时替换路由"
+      },
+      {
+        "label": "D",
+        "text": "按优先级的原则选择替换路由，优先选择优先级比较低的替换路由"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 40,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "语音信号的数字化要经过（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "抽样"
+      },
+      {
+        "label": "B",
+        "text": "量化"
+      },
+      {
+        "label": "C",
+        "text": "编码 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "D",
+        "text": "转换"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 41,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "分组网络体系结构中分组的主要目的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "降低系统实施的复杂性，每一层只实现特定的功能"
+      },
+      {
+        "label": "B",
+        "text": "允许不同制造商的分组通信设备具有相同的层功能以促进互连和互通"
+      },
+      {
+        "label": "C",
+        "text": "添加/减少功能操作非常简单，并且不会影响现有设备或功能"
+      },
+      {
+        "label": "D",
+        "text": "诠释抽象通信服务的概念和实现"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 42,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "multi_choice",
+    "question": "电路交换机按使用范围分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "用户交换机"
+      },
+      {
+        "label": "B",
+        "text": "局用交换机"
+      },
+      {
+        "label": "C",
+        "text": "市话交换机"
+      },
+      {
+        "label": "D",
+        "text": "汇接交换机"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 43,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "面向无连接通信过程，与电路交换网相似，主叫用户通过信令协议对连接分组先建立请求，直到模拟通路 的建立后，交换机就会按照目的地址选择下一个节点。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】面向连接通信过程，与电路交换网相似，主叫用户通过信令协议对连接分组先建立请求，直到 模拟通路的建立后，交换机就会按照目的地址选择下一个节点。",
+    "id": 44,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "一条虚电路具有呼叫建立、数据传输和呼叫释放过程。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 45,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "信令方式是从简单直流脉冲信号到互控信令再到现在的No.1/7号信令。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 46,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "广播信道用于系统寻呼和移动台接入。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】广播信道供基站发送单向广播信息，使移动台与网络同步。",
+    "id": 47,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "目前使用的同步时分多路复用技术的数字信号主要是PCM同步时分复用信号。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考智学官网 【慧考解析】",
+    "id": 48,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "交换单元的容量是指所有入线是可以同时送入的总的信息量。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 49,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "信令路由是指信令消息从某一给定信令点发送到另一给定信令点时所采用的一组特定信令链路。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 50,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "信令点编码是全世界范围内统一的，利用24位的信令点编码可对世界上任一信令点寻址。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】国际7号信令网和各国的7号信令网的信令点编码是各自独立的。",
+    "id": 51,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "B-ISDN模型分为低层、中层和高层。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】B-ISDN模型分为物理层、ATM层和ATM适配层。",
+    "id": 52,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "可重构型能动态交换OADM节点上、下通道的波长，可实现光网络的动态重构，使网络的波长资源得到合理 的分配，但结构复杂。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 53,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "IMS结构可以按网元分处的关系划分为三个逻辑区域，即归属域、拜访域和网关域。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】IMS结构可以按网元分处的关系划分为三个逻辑区域：归属域(HomeNetwork)，拜访域 (VisitNetwork)和网关域(GatewayNetwork)。",
+    "id": 54,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "电路交换，也可以称为线路交换，是按照一定方式固定的分配给用户一定的带宽，让通话用户独占一个信 道进行通信的一种实时交换方式，特别适合数据通信。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】数据通信的特点是突发性很强，对差错敏感，对时延不敏感。突发性强表现为在短时间内会集 中产生大量的信息。突发性的定量描述为峰值比特率和平均比特率之比，如果数据通信采用电路交换方式 ，分配固定的带宽，在用户没有信息发送时，其他的用户也不能使用这部分空闲的带宽，信道利用率太低 ；而在用户需要高速传输数据时，用户能够使用的最大带宽也只限于分配给用户的带宽，不能满足用户的要 求。因而，电路交换不适用于数据通信。 慧考智学官网",
+    "id": 55,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "呼叫处理程序在运行过程中可以对局数据进行修改。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】呼叫处理程序在运行过程中对局数据只能查询，不可以修改。",
+    "id": 56,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "S接线器的输入控制方式为控制存储器按照输入复用线配置，控制每条输入复用线上应该打开的交叉点开 关。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 57,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "信令点之间传递信令消息的最小单位是信令单元。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 58,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "标记交换是基于路由分配Tag，也是按数据流属性。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】标记交换是基于路由分配Tag，而不是按数据流属性。",
+    "id": 59,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "面向连接网络用户的通信总要经过建立连接、信息传送、拆除连接三个阶段。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 60,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "A-bis接口信令分为三层结构。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 61,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "7号信令网是一种电信业务支撑网，可完成多种功能。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 62,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "移动通信网络的C接口指的是移动交换中心与访问位置寄存器之间的接口。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】移动通信网络的C接口指的是移动交换中心与归属位置寄存器/认证中心之间的接口。",
+    "id": 63,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "模拟中继器接口与模拟用户接口应用模式没有什么区别。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 64,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "7号信令一般负责用户终端和端局之间用户线上面信令的传输和处理，并且负责局交换机之间、局交换机 和其他电信设备之间的信令传输和处理。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】7号信令一般不负责用户终端和端局之间用户线上面信令的传输和处理，只负责局交换机之间、 局交换机和其他电信设备之间的信令传输和处理。",
+    "id": 65,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "光调制器的作用是指在光纤通信中，通信信息由LED或LD发出的光波所携带，光波就是载波，把信息加载 到光波上的过程就是调制。光调制器是实现从光信号到电信号的转换的器件。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】光调制器的作用指的是在光纤通信中，通信信息由LED或LD发出的光波所携带，光波就是载波 ，把信息加载到光波上的过程就是调制。光调制器是实现从电信号到光信号的转换的器件。",
+    "id": 66,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "在程控交换机中，处理一个呼叫接续的程序在处理机上是按照一定周期执行的。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】在程控交换机中，处理一个呼叫接续的程序在处理机上是被与该呼叫有关的事件启动执行的。",
+    "id": 67,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "当交换机向被叫用户振铃时，此时交换机不会测试被叫用户是否处于空闲状态。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】当交换机向被叫用户振铃时，此时交换机会测试被叫用户是否处于空闲状态，如果处于空闲状 态，就进行振铃操作。",
+    "id": 68,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "目前比较成熟的光交换技术是O/E/O(光一电一光)的模式，即光信号首先经过光电转换成为电信号，然后 通过高速的交换电路进行数据交换，最后再进行电光转换。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 69,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "信令点是由7号信令系统中的消息传递部分和用户部分组成。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 70,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "程控交换采用的是电子计算机中常用的“存储程序控制”方式。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 71,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "在采用比特型时间表调度时钟级程序时，设时间表有16行、8列，则程序周期最多有5种，可调度的最大程 序数为8个。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考智学官网 【慧考解析】",
+    "id": 72,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "数据面也叫用户面，用于传送与用户数据直接相关的功能。例如，组头处理、查表、内部转送、排队等。 （　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 73,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "7号信令系统分层结构中，电话用户部分主要是处理与电话呼叫有关的信令，如呼叫的建立、监视、释放 。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 74,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "当主、被叫用户有任何一方挂机后，交换机仍然继续工作，不终止通信。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】当主、被叫用户有任何一方挂机后，交换机不会继续工作，终止通信。",
+    "id": 75,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "独立专用控制信道，指的是传输移动台和基站连接和信道分配的信令，还携带呼叫转移和短消息信息。 （　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 76,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "S接线器由m×n交叉点矩阵与一组控制存储器构成。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 77,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "控制存储器是由随机存储器RAM构成，其作用是存储话音存储器的时隙地址，其容量与话音存储器的容量 一样。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 78,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "基站负责射频信号的发送和接收以及无线电信号到移动交换中心MSC的接入。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】基站负责射频信号的发送和接收以及无线电信号到移动交换中心MSC的接入。",
+    "id": 79,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "7号信令信道位于中继第18时隙。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】7号信令信道位于中继第16时隙。 慧考智学官网",
+    "id": 80,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "分组丢失率指的是分组信息在信道的传递中出现丢包或出错的概率。信道的误码率通常很低，分组丢失主 要是因为交换节点的有限空间使分组排队的信息溢出，必须保证丢失率足够低。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 81,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "目前，我国国内信令网采用24位全国统一编码计划。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 82,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "7号信令系统只适用于电话网及电路交换的数据网。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 83,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "移动交换通信系统中，移动台能通过对通信网络的无线访问，完成各种控制和处理，并且可以提供主叫或 被叫通信服务。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 84,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "7号信令网主要由信令点SP、信令转接点STP组成。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 85,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "信令网是由信令点、信令转接点以及连接它们的链路组成的。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 86,
+    "category": "现代交换技术"
+  },
+  {
+    "type": "judge",
+    "question": "软交换网络中，传送层的功能是NGN统一的业务传送平台，要满足未来话音、视频和数据通信业务的需求 ，既要保证数据通信的可靠性，又要向话音、视频等实时业务提供QoS保证。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考智学官网",
+    "id": 87,
+    "category": "现代交换技术"
+  }
+]

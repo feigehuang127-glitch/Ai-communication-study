@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="flatlaf-3.5.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/flatlaf-3.5.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/HikariCP-6.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jbcrypt-0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-2.0.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-simple-2.0.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

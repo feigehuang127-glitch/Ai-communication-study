@@ -1,0 +1,1614 @@
+[
+  {
+    "id": 1,
+    "type": "multi_choice",
+    "question": "同轴电缆分为（ ）两种类型。",
+    "options": [
+      {
+        "label": "A",
+        "text": "基带同轴电缆(阻抗50Ω)"
+      },
+      {
+        "label": "B",
+        "text": "宽带同轴电缆(阻抗75Ω)"
+      },
+      {
+        "label": "C",
+        "text": "宽带同轴电缆(阻抗65Ω)"
+      },
+      {
+        "label": "D",
+        "text": "基带同轴电缆(阻抗75Ω)"
+      }
+    ],
+    "answer": "AB",
+    "analysis": ""
+  },
+  {
+    "id": 2,
+    "type": "multi_choice",
+    "question": "虚拟网VLAN可以有多种划分方式，常用的划分方式有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "基于交换机端口"
+      },
+      {
+        "label": "B",
+        "text": "基于网卡的MAC地址"
+      },
+      {
+        "label": "C",
+        "text": "基于网络层地址"
+      },
+      {
+        "label": "D",
+        "text": "基于用户"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "VLAN常用的划分方式是基于交换机端口和基于MAC地址的信号。"
+  },
+  {
+    "id": 3,
+    "type": "multi_choice",
+    "question": "作为网络层设备的路由器，具有的主要特性包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "路由选择"
+      },
+      {
+        "label": "B",
+        "text": "限制广播"
+      },
+      {
+        "label": "C",
+        "text": "数据包过滤"
+      },
+      {
+        "label": "D",
+        "text": "两台路由器直连接口间的数据转发"
+      }
+    ],
+    "answer": "AB",
+    "analysis": ""
+  },
+  {
+    "id": 4,
+    "type": "multi_choice",
+    "question": "计算机网络的发展历史，可以概括为面向终端的（ ）三个阶段。",
+    "options": [
+      {
+        "label": "A",
+        "text": "计算机网络"
+      },
+      {
+        "label": "B",
+        "text": "计算机一计算机网络"
+      },
+      {
+        "label": "C",
+        "text": "开放式标准化网络"
+      },
+      {
+        "label": "D",
+        "text": "军事网络"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": ""
+  },
+  {
+    "id": 5,
+    "type": "multi_choice",
+    "question": "局域网常用的拓扑结构有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "总线型"
+      },
+      {
+        "label": "B",
+        "text": "星型"
+      },
+      {
+        "label": "C",
+        "text": "环型"
+      },
+      {
+        "label": "D",
+        "text": "线型"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "局域网常用的拓扑结构有总线型、星型、环型等。"
+  },
+  {
+    "id": 6,
+    "type": "multi_choice",
+    "question": "ATM模型分为三个功能层，由低到高依次是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "ATM物理层"
+      },
+      {
+        "label": "B",
+        "text": "ATM层"
+      },
+      {
+        "label": "C",
+        "text": "ATM适配层"
+      },
+      {
+        "label": "D",
+        "text": "ATM传输层"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": ""
+  },
+  {
+    "id": 7,
+    "type": "multi_choice",
+    "question": "下列关于VLAN的说法中正确的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "隔离广播域"
+      },
+      {
+        "label": "B",
+        "text": "相互间通信要通过路由器"
+      },
+      {
+        "label": "C",
+        "text": "可以限制网上的计算机互相访问的权限"
+      },
+      {
+        "label": "D",
+        "text": "只能在同一个物理网络上的主机进行逻辑分组"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": ""
+  },
+  {
+    "id": 8,
+    "type": "multi_choice",
+    "question": "数据通信系统的主要技术指标包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "比特率和波特率"
+      },
+      {
+        "label": "B",
+        "text": "误码率和吞吐量"
+      },
+      {
+        "label": "C",
+        "text": "信道的传播延迟"
+      },
+      {
+        "label": "D",
+        "text": "传输介质"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": ""
+  },
+  {
+    "id": 9,
+    "type": "multi_choice",
+    "question": "以下说法正确的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "网络节点和链路的几何位置就是网络的拓扑结构，是指网络中网络单元的地理分布和互连关系的几何构型"
+      },
+      {
+        "label": "B",
+        "text": "转换节点在网络中只是转换和交换所传送的信息，而访问节点是信息交换的源节点和目标节点"
+      },
+      {
+        "label": "C",
+        "text": "计算机网络的拓扑结构主要是指通信子网的拓扑结构"
+      },
+      {
+        "label": "D",
+        "text": "环型拓扑结构的实时性是最差的，常使用令牌环来决定哪个节点可以访问系统，所以不会发生冲突"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": ""
+  },
+  {
+    "id": 10,
+    "type": "multi_choice",
+    "question": "数据传输方式依其数据在传输线上原样不变的传输还是调制变样后再传输，可分为（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "基带传输"
+      },
+      {
+        "label": "B",
+        "text": "频带传输"
+      },
+      {
+        "label": "C",
+        "text": "宽带传输"
+      },
+      {
+        "label": "D",
+        "text": "并行传输"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": ""
+  },
+  {
+    "id": 11,
+    "type": "multi_choice",
+    "question": "按信号的传输方向与时间关系划分，可分为（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "单工"
+      },
+      {
+        "label": "B",
+        "text": "半双工"
+      },
+      {
+        "label": "C",
+        "text": "全双工"
+      },
+      {
+        "label": "D",
+        "text": "混合方式"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": ""
+  },
+  {
+    "id": 12,
+    "type": "multi_choice",
+    "question": "下列说法错误的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "计算机网络中的共享资源只能是硬件"
+      },
+      {
+        "label": "B",
+        "text": "局域网的传输速率一般比广域网高，但误码率也较高"
+      },
+      {
+        "label": "C",
+        "text": "资源子网负责计算机网络的数据传输"
+      },
+      {
+        "label": "D",
+        "text": "单独一台计算机不能构成计算机网络"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": ""
+  },
+  {
+    "id": 13,
+    "type": "multi_choice",
+    "question": "以下属于运输层协议的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "TCP"
+      },
+      {
+        "label": "B",
+        "text": "UDP"
+      },
+      {
+        "label": "C",
+        "text": "SPX"
+      },
+      {
+        "label": "D",
+        "text": "X.25"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "运输层协议除了常见的TCP协议、UDP协议外，还有顺序包交换协议(SPX)、NetBIOS、NetBEUI等"
+  },
+  {
+    "id": 14,
+    "type": "multi_choice",
+    "question": "OSI模型中的数据单元有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "PDU"
+      },
+      {
+        "label": "B",
+        "text": "IDU"
+      },
+      {
+        "label": "C",
+        "text": "SDU"
+      },
+      {
+        "label": "D",
+        "text": "SAP"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": ""
+  },
+  {
+    "id": 15,
+    "type": "multi_choice",
+    "question": "OSI参考模型定义了开放系统的层次结构，是对网络内部结构最精练的概括，它具有的特性包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "是一种将异构系统互联的分层结构"
+      },
+      {
+        "label": "B",
+        "text": "定义了一种抽象结构，而并非具体实现的描述"
+      },
+      {
+        "label": "C",
+        "text": "直接的数据传送仅在最低层实现"
+      },
+      {
+        "label": "D",
+        "text": "修改本层的功能并不影响其他层"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 16,
+    "type": "multi_choice",
+    "question": "总线拓扑的缺点有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "松动的连接器能干扰网络通信"
+      },
+      {
+        "label": "B",
+        "text": "较大的网络通信量能严重地减慢总线网络"
+      },
+      {
+        "label": "C",
+        "text": "网络中一台计算机故障中断整个网络"
+      },
+      {
+        "label": "D",
+        "text": "电缆中断破坏网络通信"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 17,
+    "type": "multi_choice",
+    "question": "路由器的作用有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "异种网络互连"
+      },
+      {
+        "label": "B",
+        "text": "子网间的速率适配"
+      },
+      {
+        "label": "C",
+        "text": "子网协议转换"
+      },
+      {
+        "label": "D",
+        "text": "路由(寻径)，即路由表建立、刷新、查找"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 18,
+    "type": "multi_choice",
+    "question": "对网络安全构成威胁的主要因素有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "网络攻击"
+      },
+      {
+        "label": "B",
+        "text": "系统漏洞"
+      },
+      {
+        "label": "C",
+        "text": "网络内部安全隐患"
+      },
+      {
+        "label": "D",
+        "text": "计算机病毒"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 19,
+    "type": "multi_choice",
+    "question": "在为网络实现病毒防护系统时，下列提供防护的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "从客户计算机中卸下软驱"
+      },
+      {
+        "label": "B",
+        "text": "在所有客户机和服务器的计算机上安装病毒扫描软件"
+      },
+      {
+        "label": "C",
+        "text": "定期升级防病毒软件"
+      },
+      {
+        "label": "D",
+        "text": "限制服务的使用"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 20,
+    "type": "multi_choice",
+    "question": "网络的拓扑结构主要有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "星型拓扑"
+      },
+      {
+        "label": "B",
+        "text": "环型拓扑"
+      },
+      {
+        "label": "C",
+        "text": "树形拓扑"
+      },
+      {
+        "label": "D",
+        "text": "混合型拓扑"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 21,
+    "type": "multi_choice",
+    "question": "以下叙述正确的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "网桥也称桥接器，是连接两个局域网的存储转发设备，用它可以完成具有相同或相似体系结构网络系统的连接"
+      },
+      {
+        "label": "B",
+        "text": "路由器主要用于局域网和广域网的互联"
+      },
+      {
+        "label": "C",
+        "text": "中继器是连接网络线路的一种装置，常用于两个网络节点之间网络信号的双向转发工作，负责在两个节点物理层上按位传递信息，完成信号的复制调整和放大功能"
+      },
+      {
+        "label": "D",
+        "text": "调制解调器属于网络接入设备"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 22,
+    "type": "multi_choice",
+    "question": "网络层的协议有（ ）协议。",
+    "options": [
+      {
+        "label": "A",
+        "text": "IP"
+      },
+      {
+        "label": "B",
+        "text": "ARP"
+      },
+      {
+        "label": "C",
+        "text": "ICMP"
+      },
+      {
+        "label": "D",
+        "text": "RARP"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 23,
+    "type": "multi_choice",
+    "question": "计算机网络的应用主要包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "办公自动化"
+      },
+      {
+        "label": "B",
+        "text": "管理信息系统"
+      },
+      {
+        "label": "C",
+        "text": "过程控制"
+      },
+      {
+        "label": "D",
+        "text": "Internet应用"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 24,
+    "type": "multi_choice",
+    "question": "在计算机网络中，通常采用的交换技术有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "电路交换技术"
+      },
+      {
+        "label": "B",
+        "text": "报文交换技术"
+      },
+      {
+        "label": "C",
+        "text": "分组交换技术"
+      },
+      {
+        "label": "D",
+        "text": "信元交换技术"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 25,
+    "type": "multi_choice",
+    "question": "总线型拓扑结构的缺点包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "故障诊断困难"
+      },
+      {
+        "label": "B",
+        "text": "故障隔离困难"
+      },
+      {
+        "label": "C",
+        "text": "中继器等配置"
+      },
+      {
+        "label": "D",
+        "text": "实时性不强"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 26,
+    "type": "multi_choice",
+    "question": "以下描述中正确的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "RS-449是物理层的一个标准"
+      },
+      {
+        "label": "B",
+        "text": "DLC规程可分为面向字符的DLC和面向比特的DLC"
+      },
+      {
+        "label": "C",
+        "text": "网络层是七层协议中最重要也是最复杂的一层"
+      },
+      {
+        "label": "D",
+        "text": "数据加密与解密、语法选择由表示层来完成"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 27,
+    "type": "multi_choice",
+    "question": "网络的拓扑结构主要有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "总线型"
+      },
+      {
+        "label": "B",
+        "text": "星型"
+      },
+      {
+        "label": "C",
+        "text": "环型"
+      },
+      {
+        "label": "D",
+        "text": "树形"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 28,
+    "type": "multi_choice",
+    "question": "以下说法正确的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "报文交换中，数据是以报文的方式发出，报文中除包括用户要传送的信息外，还有源地址和目的地址等信息"
+      },
+      {
+        "label": "B",
+        "text": "分组交换也属于“存储一转发”交换方式，是以长度受到限制的报文分组为单位进行交换的"
+      },
+      {
+        "label": "C",
+        "text": "分组的最大长度一般为一千到数千比特"
+      },
+      {
+        "label": "D",
+        "text": "分组在网络中传输，还可以分为两种不同的方式：数据报和虚电路"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 29,
+    "type": "multi_choice",
+    "question": "距离矢量协议包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "RIP"
+      },
+      {
+        "label": "B",
+        "text": "IGRP"
+      },
+      {
+        "label": "C",
+        "text": "BGP"
+      },
+      {
+        "label": "D",
+        "text": "EIGRP"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 30,
+    "type": "multi_choice",
+    "question": "以下描述正确的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "e-mail的指定端口号为25，FTP的指定端口号为21，HTTP的指定端口号为80"
+      },
+      {
+        "label": "B",
+        "text": "Internet一般是由三层网络组成"
+      },
+      {
+        "label": "C",
+        "text": "ISP(Internet服务提供商)提供三大类服务"
+      },
+      {
+        "label": "D",
+        "text": "ISP的主要技术应用包括四个方面"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 31,
+    "type": "multi_choice",
+    "question": "以下说法正确的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "树形拓扑属于一种分层结构，是从总线拓扑演变过来的"
+      },
+      {
+        "label": "B",
+        "text": "树形拓扑适应于分级管理和控制系统"
+      },
+      {
+        "label": "C",
+        "text": "树形拓扑中，根部吸收计算机的发送信息信号，然后再重新广播到整个网络中"
+      },
+      {
+        "label": "D",
+        "text": "树形拓扑易于扩展，故障隔离方便，但对根的依赖性太大"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 32,
+    "type": "multi_choice",
+    "question": "路由器在执行数据包转发时，下列哪些项没有发生变化？(假定没有使用地址转换技术)（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "源端口号"
+      },
+      {
+        "label": "B",
+        "text": "目的端口号"
+      },
+      {
+        "label": "C",
+        "text": "源网络地址"
+      },
+      {
+        "label": "D",
+        "text": "目的网络地址"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 33,
+    "type": "multi_choice",
+    "question": "环型拓扑结构的缺点包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "网络扩展配置困难"
+      },
+      {
+        "label": "B",
+        "text": "节点故障引起全网故障"
+      },
+      {
+        "label": "C",
+        "text": "故障诊断困难"
+      },
+      {
+        "label": "D",
+        "text": "拓扑结构影响访问协议"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": ""
+  },
+  {
+    "id": 34,
+    "type": "multi_choice",
+    "question": "组成计算机网络的资源子网的设备是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "连网外设"
+      },
+      {
+        "label": "B",
+        "text": "终端控制器"
+      },
+      {
+        "label": "C",
+        "text": "网络交换机"
+      },
+      {
+        "label": "D",
+        "text": "终端"
+      }
+    ],
+    "answer": "ABD",
+    "analysis": ""
+  },
+  {
+    "id": 35,
+    "type": "multi_choice",
+    "question": "下列关于OSPF协议的说法中正确的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "OSPF支持基于接口的报文验证"
+      },
+      {
+        "label": "B",
+        "text": "OSPF支持到同一目的地址的多条等值路由"
+      },
+      {
+        "label": "C",
+        "text": "OSPF是一个基于距离矢量算法的边界网关路由协议"
+      },
+      {
+        "label": "D",
+        "text": "OSPF发现的路由可以根据不同的类型而有不同的优先级"
+      }
+    ],
+    "answer": "ABD",
+    "analysis": ""
+  },
+  {
+    "id": 36,
+    "type": "multi_choice",
+    "question": "X.25中的一条虚电路可以（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "作为一个物理接口的备份接口"
+      },
+      {
+        "label": "B",
+        "text": "作为一个逻辑拨号口的备份接口"
+      },
+      {
+        "label": "C",
+        "text": "作为帧中继接口中的一条虚电路的备份接口"
+      },
+      {
+        "label": "D",
+        "text": "作为主接口，由其他接口为其提供备份功能"
+      }
+    ],
+    "answer": "ACD",
+    "analysis": ""
+  },
+  {
+    "id": 37,
+    "type": "multi_choice",
+    "question": "最常见的动态路由算法有两种，即（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "地理位置"
+      },
+      {
+        "label": "B",
+        "text": "距离矢量"
+      },
+      {
+        "label": "C",
+        "text": "链路状态"
+      },
+      {
+        "label": "D",
+        "text": "数据流量"
+      }
+    ],
+    "answer": "BC",
+    "analysis": ""
+  },
+  {
+    "id": 38,
+    "type": "multi_choice",
+    "question": "目前计算机网络中实际使用的硬件地址是个字节，IP地址是个字节。（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "2"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "answer": "BC",
+    "analysis": ""
+  },
+  {
+    "id": 39,
+    "type": "multi_choice",
+    "question": "在以下设备互连时应该使用交叉网线的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "交换机普通口到路由器以太口之间"
+      },
+      {
+        "label": "B",
+        "text": "集线器级连口到交换机级连口之间"
+      },
+      {
+        "label": "C",
+        "text": "交换机普通口到交换机普通口之间"
+      },
+      {
+        "label": "D",
+        "text": "集线器普通口到集线器级连口之间"
+      }
+    ],
+    "answer": "BC",
+    "analysis": ""
+  },
+  {
+    "id": 40,
+    "type": "multi_choice",
+    "question": "下列关于TCP/IP协议的描述中正确的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "IP层可提供面向连接的服务和无连接的服务"
+      },
+      {
+        "label": "B",
+        "text": "UDP方式比TCP方式更加简单，数据传输率也高"
+      },
+      {
+        "label": "C",
+        "text": "UDP方式一般用于一次传输少量信息的情况"
+      },
+      {
+        "label": "D",
+        "text": "TCP/IP模型的应用层与OSI模型的上三层对应"
+      }
+    ],
+    "answer": "BCD",
+    "analysis": ""
+  },
+  {
+    "id": 41,
+    "type": "multi_choice",
+    "question": "在一个C类网络中，（ ）是无效的IP地址。",
+    "options": [
+      {
+        "label": "A",
+        "text": "200.48.17.1"
+      },
+      {
+        "label": "B",
+        "text": "190.64.90.2"
+      },
+      {
+        "label": "C",
+        "text": "198.200.87.0"
+      },
+      {
+        "label": "D",
+        "text": "240.78.99.15"
+      }
+    ],
+    "answer": "BCD",
+    "analysis": ""
+  },
+  {
+    "id": 42,
+    "type": "multi_choice",
+    "question": "MAC层有哪些功能？（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "提供逻辑地址"
+      },
+      {
+        "label": "B",
+        "text": "提供硬件地址"
+      },
+      {
+        "label": "C",
+        "text": "提供流控功能"
+      },
+      {
+        "label": "D",
+        "text": "对上层屏蔽下层传输介质"
+      }
+    ],
+    "answer": "BCD",
+    "analysis": "数据链路层需要实现介质访问、排序、流量控制以及差错控制等功能。为了不使数据链路层过"
+  },
+  {
+    "id": 43,
+    "type": "multi_choice",
+    "question": "下列属于点到点连接的链路层协议有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "X.25"
+      },
+      {
+        "label": "B",
+        "text": "HDLC"
+      },
+      {
+        "label": "C",
+        "text": "ATM"
+      },
+      {
+        "label": "D",
+        "text": "PPP"
+      }
+    ],
+    "answer": "BD",
+    "analysis": ""
+  },
+  {
+    "id": 44,
+    "type": "multi_choice",
+    "question": "对于10BASE-T网络，下列说法正确的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "10BASE-T网络使用光纤"
+      },
+      {
+        "label": "B",
+        "text": "10BASE-T网络使用集线器作为连接的中心点"
+      },
+      {
+        "label": "C",
+        "text": "10BASE-T网络在每端必须终结"
+      },
+      {
+        "label": "D",
+        "text": "10BASE-T网络可以使用3类UTP"
+      }
+    ],
+    "answer": "BD",
+    "analysis": ""
+  },
+  {
+    "id": 45,
+    "type": "true_false",
+    "question": "VPN是在公用的通信基础平台上提供私有数据网络的技术，运营商一般通过隧道协议和采用非安全机制来满足客户的私密性需求。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 46,
+    "type": "true_false",
+    "question": "在特殊的IP地址中，零地址用作广播地址。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 47,
+    "type": "true_false",
+    "question": "10Mbit/s速率的屏蔽双绞线星型网的出现，既降低了成本，又提高了可靠性。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 48,
+    "type": "true_false",
+    "question": "运输层的主要任务是向用户提供可靠的点到点服务。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 49,
+    "type": "true_false",
+    "question": "在TCP/IP协议中，TCP提供简单的无连接服务，UDP提供可靠的面向连接的服务。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": "TCP提供面向连接服务，UDP提供无连接服务。"
+  },
+  {
+    "id": 50,
+    "type": "true_false",
+    "question": "已知域A信任域B，域B信任域C，域C信任域A，则域A信任域C。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 51,
+    "type": "true_false",
+    "question": "网络的逻辑组成包括资源子网和通信子网，资源子网负责全网的数据传输、转发和通信处理等工作。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 52,
+    "type": "true_false",
+    "question": "镜像卷具有容错能力，可以在基本磁盘和动态磁盘上创建镜像卷。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 53,
+    "type": "true_false",
+    "question": "交换式局域网的核心设备是路由器。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 54,
+    "type": "true_false",
+    "question": "网络是指“三网”，即电信网络、移动电视网络和计算机网络。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 55,
+    "type": "true_false",
+    "question": "网络当中的一台主机只能有一个IP地址，即使其装有多个网卡也一样。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 56,
+    "type": "true_false",
+    "question": "第三层交换技术就是“第二层交换技术十第四层转发”。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 57,
+    "type": "true_false",
+    "question": "IP地址是上网主机自动产生的。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 58,
+    "type": "true_false",
+    "question": "为保证数据的可靠传输，发送方把数据封装成“比特”，按照一定顺序予以发送。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 59,
+    "type": "true_false",
+    "question": "int是通用顶级域名。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 60,
+    "type": "true_false",
+    "question": "UDP对上层提供面向连接、端到端可靠的通信服务。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 61,
+    "type": "true_false",
+    "question": "在常用的传输介质中，带宽最宽、信号传输衰减最小的、抗干扰能力最强的是同轴电缆。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 62,
+    "type": "true_false",
+    "question": "拥塞是接收端处理能力不足的表现。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 63,
+    "type": "true_false",
+    "question": "传统以太网最初是使用细同轴电缆，后来演进到使用比较便宜的粗同轴电缆，最后发展为使用更便宜和更灵活的双绞线。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 64,
+    "type": "true_false",
+    "question": "某URL为http：www.eDu.Cn/inDex.htm，其协议类型为WWW。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": "协议类型是HTTP。"
+  },
+  {
+    "id": 65,
+    "type": "true_false",
+    "question": "在Internet中，NetBIOS名称不可以重复。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 66,
+    "type": "true_false",
+    "question": "在ATM方式中，信元的长度为48个字节。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 67,
+    "type": "true_false",
+    "question": "任何一台DNS服务器上都可以创建标准主要区域、标准辅助区域和集成的ActiveDirectory区域。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 68,
+    "type": "true_false",
+    "question": "TCP与UDP段结构中端口地址都是16比特，可以有在0～65534的端口号。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 69,
+    "type": "true_false",
+    "question": "在OSI/RM分层结构中，物理层可以为网络层提供无差错的透明传输。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 70,
+    "type": "true_false",
+    "question": "若在局域网互连中使用的是透明网桥，那么路由选择工作由发送帧的源节点来完成。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 71,
+    "type": "true_false",
+    "question": "局域网最主要的特点：网络为一个单位所拥有，且地理范围和站点数目均无限。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 72,
+    "type": "true_false",
+    "question": "网络协议的三要素是语义、语法与层次结构。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": "网络协议的三要素为语义、语法和时序。"
+  },
+  {
+    "id": 73,
+    "type": "true_false",
+    "question": "越过两个节点就可以使用不同的数据链路层协议，比如一个路由器有两个接口，两个接口分别连接不同的网络，两个接口上可以使用不同的数据链路层协议。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 74,
+    "type": "true_false",
+    "question": "至少需要2个动态磁盘和1个基本磁盘才能创建RAID-5卷。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 75,
+    "type": "true_false",
+    "question": "TCP是一个与IP协议并列的传输协议。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": "TCP是传输层协议，IP是网络层协议。"
+  },
+  {
+    "id": 76,
+    "type": "true_false",
+    "question": "误码率与传输有很大的关系。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 77,
+    "type": "true_false",
+    "question": "一个网络协议主要由语法和语义组成。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 78,
+    "type": "true_false",
+    "question": "表示层处理两个应用实体之间进行数据交换的语法和会话问题。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 79,
+    "type": "true_false",
+    "question": "为避免通信子网中出现过多的数据包而造成网络阻塞，需要对流入的数据包内容进行拥塞控制。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 80,
+    "type": "true_false",
+    "question": "大部分情况下，进行流量控制的同时要进行拥塞控制，但是二者是同一个概念。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 81,
+    "type": "true_false",
+    "question": "窗口是可容纳数据帧的缓冲区，只在发送端设置发送窗口。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 82,
+    "type": "true_false",
+    "question": "UDP用户数据报只有3个字节的首部开销。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 83,
+    "type": "true_false",
+    "question": "为了保证在关闭连接之前所有的数据都可靠地到了目的地，TCP使用了三次握手的方法断开连接。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": "三次握手建立连接，四次握手释放连接。"
+  },
+  {
+    "id": 84,
+    "type": "true_false",
+    "question": "OSI参考模型是由国内标准化组织提出的体系架构，为分布应用处理开放系统提供了基础。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 85,
+    "type": "true_false",
+    "question": "大多数TCP/IP实现给临时端口号分配1024～5500的端口号。（ ）",
+    "options": [],
+    "answer": "B",
+    "analysis": ""
+  },
+  {
+    "id": 86,
+    "type": "true_false",
+    "question": "NAT路由器将数据报的源地址IPX转换成全球地址IPG，但目的地址IPY保持不变，然后发送到因特网。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 87,
+    "type": "true_false",
+    "question": "在使用网关来实现两个网络的高层互连时，两个网络的应用层及各层协议可以不同。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 88,
+    "type": "true_false",
+    "question": "路由器是一种具有多个输入端口和多个输出端口的专用计算机，其任务是转发分组。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 89,
+    "type": "true_false",
+    "question": "网络层是为运输层提供服务的。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 90,
+    "type": "true_false",
+    "question": "在交换式快速以太网中，可以通过交换机为所有节点建立并行的、独立的和专用带宽的连接。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 91,
+    "type": "true_false",
+    "question": "域名www.haut.edu.cn中，顶级域名是cn。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 92,
+    "type": "true_false",
+    "question": "当TCP发出一个段后，它启动一个定时器，等待目的端确认收到这个报文段。如果不能及时收到一个确认，将重发这个报文段。当TCP收到发自TCP连接另一端的数据，它将发送一个确认。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 93,
+    "type": "true_false",
+    "question": "从主机号借用若干个位作为子网号subnet-id，而主机号host-id也就相应减少了若干个位。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 94,
+    "type": "true_false",
+    "question": "网络层的功能包括：逻辑编址，即IP地址；路由选择。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 95,
+    "type": "true_false",
+    "question": "网络现已成为信息社会的命脉和发展知识经济的重要基础。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 96,
+    "type": "true_false",
+    "question": "同轴电缆既可用于计算机通信，又可用于传输有线电视信号。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 97,
+    "type": "true_false",
+    "question": "PPP是面向字节的，所有的PPP帧的长度都是整数字节。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 98,
+    "type": "true_false",
+    "question": "因特网采用分层次的路由选择协议。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 99,
+    "type": "true_false",
+    "question": "只有TCP端点才会关心连接的状态，而网络的中间路由器只关心IP分组的转发，对每个分组都同等对待，不关心两端连接的状态。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 100,
+    "type": "true_false",
+    "question": "DHCP服务器的配置术语“排除范围”的意思是作用域内从DHCP服务中排除的有限IP地址序列。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 101,
+    "type": "true_false",
+    "question": "运输层传送的协议数据单元称为段或报文，一到三层认为是点到点的协议，四到七层认为是端到端的协议。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 102,
+    "type": "true_false",
+    "question": "分布式系统与计算机网络在物理结构上基本是相同的。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 103,
+    "type": "true_false",
+    "question": "PSTN采用的信息交换方式是线路交换。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 104,
+    "type": "true_false",
+    "question": "21世纪的一些重要特征就是数字化、网络化和信息化，它是一个以网络为核心的信息时代。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 105,
+    "type": "true_false",
+    "question": "会话层的功能主要有对话控制和同步。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 106,
+    "type": "true_false",
+    "question": "流量控制的手段有停止等待协议和滑动窗口协议。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 107,
+    "type": "true_false",
+    "question": "为了使不同厂商、不同结构的系统之间能够进行通信，通信参与方必须遵守一致的规则和标准，这种规则称为协议。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": ""
+  },
+  {
+    "id": 108,
+    "type": "true_false",
+    "question": "在局域网中，硬件地址又称为物理地址。（ ）",
+    "options": [],
+    "answer": "A",
+    "analysis": "局域网地址和物理地址，MAC地址都是唯一的硬件地址。"
+  }
+]

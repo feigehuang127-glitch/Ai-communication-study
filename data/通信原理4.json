@@ -1,0 +1,1978 @@
+[
+  {
+    "type": "single_choice",
+    "question": "调制信道的传输特性不好将对编码信道产生影响，其结果是给数字信号带来（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "噪声干扰"
+      },
+      {
+        "label": "B",
+        "text": "码间干扰"
+      },
+      {
+        "label": "C",
+        "text": "突发干扰"
+      },
+      {
+        "label": "D",
+        "text": "噪声干扰和突发干扰"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 1,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "一个随机过程是平稳随机过程的充分必要条件是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "随机过程的数学期望与时间无关，且其相关函数与时间间隔无关"
+      },
+      {
+        "label": "B",
+        "text": "随机过程的数学期望与时间无关，且其相关函数与时间间隔有关"
+      },
+      {
+        "label": "C",
+        "text": "随机过程的数学期望与时间有关，且其相关函数与时间间隔无关"
+      },
+      {
+        "label": "D",
+        "text": "随机过程的数学期望与时间有关，且其相关函数与时间间隔有关"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】一个随机过程是平稳随机过程的充分必要条件，随机过程的数学期望与时间无关，且其相关函 数仅与时间间隔有关。",
+    "id": 2,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "下列关于群延迟畸变与幅度畸变说法，正确的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "群延迟畸变是线性畸变，幅度畸变是非线性畸变"
+      },
+      {
+        "label": "B",
+        "text": "群延迟畸变、幅度畸变都是线性畸变"
+      },
+      {
+        "label": "C",
+        "text": "群延迟畸变是非线性畸变，幅度畸变是线性畸变"
+      },
+      {
+        "label": "D",
+        "text": "群延迟畸变、幅度畸变都是非线性畸变"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 3,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "在数字通信系统中，传输速率属于通信系统性能指标中的（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "有效性"
+      },
+      {
+        "label": "B",
+        "text": "可靠性"
+      },
+      {
+        "label": "C",
+        "text": "适应性"
+      },
+      {
+        "label": "D",
+        "text": "标准性"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 4,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "恒参信道相位畸变，对模拟通信质量影响（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "不存在"
+      },
+      {
+        "label": "B",
+        "text": "不显著"
+      },
+      {
+        "label": "C",
+        "text": "显著"
+      },
+      {
+        "label": "D",
+        "text": "很大"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 5,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "离散信源输出4个不同符号，若各符号概率分别为1/2，1/4，1/8，1/8，则该信源的熵为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.5bit/sign"
+      },
+      {
+        "label": "B",
+        "text": "1.875bit/sign"
+      },
+      {
+        "label": "C",
+        "text": "1.75bit/sign"
+      },
+      {
+        "label": "D",
+        "text": "1bit/sign"
+      }
+    ],
+    "answer": "C",
+    "analysis": "",
+    "id": 6,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "下列选项中，属于线性调制的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "相移键控"
+      },
+      {
+        "label": "B",
+        "text": "频移键控"
+      },
+      {
+        "label": "C",
+        "text": "振幅键控"
+      },
+      {
+        "label": "D",
+        "text": "角度调制"
+      }
+    ],
+    "answer": "C",
+    "analysis": "",
+    "id": 7,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "下列选项属于模拟信号的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "PAM信号"
+      },
+      {
+        "label": "B",
+        "text": "PCM信号"
+      },
+      {
+        "label": "C",
+        "text": "PSK信号"
+      },
+      {
+        "label": "D",
+        "text": "DPCM信号"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 8,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "高斯白噪声通过线性系统输出分布为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "高斯分布"
+      },
+      {
+        "label": "B",
+        "text": "瑞利分布"
+      },
+      {
+        "label": "C",
+        "text": "广义瑞利分布"
+      },
+      {
+        "label": "D",
+        "text": "均匀分布"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 9,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "以下信道属于随参信道的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "电缆信道"
+      },
+      {
+        "label": "B",
+        "text": "短波信道"
+      },
+      {
+        "label": "C",
+        "text": "光纤信道"
+      },
+      {
+        "label": "D",
+        "text": "微波中继信道"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 10,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "离散信源输出5个不同符号，若各符号概率分别为1/2，1/4，1/8，1/16，1/16，则该信源的熵为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.5bit/sign"
+      },
+      {
+        "label": "B",
+        "text": "1.875bit/sign"
+      },
+      {
+        "label": "C",
+        "text": "2bit/sign"
+      },
+      {
+        "label": "D",
+        "text": "1bit/sign"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 11,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "某二进制信源各符号独立出现，若“1”符号出现的概率为3/4，则“0”符号的信息量为（　）bit。",
+    "options": [
+      {
+        "label": "A",
+        "text": "1"
+      },
+      {
+        "label": "B",
+        "text": "2"
+      },
+      {
+        "label": "C",
+        "text": "1.5"
+      },
+      {
+        "label": "D",
+        "text": "2.5"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 12,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "通信系统可分为基带传输和频带传输，下列选项属于频带传输方式的是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "PAM传输方式"
+      },
+      {
+        "label": "B",
+        "text": "PCM传输方式"
+      },
+      {
+        "label": "C",
+        "text": "PSK传输方式"
+      },
+      {
+        "label": "D",
+        "text": "DPCM传输方式"
+      }
+    ],
+    "answer": "C",
+    "analysis": "",
+    "id": 13,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "平稳随机过程的数学期望值是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "与时间有关的常数"
+      },
+      {
+        "label": "B",
+        "text": "与时间有关的变量"
+      },
+      {
+        "label": "C",
+        "text": "与时间无关的常数"
+      },
+      {
+        "label": "D",
+        "text": "与时间有关的随机变量"
+      }
+    ],
+    "answer": "C",
+    "analysis": "慧考解析】平稳随机过程的数学期望值是与时间无关的常数。",
+    "id": 14,
+    "category": "通信原理"
+  },
+  {
+    "type": "single_choice",
+    "question": "对于n维高斯过程，各统计样本之间的不相关特性与统计独立关系为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "没有直接的关系"
+      },
+      {
+        "label": "B",
+        "text": "等价"
+      },
+      {
+        "label": "C",
+        "text": "不等价"
+      },
+      {
+        "label": "D",
+        "text": "不相关不一定统计独立"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 15,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "衡量数字通信系统性能的主要指标是（　）。 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网",
+    "options": [
+      {
+        "label": "A",
+        "text": "有效性"
+      },
+      {
+        "label": "B",
+        "text": "可靠性"
+      },
+      {
+        "label": "C",
+        "text": "专业性"
+      },
+      {
+        "label": "D",
+        "text": "经济性"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "慧考解析】有效性和可靠性是衡量通信网性能的主要指标。",
+    "id": 16,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "通信系统的最简单模型由（　）构成。",
+    "options": [
+      {
+        "label": "A",
+        "text": "信息源"
+      },
+      {
+        "label": "B",
+        "text": "发送设备"
+      },
+      {
+        "label": "C",
+        "text": "信道"
+      },
+      {
+        "label": "D",
+        "text": "噪声源"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 17,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "以下语句中说法正确的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "根据香农公式，当信道容量一定时，信道的带宽越宽，对信噪比要求就越小"
+      },
+      {
+        "label": "B",
+        "text": "根据香农公式，当信道容量一定时，信道的带宽越宽，对信噪比要求就越大"
+      },
+      {
+        "label": "C",
+        "text": "在模拟通信系统中注重强调变换的线性关系"
+      },
+      {
+        "label": "D",
+        "text": "在模拟通信系统中注重强调变换的非线性关系"
+      }
+    ],
+    "answer": "AC",
+    "analysis": "",
+    "id": 18,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "按同步信息获取方式分类，同步分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "外同步法"
+      },
+      {
+        "label": "B",
+        "text": "码元同步"
+      },
+      {
+        "label": "C",
+        "text": "内同步法"
+      },
+      {
+        "label": "D",
+        "text": "自同步法"
+      }
+    ],
+    "answer": "AD",
+    "analysis": "",
+    "id": 19,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "评价一个通信系统的好与坏，要考虑到许多性能指标，如（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "有效性"
+      },
+      {
+        "label": "B",
+        "text": "可靠性"
+      },
+      {
+        "label": "C",
+        "text": "经济性"
+      },
+      {
+        "label": "D",
+        "text": "可用性"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 20,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "调制可分为（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "模拟调制 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "B",
+        "text": "数字调制"
+      },
+      {
+        "label": "C",
+        "text": "正弦波调制"
+      },
+      {
+        "label": "D",
+        "text": "脉冲调制"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 21,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "SSB的主要应用有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "短波无线电广播"
+      },
+      {
+        "label": "B",
+        "text": "话音频分复用"
+      },
+      {
+        "label": "C",
+        "text": "载波通信"
+      },
+      {
+        "label": "D",
+        "text": "数据传输"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 22,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "通信系统模型可知信号传输需经过两个变换，分别是（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "非电/电"
+      },
+      {
+        "label": "B",
+        "text": "电/非电"
+      },
+      {
+        "label": "C",
+        "text": "解调/调制"
+      },
+      {
+        "label": "D",
+        "text": "调制/解调"
+      }
+    ],
+    "answer": "AD",
+    "analysis": "",
+    "id": 23,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "QPSK(QDPSK)调制方法包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "选相法"
+      },
+      {
+        "label": "B",
+        "text": "正交法"
+      },
+      {
+        "label": "C",
+        "text": "调相法"
+      },
+      {
+        "label": "D",
+        "text": "调位法"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 24,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "随参信道的特点包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "衰耗时变"
+      },
+      {
+        "label": "B",
+        "text": "时延时变"
+      },
+      {
+        "label": "C",
+        "text": "多径传播"
+      },
+      {
+        "label": "D",
+        "text": "频率选择性衰落"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 25,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "以下说法正确的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "由功率谱的数学表达式可知，随机序列的功率谱包括连续谱和离散谱两大部分"
+      },
+      {
+        "label": "B",
+        "text": "随机序列的功率谱中包括连续谱和离散谱两大部分，其中连续谱由交变波决定，离散谱由恒定波决定 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "C",
+        "text": "随机序列的功率谱中包括连续谱和离散谱两大部分，其中连续谱由恒定波决定，离散谱由交变波决定"
+      },
+      {
+        "label": "D",
+        "text": "根据功率密度谱关系式，一个可用的数字基带信号功率密度谱中必然包含连续谱分量"
+      }
+    ],
+    "answer": "ABD",
+    "analysis": "",
+    "id": 26,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "以下说法不正确的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "当无信号时，则传输信道中将存在加性干扰，不存在乘性干扰"
+      },
+      {
+        "label": "B",
+        "text": "当无信号时，则传输信道中将不存在加性干扰，存在乘性干扰"
+      },
+      {
+        "label": "C",
+        "text": "信道对信号的影响可分为两类，一类是乘性干扰，另一类为加性干扰"
+      },
+      {
+        "label": "D",
+        "text": "信道对信号的影响可分为两类，一类是不乘性干扰，另一类为不加性干扰"
+      }
+    ],
+    "answer": "BD",
+    "analysis": "",
+    "id": 27,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "起伏噪声包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "宇宙噪声"
+      },
+      {
+        "label": "B",
+        "text": "热噪声"
+      },
+      {
+        "label": "C",
+        "text": "散弹噪声"
+      },
+      {
+        "label": "D",
+        "text": "冷噪声"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 28,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "改善随参信道对信号传输的影响可以采用分集技术，分集技术包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "空间分集"
+      },
+      {
+        "label": "B",
+        "text": "频率分集"
+      },
+      {
+        "label": "C",
+        "text": "极化分集"
+      },
+      {
+        "label": "D",
+        "text": "角度分集"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "慧考解析】按“分”划分，即按照接收信号样值的结构与统计特性分类，可分为空间、频率、时间三大基 本类型；空间分集还有两类变化形式，极化分集和角度分集。",
+    "id": 29,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "通信系统的同步功能的特点包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "载波同步"
+      },
+      {
+        "label": "B",
+        "text": "码元同步"
+      },
+      {
+        "label": "C",
+        "text": "帧同步"
+      },
+      {
+        "label": "D",
+        "text": "网同步"
+      }
+    ],
+    "answer": "ABCD",
+    "analysis": "",
+    "id": 30,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "当原始信号是模拟信号时，必须经过（　）后才能通过数字通信系统进行传输，并经过（　）后还原成原 始信号。",
+    "options": [
+      {
+        "label": "A",
+        "text": "模模转换 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "B",
+        "text": "数数转换"
+      },
+      {
+        "label": "C",
+        "text": "模数转换"
+      },
+      {
+        "label": "D",
+        "text": "数模转换"
+      }
+    ],
+    "answer": "CD",
+    "analysis": "",
+    "id": 31,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "下列有关信号传输的说法中正确的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "调制方式分为基带传输和频带传输"
+      },
+      {
+        "label": "B",
+        "text": "按传输介质分类，可分为有线系统和无线系统"
+      },
+      {
+        "label": "C",
+        "text": "数字信号的排列顺序只有串序一种方式"
+      },
+      {
+        "label": "D",
+        "text": "连接形式分为专线直通和交换网络"
+      }
+    ],
+    "answer": "ABD",
+    "analysis": "",
+    "id": 32,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "主从同步法的缺点有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "主站时钟源发生故障时，全网将失去同步"
+      },
+      {
+        "label": "B",
+        "text": "主站时钟源发生故障时，全网不会失去同步"
+      },
+      {
+        "label": "C",
+        "text": "中间站发生故障下游站点失去同步"
+      },
+      {
+        "label": "D",
+        "text": "中间站发生故障下游站点不失去同步"
+      }
+    ],
+    "answer": "AC",
+    "analysis": "",
+    "id": 33,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "通信系统的可靠性主要由（　）表示。",
+    "options": [
+      {
+        "label": "A",
+        "text": "误码率"
+      },
+      {
+        "label": "B",
+        "text": "信噪比"
+      },
+      {
+        "label": "C",
+        "text": "误信率"
+      },
+      {
+        "label": "D",
+        "text": "电压驻波比"
+      }
+    ],
+    "answer": "AC",
+    "analysis": "",
+    "id": 34,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "下列各项表述中，属于数字通信技术的缺点的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "占用更宽的信道带宽"
+      },
+      {
+        "label": "B",
+        "text": "不可传送离散信号"
+      },
+      {
+        "label": "C",
+        "text": "对同步要求高"
+      },
+      {
+        "label": "D",
+        "text": "需要较复杂的同步设备"
+      }
+    ],
+    "answer": "ACD",
+    "analysis": "",
+    "id": 35,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "单边带调幅SSB的缺点有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "要求边带滤波器是理想低通"
+      },
+      {
+        "label": "B",
+        "text": "要求边带滤波器是理想高通 专业网校课程、题库软件、考试用书、资讯信息全方位一体化职业考试学习平台 慧考智学官网"
+      },
+      {
+        "label": "C",
+        "text": "要求边带滤波器是非理想低通"
+      },
+      {
+        "label": "D",
+        "text": "要求边带滤波器是非理想高通"
+      }
+    ],
+    "answer": "AB",
+    "analysis": "",
+    "id": 36,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "通信系统中的噪声包括（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "单频噪声"
+      },
+      {
+        "label": "B",
+        "text": "脉冲噪声"
+      },
+      {
+        "label": "C",
+        "text": "起伏噪声"
+      },
+      {
+        "label": "D",
+        "text": "冷噪声"
+      }
+    ],
+    "answer": "ABC",
+    "analysis": "",
+    "id": 37,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "随参信道的传输介质具有（　）等特点。",
+    "options": [
+      {
+        "label": "A",
+        "text": "信号的衰减随时间变化"
+      },
+      {
+        "label": "B",
+        "text": "传输的时延随时间变化"
+      },
+      {
+        "label": "C",
+        "text": "单径传播"
+      },
+      {
+        "label": "D",
+        "text": "多径传播"
+      }
+    ],
+    "answer": "ABD",
+    "analysis": "",
+    "id": 38,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "将模拟信号数字化的传输方法有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "脉冲编码调制"
+      },
+      {
+        "label": "B",
+        "text": "脉冲编码解调"
+      },
+      {
+        "label": "C",
+        "text": "增量解调"
+      },
+      {
+        "label": "D",
+        "text": "增量调制"
+      }
+    ],
+    "answer": "AD",
+    "analysis": "",
+    "id": 39,
+    "category": "通信原理"
+  },
+  {
+    "type": "multi_choice",
+    "question": "根据香农公式，以下关系正确的有（　）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "信道容量一定，信道的带宽越宽信噪比的要求越小"
+      },
+      {
+        "label": "B",
+        "text": "信道的容量与信道的带宽成反比"
+      },
+      {
+        "label": "C",
+        "text": "信道容量一定，信道的带宽越宽信噪比的要求越高"
+      },
+      {
+        "label": "D",
+        "text": "信道的容量与信噪比成正比"
+      }
+    ],
+    "answer": "AD",
+    "analysis": "",
+    "id": 40,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "平稳随机过程的数学期望值是与时间无关的常数。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 41,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "常规调幅的手段是包络解调。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 42,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "2DPSK信号相对于绝对码属于相对调相。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 43,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "窄带噪声的ξ (l)、ξ .(t)、ξ ，(t)都是均值为零的平稳高斯白噪声;ξ (l)、ξ.(t)、ξ ，(1)的平 均功率(方差)相同，为σ2。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 44,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "分集接收的信号合并方式可分为最佳选择式、等增益相加式、最大比值相加式。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 45,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "信道是以传输媒介为基础的信号通路，可以分为狭义信道和广义信道。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 46,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "时分多路通信是各路信号在信道上占有不同时间间隔进行通信。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 47,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "模拟信号是指参量可连续取值的信号，数字信号是指参量可离散取值的信号。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 48,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "只要无误码，则PCM接收机输出模拟信号中就无噪声。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 49,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "调制信道对信号的干扰有两种：乘性干扰K(t)和加性干扰n(t)。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 50,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "在“0”“1”等概率出现情况下，双极性不归零码能够直接提取位同步信号。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 51,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "通信网按同步功能可分为载波同步、码元同步、帧同步和网同步。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 52,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "一种编码，若其最小距离为d0，能纠正t个错误时，21+1≤d0。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 53,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "在数字通信系统中，眼图是用实验方法观察码间干扰和噪声对系统性能的影响。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 54,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "当信道带宽趋向无穷时，信道容量趋向一常数。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 55,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "当无信号时，乘性噪声不存在。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 56,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "幅度调制通常称为线性调制是因为调幅器是一个线性电路。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 57,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "出现概率越大的消息，其所含的信息量越大。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 58,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "2DPSK占用的频带与2ASK占用的频带一样宽。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 59,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "平稳随机过程通过线性系统时，仍是平稳的。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 60,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "高斯过程经过线性系统后仍是高斯过程。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 61,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "振幅调制(AM)信号在采用包络检波法解调时会产生门限效应。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 62,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "部分响应系统存在人为的码间干扰。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 63,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "平稳随机过程的自相关函数与其功率谱密度是一对傅里叶变换。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 64,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "按照抽样定理要求，进行抽样后即实现了模拟信号到数字信号的转换。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 65,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "信道容量是指信道传输信息速率的最小值。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 66,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "白噪声在任意两个时刻上的取值都是不相关的。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 67,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "相位模糊度是指本地载波的不确定性造成的输出不确定。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 68,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "一般说来，通过键控法得到二进制移频建控信号(2FSK)的相位与序列有关。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 69,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "消除码间串扰的基本思想是当前码元的判决时刻，其他码元的值为1。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 70,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "当信道带宽B→∞时，信道容量C不→∞。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 71,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "数字信号的参量是离散取值的，只能取有限个值。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 72,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "相位的概率密度主要集中在有用信号相位的周围，其幅度取决于信道比。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 73,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "幅度调制通常称为线性调制是因为频带的搬移过程是线性的。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 74,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "由于调制信道属于模拟信道，而编码信道属于数字信道，所以调制信道引起的失真不会影响编码信道。 （　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 75,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "在单边带信号中插入强载波，可用包络检波法解调出基带信号。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 76,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "多径传播会引起频率选择性衰落。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考智学官网 【慧考解析】",
+    "id": 77,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "单边带信号采用相干解调。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 78,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "模拟信号的数字化传输不会对模拟信号带来任何影响。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 79,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "一个均值为零，方差为σn2的窄带平稳高斯过程，它的同相分量和正交分量均是平稳高斯过程，而且均值 为1，方差为σn2。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 80,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "码间串扰通过时域均衡可以减少，也能彻底消除。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 81,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "2PSK信号的频谱要比2ASK信号的频谱宽。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 82,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "PSK是用码元载波的相位来传输信息，DSP是用前后码元载波的相位来传输信息，它克服了PSK的相位模糊 缺点。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 83,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "时域均衡是利用接收波形本身来进行补偿，通过消除取样点的符号间干扰，提高判决的可靠性。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 84,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "根据载波的不同，可分为以正弦波作为载波的连续载波调制和以脉冲串作为载波的脉冲调制。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "慧考解析】 慧考智学官网",
+    "id": 85,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "任何一个采用线性调制的频带传输系统，总可以由一个等效的基带传输系统所替代。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 86,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "在数字基带信号的频谱分析过程中，将基带信号分解为交变波和稳态波。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 87,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "所有单极性二元码的功率谱中都存在位定时分量。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 88,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "数字信号的参量是分散取值的。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "",
+    "id": 89,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "随参信道的传输媒质存在多径传播。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 90,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "任何一个采用线性调制的频带传输系统，无论何时，总可以由一个等效的基带传输系统所替代。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "analysis": "",
+    "id": 91,
+    "category": "通信原理"
+  },
+  {
+    "type": "judge",
+    "question": "如果FM信号的最大瞬时相位偏移小于π/6，则称为宽带调频，否则为窄带调频。（　）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "analysis": "慧考智学官网",
+    "id": 92,
+    "category": "通信原理"
+  }
+]
