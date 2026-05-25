@@ -23,6 +23,10 @@
   </div>
 
   <div class="grid">
+    <GlassCard href="/profile/reports">
+      <h3>学习报告</h3>
+      <p>查看学习进度与技能树</p>
+    </GlassCard>
     <GlassCard href="/profile/wrongbook">
       <h3>错题本</h3>
       <p>查看和复习错过的题目</p>
