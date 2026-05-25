@@ -1,9 +1,9 @@
 <script>
-  import { auth } from '$lib/stores/auth';
+  import { logout } from '$lib/stores/auth';
   import { goto } from '$app/navigation';
 
   function handleLogout() {
-    auth.logout();
+    logout();
     goto('/login');
   }
 </script>

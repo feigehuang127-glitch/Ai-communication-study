@@ -1,5 +1,5 @@
 <script>
-  import { auth } from '$lib/stores/auth';
+  import { user } from '$lib/stores/auth';
   import { page } from '$app/stores';
 </script>
 
@@ -10,7 +10,7 @@
     <a href="/lab" class:active={$page.url.pathname.startsWith('/lab')}>实验场</a>
     <a href="/game" class:active={$page.url.pathname.startsWith('/game')}>竞技</a>
     <a href="/profile" class:active={$page.url.pathname.startsWith('/profile')}>
-      {$auth.user?.username || '个人中心'}
+      {$user?.username || '个人中心'}
     </a>
   </div>
 </nav>
