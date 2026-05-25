@@ -1,6 +1,7 @@
 <script lang="ts">
   import { game } from '$lib/stores/game';
   import { onMount } from 'svelte';
+  import { page } from '$app/stores';
   import { goto } from '$app/navigation';
 
   let timeLeft = 10;
@@ -12,10 +13,18 @@
 
   $: question = $game.questions[$game.currentIndex];
 
-  onMount(() => {
+  onMount(async () => {
+    const params = $page.url.searchParams;
+    const mode = params.get('mode') || 'pve';
+    const source = params.get('source') || '';
+
     if ($game.questions.length === 0) {
-      goto('/game');
-      return;
+      try {
+        await game.start(source || 'ai', mode);
+      } catch {
+        goto('/game/lobby');
+        return;
+      }
     }
     startTimer();
   });
