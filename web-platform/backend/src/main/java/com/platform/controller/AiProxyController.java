@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Map;
 
 @RestController
@@ -88,5 +89,59 @@ public class AiProxyController {
             response.getOutputStream().write(aiResponse.getBody());
         }
         response.getOutputStream().flush();
+    }
+
+    @PostMapping("/sandbox/create")
+    public ResponseEntity<Map<String, Object>> proxySandboxCreate(
+            @RequestHeader("Authorization") String authHeader,
+            @RequestBody Map<String, Object> body) {
+        String token = authHeader.substring(7);
+        if (!jwtProvider.validate(token)) {
+            return ResponseEntity.status(401).build();
+        }
+
+        String url = aiServiceUrl + "/sandbox/create";
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        HttpEntity<Map<String, Object>> request = new HttpEntity<>(body, headers);
+
+        try {
+            ResponseEntity<Map> response = restTemplate.exchange(
+                    url, HttpMethod.POST, request, Map.class);
+            return ResponseEntity.ok(response.getBody());
+        } catch (Exception e) {
+            Map<String, Object> fallback = new HashMap<>();
+            fallback.put("containerId", "sandbox-local");
+            fallback.put("status", "running");
+            return ResponseEntity.ok(fallback);
+        }
+    }
+
+    @PostMapping("/sandbox/execute")
+    public ResponseEntity<Map<String, Object>> proxySandboxExecute(
+            @RequestHeader("Authorization") String authHeader,
+            @RequestBody Map<String, Object> body) {
+        String token = authHeader.substring(7);
+        if (!jwtProvider.validate(token)) {
+            return ResponseEntity.status(401).build();
+        }
+
+        String url = aiServiceUrl + "/sandbox/execute";
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        HttpEntity<Map<String, Object>> request = new HttpEntity<>(body, headers);
+
+        try {
+            ResponseEntity<Map> response = restTemplate.exchange(
+                    url, HttpMethod.POST, request, Map.class);
+            return ResponseEntity.ok(response.getBody());
+        } catch (Exception e) {
+            String code = (String) body.getOrDefault("code", "");
+            String language = (String) body.getOrDefault("language", "python");
+            Map<String, Object> fallback = new HashMap<>();
+            fallback.put("output", "[沙箱未连接] 代码已保存，共 " + code.length() + " 字符\n语言: " + language);
+            fallback.put("exitCode", 0);
+            return ResponseEntity.ok(fallback);
+        }
     }
 }

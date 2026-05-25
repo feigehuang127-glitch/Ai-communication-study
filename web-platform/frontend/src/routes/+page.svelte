@@ -3,7 +3,7 @@
   import Leaderboard from '$lib/components/Leaderboard.svelte';
 
   const colleges = [
-    { name: '通信学院', slug: 'comm', desc: '通信原理 · 数据通信网 · 信号与系统', icon: '📡' },
+    { name: '通信学院', slug: 'comm', desc: '通信原理 · 数据通信网 · 信号与系统', icon: '📡', coming: true },
     { name: 'AI 学院', slug: 'ai', desc: '提示词工程 · Skills · Agent 开发', icon: '🤖', coming: true }
   ];
 
