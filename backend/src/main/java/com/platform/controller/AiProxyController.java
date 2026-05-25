@@ -63,4 +63,30 @@ public class AiProxyController {
             return ResponseEntity.ok(Map.of("ai_service", "unavailable"));
         }
     }
+
+    @PostMapping("/compare")
+    public void proxyCompare(@RequestBody Map<String, Object> body,
+                             @RequestHeader("Authorization") String authHeader,
+                             HttpServletResponse response) throws IOException {
+        String token = authHeader.substring(7);
+        if (!jwtProvider.validate(token)) {
+            response.setStatus(401);
+            return;
+        }
+
+        String url = aiServiceUrl + "/compare";
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+
+        HttpEntity<Map<String, Object>> request = new HttpEntity<>(body, headers);
+        ResponseEntity<byte[]> aiResponse = restTemplate.exchange(
+                url, HttpMethod.POST, request, byte[].class);
+
+        response.setContentType("text/event-stream");
+        response.setStatus(aiResponse.getStatusCode().value());
+        if (aiResponse.getBody() != null) {
+            response.getOutputStream().write(aiResponse.getBody());
+        }
+        response.getOutputStream().flush();
+    }
 }
