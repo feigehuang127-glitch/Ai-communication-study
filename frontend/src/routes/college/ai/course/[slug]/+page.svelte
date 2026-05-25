@@ -9,6 +9,7 @@
   let course: any = null;
   let chapters: any[] = [];
   let activeLesson: any = null;
+  let courseProgress: any = null;
 
   $: slug = $page.params.slug;
 
@@ -20,8 +21,15 @@
       if (chapters.length > 0 && chapters[0].lessons?.length > 0) {
         activeLesson = chapters[0].lessons[0];
       }
+      loadProgress();
     } catch {}
   });
+
+  async function loadProgress() {
+    try {
+      courseProgress = await apiJson<any>(`/api/progress/course/${course.id}`);
+    } catch {}
+  }
 
   function selectLesson(lesson: any) {
     activeLesson = lesson;
@@ -63,6 +71,12 @@
       <div class="course-header">
         <h2>{course.title}</h2>
         <span class="level-badge">{course.level}</span>
+        {#if courseProgress}
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: {courseProgress.totalLessons > 0 ? courseProgress.completedLessons / courseProgress.totalLessons * 100 : 0}%"></div>
+          </div>
+          <span class="progress-text">{courseProgress.completedLessons}/{courseProgress.totalLessons} 课时</span>
+        {/if}
       </div>
       {#each chapters as ch}
         <div class="chapter">
@@ -198,4 +212,7 @@
     margin: 12px 0;
   }
   .placeholder { color: var(--text-secondary); font-style: italic; }
+  .progress-bar { height: 4px; background: rgba(255,255,255,0.08); border-radius: 2px; margin: 8px 0; overflow: hidden; }
+  .progress-fill { height: 100%; background: var(--accent-blue); border-radius: 2px; transition: width 0.3s; }
+  .progress-text { font-size: 11px; color: var(--text-secondary); }
 </style>
