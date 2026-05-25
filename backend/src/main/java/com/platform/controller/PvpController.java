@@ -39,11 +39,19 @@ public class PvpController {
             @AuthenticationPrincipal UserDetails details,
             @RequestBody Map<String, Object> body) {
         var user = userService.findByUsername(details.getUsername());
+        Object matchIdObj = body.get("matchId");
+        Object correctObj = body.get("correctCount");
+        Object totalObj = body.get("totalQuestions");
+
+        if (matchIdObj == null || correctObj == null || totalObj == null) {
+            return ResponseEntity.badRequest().body(Map.of("error", "Missing required fields"));
+        }
+
         return ResponseEntity.ok(pvpService.submitPvpResult(
-                Long.valueOf(body.get("matchId").toString()),
+                Long.valueOf(matchIdObj.toString()),
                 user.getId(),
-                (int) body.get("correctCount"),
-                (int) body.get("totalQuestions")
+                ((Number) correctObj).intValue(),
+                ((Number) totalObj).intValue()
         ));
     }
 }
