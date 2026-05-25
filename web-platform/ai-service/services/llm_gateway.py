@@ -48,7 +48,7 @@ async def stream_chat(
         system_msg = next((m["content"] for m in messages if m["role"] == "system"), "")
         chat_messages = [m for m in messages if m["role"] != "system"]
         body = {
-            "model": model_name.replace("claude-", "claude-"),
+            "model": model_name,
             "max_tokens": max_tokens,
             "temperature": temperature,
             "system": system_msg,
@@ -65,10 +65,16 @@ async def stream_chat(
         }
 
     async with httpx.AsyncClient(timeout=60.0) as client:
-        async with client.stream("POST", cfg["url"], headers=headers, json=body) as resp:
-            async for line in resp.aiter_lines():
-                if line.startswith("data: "):
-                    yield f"{line}\n\n"
+        try:
+            async with client.stream("POST", cfg["url"], headers=headers, json=body) as resp:
+                resp.raise_for_status()
+                async for line in resp.aiter_lines():
+                    if line.startswith("data: "):
+                        yield f"{line}\n\n"
+        except httpx.HTTPStatusError as e:
+            yield f"data: [ERROR] HTTP {e.response.status_code}: {e.response.text[:200]}\n\n"
+        except Exception as e:
+            yield f"data: [ERROR] {str(e)}\n\n"
 
 
 async def chat_sync(
