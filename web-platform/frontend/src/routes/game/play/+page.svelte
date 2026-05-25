@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { game } from '$lib/stores/game';
   import { onMount } from 'svelte';
   import { goto } from '$app/navigation';

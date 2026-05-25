@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { auth } from '$lib/stores/auth';
   import { goto } from '$app/navigation';
   import GlassCard from '$lib/components/GlassCard.svelte';
