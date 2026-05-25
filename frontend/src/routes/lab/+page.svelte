@@ -14,12 +14,11 @@
         <p>Docker 隔离的在线代码执行环境</p>
       </div>
     </GlassCard>
-    <GlassCard>
+    <GlassCard href="/lab/prompt-playground">
       <div class="lab-card">
         <span class="lab-icon">🔬</span>
         <h3>提示词实验场</h3>
         <p>多模型横向评测对比</p>
-        <span class="badge">即将上线</span>
       </div>
     </GlassCard>
     <GlassCard>
