@@ -3,10 +3,12 @@ package com.platform.service;
 import com.platform.model.*;
 import com.platform.repository.*;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
 
 @Service
+@Transactional(readOnly = true)
 public class CourseService {
 
     private final CollegeRepository collegeRepo;
@@ -69,7 +71,10 @@ public class CourseService {
         Course course = getCourse(slug);
         StringBuilder sb = new StringBuilder();
         sb.append("# ").append(course.getTitle()).append("\n\n");
-        sb.append(course.getDescription()).append("\n\n");
+        if (course.getDescription() != null) {
+            sb.append(course.getDescription());
+        }
+        sb.append("\n\n");
         for (Chapter ch : getChapters(course.getId())) {
             sb.append("## ").append(ch.getTitle()).append("\n\n");
             for (Lesson lesson : getLessons(ch.getId())) {
