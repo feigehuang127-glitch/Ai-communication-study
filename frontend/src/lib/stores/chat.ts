@@ -1,4 +1,4 @@
-import { writable } from 'svelte/store';
+import { writable, get } from 'svelte/store';
 
 export interface ChatMessage {
   role: 'user' | 'assistant' | 'system';
@@ -15,13 +15,15 @@ export interface ChatState {
 }
 
 function createChatStore() {
-  const { subscribe, update } = writable<ChatState>({
+  const store = writable<ChatState>({
     isOpen: false,
     personaId: 'lecturer',
     personaName: '讲解老师',
     messages: [],
     isLoading: false,
   });
+
+  const { subscribe, update } = store;
 
   function toggle() {
     update(s => ({ ...s, isOpen: !s.isOpen }));
@@ -52,7 +54,82 @@ function createChatStore() {
     update(s => ({ ...s, personaId, personaName: getPersonaName(personaId) }));
   }
 
-  return { subscribe, toggle, open, close, addMessage, setLoading, setPersona };
+  async function sendMessage(message: string, contextPage: string) {
+    const state = get(store);
+    if (!message.trim() || state.isLoading) return;
+
+    addMessage({ role: 'user', content: message });
+    setLoading(true);
+
+    try {
+      const token = typeof localStorage !== 'undefined' ? localStorage.getItem('token') : null;
+      const res = await fetch('/api/ai/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          message: message.trim(),
+          context_page: contextPage,
+          conversation_history: state.messages.slice(-10).map(m => ({
+            role: m.role,
+            content: m.content,
+          })),
+          model: 'claude-sonnet-4-6',
+        }),
+      });
+
+      const reader = res.body?.getReader();
+      if (!reader) {
+        addMessage({ role: 'assistant', content: '抱歉，无法获取响应。' });
+        return;
+      }
+
+      const decoder = new TextDecoder();
+      let buffer = '';
+      let assistantContent = '';
+      let personaName: string | undefined;
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop() || '';
+
+        for (const line of lines) {
+          if (!line.startsWith('data: ')) continue;
+          const data = line.slice(6).trim();
+          if (data === '[DONE]') continue;
+          if (!data) continue;
+
+          if (data.includes('|') && !assistantContent) {
+            const [pid, pname] = data.split('|');
+            personaName = pname;
+            setPersona(pid);
+          } else if (data.startsWith('{')) {
+            try {
+              const delta = JSON.parse(data);
+              assistantContent += delta.content || '';
+            } catch { /* skip malformed JSON */ }
+          }
+        }
+      }
+
+      if (assistantContent) {
+        addMessage({ role: 'assistant', content: assistantContent, personaName });
+      } else {
+        addMessage({ role: 'assistant', content: '收到回复，但内容为空。' });
+      }
+    } catch (e: any) {
+      addMessage({ role: 'assistant', content: '抱歉，连接出现问题，请重试。' });
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  return { subscribe, toggle, open, close, addMessage, setLoading, setPersona, sendMessage };
 }
 
 function getPersonaName(id: string): string {

@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { page } from '$app/stores';
-  import { apiJson } from '$lib/api/client';
+  import { api, apiJson } from '$lib/api/client';
   import { chat } from '$lib/stores/chat';
   import GlassCard from '$lib/components/GlassCard.svelte';
   import PersonaAvatar from '$lib/components/PersonaAvatar.svelte';
@@ -10,6 +10,9 @@
   let chapters: any[] = [];
   let activeLesson: any = null;
   let courseProgress: any = null;
+  let completedLessonIds: Set<number> = new Set();
+  let progressMsg = '';
+  let markingComplete = false;
 
   $: slug = $page.params.slug;
 
@@ -28,11 +31,39 @@
   async function loadProgress() {
     try {
       courseProgress = await apiJson<any>(`/api/progress/course/${course.id}`);
+      if (courseProgress?.completedLessonIds) {
+        completedLessonIds = new Set(courseProgress.completedLessonIds);
+      }
     } catch {}
   }
 
   function selectLesson(lesson: any) {
     activeLesson = lesson;
+    // Call start endpoint to track progress
+    try {
+      api(`/api/progress/lesson/${lesson.id}/start`, { method: 'POST' });
+    } catch {}
+  }
+
+  async function markComplete() {
+    if (!activeLesson || markingComplete) return;
+    markingComplete = true;
+    progressMsg = '正在记录进度...';
+    try {
+      await api(`/api/progress/lesson/${activeLesson.id}/complete`, {
+        method: 'POST',
+        body: { score: 100 },
+      });
+      completedLessonIds.add(activeLesson.id);
+      progressMsg = '已完成本课时！';
+      loadProgress();
+    } catch (e: any) {
+      // If API fails, still mark locally
+      completedLessonIds.add(activeLesson.id);
+      progressMsg = '已标记为完成（离线模式）';
+    } finally {
+      markingComplete = false;
+    }
   }
 
   function askTeacher() {
@@ -85,10 +116,14 @@
             <button
               class="lesson-link"
               class:active={activeLesson?.id === lesson.id}
+              class:completed={completedLessonIds.has(lesson.id)}
               on:click={() => selectLesson(lesson)}
             >
               {lesson.contentType === 'code' ? '💻 ' : '📖 '}
               {lesson.title}
+              {#if completedLessonIds.has(lesson.id)}
+                <span class="check-mark">✓</span>
+              {/if}
             </button>
           {/each}
         </div>
@@ -118,6 +153,22 @@
               <p class="placeholder">测验内容（需后端题库对接）</p>
             {:else}
               <p class="placeholder">视频内容（需视频服务对接）</p>
+            {/if}
+          </div>
+          <div class="lesson-footer">
+            {#if progressMsg}
+              <span class="progress-msg">{progressMsg}</span>
+            {/if}
+            {#if !completedLessonIds.has(activeLesson.id)}
+              <button
+                class="complete-btn"
+                on:click={markComplete}
+                disabled={markingComplete}
+              >
+                {markingComplete ? '提交中...' : '✓ 标记完成'}
+              </button>
+            {:else}
+              <span class="completed-badge">已完成</span>
             {/if}
           </div>
         </GlassCard>
@@ -215,4 +266,39 @@
   .progress-bar { height: 4px; background: rgba(255,255,255,0.08); border-radius: 2px; margin: 8px 0; overflow: hidden; }
   .progress-fill { height: 100%; background: var(--accent-blue); border-radius: 2px; transition: width 0.3s; }
   .progress-text { font-size: 11px; color: var(--text-secondary); }
+
+  .lesson-link.completed { color: var(--accent-green); }
+  .check-mark { margin-left: 6px; font-size: 12px; color: var(--accent-green); }
+
+  .lesson-footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .progress-msg { font-size: 13px; color: var(--text-secondary); }
+  .complete-btn {
+    padding: 8px 20px;
+    background: linear-gradient(135deg, var(--accent-green), #3a8);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s ease;
+  }
+  .complete-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+  .complete-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+  .completed-badge {
+    padding: 6px 16px;
+    background: rgba(100, 200, 150, 0.15);
+    border: 1px solid var(--accent-green);
+    border-radius: 8px;
+    color: var(--accent-green);
+    font-size: 13px;
+    font-weight: 600;
+  }
 </style>

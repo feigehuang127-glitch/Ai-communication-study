@@ -48,11 +48,18 @@ body {
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
 }
 
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
 .gradient-text {
-  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple), var(--accent-blue));
+  background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  animation: gradient-shift 3s ease infinite;
 }
 
 .glow-orb {
@@ -62,6 +69,16 @@ body {
   opacity: 0.15;
   pointer-events: none;
   z-index: 0;
+}
+
+button:not(:disabled) {
+  transition: all 0.2s ease;
+}
+button:not(:disabled):hover {
+  transform: translateY(-1px);
+}
+button:not(:disabled):active {
+  transform: translateY(0);
 }
 
 ::-webkit-scrollbar { width: 6px; }

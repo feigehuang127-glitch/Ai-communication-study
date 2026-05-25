@@ -2,14 +2,18 @@
   import { onMount } from 'svelte';
   import { apiJson } from '$lib/api/client';
   import GlassCard from '$lib/components/GlassCard.svelte';
+  import LoadingSpinner from '$lib/components/LoadingSpinner.svelte';
 
   let courses: any[] = [];
+  let loading = true;
 
   onMount(async () => {
     try {
       const college = await apiJson<any>('/api/courses/colleges/ai');
       courses = await apiJson<any[]>(`/api/courses?collegeId=${college.id}`);
-    } catch {}
+    } catch {} finally {
+      loading = false;
+    }
   });
 </script>
 
@@ -21,17 +25,23 @@
 
   <section class="courses">
     <h2>课程体系</h2>
-    <div class="course-grid">
-      {#each courses as course}
-        <GlassCard href={`/college/ai/course/${course.slug}`}>
-          <div class="course-card">
-            <span class="level-badge">L{course.level?.replace('L', '')}</span>
-            <h3>{course.title}</h3>
-            <p>{course.description}</p>
-          </div>
-        </GlassCard>
-      {/each}
-    </div>
+    {#if loading}
+      <LoadingSpinner message="加载课程中..." />
+    {:else if courses.length === 0}
+      <p class="empty">暂无课程</p>
+    {:else}
+      <div class="course-grid">
+        {#each courses as course}
+          <GlassCard href={`/college/ai/course/${course.slug}`}>
+            <div class="course-card">
+              <span class="level-badge">L{course.level?.replace('L', '')}</span>
+              <h3>{course.title}</h3>
+              <p>{course.description}</p>
+            </div>
+          </GlassCard>
+        {/each}
+      </div>
+    {/if}
   </section>
 </div>
 

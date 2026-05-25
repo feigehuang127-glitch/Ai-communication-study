@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { chat, type ChatMessage } from '$lib/stores/chat';
+  import { chat } from '$lib/stores/chat';
   import PersonaAvatar from './PersonaAvatar.svelte';
   import { page } from '$app/stores';
 
@@ -12,68 +12,11 @@
     return pathname;
   }
 
-  async function send() {
+  function send() {
     const text = inputText.trim();
     if (!text || $chat.isLoading) return;
-
-    chat.addMessage({ role: 'user', content: text });
     inputText = '';
-    chat.setLoading(true);
-
-    try {
-      const token = localStorage.getItem('token');
-      const res = await fetch('/api/ai/chat', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}`,
-        },
-        body: JSON.stringify({
-          message: text,
-          contextPage: getContextPage(),
-          conversationHistory: $chat.messages.slice(-10).map(m => ({
-            role: m.role,
-            content: m.content,
-          })),
-        }),
-      });
-
-      const reader = res.body?.getReader();
-      if (!reader) return;
-      const decoder = new TextDecoder();
-      let buffer = '';
-      let assistantMsg: ChatMessage = { role: 'assistant', content: '' };
-
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-        buffer += decoder.decode(value, { stream: true });
-        const lines = buffer.split('\n');
-        buffer = lines.pop() || '';
-
-        for (const line of lines) {
-          if (line.startsWith('data: ')) {
-            const data = line.slice(6);
-            if (data === '[DONE]') continue;
-            if (data.includes('|') && !assistantMsg.content) {
-              const [pid, pname] = data.split('|');
-              assistantMsg.personaName = pname;
-              chat.setPersona(pid);
-            } else if (data.startsWith('{')) {
-              try {
-                const delta = JSON.parse(data);
-                assistantMsg.content += delta.content || '';
-              } catch {}
-            }
-          }
-        }
-      }
-      chat.addMessage(assistantMsg);
-    } catch (e) {
-      chat.addMessage({ role: 'assistant', content: '抱歉，连接出现问题，请重试。' });
-    } finally {
-      chat.setLoading(false);
-    }
+    chat.sendMessage(text, getContextPage());
   }
 
   function handleKeydown(e: KeyboardEvent) {

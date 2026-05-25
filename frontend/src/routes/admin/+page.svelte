@@ -1,5 +1,15 @@
 <script lang="ts">
+  import { user } from '$lib/stores/auth';
+  import { goto } from '$app/navigation';
+  import { onMount } from 'svelte';
   import GlassCard from '$lib/components/GlassCard.svelte';
+
+  onMount(() => {
+    const currentUser = $user;
+    if (!currentUser || currentUser.role !== 'ADMIN') {
+      goto('/login');
+    }
+  });
 </script>
 
 <div class="admin">

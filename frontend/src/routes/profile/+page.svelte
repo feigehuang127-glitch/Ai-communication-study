@@ -2,41 +2,49 @@
   import { onMount } from 'svelte';
   import { apiJson } from '$lib/api/client';
   import GlassCard from '$lib/components/GlassCard.svelte';
+  import LoadingSpinner from '$lib/components/LoadingSpinner.svelte';
 
   let profile: any = null;
+  let loading = true;
 
   onMount(async () => {
     try {
       profile = await apiJson('/api/user/me');
-    } catch { /* handle */ }
+    } catch { /* handle */ } finally {
+      loading = false;
+    }
   });
 </script>
 
-<div class="profile">
-  <div class="profile-header">
-    <div class="avatar glass">{(profile?.username || '?')[0].toUpperCase()}</div>
-    <div>
-      <h1>{profile?.username}</h1>
-      <span class="rank-badge">{profile?.rank}</span>
+{#if loading}
+  <LoadingSpinner />
+{:else}
+  <div class="profile">
+    <div class="profile-header">
+      <div class="avatar glass">{(profile?.username || '?')[0].toUpperCase()}</div>
+      <div>
+        <h1>{profile?.username}</h1>
+        <span class="rank-badge">{profile?.rank}</span>
+      </div>
+      <div class="score">{profile?.totalScore ?? 0} <small>积分</small></div>
     </div>
-    <div class="score">{profile?.totalScore ?? 0} <small>积分</small></div>
-  </div>
 
-  <div class="grid">
-    <GlassCard href="/profile/reports">
-      <h3>学习报告</h3>
-      <p>查看学习进度与技能树</p>
-    </GlassCard>
-    <GlassCard href="/profile/wrongbook">
-      <h3>错题本</h3>
-      <p>查看和复习错过的题目</p>
-    </GlassCard>
-    <GlassCard href="/profile/settings">
-      <h3>设置</h3>
-      <p>账户与偏好设置</p>
-    </GlassCard>
+    <div class="grid">
+      <GlassCard href="/profile/reports">
+        <h3>学习报告</h3>
+        <p>查看学习进度与技能树</p>
+      </GlassCard>
+      <GlassCard href="/profile/wrongbook">
+        <h3>错题本</h3>
+        <p>查看和复习错过的题目</p>
+      </GlassCard>
+      <GlassCard href="/profile/settings">
+        <h3>设置</h3>
+        <p>账户与偏好设置</p>
+      </GlassCard>
+    </div>
   </div>
-</div>
+{/if}
 
 <style>
   .profile { max-width: 600px; margin: 0 auto; }
