@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { auth } from '$lib/stores/auth';
+  import { login, user } from '$lib/stores/auth';
   import { goto } from '$app/navigation';
   import GlassCard from '$lib/components/GlassCard.svelte';
 
@@ -12,7 +12,7 @@
     error = '';
     loading = true;
     try {
-      await auth.login(username, password);
+      await login(username, password);
       goto('/');
     } catch (e) {
       error = '用户名或密码错误';

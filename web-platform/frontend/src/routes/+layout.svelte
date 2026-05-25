@@ -3,12 +3,12 @@
   import GlassNavbar from '$lib/components/GlassNavbar.svelte';
   import ParticleBackground from '$lib/components/ParticleBackground.svelte';
   import Toast from '$lib/components/Toast.svelte';
-  import { auth } from '$lib/stores/auth';
+  import { checkAuth } from '$lib/stores/auth';
 
   onMount(() => {
     const token = localStorage.getItem('token');
     if (token) {
-      auth.checkAuth();
+      checkAuth();
     }
   });
 </script>
