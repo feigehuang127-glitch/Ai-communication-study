@@ -35,6 +35,12 @@
         <a href="/college/comm" class="btn-primary">去学习</a>
         <a href="/profile/wrongbook" class="btn-secondary">查看错题</a>
       </div>
+
+      <div class="portal-actions">
+        <a href="/profile/wrongbook" class="btn-portal">📖 查看错题本</a>
+        <a href="/college/ai" class="btn-portal">🎓 去学习相关课程</a>
+        <a href="/game/lobby" class="btn-portal">⚔️ 再来一局</a>
+      </div>
     </GlassCard>
   </div>
 {/if}
@@ -54,4 +60,7 @@
   }
   .btn-primary { background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple)); color: white; border: none; }
   .btn-secondary { background: rgba(255,255,255,0.06); border: 1px solid var(--glass-border); color: var(--text-primary); }
+  .portal-actions { display: flex; gap: 12px; justify-content: center; margin-top: 24px; flex-wrap: wrap; }
+  .btn-portal { padding: 10px 20px; background: rgba(255,255,255,0.06); border: 1px solid var(--glass-border); border-radius: 10px; color: var(--text-primary); text-decoration: none; font-size: 14px; }
+  .btn-portal:hover { background: rgba(255,255,255,0.1); }
 </style>

@@ -26,6 +26,7 @@
         <GlassCard>
           <span class="tag">{wq.college}</span>
           <span class="error-count">错 {wq.errorCount} 次</span>
+          <a href="/game/play?source=wrongbook&questionId={wq.questionId}" class="retry-btn">🔄 重新挑战</a>
         </GlassCard>
       {/each}
     </div>
@@ -45,6 +46,7 @@
     border-radius: 4px; font-size: 11px;
   }
   .error-count { float: right; color: var(--accent-red); font-size: 13px; }
+  .retry-btn { padding: 4px 12px; background: rgba(100,200,150,0.15); border: 1px solid var(--accent-green); border-radius: 6px; color: var(--accent-green); text-decoration: none; font-size: 12px; }
   .btn-primary {
     display: block; width: 100%; padding: 14px; text-align: center;
     background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
