@@ -1,5 +1,7 @@
 <script>
   import { onMount } from 'svelte';
+  import { fly, fade } from 'svelte/transition';
+  import { page } from '$app/stores';
   import GlassNavbar from '$lib/components/GlassNavbar.svelte';
   import ParticleBackground from '$lib/components/ParticleBackground.svelte';
   import Toast from '$lib/components/Toast.svelte';
@@ -19,9 +21,11 @@
 <div class="app-shell">
   <ParticleBackground />
   <GlassNavbar />
-  <main class="main-content">
-    <slot />
-  </main>
+  {#key $page.url.pathname}
+    <main class="main-content" in:fly={{ x: 0, y: 20, duration: 300 }} out:fade={{ duration: 150 }}>
+      <slot />
+    </main>
+  {/key}
   <Toast />
   <AIWidget />
   <CommandPalette />

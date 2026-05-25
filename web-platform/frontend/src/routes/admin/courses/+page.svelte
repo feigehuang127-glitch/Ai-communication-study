@@ -1,7 +1,10 @@
 <script lang="ts">
   import { onMount } from 'svelte';
+  import { user } from '$lib/stores/auth';
+  import { goto } from '$app/navigation';
   import { apiJson } from '$lib/api/client';
   import GlassCard from '$lib/components/GlassCard.svelte';
+  import LoadingSpinner from '$lib/components/LoadingSpinner.svelte';
 
   interface College {
     id: number;
@@ -32,13 +35,21 @@
   };
 
   let message = '';
+  let loading = true;
 
   onMount(async () => {
+    const currentUser = $user;
+    if (!currentUser || currentUser.role !== 'ADMIN') {
+      goto('/login');
+      return;
+    }
     try {
       colleges = await apiJson<College[]>('/api/admin/colleges');
       courses = await apiJson<Course[]>('/api/admin/courses');
     } catch (e: any) {
       message = '加载失败: ' + e.message;
+    } finally {
+      loading = false;
     }
   });
 
@@ -97,17 +108,20 @@
   }
 </script>
 
-<div class="admin-page">
-  <div class="header-row">
-    <h1 class="gradient-text">课程管理</h1>
-    <a href="/admin" class="back-link">← 返回后台</a>
-  </div>
+{#if loading}
+  <LoadingSpinner />
+{:else}
+  <div class="admin-page">
+    <div class="header-row">
+      <h1 class="gradient-text">课程管理</h1>
+      <a href="/admin" class="back-link">← 返回后台</a>
+    </div>
 
-  {#if message}
-    <div class="msg">{message}</div>
-  {/if}
+    {#if message}
+      <div class="msg">{message}</div>
+    {/if}
 
-  <GlassCard>
+    <GlassCard>
     <h2>{editing ? '编辑课程' : '新建课程'}</h2>
     <form on:submit|preventDefault={save} class="course-form">
       <div class="form-row">
@@ -182,6 +196,7 @@
     {/if}
   </section>
 </div>
+{/if}
 
 <style>
   .admin-page { max-width: 900px; margin: 0 auto; }

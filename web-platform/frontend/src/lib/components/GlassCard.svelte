@@ -24,6 +24,7 @@
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   .card-link:hover { text-decoration: none; }
   .card-button {
@@ -31,5 +32,9 @@
     border: none;
     font: inherit;
     text-align: left;
+  }
+  .card-link:hover, .card-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   }
 </style>
