@@ -21,12 +21,11 @@
         <p>多模型横向评测对比</p>
       </div>
     </GlassCard>
-    <GlassCard>
+    <GlassCard href="/lab/agent-builder">
       <div class="lab-card">
         <span class="lab-icon">🤖</span>
         <h3>Agent 构建器</h3>
         <p>可视化拖拽构建 Agent 工作流</p>
-        <span class="badge">即将上线</span>
       </div>
     </GlassCard>
   </div>
