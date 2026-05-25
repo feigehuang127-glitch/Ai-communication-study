@@ -27,7 +27,7 @@ public class PvpMatch {
     private String scores;
 
     @Column(name = "played_at")
-    private LocalDateTime playedAt;
+    private LocalDateTime playedAt = LocalDateTime.now();
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }

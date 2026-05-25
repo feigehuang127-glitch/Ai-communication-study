@@ -20,10 +20,11 @@ public class UserWrongQuestion {
     @Column(name = "error_count")
     private Integer errorCount = 1;
 
+    @Column(columnDefinition = "TINYINT")
     private Integer status = 0;
 
     @Column(name = "last_wrong_at")
-    private LocalDateTime lastWrongAt;
+    private LocalDateTime lastWrongAt = LocalDateTime.now();
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }

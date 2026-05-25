@@ -24,7 +24,7 @@ public class LearningReport {
     private String content;
 
     @Column(name = "generated_at")
-    private LocalDateTime generatedAt;
+    private LocalDateTime generatedAt = LocalDateTime.now();
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }

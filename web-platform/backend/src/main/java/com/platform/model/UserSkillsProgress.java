@@ -17,10 +17,11 @@ public class UserSkillsProgress {
     @Column(name = "skill_id", nullable = false, length = 100)
     private String skillId;
 
+    @Column(columnDefinition = "TINYINT")
     private Integer status = 0;
 
     @Column(name = "updated_at")
-    private LocalDateTime updatedAt;
+    private LocalDateTime updatedAt = LocalDateTime.now();
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
