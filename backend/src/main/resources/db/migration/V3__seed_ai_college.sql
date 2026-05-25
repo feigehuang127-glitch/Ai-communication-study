@@ -1,16 +1,16 @@
 -- AI 学院
-INSERT INTO colleges (name, slug, icon, description) VALUES
+INSERT IGNORE INTO colleges (name, slug, icon, description) VALUES
 ('AI 学院', 'ai', 'robot', '提示词工程 · Skills 开发 · Agent 构建');
 
 SET @ai_college_id = LAST_INSERT_ID();
 
 -- 提示词工程课程
-INSERT INTO courses (college_id, title, slug, level, `order`, description) VALUES
+INSERT IGNORE INTO courses (college_id, title, slug, level, `order`, description) VALUES
 (@ai_college_id, '提示词工程基础', 'prompt-engineering', 'L1', 1, '从零掌握 Prompt 设计方法论：指令型/角色型/思维链/少样本提示');
 
 SET @pe_course_id = LAST_INSERT_ID();
 
-INSERT INTO chapters (course_id, title, `order`) VALUES
+INSERT IGNORE INTO chapters (course_id, title, `order`) VALUES
 (@pe_course_id, '认识大语言模型', 1),
 (@pe_course_id, '基础提示词模式', 2),
 (@pe_course_id, '思维链与推理', 3);
@@ -19,7 +19,7 @@ SET @ch1_id = (SELECT id FROM chapters WHERE course_id = @pe_course_id AND `orde
 SET @ch2_id = (SELECT id FROM chapters WHERE course_id = @pe_course_id AND `order` = 2);
 SET @ch3_id = (SELECT id FROM chapters WHERE course_id = @pe_course_id AND `order` = 3);
 
-INSERT INTO lessons (chapter_id, title, content_type, content, `order`) VALUES
+INSERT IGNORE INTO lessons (chapter_id, title, content_type, content, `order`) VALUES
 (@ch1_id, 'LLM 工作原理', 'text',
  '{"body":"## Token 与上下文窗口\n\nLLM 将文本切分为 token（词元）进行处理。一个 token 约等于 0.75 个英文单词或 0.5 个中文字。\n\n### 关键概念\n- **上下文窗口**：模型一次能处理的最大 token 数（如 GPT-4 为 128K）\n- **Temperature**：控制输出的随机性（0=确定，1=创造性）\n- **Top-P**：核采样，只从累积概率达到 P 的 token 中选择"}',
  1),
@@ -37,12 +37,12 @@ INSERT INTO lessons (chapter_id, title, content_type, content, `order`) VALUES
  1);
 
 -- Agent 开发课程
-INSERT INTO courses (college_id, title, slug, level, `order`, description) VALUES
+INSERT IGNORE INTO courses (college_id, title, slug, level, `order`, description) VALUES
 (@ai_college_id, 'Agent 开发入门', 'agent-development', 'L2', 2, '构建你的第一个 AI Agent：工具调用、记忆管理、多步推理');
 
 SET @agent_course_id = LAST_INSERT_ID();
 
-INSERT INTO chapters (course_id, title, `order`) VALUES
+INSERT IGNORE INTO chapters (course_id, title, `order`) VALUES
 (@agent_course_id, 'Agent 架构基础', 1),
 (@agent_course_id, '工具调用 (Tool Use)', 2),
 (@agent_course_id, '记忆与状态管理', 3);
@@ -51,7 +51,7 @@ SET @ag_ch1 = (SELECT id FROM chapters WHERE course_id = @agent_course_id AND `o
 SET @ag_ch2 = (SELECT id FROM chapters WHERE course_id = @agent_course_id AND `order` = 2);
 SET @ag_ch3 = (SELECT id FROM chapters WHERE course_id = @agent_course_id AND `order` = 3);
 
-INSERT INTO lessons (chapter_id, title, content_type, content, `order`) VALUES
+INSERT IGNORE INTO lessons (chapter_id, title, content_type, content, `order`) VALUES
 (@ag_ch1, '什么是 AI Agent', 'text',
  '{"body":"## Agent = LLM + 工具 + 记忆 + 规划\n\nAgent 是一个能够自主感知环境、做出决策、执行行动的智能体。\n\n### 核心组件\n- **大脑 (LLM)**：理解任务、生成计划\n- **工具 (Tools)**：搜索、计算、API 调用\n- **记忆 (Memory)**：短期（对话上下文）+ 长期（向量数据库）\n- **规划 (Planning)**：任务分解、自我反思"}',
  1),
