@@ -3,6 +3,9 @@
   import GlassNavbar from '$lib/components/GlassNavbar.svelte';
   import ParticleBackground from '$lib/components/ParticleBackground.svelte';
   import Toast from '$lib/components/Toast.svelte';
+  import AIWidget from '$lib/components/AIWidget.svelte';
+  import CommandPalette from '$lib/components/CommandPalette.svelte';
+  import SlidePanel from '$lib/components/SlidePanel.svelte';
   import { checkAuth } from '$lib/stores/auth';
 
   onMount(() => {
@@ -20,6 +23,9 @@
     <slot />
   </main>
   <Toast />
+  <AIWidget />
+  <CommandPalette />
+  <SlidePanel />
 </div>
 
 <style>
