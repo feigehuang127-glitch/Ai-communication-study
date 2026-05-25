@@ -11,8 +11,9 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql
       - ./backend/src/main/resources/db/migration:/docker-entrypoint-initdb.d
+    # MySQL health check with root credentials required for MySQL 8.0+ when root password is set
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p$${MYSQL_ROOT_PASSWORD}"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -55,6 +56,8 @@ services:
       OPENAI_API_KEY: ${OPENAI_API_KEY}
       DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY}
     volumes:
+    # Docker socket for sandbox container scheduling (Phase 5 code execution sandboxes)
+    # Security: restrict to non-root container in production; use gVisor/Firecracker for multi-tenant
       - /var/run/docker.sock:/var/run/docker.sock
 
   frontend:
