@@ -1,45 +1,62 @@
 <script lang="ts">
+  import { onDestroy } from 'svelte';
+  import { goto } from '$app/navigation';
   import GlassCard from '$lib/components/GlassCard.svelte';
   import Leaderboard from '$lib/components/Leaderboard.svelte';
   import { apiJson } from '$lib/api/client';
 
-  let matching = false;
-  let queueStatus = '';
+  let queuing = false;
+  let queueStatus: string | null = null;
   let matchError = '';
+  let matchResult: any = null;
+  let pollInterval: ReturnType<typeof setInterval> | null = null;
 
-  async function joinQueue() {
-    matching = true;
+  async function joinPvPQueue() {
+    queuing = true;
     matchError = '';
     queueStatus = '正在匹配对手...';
     try {
-      const result = await apiJson<{
-        status: string;
-        matchId?: number;
-        questions?: any[];
-      }>('/api/pvp/queue/join', { method: 'POST' });
-
-      if (result.status === 'matched' && result.matchId) {
-        queueStatus = '匹配成功！';
-        window.location.href = `/game/play?mode=pvp&matchId=${result.matchId}`;
-      } else if (result.status === 'queued') {
+      const token = localStorage.getItem('token');
+      const res = await apiJson<any>('/api/pvp/queue/join', { method: 'POST' });
+      if (res.status === 'matched') {
+        goto(`/game/play?mode=pvp&matchId=${res.matchId}`);
+      } else if (res.status === 'queued') {
         queueStatus = '已加入匹配队列，等待对手...';
-      } else if (result.status === 'already_queued') {
-        queueStatus = '你已在匹配队列中';
+        // Start polling
+        pollInterval = setInterval(async () => {
+          try {
+            const check = await apiJson<any>('/api/pvp/queue/join', { method: 'POST' });
+            if (check.status === 'matched') {
+              clearInterval(pollInterval!);
+              goto(`/game/play?mode=pvp&matchId=${check.matchId}`);
+            }
+          } catch {}
+        }, 3000);
       }
+      matchResult = res;
     } catch (e: any) {
-      matchError = e.message || '匹配失败，请重试';
-      queueStatus = '';
+      queueStatus = '匹配失败，请重试';
+    } finally {
+      queuing = false;
     }
-    matching = false;
+  }
+
+  async function joinQueue() {
+    await joinPvPQueue();
   }
 
   async function leaveQueue() {
     try {
       await apiJson('/api/pvp/queue/leave', { method: 'POST' });
-      queueStatus = '';
     } catch { /* ignore */ }
-    matching = false;
+    if (pollInterval) { clearInterval(pollInterval); pollInterval = null; }
+    queuing = false;
+    queueStatus = null;
   }
+
+  onDestroy(() => {
+    if (pollInterval) clearInterval(pollInterval);
+  });
 </script>
 
 <div class="lobby">
@@ -60,9 +77,9 @@
         <span class="mode-icon">🏆</span>
         <h3>PVP 天梯</h3>
         <p>全站题库随机对战，挑战其他玩家，冲击排行榜</p>
-        {#if !matching && !queueStatus}
+        {#if !queuing && !queueStatus}
           <button class="mm-btn" on:click|stopPropagation={joinQueue}>开始匹配</button>
-        {:else if matching}
+        {:else if queuing}
           <button class="mm-btn loading" disabled>匹配中...</button>
         {:else if queueStatus}
           <span class="queue-status">{queueStatus}</span>

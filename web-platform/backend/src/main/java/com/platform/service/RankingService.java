@@ -17,32 +17,48 @@ public class RankingService {
     }
 
     public void updateScore(Long userId, int score) {
-        redis.opsForZSet().incrementScore(LEADERBOARD_KEY, userId.toString(), score);
+        try {
+            redis.opsForZSet().incrementScore(LEADERBOARD_KEY, userId.toString(), score);
+        } catch (Exception e) {
+            // Redis failure - silently ignore, ranking will be stale
+        }
     }
 
     public Long getRank(Long userId) {
-        Long rank = redis.opsForZSet().reverseRank(LEADERBOARD_KEY, userId.toString());
-        return rank == null ? -1 : rank + 1;
+        try {
+            Long rank = redis.opsForZSet().reverseRank(LEADERBOARD_KEY, userId.toString());
+            return rank == null ? -1 : rank + 1;
+        } catch (Exception e) {
+            return -1L;
+        }
     }
 
     public Double getScore(Long userId) {
-        return redis.opsForZSet().score(LEADERBOARD_KEY, userId.toString());
+        try {
+            return redis.opsForZSet().score(LEADERBOARD_KEY, userId.toString());
+        } catch (Exception e) {
+            return 0.0;
+        }
     }
 
     public List<Map<String, Object>> getTopPlayers(int count) {
-        Set<ZSetOperations.TypedTuple<String>> top = redis.opsForZSet()
-                .reverseRangeWithScores(LEADERBOARD_KEY, 0, count - 1);
-        List<Map<String, Object>> result = new ArrayList<>();
-        if (top != null) {
-            int rank = 1;
-            for (var tuple : top) {
-                result.add(Map.of(
-                        "rank", rank++,
-                        "userId", Long.parseLong(tuple.getValue()),
-                        "score", tuple.getScore()
-                ));
+        try {
+            Set<ZSetOperations.TypedTuple<String>> top = redis.opsForZSet()
+                    .reverseRangeWithScores(LEADERBOARD_KEY, 0, count - 1);
+            List<Map<String, Object>> result = new ArrayList<>();
+            if (top != null) {
+                int rank = 1;
+                for (var tuple : top) {
+                    result.add(Map.of(
+                            "rank", rank++,
+                            "userId", Long.parseLong(tuple.getValue()),
+                            "score", tuple.getScore()
+                    ));
+                }
             }
+            return result;
+        } catch (Exception e) {
+            return Collections.emptyList();
         }
-        return result;
     }
 }

@@ -2,6 +2,7 @@ package com.platform.service;
 
 import com.platform.model.*;
 import com.platform.repository.*;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -43,6 +44,7 @@ public class PvpService {
         return Map.of("status", "left");
     }
 
+    @Transactional
     private Map<String, Object> createMatch(Integer player1Id, Integer player2Id) {
         List<Question> allQuestions = questionRepo.findAll();
         Collections.shuffle(allQuestions);
@@ -75,20 +77,48 @@ public class PvpService {
                 .orElseThrow(() -> new RuntimeException("Match not found"));
         int score = correctCount * 10;
 
-        if (match.getWinnerId() == null) {
-            match.setWinnerId(userId);
-            try {
-                match.setScores(objectMapper.writeValueAsString(
-                        Map.of(userId.toString(), Map.of("correct", correctCount, "score", score))));
-            } catch (Exception e) {
-                match.setScores("{}");
-            }
-            matchRepo.save(match);
-            rankingService.updateScore(userId.longValue(), score);
-            return Map.of("status", "completed", "winnerId", userId, "score", score);
+        // Load existing scores
+        Map<String, Map<String, Integer>> scores;
+        try {
+            String existing = match.getScores();
+            scores = (existing == null || existing.isEmpty()) ? new HashMap<>()
+                    : objectMapper.readValue(existing, new TypeReference<Map<String, Map<String, Integer>>>() {});
+        } catch (Exception e) {
+            scores = new HashMap<>();
         }
 
-        rankingService.updateScore(userId.longValue(), score);
-        return Map.of("status", "completed", "winnerId", match.getWinnerId(), "score", score);
+        // Record this player's result
+        scores.put(userId.toString(), Map.of("correct", correctCount, "score", score));
+
+        // If both players have submitted, determine winner
+        if (scores.size() >= 2) {
+            Integer winnerId = null;
+            int highestCorrect = -1;
+            for (var entry : scores.entrySet()) {
+                int c = entry.getValue().get("correct");
+                if (c > highestCorrect) {
+                    highestCorrect = c;
+                    winnerId = Integer.parseInt(entry.getKey());
+                }
+            }
+            match.setWinnerId(winnerId);
+        }
+
+        try {
+            match.setScores(objectMapper.writeValueAsString(scores));
+        } catch (Exception e) {
+            match.setScores("{}");
+        }
+        matchRepo.save(match);
+
+        // Always update Redis ranking
+        try {
+            rankingService.updateScore(userId.longValue(), score);
+        } catch (Exception e) {
+            // Redis failure shouldn't block match result
+        }
+
+        return Map.of("status", scores.size() >= 2 ? "completed" : "waiting_for_opponent",
+                "score", score);
     }
 }
