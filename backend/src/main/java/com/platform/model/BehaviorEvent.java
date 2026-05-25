@@ -23,13 +23,14 @@ public class BehaviorEvent {
     @Column(columnDefinition = "JSON")
     private String context;
 
+    @Column(columnDefinition = "TINYINT")
     private Integer severity = 1;
 
     @Column(name = "triggered_rule_id", length = 50)
     private String triggeredRuleId;
 
     @Column(name = "created_at")
-    private LocalDateTime createdAt;
+    private LocalDateTime createdAt = LocalDateTime.now();
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }

@@ -30,7 +30,7 @@ public class SandboxSession {
     private String status = "starting";
 
     @Column(name = "started_at")
-    private LocalDateTime startedAt;
+    private LocalDateTime startedAt = LocalDateTime.now();
 
     @Column(name = "expires_at")
     private LocalDateTime expiresAt;
