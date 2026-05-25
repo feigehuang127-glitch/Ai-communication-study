@@ -37,7 +37,7 @@ public class ProgressController {
             @AuthenticationPrincipal UserDetails details,
             @PathVariable Long courseId) {
         var user = userService.findByUsername(details.getUsername());
-        return ResponseEntity.ok(progressService.getCourseProgress(user.getId(), courseId, courseService));
+        return ResponseEntity.ok(progressService.getCourseProgress(user.getId(), courseId));
     }
 
     @PostMapping("/lesson/{lessonId}/start")

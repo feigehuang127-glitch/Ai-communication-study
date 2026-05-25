@@ -14,11 +14,14 @@ public class ProgressService {
 
     private final UserProgressRepository userProgressRepo;
     private final UserSkillsProgressRepository skillsRepo;
+    private final CourseService courseService;
 
     public ProgressService(UserProgressRepository userProgressRepo,
-                           UserSkillsProgressRepository skillsRepo) {
+                           UserSkillsProgressRepository skillsRepo,
+                           CourseService courseService) {
         this.userProgressRepo = userProgressRepo;
         this.skillsRepo = skillsRepo;
+        this.courseService = courseService;
     }
 
     @Transactional(readOnly = true)
@@ -32,14 +35,15 @@ public class ProgressService {
     }
 
     public UserProgress markLessonStarted(Integer userId, Long lessonId) {
-        return userProgressRepo.findByUserIdAndLessonId(userId, lessonId)
+        UserProgress p = userProgressRepo.findByUserIdAndLessonId(userId, lessonId)
                 .orElseGet(() -> {
-                    UserProgress p = new UserProgress();
-                    p.setUserId(userId);
-                    p.setLessonId(lessonId);
-                    p.setStatus("in_progress");
-                    return userProgressRepo.save(p);
+                    UserProgress np = new UserProgress();
+                    np.setUserId(userId);
+                    np.setLessonId(lessonId);
+                    return np;
                 });
+        p.setStatus("in_progress");
+        return userProgressRepo.save(p);
     }
 
     public UserProgress markLessonCompleted(Integer userId, Long lessonId, Integer score) {
@@ -57,8 +61,7 @@ public class ProgressService {
     }
 
     @Transactional(readOnly = true)
-    public Map<String, Object> getCourseProgress(Integer userId, Long courseId,
-                                                  CourseService courseService) {
+    public Map<String, Object> getCourseProgress(Integer userId, Long courseId) {
         List<Chapter> chapters = courseService.getChapters(courseId);
         int totalLessons = 0;
         int completedLessons = 0;
@@ -97,14 +100,15 @@ public class ProgressService {
     }
 
     public UserSkillsProgress unlockSkill(Integer userId, String skillId) {
-        return skillsRepo.findByUserIdAndSkillId(userId, skillId)
+        UserSkillsProgress sp = skillsRepo.findByUserIdAndSkillId(userId, skillId)
                 .orElseGet(() -> {
-                    UserSkillsProgress sp = new UserSkillsProgress();
-                    sp.setUserId(userId);
-                    sp.setSkillId(skillId);
-                    sp.setStatus(1);
-                    return skillsRepo.save(sp);
+                    UserSkillsProgress nsp = new UserSkillsProgress();
+                    nsp.setUserId(userId);
+                    nsp.setSkillId(skillId);
+                    return nsp;
                 });
+        sp.setStatus(1);
+        return skillsRepo.save(sp);
     }
 
     public UserSkillsProgress masterSkill(Integer userId, String skillId) {
