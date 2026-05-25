@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routers import health, chat, sandbox
+from routers import health, chat, sandbox, compare
 
 app = FastAPI(title="AI Learning Platform - AI Service")
 
@@ -14,3 +14,4 @@ app.add_middleware(
 app.include_router(health.router)
 app.include_router(chat.router)
 app.include_router(sandbox.router)
+app.include_router(compare.router)
