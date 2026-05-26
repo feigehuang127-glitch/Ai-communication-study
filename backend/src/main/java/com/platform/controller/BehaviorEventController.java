@@ -1,5 +1,6 @@
 package com.platform.controller;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.platform.model.BehaviorEvent;
 import com.platform.repository.BehaviorEventRepository;
 import com.platform.security.JwtProvider;
@@ -16,6 +17,7 @@ import java.util.*;
 public class BehaviorEventController {
 
     private static final Logger log = LoggerFactory.getLogger(BehaviorEventController.class);
+    private static final ObjectMapper objectMapper = new ObjectMapper();
 
     private final BehaviorEventRepository repo;
     private final JwtProvider jwtProvider;
@@ -45,7 +47,7 @@ public class BehaviorEventController {
                     @SuppressWarnings("unchecked")
                     Map<String, Object> dataMap = (Map<String, Object>) data;
                     dataMap.put("url", e.getOrDefault("url", ""));
-                    be.setContext(new com.fasterxml.jackson.databind.ObjectMapper().writeValueAsString(dataMap));
+                    be.setContext(objectMapper.writeValueAsString(dataMap));
                 }
                 repo.save(be);
                 saved++;

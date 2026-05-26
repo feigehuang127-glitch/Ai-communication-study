@@ -54,11 +54,8 @@ public class PvpService {
 
     @Transactional
     private Map<String, Object> createMatch(Integer player1Id, Integer player2Id) {
-        // Use DB-level random limit instead of loading ALL questions into memory
-        List<Question> selected = questionRepo.findRandomQuestions("all", 1, 10, 10);
-        if (selected.isEmpty()) {
-            selected = questionRepo.findRandomQuestions("通信", 1, 10, 10);
-        }
+        // Use native SQL RAND() with LIMIT — works across all colleges (ENUM 'ai','comm')
+        List<Question> selected = questionRepo.findRandomQuestions(10);
 
         PvpMatch match = new PvpMatch();
         match.setPlayer1Id(player1Id);

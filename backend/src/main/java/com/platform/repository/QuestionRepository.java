@@ -24,4 +24,7 @@ public interface QuestionRepository extends JpaRepository<Question, Integer> {
     List<Question> findByCollegeAndCategory(String college, String category);
 
     long countByCollege(String college);
+
+    @Query(value = "SELECT * FROM questions ORDER BY RAND() LIMIT :limit", nativeQuery = true)
+    List<Question> findRandomQuestions(@Param("limit") Integer limit);
 }

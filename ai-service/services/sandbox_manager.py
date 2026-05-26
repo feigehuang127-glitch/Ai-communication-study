@@ -6,9 +6,24 @@ import re
 from datetime import datetime, timedelta
 from config import settings
 
-# Only connect to Docker if sandbox is explicitly enabled.
-# Mounting docker.sock in production is a container-escape risk;
-# use gVisor (runsc), Firecracker, or Sysbox for multi-tenant isolation.
+# ═══════════════════════════════════════════════════════════════════
+# SANDBOX SECURITY — READ BEFORE ENABLING IN PRODUCTION
+# ═══════════════════════════════════════════════════════════════════
+# The FORBIDDEN_PATTERNS blacklist below is a FIRST LINE OF DEFENSE only.
+# It stops casual mischief but is TRIVIALLY BYPASSED by anyone who knows
+# Python's dynamic features (getattr, base64, codecs, etc.).
+#
+# For production multi-tenant sandboxing you MUST layer ALL of:
+#   1. Non-root container user:  USER sandbox / SecurityContext runAsNonRoot
+#   2. gVisor runtime:           docker run --runtime=runsc ...
+#   3. Network disabled:         network_disabled=True (already set below)
+#   4. Read-only rootfs + tmpfs: read_only=True, tmpfs={"/tmp": "noexec"}
+#   5. seccomp/AppArmor profile: custom syscall whitelist per workload
+#   6. CPU/memory hard limits:   already enforced via Docker SDK params
+#
+# Without a kernel-level sandbox (gVisor/Firecracker), any code execution
+# endpoint is a REMOTE CODE EXECUTION vector against the host.
+# ═══════════════════════════════════════════════════════════════════
 SANDBOX_ENABLED = os.getenv("SANDBOX_ENABLED", "false").lower() in ("true", "1", "yes")
 client = docker.from_env() if SANDBOX_ENABLED else None
 
