@@ -6,6 +6,12 @@ type RequestOptions = {
   headers?: Record<string, string>;
 };
 
+const API_BASE = (typeof import.meta !== 'undefined' && (import.meta as any).env?.VITE_API_URL) || '';
+
+function apiUrl(path: string): string {
+  return `${API_BASE}${path}`;
+}
+
 export async function api(path: string, options: RequestOptions = {}) {
   const token = browser ? localStorage.getItem('token') : null;
   const headers: Record<string, string> = {
@@ -15,7 +21,7 @@ export async function api(path: string, options: RequestOptions = {}) {
   if (token) {
     headers['Authorization'] = `Bearer ${token}`;
   }
-  const res = await fetch(path, {
+  const res = await fetch(apiUrl(path), {
     method: options.method || 'GET',
     headers,
     body: options.body ? JSON.stringify(options.body) : undefined

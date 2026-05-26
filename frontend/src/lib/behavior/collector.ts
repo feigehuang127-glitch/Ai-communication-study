@@ -41,8 +41,10 @@ class BehaviorCollector {
       ...e,
       url: window.location.pathname,
     }));
+    const base = (import.meta as any).env?.VITE_API_URL || '';
+    const endpoint = `${base}/api/behavior/events`;
     if (navigator.sendBeacon) {
-      navigator.sendBeacon('/api/behavior/events', JSON.stringify(payload));
+      navigator.sendBeacon(endpoint, JSON.stringify(payload));
     }
   }
 
