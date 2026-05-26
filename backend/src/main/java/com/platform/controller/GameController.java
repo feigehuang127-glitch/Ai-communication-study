@@ -28,7 +28,7 @@ public class GameController {
             @RequestBody GameStartRequest request,
             @RequestHeader("Authorization") String authHeader) {
         String token = authHeader.substring(7);
-        Integer userId = jwtProvider.getUserId(token).intValue();
+        Integer userId = jwtProvider.getUserId(token);
         GameSession session = gameService.startGame(userId, request.getCollege(), request.getCategory());
         return ResponseEntity.ok(Map.of(
                 "sessionId", session.getSessionId(),

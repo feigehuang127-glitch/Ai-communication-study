@@ -1,5 +1,7 @@
 package com.platform.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.stereotype.Service;
@@ -9,6 +11,7 @@ import java.util.*;
 @Service
 public class RankingService {
 
+    private static final Logger log = LoggerFactory.getLogger(RankingService.class);
     private static final String LEADERBOARD_KEY = "leaderboard:rank";
     private final RedisTemplate<String, String> redis;
 
@@ -20,7 +23,7 @@ public class RankingService {
         try {
             redis.opsForZSet().incrementScore(LEADERBOARD_KEY, userId.toString(), score);
         } catch (Exception e) {
-            // Redis failure - silently ignore, ranking will be stale
+            log.error("Redis leaderboard update failed for userId={}, score={}", userId, score, e);
         }
     }
 
@@ -29,6 +32,7 @@ public class RankingService {
             Long rank = redis.opsForZSet().reverseRank(LEADERBOARD_KEY, userId.toString());
             return rank == null ? -1 : rank + 1;
         } catch (Exception e) {
+            log.error("Redis leaderboard rank lookup failed for userId={}", userId, e);
             return -1L;
         }
     }
@@ -37,6 +41,7 @@ public class RankingService {
         try {
             return redis.opsForZSet().score(LEADERBOARD_KEY, userId.toString());
         } catch (Exception e) {
+            log.error("Redis leaderboard score lookup failed for userId={}", userId, e);
             return 0.0;
         }
     }
@@ -58,6 +63,7 @@ public class RankingService {
             }
             return result;
         } catch (Exception e) {
+            log.error("Redis leaderboard top-{} query failed", count, e);
             return Collections.emptyList();
         }
     }

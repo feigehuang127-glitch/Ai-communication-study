@@ -7,6 +7,9 @@ import com.platform.model.Question;
 import com.platform.model.User;
 import com.platform.model.WrongQuestion;
 import com.platform.repository.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -16,6 +19,8 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 public class GameService {
+
+    private static final Logger log = LoggerFactory.getLogger(GameService.class);
 
     private final QuestionRepository questionRepository;
     private final GameHistoryRepository gameHistoryRepository;
@@ -28,6 +33,7 @@ public class GameService {
     private static final int QUESTIONS_PER_ROUND = 10;
     private static final int TIME_LIMIT_SECONDS = 10;
     private static final int TIMEOUT_EXEMPTIONS = 2;
+    private static final long SESSION_TTL_MS = 30 * 60 * 1000; // 30 minutes
 
     public GameService(QuestionRepository questionRepository,
                        GameHistoryRepository gameHistoryRepository,
@@ -39,6 +45,23 @@ public class GameService {
         this.wrongQuestionRepository = wrongQuestionRepository;
         this.userService = userService;
         this.userRepository = userRepository;
+    }
+
+    @Scheduled(fixedRate = 60000)
+    public void cleanupExpiredSessions() {
+        long now = System.currentTimeMillis();
+        List<String> expired = new ArrayList<>();
+        for (var entry : activeSessions.entrySet()) {
+            if (now - entry.getValue().getStartTime() > SESSION_TTL_MS) {
+                expired.add(entry.getKey());
+            }
+        }
+        for (String id : expired) {
+            activeSessions.remove(id);
+        }
+        if (!expired.isEmpty()) {
+            log.info("Cleaned up {} expired game sessions", expired.size());
+        }
     }
 
     public GameSession startGame(Integer userId, String college, String category) {
@@ -65,11 +88,12 @@ public class GameService {
         if (session == null || session.isFinished()) return false;
 
         Question question = session.getQuestions().get(questionIndex);
-        String correct = sortAnswer(question.getAnswer());
-        String user = sortAnswer(userAnswer);
-        boolean isCorrect = correct.equals(user);
+        String correct = normalizeAnswer(question.getAnswer());
+        String user = normalizeAnswer(userAnswer);
+        double score = computeScore(correct, user);
+        boolean isCorrect = score > 0;
 
-        session.recordAnswer(questionIndex, isCorrect, userAnswer);
+        session.recordAnswer(questionIndex, score);
         return isCorrect;
     }
 
@@ -94,8 +118,9 @@ public class GameService {
 
         userService.addScore(session.getUserId(), scoreEarned);
 
-        for (var entry : session.getAnswerResults().entrySet()) {
-            if (!entry.getValue()) {
+        // Track wrong questions for fully wrong answers (score == 0)
+        for (var entry : session.getAnswerScores().entrySet()) {
+            if (entry.getValue() <= 0) {
                 Question q = session.getQuestions().get(entry.getKey());
                 wrongQuestionRepository.findByUserIdAndQuestionId(session.getUserId(), q.getId())
                         .ifPresentOrElse(wq -> {
@@ -115,20 +140,25 @@ public class GameService {
             }
         }
 
+        // Build backward-compatible boolean answer map for the response DTO
+        Map<Integer, Boolean> answerResults = new HashMap<>();
+        for (var entry : session.getAnswerScores().entrySet()) {
+            answerResults.put(entry.getKey(), entry.getValue() > 0);
+        }
         return new GameResultResponse(result, correct, QUESTIONS_PER_ROUND, scoreEarned,
-                session.getAnswerResults(), session.getQuestions());
+                answerResults, session.getQuestions());
     }
 
     private int calculateScore(GameSession session) {
         if (session.hasComboWin()) return 3;
-        if (session.getCorrectCount() >= 7) return 2;
-        if (session.getCorrectCount() < 6) return -1;
+        if (session.getTotalScore() >= 7) return 2;
+        if (session.getTotalScore() < 6) return -1;
         return 0;
     }
 
     private String determineResult(GameSession session) {
         if (session.hasComboWin()) return "win_combo";
-        if (session.getCorrectCount() >= 7) return "win";
+        if (session.getTotalScore() >= 7) return "win";
         return "lose";
     }
 
@@ -144,10 +174,35 @@ public class GameService {
         };
     }
 
-    private String sortAnswer(String answer) {
-        char[] chars = answer.toUpperCase().replaceAll("[^A-D]", "").toCharArray();
-        Arrays.sort(chars);
-        return new String(chars);
+    /**
+     * Score a multi-choice answer. Single-choice: exact match (0 or 1).
+     * Multi-choice: partial credit — hits earn +1, misses penalize -1,
+     * normalized by the correct option count, clamped to [0, 1].
+     */
+    private double computeScore(String correct, String user) {
+        if (correct.isEmpty()) return 0;
+
+        Set<Character> correctSet = new HashSet<>();
+        for (char c : correct.toCharArray()) correctSet.add(c);
+        Set<Character> userSet = new HashSet<>();
+        for (char c : user.toCharArray()) userSet.add(c);
+
+        if (correctSet.size() == 1) {
+            return correctSet.equals(userSet) ? 1.0 : 0;
+        }
+
+        int hits = 0;
+        int misses = 0;
+        for (char c : userSet) {
+            if (correctSet.contains(c)) hits++;
+            else misses++;
+        }
+        double raw = (double) (hits - misses) / correctSet.size();
+        return Math.max(0, Math.min(1.0, raw));
+    }
+
+    private String normalizeAnswer(String answer) {
+        return answer.toUpperCase().replaceAll("[^A-D]", "");
     }
 
     public static class GameSession {
@@ -156,8 +211,9 @@ public class GameService {
         private final String college;
         private final String category;
         private final List<Question> questions;
-        private final Map<Integer, Boolean> answerResults = new HashMap<>();
+        private final Map<Integer, Double> answerScores = new HashMap<>();
         private int correctCount = 0;
+        private double totalScore = 0;
         private int comboCount = 0;
         private int maxCombo = 0;
         private int timeoutUsed = 0;
@@ -177,10 +233,14 @@ public class GameService {
             this.maxTimeouts = maxTimeouts;
         }
 
-        public void recordAnswer(int index, boolean correct, String answer) {
-            answerResults.put(index, correct);
-            if (correct) {
+        public void recordAnswer(int index, double score) {
+            answerScores.put(index, score);
+            totalScore += score;
+            if (score >= 1.0) {
                 correctCount++;
+                comboCount++;
+                maxCombo = Math.max(maxCombo, comboCount);
+            } else if (score > 0) {
                 comboCount++;
                 maxCombo = Math.max(maxCombo, comboCount);
             } else {
@@ -189,15 +249,17 @@ public class GameService {
         }
 
         public boolean hasComboWin() { return maxCombo >= 5; }
-        public boolean isFinished() { return finished || answerResults.size() >= questions.size(); }
+        public boolean isFinished() { return finished || answerScores.size() >= questions.size(); }
 
         public String getSessionId() { return sessionId; }
         public Integer getUserId() { return userId; }
         public String getCollege() { return college; }
         public String getCategory() { return category; }
         public List<Question> getQuestions() { return questions; }
-        public Map<Integer, Boolean> getAnswerResults() { return answerResults; }
+        public Map<Integer, Double> getAnswerScores() { return answerScores; }
         public int getCorrectCount() { return correctCount; }
+        public double getTotalScore() { return totalScore; }
         public long getElapsedSeconds() { return (System.currentTimeMillis() - startTime) / 1000; }
+        public long getStartTime() { return startTime; }
     }
 }

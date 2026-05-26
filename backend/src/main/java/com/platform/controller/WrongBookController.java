@@ -25,7 +25,7 @@ public class WrongBookController {
             @RequestHeader("Authorization") String authHeader,
             @RequestParam(defaultValue = "0") int status) {
         String token = authHeader.substring(7);
-        Integer userId = jwtProvider.getUserId(token).intValue();
+        Integer userId = jwtProvider.getUserId(token);
         return ResponseEntity.ok(wrongQuestionRepository.findByUserIdAndStatus(userId, status));
     }
 }

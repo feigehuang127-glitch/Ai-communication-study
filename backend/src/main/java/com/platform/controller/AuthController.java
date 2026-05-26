@@ -33,7 +33,7 @@ public class AuthController {
                 new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword()));
 
         User user = userService.findByUsername(request.getUsername());
-        String token = jwtProvider.generateToken(user.getUsername(), (long) user.getId(), user.getRole());
+        String token = jwtProvider.generateToken(user.getUsername(), user.getId(), user.getRole());
         return ResponseEntity.ok(new LoginResponse(
                 token, user.getUsername(), user.getRole(), user.getTotalScore(), user.getRank()));
     }

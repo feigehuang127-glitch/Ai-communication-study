@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 @Service
@@ -17,6 +18,7 @@ public class PvpService {
     private final QuestionRepository questionRepo;
     private final RankingService rankingService;
     private final ConcurrentLinkedQueue<Integer> matchQueue = new ConcurrentLinkedQueue<>();
+    private final Set<Integer> queuedSet = ConcurrentHashMap.newKeySet();
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     public PvpService(PvpMatchRepository matchRepo,
@@ -28,12 +30,17 @@ public class PvpService {
     }
 
     public Map<String, Object> joinQueue(Integer userId) {
-        if (matchQueue.contains(userId)) {
+        // O(1) lookup via ConcurrentHashMap.newKeySet() instead of O(N) queue scan
+        if (!queuedSet.add(userId)) {
             return Map.of("status", "already_queued");
         }
         Integer opponent = matchQueue.poll();
-        if (opponent != null && !opponent.equals(userId)) {
-            return createMatch(userId, opponent);
+        if (opponent != null) {
+            queuedSet.remove(opponent);
+            if (!opponent.equals(userId)) {
+                queuedSet.remove(userId);
+                return createMatch(userId, opponent);
+            }
         }
         matchQueue.add(userId);
         return Map.of("status", "queued");
@@ -41,14 +48,17 @@ public class PvpService {
 
     public Map<String, Object> leaveQueue(Integer userId) {
         matchQueue.remove(userId);
+        queuedSet.remove(userId);
         return Map.of("status", "left");
     }
 
     @Transactional
     private Map<String, Object> createMatch(Integer player1Id, Integer player2Id) {
-        List<Question> allQuestions = questionRepo.findAll();
-        Collections.shuffle(allQuestions);
-        List<Question> selected = allQuestions.subList(0, Math.min(10, allQuestions.size()));
+        // Use DB-level random limit instead of loading ALL questions into memory
+        List<Question> selected = questionRepo.findRandomQuestions("all", 1, 10, 10);
+        if (selected.isEmpty()) {
+            selected = questionRepo.findRandomQuestions("通信", 1, 10, 10);
+        }
 
         PvpMatch match = new PvpMatch();
         match.setPlayer1Id(player1Id);

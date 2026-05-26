@@ -22,7 +22,7 @@ public class JwtProvider {
         this.expirationMs = expirationMs;
     }
 
-    public String generateToken(String username, Long userId, String role) {
+    public String generateToken(String username, Integer userId, String role) {
         Date now = new Date();
         return Jwts.builder()
                 .subject(username)
@@ -38,8 +38,9 @@ public class JwtProvider {
         return parseClaims(token).getSubject();
     }
 
-    public Long getUserId(String token) {
-        return parseClaims(token).get("userId", Long.class);
+    public Integer getUserId(String token) {
+        Number n = parseClaims(token).get("userId", Number.class);
+        return n != null ? n.intValue() : null;
     }
 
     public boolean validate(String token) {

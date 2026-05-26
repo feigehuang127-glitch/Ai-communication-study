@@ -1,11 +1,32 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import GlassCard from '$lib/components/GlassCard.svelte';
   import Leaderboard from '$lib/components/Leaderboard.svelte';
+  import { apiJson } from '$lib/api/client';
 
-  const colleges = [
-    { name: '通信学院', slug: 'comm', desc: '通信原理 · 数据通信网 · 信号与系统', icon: '📡', coming: true },
-    { name: 'AI 学院', slug: 'ai', desc: '提示词工程 · Skills · Agent 开发', icon: '🤖', coming: true }
-  ];
+  let colleges: Array<{ name: string; slug: string; desc: string; icon: string; coming: boolean }> = [];
+  let loading = true;
+
+  onMount(async () => {
+    try {
+      const data = await apiJson('/api/courses/colleges');
+      colleges = data.map((c: any) => ({
+        name: c.name,
+        slug: c.slug,
+        desc: c.description || '',
+        icon: c.icon || '📚',
+        coming: false,
+      }));
+    } catch {
+      // Fallback to hardcoded list when API unavailable
+      colleges = [
+        { name: '通信学院', slug: 'comm', desc: '通信原理 · 数据通信网 · 信号与系统', icon: '📡', coming: true },
+        { name: 'AI 学院', slug: 'ai', desc: '提示词工程 · Skills · Agent 开发', icon: '🤖', coming: true }
+      ];
+    } finally {
+      loading = false;
+    }
+  });
 
   const quickActions = [
     { label: '每日挑战', href: '/game?mode=daily' },
@@ -22,22 +43,26 @@
 
   <section class="colleges">
     <h2>选择学院</h2>
-    <div class="college-grid">
-      {#each colleges as college}
-        <GlassCard href={college.coming ? undefined : `/college/${college.slug}`}>
-          <div class="college-card">
-            <span class="college-icon">{college.icon}</span>
-            <div>
-              <h3>{college.name}</h3>
-              <p>{college.desc}</p>
-              {#if college.coming}
-                <span class="badge">即将上线</span>
-              {/if}
+    {#if loading}
+      <p style="color: var(--text-secondary);">加载中...</p>
+    {:else}
+      <div class="college-grid">
+        {#each colleges as college}
+          <GlassCard href={college.coming ? undefined : `/college/${college.slug}`}>
+            <div class="college-card">
+              <span class="college-icon">{college.icon}</span>
+              <div>
+                <h3>{college.name}</h3>
+                <p>{college.desc}</p>
+                {#if college.coming}
+                  <span class="badge">即将上线</span>
+                {/if}
+              </div>
             </div>
-          </div>
-        </GlassCard>
-      {/each}
-    </div>
+          </GlassCard>
+        {/each}
+      </div>
+    {/if}
   </section>
 
   <section class="quick-actions">

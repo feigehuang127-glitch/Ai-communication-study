@@ -88,23 +88,37 @@ function createChatStore() {
 
       const decoder = new TextDecoder();
       let buffer = '';
+      let dataBuffer = '';
       let assistantContent = '';
       let personaName: string | undefined;
 
+      // Proper SSE state machine — handles multi-line data fields and
+      // network chunk boundaries correctly per the SSE spec (W3C).
       while (true) {
         const { done, value } = await reader.read();
         if (done) break;
         buffer += decoder.decode(value, { stream: true });
-        const lines = buffer.split('\n');
-        buffer = lines.pop() || '';
 
-        for (const line of lines) {
-          if (!line.startsWith('data: ')) continue;
-          const data = line.slice(6).trim();
-          if (data === '[DONE]') continue;
-          if (!data) continue;
+        // Process complete SSE events delimited by double-newline
+        while (true) {
+          const idx = buffer.indexOf('\n\n');
+          if (idx === -1) break;
+          const eventBlock = buffer.slice(0, idx);
+          buffer = buffer.slice(idx + 2);
 
-          if (data.includes('|') && !assistantContent) {
+          // Extract data: lines from this event block
+          const lines = eventBlock.split('\n');
+          dataBuffer = '';
+          for (const line of lines) {
+            if (line.startsWith('data: ')) {
+              dataBuffer += (dataBuffer ? '\n' : '') + line.slice(6);
+            }
+          }
+
+          const data = dataBuffer.trim();
+          if (!data || data === '[DONE]') continue;
+
+          if (data.includes('|') && !assistantContent && !data.startsWith('{')) {
             const [pid, pname] = data.split('|');
             personaName = pname;
             setPersona(pid);

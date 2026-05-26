@@ -55,10 +55,28 @@ services:
       ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
       OPENAI_API_KEY: ${OPENAI_API_KEY}
       DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY}
-    volumes:
-    # Docker socket for sandbox container scheduling (Phase 5 code execution sandboxes)
-    # Security: restrict to non-root container in production; use gVisor/Firecracker for multi-tenant
-      - /var/run/docker.sock:/var/run/docker.sock
+      SANDBOX_ENABLED: ${SANDBOX_ENABLED:-false}
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    tmpfs:
+      - /tmp
+    # ═══════════════════════════════════════════════════════════════
+    # WARNING: Mounting docker.sock grants the AI service full control
+    # over the host Docker daemon. A malicious code execution payload
+    # can escape the sandbox container and compromise the HOST machine,
+    # including MySQL, Redis, and backend containers.
+    #
+    # PRODUCTION: Remove this volume mount and use one of:
+    #   - gVisor (runsc): docker run --runtime=runsc ...
+    #   - Firecracker:   via Weave Ignite or firecracker-containerd
+    #   - Sysbox:        via Nestybox sysbox-runc
+    #   - KVM-based VM:  QEMU micro-VM per sandbox session
+    #
+    # DEV ONLY: Uncomment the following line for local sandbox testing.
+    # ═══════════════════════════════════════════════════════════════
+    # volumes:
+    #   - /var/run/docker.sock:/var/run/docker.sock
 
   frontend:
     build: ./frontend
