@@ -6,6 +6,7 @@ export interface User {
   role: string;
   totalScore: number;
   rank: string;
+  aiSensitivity?: string;
 }
 
 export const user = writable<User | null>(null);

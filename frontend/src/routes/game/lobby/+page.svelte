@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onDestroy } from 'svelte';
   import { goto } from '$app/navigation';
-  import GlassCard from '$lib/components/GlassCard.svelte';
+  import PremiumCard from '$lib/components/PremiumCard.svelte';
   import Leaderboard from '$lib/components/Leaderboard.svelte';
   import { apiJson } from '$lib/api/client';
 
@@ -64,15 +64,15 @@
   <p class="sub">选择你的挑战模式</p>
 
   <div class="mode-grid">
-    <GlassCard href="/game/play?mode=pve">
+    <PremiumCard href="/game/play?mode=pve" glowColor="var(--accent-blue)">
       <div class="mode-card">
         <span class="mode-icon">⚔️</span>
         <h3>PVE 闯关</h3>
         <p>按课程进度逐关解锁，循序渐进攻克题库</p>
       </div>
-    </GlassCard>
+    </PremiumCard>
 
-    <GlassCard onClick={joinQueue}>
+    <PremiumCard onClick={joinQueue} glowColor="var(--accent-gold)">
       <div class="mode-card">
         <span class="mode-icon">🏆</span>
         <h3>PVP 天梯</h3>
@@ -89,15 +89,15 @@
           <p class="mm-error">{matchError}</p>
         {/if}
       </div>
-    </GlassCard>
+    </PremiumCard>
 
-    <GlassCard href="/game/play?mode=daily">
+    <PremiumCard href="/game/play?mode=daily" glowColor="var(--accent-red)">
       <div class="mode-card">
         <span class="mode-icon">🔥</span>
         <h3>每日挑战</h3>
         <p>每日刷新限定题目，获取额外积分奖励</p>
       </div>
-    </GlassCard>
+    </PremiumCard>
   </div>
 
   <div class="lb-wrapper">

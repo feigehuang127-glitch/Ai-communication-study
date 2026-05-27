@@ -19,7 +19,7 @@
   });
 </script>
 
-<div class="leaderboard glass">
+<div class="leaderboard glass spotlight-overlay" style="--spot-x: 50%; --spot-y: 0%;">
   <h3 class="lb-title">天梯排行榜</h3>
   {#if loading}
     <p class="lb-empty">加载中...</p>
@@ -33,7 +33,7 @@
         <span class="lb-col-score">积分</span>
       </div>
       {#each entries as entry}
-        <div class="lb-row" class:lb-top3={entry.rank <= 3}>
+        <div class="lb-row spring-hover" class:lb-top3={entry.rank <= 3}>
           <span class="lb-col-rank">
             {#if entry.rank === 1}🥇
             {:else if entry.rank === 2}🥈

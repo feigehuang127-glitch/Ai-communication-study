@@ -15,6 +15,23 @@
   --accent-green: #64c896;
   --accent-gold: #ffb464;
   --accent-red: #ff6464;
+
+  /* ─── Spring cubic-beziers (drop-in for elements without Svelte spring) ─── */
+  --ease-spring-snappy: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring-bouncy: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-spring-damped:  cubic-bezier(0.42, 0.0, 0.58, 1);
+
+  /* ─── Morandi-inspired desaturated accents ─── */
+  --morandi-blue:   #8fa4b4;
+  --morandi-sage:   #a3b59a;
+  --morandi-rose:   #c4a4a4;
+  --morandi-slate:  #7e8c9a;
+  --morandi-cream:  #d8d5cc;
+
+  /* ─── Intervention severity colors ─── */
+  --intervention-info: var(--accent-blue);
+  --intervention-warning: var(--accent-gold);
+  --intervention-critical: var(--accent-red);
 }
 
 * {
@@ -34,23 +51,45 @@ body {
 .glass {
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px) saturate(120%);
+  -webkit-backdrop-filter: blur(20px) saturate(120%);
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
+  transition: background 0.35s var(--ease-spring-damped),
+              border-color 0.35s var(--ease-spring-damped),
+              box-shadow 0.35s var(--ease-spring-damped),
+              transform 0.4s var(--ease-spring-bouncy);
 }
 
 .glass:hover {
   background: var(--glass-hover);
   border-color: rgba(255, 255, 255, 0.2);
+  border-image: none;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 4px 20px rgba(100, 180, 255, 0.06),
+    0 12px 40px rgba(0, 0, 0, 0.4);
   transform: translateY(-2px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
 }
 
 @keyframes gradient-shift {
   0%, 100% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: calc(200px + 100%) 0; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 8px rgba(100, 180, 255, 0.2); }
+  50% { box-shadow: 0 0 20px rgba(100, 180, 255, 0.5); }
+}
+
+@keyframes dot-wave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
 }
 
 .gradient-text {
@@ -71,6 +110,18 @@ body {
   z-index: 0;
 }
 
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.04) 0%,
+    rgba(255, 255, 255, 0.1) 40%,
+    rgba(255, 255, 255, 0.04) 80%
+  );
+  background-size: 200px 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  border-radius: 4px;
+}
+
 button:not(:disabled) {
   transition: all 0.2s ease;
 }
@@ -81,6 +132,95 @@ button:not(:disabled):active {
   transform: translateY(0);
 }
 
+/* ─── Spring-flicker: subtle attention pulse for inline highlights ─── */
+@keyframes spring-flicker {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  30% { opacity: 0.85; transform: scale(0.98); }
+  60% { opacity: 1; transform: scale(1.01); }
+}
+
+/* ─── Border-flow: animated gradient border for premium containers ─── */
+@keyframes border-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ─── Severity-pulse: persistent glow pulse for critical intervention cards ─── */
+@keyframes severity-pulse {
+  0%, 100% { box-shadow: 0 0 8px var(--severity-glow, var(--accent-red)); }
+  50% { box-shadow: 0 0 22px var(--severity-glow, var(--accent-red)); }
+}
+
+/* ─── FLIP-friendly base class ─── */
+.flip-container {
+  position: relative;
+}
+.flip-container > * {
+  transition: transform 0.35s var(--ease-spring-bouncy),
+              opacity 0.25s var(--ease-spring-snappy);
+}
+
+/* ─── Spotlight overlay pattern (reusable via CSS vars) ─── */
+.spotlight-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.spotlight-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    400px circle at var(--spot-x, 50%) var(--spot-y, 50%),
+    rgba(255, 255, 255, 0.04),
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.spotlight-overlay:hover::after {
+  opacity: 1;
+}
+
+/* ─── Utility: spring-scale on hover (drop-in without JS) ─── */
+.spring-hover {
+  transition: transform 0.4s var(--ease-spring-bouncy),
+              box-shadow 0.35s var(--ease-spring-damped);
+}
+.spring-hover:hover {
+  transform: scale(1.015) translateY(-3px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+}
+
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .gradient-text {
+    animation: none;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .spring-hover:hover {
+    transform: none;
+  }
+  .spotlight-overlay::after {
+    opacity: 0 !important;
+  }
+  .connector.active {
+    animation: none;
+  }
+  .skill-node {
+    animation: none !important;
+  }
+}

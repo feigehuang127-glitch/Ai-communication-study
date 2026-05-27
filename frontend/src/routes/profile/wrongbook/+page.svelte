@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { apiJson } from '$lib/api/client';
-  import GlassCard from '$lib/components/GlassCard.svelte';
+  import PremiumCard from '$lib/components/PremiumCard.svelte';
 
   let questions: any[] = [];
 
@@ -23,11 +23,11 @@
   {:else}
     <div class="list">
       {#each questions as wq}
-        <GlassCard>
+        <PremiumCard>
           <span class="tag">{wq.college}</span>
           <span class="error-count">错 {wq.errorCount} 次</span>
           <a href="/game/play?source=wrongbook&questionId={wq.questionId}" class="retry-btn">🔄 重新挑战</a>
-        </GlassCard>
+        </PremiumCard>
       {/each}
     </div>
   {/if}

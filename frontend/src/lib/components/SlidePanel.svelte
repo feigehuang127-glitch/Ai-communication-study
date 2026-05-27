@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { fly } from 'svelte/transition';
   import { chat } from '$lib/stores/chat';
   import PersonaAvatar from './PersonaAvatar.svelte';
   import { page } from '$app/stores';
@@ -19,6 +20,14 @@
     chat.sendMessage(text, getContextPage());
   }
 
+  let ripple = false;
+
+  $: if ($chat.autoOpened) {
+    ripple = true;
+    setTimeout(() => (ripple = false), 800);
+    chat.updateState({ autoOpened: false } as any);
+  }
+
   function handleKeydown(e: KeyboardEvent) {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
@@ -27,19 +36,22 @@
   }
 </script>
 
-<div class="slide-panel" class:open={$chat.isOpen}>
+<div class="slide-panel" class:open={$chat.isOpen} class:ripple>
   <div class="panel-header glass">
     <PersonaAvatar personaId={$chat.personaId} name={$chat.personaName} />
     <button class="close-btn" on:click={chat.close}>✕</button>
   </div>
 
   <div class="panel-messages">
-    {#each $chat.messages as msg}
-      <div class="message" class:user={msg.role === 'user'} class:assistant={msg.role === 'assistant'}>
+    {#each $chat.messages as msg, i (i)}
+      <div
+        class="message"
+        class:user={msg.role === 'user'}
+        class:assistant={msg.role === 'assistant'}
+        in:fly={{ x: msg.role === 'user' ? 30 : -30, y: 0, duration: 250 }}
+      >
         {#if msg.role === 'assistant' && msg.personaName}
-          <span class="persona-tag" style="font-size: 11px; color: var(--text-secondary);">
-            {msg.personaName}
-          </span>
+          <span class="persona-tag">{msg.personaName}</span>
         {/if}
         <div class="msg-bubble glass">
           {msg.content}
@@ -48,7 +60,11 @@
     {/each}
     {#if $chat.isLoading}
       <div class="message assistant">
-        <div class="msg-bubble glass typing">...</div>
+        <div class="msg-bubble glass typing-dots">
+          <span class="dot">.</span>
+          <span class="dot">.</span>
+          <span class="dot">.</span>
+        </div>
       </div>
     {/if}
     <div bind:this={messagesEnd}></div>
@@ -72,16 +88,28 @@
   .slide-panel {
     position: fixed;
     top: 0;
-    right: -420px;
+    right: 0;
     width: 400px;
     height: 100vh;
     z-index: 1000;
     display: flex;
     flex-direction: column;
-    transition: right 0.3s ease;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
     background: var(--bg-primary);
   }
-  .slide-panel.open { right: 0; }
+  .slide-panel.open { transform: translateX(0); }
+  .slide-panel.ripple::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    animation: ripple-glow 0.8s ease-out;
+    pointer-events: none;
+  }
+  @keyframes ripple-glow {
+    0% { box-shadow: inset 0 0 30px var(--accent-blue); opacity: 1; }
+    100% { box-shadow: inset 0 0 0px var(--accent-blue); opacity: 0; }
+  }
   .panel-header {
     display: flex;
     align-items: center;
@@ -109,6 +137,10 @@
   .message { max-width: 90%; }
   .message.user { align-self: flex-end; }
   .message.assistant { align-self: flex-start; }
+  .persona-tag {
+    font-size: 11px;
+    color: var(--text-secondary);
+  }
   .msg-bubble {
     padding: 10px 14px;
     border-radius: 12px;
@@ -119,8 +151,23 @@
     background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
     border: none;
   }
-  .typing { animation: blink 1s infinite; }
-  @keyframes blink { 50% { opacity: 0.3; } }
+  .typing-dots {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 14px 18px;
+  }
+  .typing-dots .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--text-secondary);
+    font-size: 0;
+    line-height: 0;
+    animation: dot-wave 0.8s ease-in-out infinite;
+  }
+  .typing-dots .dot:nth-child(2) { animation-delay: 0.15s; }
+  .typing-dots .dot:nth-child(3) { animation-delay: 0.3s; }
   .panel-input {
     display: flex;
     gap: 8px;

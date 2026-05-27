@@ -8,12 +8,23 @@
   import AIWidget from '$lib/components/AIWidget.svelte';
   import CommandPalette from '$lib/components/CommandPalette.svelte';
   import SlidePanel from '$lib/components/SlidePanel.svelte';
+  import InterventionDispatcher from '$lib/components/InterventionDispatcher.svelte';
+  import InterventionSidebar from '$lib/components/InterventionSidebar.svelte';
   import { checkAuth } from '$lib/stores/auth';
+  import { behaviorEngine } from '$lib/behavior/BehaviorEngine';
+  import { getCollector } from '$lib/behavior/collector';
 
   onMount(() => {
     const token = localStorage.getItem('token');
     if (token) {
       checkAuth();
+    }
+
+    // Activate behavior pipeline if user opted in
+    if (localStorage.getItem('ai-intervention-enabled') === 'true') {
+      behaviorEngine.enable();
+      getCollector().setupListeners();
+      getCollector().onEvent((event) => behaviorEngine.pushEvent(event));
     }
   });
 </script>
@@ -30,6 +41,8 @@
   <AIWidget />
   <CommandPalette />
   <SlidePanel />
+  <InterventionDispatcher />
+  <InterventionSidebar />
 </div>
 
 <style>

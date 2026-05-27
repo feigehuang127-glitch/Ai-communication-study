@@ -1,5 +1,5 @@
 <script>
-  import GlassCard from '$lib/components/GlassCard.svelte';
+  import PremiumCard from '$lib/components/PremiumCard.svelte';
 </script>
 
 <div class="lab-page">
@@ -7,27 +7,27 @@
   <p class="sub">动手实践，构建你的 AI 项目</p>
 
   <div class="lab-grid">
-    <GlassCard href="/lab/sandbox">
+    <PremiumCard href="/lab/sandbox" glowColor="var(--accent-blue)">
       <div class="lab-card">
         <span class="lab-icon">🐳</span>
         <h3>代码沙箱</h3>
         <p>Docker 隔离的在线代码执行环境</p>
       </div>
-    </GlassCard>
-    <GlassCard href="/lab/prompt-playground">
+    </PremiumCard>
+    <PremiumCard href="/lab/prompt-playground" glowColor="var(--accent-purple)">
       <div class="lab-card">
         <span class="lab-icon">🔬</span>
         <h3>提示词实验场</h3>
         <p>多模型横向评测对比</p>
       </div>
-    </GlassCard>
-    <GlassCard href="/lab/agent-builder">
+    </PremiumCard>
+    <PremiumCard href="/lab/agent-builder" glowColor="var(--accent-green)">
       <div class="lab-card">
         <span class="lab-icon">🤖</span>
         <h3>Agent 构建器</h3>
         <p>可视化拖拽构建 Agent 工作流</p>
       </div>
-    </GlassCard>
+    </PremiumCard>
   </div>
 </div>
 

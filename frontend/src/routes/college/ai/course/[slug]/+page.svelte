@@ -3,7 +3,7 @@
   import { page } from '$app/stores';
   import { api, apiJson } from '$lib/api/client';
   import { chat } from '$lib/stores/chat';
-  import GlassCard from '$lib/components/GlassCard.svelte';
+  import PremiumCard from '$lib/components/PremiumCard.svelte';
   import PersonaAvatar from '$lib/components/PersonaAvatar.svelte';
 
   let course: any = null;
@@ -132,7 +132,7 @@
 
     <div class="course-content">
       {#if activeLesson}
-        <GlassCard>
+        <PremiumCard>
           <div class="lesson-header">
             <h1>{activeLesson.title}</h1>
             <div class="lesson-actions">
@@ -171,7 +171,7 @@
               <span class="completed-badge">已完成</span>
             {/if}
           </div>
-        </GlassCard>
+        </PremiumCard>
       {/if}
     </div>
   </div>

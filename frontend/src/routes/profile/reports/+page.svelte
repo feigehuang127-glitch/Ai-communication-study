@@ -1,7 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { apiJson } from '$lib/api/client';
-  import GlassCard from '$lib/components/GlassCard.svelte';
   import SkillTree from '$lib/components/SkillTree.svelte';
 
   interface LearningReport {

@@ -3,7 +3,7 @@
   import { user } from '$lib/stores/auth';
   import { goto } from '$app/navigation';
   import { apiJson } from '$lib/api/client';
-  import GlassCard from '$lib/components/GlassCard.svelte';
+  import PremiumCard from '$lib/components/PremiumCard.svelte';
   import LoadingSpinner from '$lib/components/LoadingSpinner.svelte';
 
   interface College {
@@ -121,7 +121,7 @@
       <div class="msg">{message}</div>
     {/if}
 
-    <GlassCard>
+    <PremiumCard>
     <h2>{editing ? '编辑课程' : '新建课程'}</h2>
     <form on:submit|preventDefault={save} class="course-form">
       <div class="form-row">
@@ -166,7 +166,7 @@
         {/if}
       </div>
     </form>
-  </GlassCard>
+  </PremiumCard>
 
   <section class="list-section">
     <h2>已有课程 ({courses.length})</h2>
@@ -175,7 +175,7 @@
     {:else}
       <div class="course-list">
         {#each courses as course (course.id)}
-          <GlassCard>
+          <PremiumCard>
             <div class="course-item">
               <div class="course-info">
                 <h3>{course.title}</h3>
@@ -190,7 +190,7 @@
                 <button class="btn-sm btn-danger" on:click={() => deleteCourse(course)}>删除</button>
               </div>
             </div>
-          </GlassCard>
+          </PremiumCard>
         {/each}
       </div>
     {/if}

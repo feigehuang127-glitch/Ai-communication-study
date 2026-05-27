@@ -1,7 +1,6 @@
 <script lang="ts">
   import { login, user } from '$lib/stores/auth';
   import { goto } from '$app/navigation';
-  import GlassCard from '$lib/components/GlassCard.svelte';
 
   let username = '';
   let password = '';

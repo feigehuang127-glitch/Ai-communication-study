@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import GlassCard from '$lib/components/GlassCard.svelte';
+  import PremiumCard from '$lib/components/PremiumCard.svelte';
   import Leaderboard from '$lib/components/Leaderboard.svelte';
   import { apiJson } from '$lib/api/client';
 
@@ -48,7 +48,7 @@
     {:else}
       <div class="college-grid">
         {#each colleges as college}
-          <GlassCard href={college.coming ? undefined : `/college/${college.slug}`}>
+          <PremiumCard href={college.coming ? undefined : `/college/${college.slug}`}>
             <div class="college-card">
               <span class="college-icon">{college.icon}</span>
               <div>
@@ -59,7 +59,7 @@
                 {/if}
               </div>
             </div>
-          </GlassCard>
+          </PremiumCard>
         {/each}
       </div>
     {/if}
@@ -69,9 +69,9 @@
     <h2>快速入口</h2>
     <div class="actions-row">
       {#each quickActions as action}
-        <GlassCard href={action.href}>
+        <PremiumCard href={action.href}>
           <span>{action.label}</span>
-        </GlassCard>
+        </PremiumCard>
       {/each}
     </div>
   </section>

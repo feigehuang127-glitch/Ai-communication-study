@@ -1,5 +1,5 @@
 <script lang="ts">
-  import GlassCard from '$lib/components/GlassCard.svelte';
+  import PremiumCard from '$lib/components/PremiumCard.svelte';
 
   let prompt = '解释一下什么是递归？';
   let results: Record<string, string> = {};
@@ -70,7 +70,7 @@
   <h1 class="gradient-text">提示词实验场</h1>
   <p class="sub">同一个 Prompt，多个模型横向评测对比</p>
 
-  <GlassCard>
+  <PremiumCard>
     <div class="input-area">
       <textarea bind:value={prompt} placeholder="输入你的 Prompt..." rows="4"></textarea>
       <div class="model-select">
@@ -85,13 +85,13 @@
         {loading ? '评测中...' : '开始对比'}
       </button>
     </div>
-  </GlassCard>
+  </PremiumCard>
 
   {#if Object.keys(results).length > 0 || activeModels.size > 0}
     <div class="compare-grid">
       {#each selectedModels as model}
         {#if results[model] || streaming[model] !== undefined}
-          <GlassCard>
+          <PremiumCard>
             <div class="result-panel">
               <h3>
                 {model}
@@ -101,7 +101,7 @@
               </h3>
               <div class="content">{results[model] || streaming[model] || ''}</div>
             </div>
-          </GlassCard>
+          </PremiumCard>
         {/if}
       {/each}
     </div>

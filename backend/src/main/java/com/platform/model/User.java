@@ -18,13 +18,13 @@ public class User {
     @Column(name = "password_hash", nullable = false, length = 200)
     private String passwordHash;
 
-    @Column(length = 20)
+    @Column(name = "user_role", length = 20)
     private String role = "player";
 
     @Column(name = "total_score")
     private Integer totalScore = 0;
 
-    @Column(length = 20)
+    @Column(name = "user_rank", length = 20)
     private String rank = "青铜";
 
     @Column(name = "last_checkin_date")

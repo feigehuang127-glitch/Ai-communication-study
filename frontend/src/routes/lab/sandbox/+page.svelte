@@ -1,12 +1,15 @@
 <script lang="ts">
   import { apiJson } from '$lib/api/client';
-  import GlassCard from '$lib/components/GlassCard.svelte';
+  import PremiumCard from '$lib/components/PremiumCard.svelte';
+  import MonacoEditor from '$lib/components/MonacoEditor.svelte';
+  import SkeletonLine from '$lib/components/SkeletonLine.svelte';
 
   let code = `print("Hello, AI Academy!")`;
   let output = '';
   let language = 'python';
   let running = false;
   let containerId = '';
+  let editorReady = false;
 
   async function createSandbox() {
     try {
@@ -41,7 +44,7 @@
   <p class="sub">Docker 隔离环境，支持 Python 和 JavaScript</p>
 
   <div class="sandbox-layout">
-    <GlassCard>
+    <PremiumCard>
       <div class="editor-header">
         <select bind:value={language}>
           <option value="python">Python</option>
@@ -51,23 +54,32 @@
           {running ? '运行中...' : '▶ 运行'}
         </button>
       </div>
-      <textarea
-        bind:value={code}
-        class="code-editor"
-        spellcheck="false"
-        placeholder="在此编写代码..."
-      ></textarea>
-    </GlassCard>
+      {#if !editorReady}
+        <div class="editor-skeleton">
+          <SkeletonLine width="100%" height="300px" rounded="10px" />
+        </div>
+      {/if}
+      <div class:editor-hidden={!editorReady}>
+        <MonacoEditor
+          bind:value={code}
+          {language}
+          on:change={(e) => (code = e.detail)}
+          on:ready={() => (editorReady = true)}
+        />
+      </div>
+    </PremiumCard>
 
-    <GlassCard>
+    <PremiumCard>
       <div class="output-header">输出</div>
       <pre class="output-area">{output || '点击「运行」查看结果'}</pre>
-    </GlassCard>
+    </PremiumCard>
   </div>
 </div>
 
 <style>
   .sandbox { max-width: 1000px; margin: 0 auto; }
+  .editor-skeleton { margin-top: 0; }
+  .editor-hidden { display: none; }
   .sub { color: var(--text-secondary); margin: 8px 0 24px; }
   .sandbox-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .editor-header {
@@ -95,20 +107,6 @@
     font-size: 13px;
   }
   .run-btn:disabled { opacity: 0.5; cursor: not-allowed; }
-  .code-editor {
-    width: 100%;
-    height: 300px;
-    background: rgba(0,0,0,0.3);
-    border: 1px solid var(--glass-border);
-    border-radius: 10px;
-    padding: 16px;
-    color: var(--text-primary);
-    font-family: 'Fira Code', 'Cascadia Code', monospace;
-    font-size: 13px;
-    resize: none;
-    outline: none;
-    line-height: 1.6;
-  }
   .output-header { margin-bottom: 8px; font-size: 14px; font-weight: 600; }
   .output-area {
     min-height: 300px;

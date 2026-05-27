@@ -6,38 +6,74 @@ interface BehaviorEvent {
 
 type EventCallback = (event: BehaviorEvent) => void;
 
+const RATE_LIMIT_WINDOW = 100; // max events per window
+const RATE_LIMIT_RESET = 1000; // reset window in ms
+
 class BehaviorCollector {
   private listeners: EventCallback[] = [];
   private events: BehaviorEvent[] = [];
   private flushTimer: ReturnType<typeof setInterval> | null = null;
   private _enabled = true;
+  private rateCount = 0;
+  private rateWindowStart = Date.now();
+  private optInCheck: (() => boolean) | null = null;
+  private _listenersSetup = false;
 
   constructor() {
-    this.setupListeners();
-    this.flushTimer = setInterval(() => this.flush(), 3000);
+    // Don't access DOM in constructor — SSR-safe.
+    // Call setupListeners() explicitly in browser onMount.
+    if (typeof document !== 'undefined') {
+      this.setupListeners();
+    }
+    if (typeof setInterval !== 'undefined') {
+      this.flushTimer = setInterval(() => this.flush(), 3000);
+    }
   }
 
-  enable() { this._enabled = true; }
-  disable() { this._enabled = false; }
+  setOptInCheck(fn: () => boolean) {
+    this.optInCheck = fn;
+  }
+
+  enable() {
+    this._enabled = true;
+  }
+
+  disable() {
+    this._enabled = false;
+  }
+
+  get isEnabled() {
+    return this._enabled;
+  }
 
   onEvent(cb: EventCallback) {
     this.listeners.push(cb);
     return () => {
-      this.listeners = this.listeners.filter(l => l !== cb);
+      this.listeners = this.listeners.filter((l) => l !== cb);
     };
   }
 
   private emit(event: BehaviorEvent) {
     if (!this._enabled) return;
+
+    // Rate limiting — drop events if exceeding threshold
+    const now = Date.now();
+    if (now - this.rateWindowStart > RATE_LIMIT_RESET) {
+      this.rateCount = 0;
+      this.rateWindowStart = now;
+    }
+    this.rateCount++;
+    if (this.rateCount > RATE_LIMIT_WINDOW) return;
+
     this.events.push(event);
-    this.listeners.forEach(cb => cb(event));
+    this.listeners.forEach((cb) => cb(event));
   }
 
   private flush() {
-    if (this.events.length === 0) return;
+    if (this.events.length === 0 || typeof window === 'undefined') return;
     const batch = [...this.events];
     this.events = [];
-    const payload = batch.map(e => ({
+    const payload = batch.map((e) => ({
       ...e,
       url: window.location.pathname,
     }));
@@ -48,7 +84,30 @@ class BehaviorCollector {
     }
   }
 
-  private setupListeners() {
+  // Public API for game/quiz pages to report domain events
+  reportAnswerSubmit(latencyMs: number, optionChanges: number, correct: boolean) {
+    if (!this._enabled) return;
+    if (this.optInCheck && !this.optInCheck()) return;
+    this.emit({
+      type: 'answer_submit',
+      timestamp: Date.now(),
+      data: { latency: latencyMs, changes: optionChanges, correct },
+    });
+  }
+
+  reportQuizStart() {
+    if (!this._enabled) return;
+    if (this.optInCheck && !this.optInCheck()) return;
+    this.emit({
+      type: 'quiz_start',
+      timestamp: Date.now(),
+      data: {},
+    });
+  }
+
+  setupListeners() {
+    if (typeof document === 'undefined' || this._listenersSetup) return;
+    this._listenersSetup = true;
     // Click tracking
     document.addEventListener('click', (e) => {
       const target = e.target as HTMLElement;
@@ -70,21 +129,25 @@ class BehaviorCollector {
 
     // Scroll depth
     let maxScrollDepth = 0;
-    window.addEventListener('scroll', () => {
-      const depth = Math.round(
-        (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100
-      );
-      if (depth > maxScrollDepth) {
-        maxScrollDepth = depth;
-        if (depth % 25 === 0) {
-          this.emit({
-            type: 'scroll_depth',
-            timestamp: Date.now(),
-            data: { depth },
-          });
+    window.addEventListener(
+      'scroll',
+      () => {
+        const depth = Math.round(
+          (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100
+        );
+        if (depth > maxScrollDepth) {
+          maxScrollDepth = depth;
+          if (depth % 25 === 0) {
+            this.emit({
+              type: 'scroll_depth',
+              timestamp: Date.now(),
+              data: { depth },
+            });
+          }
         }
-      }
-    }, { passive: true });
+      },
+      { passive: true }
+    );
 
     // Text selection
     document.addEventListener('mouseup', () => {
@@ -113,4 +176,11 @@ class BehaviorCollector {
   }
 }
 
-export const collector = new BehaviorCollector();
+let _collector: BehaviorCollector | null = null;
+
+export function getCollector(): BehaviorCollector {
+  if (!_collector) {
+    _collector = new BehaviorCollector();
+  }
+  return _collector;
+}

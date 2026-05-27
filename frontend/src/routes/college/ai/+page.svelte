@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { apiJson } from '$lib/api/client';
-  import GlassCard from '$lib/components/GlassCard.svelte';
+  import PremiumCard from '$lib/components/PremiumCard.svelte';
   import LoadingSpinner from '$lib/components/LoadingSpinner.svelte';
 
   let courses: any[] = [];
@@ -32,13 +32,13 @@
     {:else}
       <div class="course-grid">
         {#each courses as course}
-          <GlassCard href={`/college/ai/course/${course.slug}`}>
+          <PremiumCard href={`/college/ai/course/${course.slug}`}>
             <div class="course-card">
               <span class="level-badge">L{course.level?.replace('L', '')}</span>
               <h3>{course.title}</h3>
               <p>{course.description}</p>
             </div>
-          </GlassCard>
+          </PremiumCard>
         {/each}
       </div>
     {/if}

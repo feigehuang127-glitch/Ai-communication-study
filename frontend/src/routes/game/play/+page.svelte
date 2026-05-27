@@ -3,6 +3,7 @@
   import { onMount } from 'svelte';
   import { page } from '$app/stores';
   import { goto } from '$app/navigation';
+  import { getCollector } from '$lib/behavior/collector';
 
   let timeLeft = 10;
   let isLocked = false;
@@ -10,6 +11,8 @@
   let showResult = false;
   let lastCorrect = false;
   let timer: ReturnType<typeof setInterval>;
+  let questionStart = Date.now();
+  let optionChangeCount = 0;
 
   $: question = $game.questions[$game.currentIndex];
 
@@ -26,6 +29,8 @@
         return;
       }
     }
+    getCollector().reportQuizStart();
+    questionStart = Date.now();
     startTimer();
   });
 
@@ -45,14 +50,21 @@
     isLocked = true;
     lastCorrect = false;
     showResult = true;
+    const latency = Date.now() - questionStart;
+    getCollector().reportAnswerSubmit(latency, optionChangeCount, false);
   }
 
   async function selectOption(opt: string) {
     if (isLocked) return;
+    if (selectedAnswer && selectedAnswer !== opt) {
+      optionChangeCount++;
+    }
     isLocked = true;
     clearInterval(timer);
     selectedAnswer = opt;
+    const latency = Date.now() - questionStart;
     lastCorrect = await game.submitAnswer(opt);
+    getCollector().reportAnswerSubmit(latency, optionChangeCount, lastCorrect);
     showResult = true;
   }
 
@@ -60,11 +72,13 @@
     showResult = false;
     selectedAnswer = '';
     isLocked = false;
+    optionChangeCount = 0;
 
     if ($game.currentIndex >= $game.totalQuestions - 1) {
       finishGame();
     } else {
       game.nextQuestion();
+      questionStart = Date.now();
       startTimer();
     }
   }

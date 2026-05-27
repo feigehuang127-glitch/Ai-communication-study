@@ -2,7 +2,8 @@
   import { logout, user } from '$lib/stores/auth';
   import { goto } from '$app/navigation';
   import { onMount } from 'svelte';
-  import GlassCard from '$lib/components/GlassCard.svelte';
+  import { behaviorEngine } from '$lib/behavior/BehaviorEngine';
+  import { getCollector } from '$lib/behavior/collector';
 
   let oldPassword = '';
   let newPassword = '';
@@ -10,6 +11,7 @@
   let passwordMsg = '';
 
   let aiIntervention = 'medium';
+  let aiEnabled = false;
 
   let accountCreated = '';
   let totalStudyHours = 0;
@@ -17,6 +19,8 @@
   onMount(() => {
     const saved = localStorage.getItem('ai-intervention');
     if (saved) aiIntervention = saved;
+
+    aiEnabled = localStorage.getItem('ai-intervention-enabled') === 'true';
 
     const created = localStorage.getItem('account-created');
     if (created) {
@@ -29,6 +33,16 @@
     const hours = localStorage.getItem('total-study-hours');
     if (hours) totalStudyHours = parseFloat(hours);
   });
+
+  function toggleAiEnabled() {
+    aiEnabled = !aiEnabled;
+    if (aiEnabled) {
+      behaviorEngine.enable();
+      getCollector().onEvent((event) => behaviorEngine.pushEvent(event));
+    } else {
+      behaviorEngine.disable();
+    }
+  }
 
   function saveAiBehaviour() {
     localStorage.setItem('ai-intervention', aiIntervention);
@@ -119,14 +133,31 @@
 
   <div class="glass section">
     <h3>AI 行为监测</h3>
-    <p>控制 AI 助手的主动干预程度</p>
+    <p>开启后，AI 助手会在检测到学习困难时主动提供帮助</p>
     <div class="ai-behaviour">
-      <select class="select" bind:value={aiIntervention}>
-        <option value="low">低 — 仅响应我的提问</option>
-        <option value="medium">中 — 适时提醒</option>
-        <option value="high">高 — 主动指导</option>
-      </select>
-      <button class="btn-secondary" on:click={saveAiBehaviour}>保存偏好</button>
+      <label class="toggle-label">
+        <span>启用 AI 学习助手</span>
+        <button
+          class="toggle-switch"
+          class:active={aiEnabled}
+          on:click={toggleAiEnabled}
+          role="switch"
+          aria-checked={aiEnabled}
+        >
+          <span class="toggle-knob"></span>
+        </button>
+      </label>
+      {#if aiEnabled}
+        <div class="ai-level-row">
+          <label class="ai-level-label">干预程度</label>
+          <select class="select" bind:value={aiIntervention}>
+            <option value="low">低 — 仅响应我的提问</option>
+            <option value="medium">中 — 适时提醒</option>
+            <option value="high">高 — 主动指导</option>
+          </select>
+          <button class="btn-secondary" on:click={saveAiBehaviour}>保存偏好</button>
+        </div>
+      {/if}
     </div>
   </div>
 
@@ -162,7 +193,53 @@
   .msg { font-size: 13px; color: var(--accent-green); }
   .msg.error { color: var(--accent-red); }
 
-  .ai-behaviour { display: flex; gap: 12px; align-items: center; margin-top: 12px; }
+  .ai-behaviour { display: flex; flex-direction: column; gap: 12px; margin-top: 12px; }
+  .toggle-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .toggle-switch {
+    position: relative;
+    width: 44px;
+    height: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+    background: rgba(255,255,255,0.08);
+    cursor: pointer;
+    transition: background 0.2s;
+    padding: 0;
+  }
+  .toggle-switch.active {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+  }
+  .toggle-knob {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: white;
+    transition: transform 0.2s;
+  }
+  .toggle-switch.active .toggle-knob {
+    transform: translateX(20px);
+  }
+  .ai-level-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .ai-level-label {
+    font-size: 13px;
+    color: var(--text-secondary);
+    white-space: nowrap;
+  }
 
   .btn-primary {
     padding: 8px 20px;

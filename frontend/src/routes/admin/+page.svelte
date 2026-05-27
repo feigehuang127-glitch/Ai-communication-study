@@ -2,7 +2,7 @@
   import { user } from '$lib/stores/auth';
   import { goto } from '$app/navigation';
   import { onMount } from 'svelte';
-  import GlassCard from '$lib/components/GlassCard.svelte';
+  import PremiumCard from '$lib/components/PremiumCard.svelte';
 
   onMount(() => {
     const currentUser = $user;
@@ -17,22 +17,22 @@
 
   <div class="admin-grid">
     <a href="/admin/courses" class="admin-link">
-      <GlassCard>
+      <PremiumCard>
         <div class="admin-card">
           <span class="icon">📚</span>
           <h3>课程管理</h3>
           <p>管理学院、课程、章节、课时</p>
         </div>
-      </GlassCard>
+      </PremiumCard>
     </a>
     <a href="/admin/questions" class="admin-link">
-      <GlassCard>
+      <PremiumCard>
         <div class="admin-card">
           <span class="icon">📝</span>
           <h3>题库管理</h3>
           <p>新增、编辑、分类题目</p>
         </div>
-      </GlassCard>
+      </PremiumCard>
     </a>
   </div>
 </div>

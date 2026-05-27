@@ -10,8 +10,7 @@ services:
       - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
-      - ./backend/src/main/resources/db/migration:/docker-entrypoint-initdb.d
-    # MySQL health check with root credentials required for MySQL 8.0+ when root password is set
+      # 💥 已移除冲突的 /docker-entrypoint-initdb.d 挂载，防止破坏 Flyway 迁移链
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p$${MYSQL_ROOT_PASSWORD}"]
       interval: 10s
@@ -56,30 +55,25 @@ services:
       OPENAI_API_KEY: ${OPENAI_API_KEY}
       DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY}
       SANDBOX_ENABLED: ${SANDBOX_ENABLED:-false}
+      # 🚀 新增：修正容器内部网络拓扑连接，使 Pydantic 正确路由到对应容器
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      BACKEND_URL: http://backend:8080
     security_opt:
       - no-new-privileges:true
     read_only: true
     tmpfs:
       - /tmp
-    # ═══════════════════════════════════════════════════════════════
-    # WARNING: Mounting docker.sock grants the AI service full control
-    # over the host Docker daemon. A malicious code execution payload
-    # can escape the sandbox container and compromise the HOST machine,
-    # including MySQL, Redis, and backend containers.
-    #
-    # PRODUCTION: Remove this volume mount and use one of:
-    #   - gVisor (runsc): docker run --runtime=runsc ...
-    #   - Firecracker:   via Weave Ignite or firecracker-containerd
-    #   - Sysbox:        via Nestybox sysbox-runc
-    #   - KVM-based VM:  QEMU micro-VM per sandbox session
-    #
-    # DEV ONLY: Uncomment the following line for local sandbox testing.
-    # ═══════════════════════════════════════════════════════════════
-    # volumes:
-    #   - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      redis:
+        condition: service_healthy
 
   frontend:
-    build: ./frontend
+    build: 
+      context: ./frontend
+      # 🚀 如果前端在 build 期间需要注入变量，推荐写在 args 中：
+      # args:
+      #   VITE_API_URL: http://localhost:8080
     container_name: platform-frontend
     ports:
       - "5173:5173"

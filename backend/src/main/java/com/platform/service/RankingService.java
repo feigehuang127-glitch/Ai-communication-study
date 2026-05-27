@@ -2,7 +2,7 @@ package com.platform.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.stereotype.Service;
 
@@ -13,9 +13,9 @@ public class RankingService {
 
     private static final Logger log = LoggerFactory.getLogger(RankingService.class);
     private static final String LEADERBOARD_KEY = "leaderboard:rank";
-    private final RedisTemplate<String, String> redis;
+    private final StringRedisTemplate redis;
 
-    public RankingService(RedisTemplate<String, String> redis) {
+    public RankingService(StringRedisTemplate redis) {
         this.redis = redis;
     }
 

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import GlassCard from '$lib/components/GlassCard.svelte';
+  import PremiumCard from '$lib/components/PremiumCard.svelte';
 
   let result: any = null;
 
@@ -12,7 +12,7 @@
 
 {#if result}
   <div class="result-page">
-    <GlassCard>
+    <PremiumCard>
       <div class="result-header">
         <h1 class="gradient-text">
           {result.result === 'win_combo' ? '连对通关!' :
@@ -41,17 +41,17 @@
         <a href="/college/ai" class="btn-portal">🎓 去学习相关课程</a>
         <a href="/game/lobby" class="btn-portal">⚔️ 再来一局</a>
       </div>
-    </GlassCard>
+    </PremiumCard>
   </div>
 {:else}
   <div class="result-page">
-    <GlassCard>
+    <PremiumCard>
       <div class="empty-state">
         <h2>没有游戏数据</h2>
         <p>请先完成一场游戏后再查看结果</p>
         <a href="/game/lobby" class="btn-primary">开始游戏</a>
       </div>
-    </GlassCard>
+    </PremiumCard>
   </div>
 {/if}
 

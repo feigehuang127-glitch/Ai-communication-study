@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { apiJson } from '$lib/api/client';
-  import GlassCard from '$lib/components/GlassCard.svelte';
+  import PremiumCard from '$lib/components/PremiumCard.svelte';
   import LoadingSpinner from '$lib/components/LoadingSpinner.svelte';
 
   let profile: any = null;
@@ -30,18 +30,18 @@
     </div>
 
     <div class="grid">
-      <GlassCard href="/profile/reports">
+      <PremiumCard href="/profile/reports">
         <h3>学习报告</h3>
         <p>查看学习进度与技能树</p>
-      </GlassCard>
-      <GlassCard href="/profile/wrongbook">
+      </PremiumCard>
+      <PremiumCard href="/profile/wrongbook">
         <h3>错题本</h3>
         <p>查看和复习错过的题目</p>
-      </GlassCard>
-      <GlassCard href="/profile/settings">
+      </PremiumCard>
+      <PremiumCard href="/profile/settings">
         <h3>设置</h3>
         <p>账户与偏好设置</p>
-      </GlassCard>
+      </PremiumCard>
     </div>
   </div>
 {/if}

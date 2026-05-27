@@ -1,0 +1,39 @@
+# ─── Dependencies ───
+node_modules/
+
+# ─── Build output ───
+.svelte-kit/
+build/
+backend/target/
+out/
+
+# ─── IDE ───
+.idea/
+*.iml
+.vscode/
+
+# ─── OS ───
+.DS_Store
+Thumbs.db
+
+# ─── Env & secrets ───
+.env
+.env.local
+.env.*.local
+*.env
+
+# ─── Logs ───
+*.log
+
+# ─── Python ───
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ─── Misc ───
+.superpowers/
+web-platform/
+webdesign/
+config.properties
+backend/settings.xml

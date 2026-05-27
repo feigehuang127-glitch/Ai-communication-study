@@ -12,6 +12,7 @@ export interface ChatState {
   personaName: string;
   messages: ChatMessage[];
   isLoading: boolean;
+  autoOpened?: boolean;
 }
 
 function createChatStore() {
@@ -42,6 +43,24 @@ function createChatStore() {
     update(s => ({ ...s, isOpen: false }));
   }
 
+  function autoOpen(personaId: string, contextMessage: string) {
+    update(s => {
+      if (s.isOpen) return s;
+      const name = getPersonaName(personaId);
+      return {
+        ...s,
+        isOpen: true,
+        personaId,
+        personaName: name,
+        autoOpened: true,
+        messages: [
+          ...s.messages,
+          { role: 'assistant' as const, content: contextMessage, personaName: name },
+        ],
+      };
+    });
+  }
+
   function addMessage(msg: ChatMessage) {
     update(s => ({ ...s, messages: [...s.messages, msg] }));
   }
@@ -52,6 +71,10 @@ function createChatStore() {
 
   function setPersona(personaId: string) {
     update(s => ({ ...s, personaId, personaName: getPersonaName(personaId) }));
+  }
+
+  function updateState(partial: Partial<ChatState>) {
+    update((s) => ({ ...s, ...partial }));
   }
 
   async function sendMessage(message: string, contextPage: string) {
@@ -143,7 +166,7 @@ function createChatStore() {
     }
   }
 
-  return { subscribe, toggle, open, close, addMessage, setLoading, setPersona, sendMessage };
+  return { subscribe, toggle, open, close, autoOpen, addMessage, setLoading, setPersona, updateState, sendMessage };
 }
 
 function getPersonaName(id: string): string {

@@ -4,6 +4,7 @@ export interface RuleConfig {
   conditions: Record<string, unknown>;
   intervention: {
     type: 'toast' | 'inline_card' | 'sidebar' | 'title_flash';
+    severity?: 'info' | 'warning' | 'critical';
     title?: string;
     message: string;
     actionLabel?: string;
@@ -23,6 +24,7 @@ export const DEFAULT_RULES: RuleConfig[] = [
     },
     intervention: {
       type: 'inline_card',
+      severity: 'info',
       title: '需要帮助吗？',
       message: '看起来这题有点纠结，需要看个小提示吗？',
       actionLabel: '查看提示',
@@ -39,6 +41,7 @@ export const DEFAULT_RULES: RuleConfig[] = [
     },
     intervention: {
       type: 'sidebar',
+      severity: 'warning',
       message: '我注意到你在这块停留很久，帮你总结一下核心概念？',
     },
   },
@@ -53,6 +56,7 @@ export const DEFAULT_RULES: RuleConfig[] = [
     },
     intervention: {
       type: 'title_flash',
+      severity: 'critical',
       message: '还有3题就升级了，确定要走？',
     },
   },
@@ -67,6 +71,7 @@ export const DEFAULT_RULES: RuleConfig[] = [
     },
     intervention: {
       type: 'inline_card',
+      severity: 'info',
       title: '你学得很快！',
       message: '当前难度你已经掌握了，试试跳级挑战？',
       actionLabel: '跳级测试',

@@ -3,7 +3,7 @@
   import { user } from '$lib/stores/auth';
   import { goto } from '$app/navigation';
   import { apiJson } from '$lib/api/client';
-  import GlassCard from '$lib/components/GlassCard.svelte';
+  import PremiumCard from '$lib/components/PremiumCard.svelte';
   import LoadingSpinner from '$lib/components/LoadingSpinner.svelte';
 
   interface Question {
@@ -142,7 +142,7 @@
     <div class="msg">{message}</div>
   {/if}
 
-  <GlassCard>
+  <PremiumCard>
     <h2>{editing ? '编辑题目' : '新增题目'}</h2>
     <form on:submit|preventDefault={save} class="question-form">
       <div class="form-row">
@@ -216,7 +216,7 @@
         {/if}
       </div>
     </form>
-  </GlassCard>
+  </PremiumCard>
 
   <section class="list-section">
     <h2>已有题目 ({questions.length})</h2>
@@ -225,7 +225,7 @@
     {:else}
       <div class="question-list">
         {#each questions as q (q.id)}
-          <GlassCard>
+          <PremiumCard>
             <div class="question-item">
               <div class="question-info">
                 <p class="q-content">{q.content}</p>
@@ -242,7 +242,7 @@
                 <button class="btn-sm btn-danger" on:click={() => deleteQuestion(q)}>删除</button>
               </div>
             </div>
-          </GlassCard>
+          </PremiumCard>
         {/each}
       </div>
     {/if}
