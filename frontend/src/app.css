@@ -32,6 +32,10 @@
   --intervention-info: var(--accent-blue);
   --intervention-warning: var(--accent-gold);
   --intervention-critical: var(--accent-red);
+
+  /* ─── Morandi surface tokens (shared across components) ─── */
+  --morandi-bg-card: #111625;
+  --morandi-border: rgba(255, 255, 255, 0.08);
 }
 
 * {

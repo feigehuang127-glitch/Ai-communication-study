@@ -1,11 +1,13 @@
 <script lang="ts">
-  import { fly } from 'svelte/transition';
   import { chat } from '$lib/stores/chat';
   import PersonaAvatar from './PersonaAvatar.svelte';
   import { page } from '$app/stores';
+  import { fly, fade } from 'svelte/transition';
+  import { quintOut } from 'svelte/easing';
+  import { tick } from 'svelte';
 
   let inputText = '';
-  let messagesEnd: HTMLDivElement;
+  let messagesContainer: HTMLDivElement;
 
   function getContextPage(): string {
     const pathname = $page.url.pathname;
@@ -13,19 +15,13 @@
     return pathname;
   }
 
-  function send() {
+  async function send() {
     const text = inputText.trim();
     if (!text || $chat.isLoading) return;
     inputText = '';
     chat.sendMessage(text, getContextPage());
-  }
-
-  let ripple = false;
-
-  $: if ($chat.autoOpened) {
-    ripple = true;
-    setTimeout(() => (ripple = false), 800);
-    chat.updateState({ autoOpened: false } as any);
+    await tick();
+    scrollToBottom();
   }
 
   function handleKeydown(e: KeyboardEvent) {
@@ -34,145 +30,177 @@
       send();
     }
   }
+
+  $: if ($chat.messages || $chat.isLoading) {
+    setTimeout(scrollToBottom, 30);
+  }
+
+  function scrollToBottom() {
+    if (messagesContainer) {
+      messagesContainer.scrollTo({
+        top: messagesContainer.scrollHeight,
+        behavior: 'smooth'
+      });
+    }
+  }
 </script>
 
-<div class="slide-panel" class:open={$chat.isOpen} class:ripple>
-  <div class="panel-header glass">
-    <PersonaAvatar personaId={$chat.personaId} name={$chat.personaName} />
-    <button class="close-btn" on:click={chat.close}>✕</button>
-  </div>
+{#if $chat.isOpen}
+  <div
+    class="slide-panel"
+    in:fly={{ x: 420, duration: 450, easing: quintOut }}
+    out:fly={{ x: 420, duration: 300, easing: quintOut }}
+  >
+    <div class="panel-header glass">
+      <PersonaAvatar personaId={$chat.personaId} name={$chat.personaName} />
+      <button class="close-btn" on:click={chat.close} aria-label="关闭面板">✕</button>
+    </div>
 
-  <div class="panel-messages">
-    {#each $chat.messages as msg, i (i)}
-      <div
-        class="message"
-        class:user={msg.role === 'user'}
-        class:assistant={msg.role === 'assistant'}
-        in:fly={{ x: msg.role === 'user' ? 30 : -30, y: 0, duration: 250 }}
-      >
-        {#if msg.role === 'assistant' && msg.personaName}
-          <span class="persona-tag">{msg.personaName}</span>
-        {/if}
-        <div class="msg-bubble glass">
-          {msg.content}
+    <div class="panel-messages" bind:this={messagesContainer}>
+      {#each $chat.messages as msg (msg.content + msg.role)}
+        <div
+          class="message"
+          class:user={msg.role === 'user'}
+          class:assistant={msg.role === 'assistant'}
+          in:fly={{ y: 12, duration: 350, easing: quintOut }}
+        >
+          {#if msg.role === 'assistant' && msg.personaName}
+            <span class="persona-tag">{msg.personaName}</span>
+          {/if}
+          <div class="msg-bubble glass">
+            {msg.content}
+          </div>
         </div>
-      </div>
-    {/each}
-    {#if $chat.isLoading}
-      <div class="message assistant">
-        <div class="msg-bubble glass typing-dots">
-          <span class="dot">.</span>
-          <span class="dot">.</span>
-          <span class="dot">.</span>
-        </div>
-      </div>
-    {/if}
-    <div bind:this={messagesEnd}></div>
-  </div>
+      {/each}
 
-  <div class="panel-input glass">
-    <textarea
-      bind:value={inputText}
-      placeholder="向 AI 助手提问..."
-      on:keydown={handleKeydown}
-      rows="1"
-      disabled={$chat.isLoading}
-    ></textarea>
-    <button class="send-btn" on:click={send} disabled={$chat.isLoading || !inputText.trim()}>
-      发送
-    </button>
+      {#if $chat.isLoading}
+        <div class="message assistant" in:fade={{ duration: 150 }}>
+          <div class="msg-bubble glass typing">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+        </div>
+      {/if}
+    </div>
+
+    <div class="panel-input glass">
+      <textarea
+        bind:value={inputText}
+        placeholder="向 AI 导师提问或探讨研究架构..."
+        on:keydown={handleKeydown}
+        rows="1"
+        disabled={$chat.isLoading}
+      ></textarea>
+      <button class="send-btn" on:click={send} disabled={$chat.isLoading || !inputText.trim()}>
+        发送
+      </button>
+    </div>
   </div>
-</div>
+{/if}
 
 <style>
   .slide-panel {
     position: fixed;
     top: 0;
     right: 0;
-    width: 400px;
+    width: 420px;
     height: 100vh;
     z-index: 1000;
     display: flex;
     flex-direction: column;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-    background: var(--bg-primary);
-  }
-  .slide-panel.open { transform: translateX(0); }
-  .slide-panel.ripple::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    animation: ripple-glow 0.8s ease-out;
-    pointer-events: none;
-  }
-  @keyframes ripple-glow {
-    0% { box-shadow: inset 0 0 30px var(--accent-blue); opacity: 1; }
-    100% { box-shadow: inset 0 0 0px var(--accent-blue); opacity: 0; }
+    background: #0d1222;
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.4);
   }
   .panel-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 16px;
+    padding: 14px 20px;
     border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: rgba(17, 22, 37, 0.7);
     flex-shrink: 0;
   }
   .close-btn {
     background: none;
     border: none;
     color: var(--text-secondary);
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
-    padding: 4px 8px;
+    padding: 6px;
+    border-radius: 50%;
+    transition: background 0.2s, color 0.2s;
   }
+  .close-btn:hover { background: rgba(255,255,255,0.05); color: var(--text-primary); }
+
   .panel-messages {
     flex: 1;
     overflow-y: auto;
-    padding: 16px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
+    scroll-behavior: smooth;
   }
-  .message { max-width: 90%; }
-  .message.user { align-self: flex-end; }
-  .message.assistant { align-self: flex-start; }
+  .message { max-width: 88%; display: flex; flex-direction: column; gap: 4px; }
+  .message.user { align-self: flex-end; align-items: flex-end; }
+  .message.assistant { align-self: flex-start; align-items: flex-start; }
+
   .persona-tag {
     font-size: 11px;
-    color: var(--text-secondary);
+    font-weight: 500;
+    color: var(--morandi-blue);
+    padding-left: 4px;
   }
+
   .msg-bubble {
-    padding: 10px 14px;
-    border-radius: 12px;
-    font-size: 13px;
-    line-height: 1.5;
+    padding: 12px 16px;
+    border-radius: 14px;
+    font-size: 13.5px;
+    line-height: 1.6;
+    word-break: break-word;
+    transition: height 0.25s var(--ease-spring-snappy);
+    will-change: height;
   }
+
   .message.user .msg-bubble {
-    background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
-    border: none;
+    background: linear-gradient(135deg, rgba(143, 164, 180, 0.25), rgba(184, 156, 156, 0.15));
+    border: 1px solid rgba(143, 164, 180, 0.3);
+    color: var(--text-primary);
   }
-  .typing-dots {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    padding: 14px 18px;
+  .message.assistant .msg-bubble {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--morandi-border);
+    color: #e2e8f0;
   }
-  .typing-dots .dot {
+
+  .typing { display: flex; gap: 4px; padding: 14px 20px; }
+  .typing .dot {
     width: 6px;
     height: 6px;
+    background: var(--morandi-blue);
     border-radius: 50%;
-    background: var(--text-secondary);
-    font-size: 0;
-    line-height: 0;
-    animation: dot-wave 0.8s ease-in-out infinite;
+    animation: dot-jump 1.4s infinite ease-in-out both;
   }
-  .typing-dots .dot:nth-child(2) { animation-delay: 0.15s; }
-  .typing-dots .dot:nth-child(3) { animation-delay: 0.3s; }
+  .typing .dot:nth-child(1) { animation-delay: -0.32s; }
+  .typing .dot:nth-child(2) { animation-delay: -0.16s; }
+
+  @keyframes dot-jump {
+    0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+    40% { transform: scale(1.1) translateY(-4px); opacity: 1; }
+  }
+
   .panel-input {
     display: flex;
-    gap: 8px;
-    padding: 12px 16px;
+    gap: 10px;
+    align-items: flex-end;
+    padding: 16px 20px;
     border-radius: 0;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background: rgba(17, 22, 37, 0.8);
     flex-shrink: 0;
   }
   textarea {
@@ -180,20 +208,26 @@
     background: transparent;
     border: none;
     color: var(--text-primary);
-    font-size: 13px;
+    font-size: 13.5px;
     resize: none;
     outline: none;
     font-family: inherit;
+    line-height: 1.5;
+    max-height: 100px;
   }
+  textarea::placeholder { color: var(--text-secondary); }
+
   .send-btn {
-    padding: 6px 16px;
-    background: var(--accent-blue);
+    padding: 8px 18px;
+    background: var(--morandi-blue);
     border: none;
     border-radius: 8px;
-    color: white;
+    color: #0b0f19;
     font-weight: 600;
     cursor: pointer;
     font-size: 13px;
+    transition: opacity 0.2s, transform 0.2s;
   }
-  .send-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .send-btn:hover:not(:disabled) { transform: translateY(-1px); opacity: 0.9; }
+  .send-btn:disabled { opacity: 0.3; cursor: not-allowed; transform: none; }
 </style>
