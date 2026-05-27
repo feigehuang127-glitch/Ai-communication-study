@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import { fly, fade } from 'svelte/transition';
   import { page } from '$app/stores';
+  import { onNavigate } from '$app/navigation';
   import GlassNavbar from '$lib/components/GlassNavbar.svelte';
   import ParticleBackground from '$lib/components/ParticleBackground.svelte';
   import Toast from '$lib/components/Toast.svelte';
@@ -26,6 +27,17 @@
       getCollector().setupListeners();
       getCollector().onEvent((event) => behaviorEngine.pushEvent(event));
     }
+  });
+
+  // View Transitions API: seamless cross-page element morphing
+  onNavigate((navigation) => {
+    if (!document.startViewTransition) return;
+    return new Promise((resolve) => {
+      document.startViewTransition(async () => {
+        resolve();
+        await navigation.complete;
+      });
+    });
   });
 </script>
 
@@ -56,5 +68,6 @@
     max-width: 1280px;
     margin: 0 auto;
     padding: 80px 24px 40px;
+    view-transition-name: main-content;
   }
 </style>

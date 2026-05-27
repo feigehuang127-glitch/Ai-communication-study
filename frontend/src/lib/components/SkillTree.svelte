@@ -205,12 +205,8 @@
     transition: stroke 0.6s ease, stroke-width 0.6s ease, stroke-dasharray 0.6s ease;
   }
   .connector.active {
-    stroke-dasharray: 2, 2;
-    animation: connector-flow 3s linear infinite;
-  }
-
-  @keyframes connector-flow {
-    to { stroke-dashoffset: -20; }
+    stroke-dasharray: 6, 6;
+    animation: flow-light 1.5s linear infinite;
   }
 
   /* ─── Category grid ─── */
@@ -279,6 +275,8 @@
   .skill-node.mastered {
     background: rgba(100, 200, 150, 0.06);
     border-color: rgba(100, 200, 150, 0.15);
+    animation: node-appear 0.5s cubic-bezier(0.16, 1, 0.3, 1) backwards,
+               breathe-glow 3s ease-in-out 0.5s infinite;
   }
 
   .skill-node.learning {
@@ -308,6 +306,10 @@
     border: 2px solid var(--node-color);
     flex-shrink: 0;
     transition: box-shadow 0.6s ease, border-color 0.6s ease;
+  }
+
+  .skill-node.mastered .node-ring {
+    --breathe-color: var(--node-glow);
   }
 
   .node-dot {

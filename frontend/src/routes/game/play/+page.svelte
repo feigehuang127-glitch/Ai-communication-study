@@ -71,6 +71,7 @@
     const latency = Date.now() - questionStart;
     lastCorrect = await game.submitAnswer(opt);
     getCollector().reportAnswerSubmit(latency, optionChangeCount, lastCorrect);
+    triggerFeedback(opt, lastCorrect);
     showResult = true;
   }
 
@@ -95,12 +96,25 @@
     goto('/game/result');
   }
 
+  let shakeTarget = '';
+  let burstTarget = '';
+
   function optionClass(opt: string) {
     if (!showResult) return '';
     const q = $game.questions[$game.currentIndex];
     if (opt === q.answer) return 'correct';
     if (opt === selectedAnswer && !lastCorrect) return 'wrong';
     return 'dimmed';
+  }
+
+  function triggerFeedback(opt: string, correct: boolean) {
+    if (correct) {
+      burstTarget = opt;
+      setTimeout(() => { burstTarget = ''; }, 700);
+    } else {
+      shakeTarget = opt;
+      setTimeout(() => { shakeTarget = ''; }, 500);
+    }
   }
 </script>
 
@@ -152,11 +166,16 @@
             {#if question['option' + opt]}
               <button
                 class="option {optionClass(opt)}"
+                class:shake={shakeTarget === opt}
+                class:burst-glow={burstTarget === opt}
                 on:click={() => selectOption(opt)}
                 disabled={isLocked}
               >
                 <span class="opt-letter">{opt}</span>
                 <span>{question['option' + opt]}</span>
+                {#if burstTarget === opt}
+                  <span class="burst-ring"></span>
+                {/if}
               </button>
             {/if}
           {/each}
@@ -240,37 +259,70 @@
 
   .options { display: flex; flex-direction: column; gap: 10px; }
   .option {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 12px;
     padding: 14px 18px;
     background: rgba(255,255,255,0.04);
     border: 1px solid var(--glass-border);
-    border-radius: 12px;
+    border-radius: var(--radius-xl);
     color: var(--text-primary);
     font-size: 14px;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: background 0.2s ease, border-color 0.2s ease,
+                transform 0.35s var(--ease-spring-bouncy);
     text-align: left;
+    overflow: hidden;
   }
   .option:hover:not(:disabled) {
     background: rgba(255,255,255,0.08);
     border-color: rgba(255,255,255,0.2);
+    transform: scale(1.01);
   }
   .option:disabled { cursor: default; }
+
+  /* ─── Shake animation for wrong answers ─── */
+  .option.shake {
+    animation: shake 0.5s var(--ease-spring-damped);
+  }
+
+  /* ─── Burst glow ring for correct answers ─── */
+  .burst-ring {
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    border: 2px solid var(--accent-green);
+    animation: correct-glow 0.7s ease-out forwards;
+    pointer-events: none;
+  }
+
   .opt-letter {
     width: 28px; height: 28px;
     display: flex; align-items: center; justify-content: center;
     background: rgba(255,255,255,0.08);
-    border-radius: 8px;
+    border-radius: var(--radius-lg);
     font-weight: 600; font-size: 13px;
+    transition: background 0.2s ease;
   }
-  .option.correct { background: rgba(100,200,150,0.15); border-color: var(--accent-green); }
-  .option.wrong { background: rgba(255,100,100,0.15); border-color: var(--accent-red); }
-  .option.dimmed { opacity: 0.4; }
+  .option.correct {
+    background: rgba(100,200,150,0.15);
+    border-color: var(--accent-green);
+  }
+  .option.correct .opt-letter {
+    background: rgba(100,200,150,0.25);
+  }
+  .option.wrong {
+    background: rgba(255,100,100,0.15);
+    border-color: var(--accent-red);
+  }
+  .option.wrong .opt-letter {
+    background: rgba(255,100,100,0.25);
+  }
+  .option.dimmed { opacity: 0.35; }
 
   .result-feedback {
-    margin-top: 20px; padding: 16px; border-radius: 12px; font-weight: 600;
+    margin-top: 20px; padding: 16px; border-radius: var(--radius-xl); font-weight: 600;
   }
   .result-feedback.correct { background: rgba(100,200,150,0.1); color: var(--accent-green); }
   .result-feedback.wrong { background: rgba(255,100,100,0.1); color: var(--accent-red); }
@@ -279,8 +331,14 @@
   .btn-primary {
     width: 100%; padding: 14px; margin-top: 20px;
     background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
-    border: none; border-radius: 12px; color: white; font-size: 15px;
+    border: none; border-radius: var(--radius-xl); color: white; font-size: 15px;
     font-weight: 600; cursor: pointer;
+    transition: transform 0.35s var(--ease-spring-bouncy),
+                box-shadow 0.3s ease;
+  }
+  .btn-primary:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(100, 180, 255, 0.2);
   }
   .loading { text-align: center; padding: 80px; color: var(--text-secondary); }
 </style>

@@ -36,6 +36,13 @@
   /* ─── Morandi surface tokens (shared across components) ─── */
   --morandi-bg-card: #111625;
   --morandi-border: rgba(255, 255, 255, 0.08);
+
+  /* ─── Border-radius scale (geometric progression: outer = inner + gap) ─── */
+  --radius-3xl: 24px;  /* Main containers, SlidePanel, large modals */
+  --radius-2xl: 16px;  /* Core card containers (GlassCard, PremiumCard) */
+  --radius-xl:  12px;  /* Form inputs, answer option buttons, sandbox cards */
+  --radius-lg:   8px;  /* Badges, tags, dropdown items, small chips */
+  --radius-md:   6px;  /* Inline code, tiny labels */
 }
 
 * {
@@ -57,12 +64,22 @@ body {
   border: 1px solid var(--glass-border);
   backdrop-filter: blur(20px) saturate(120%);
   -webkit-backdrop-filter: blur(20px) saturate(120%);
-  border-radius: 16px;
+  border-radius: var(--radius-2xl);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   transition: background 0.35s var(--ease-spring-damped),
               border-color 0.35s var(--ease-spring-damped),
               box-shadow 0.35s var(--ease-spring-damped),
               transform 0.4s var(--ease-spring-bouncy);
+}
+
+/* ─── Squircle: continuous superellipse for premium surfaces ─── */
+.squircle {
+  clip-path: url(#squircle-clip);
+}
+
+/* ─── Glass-sm: tighter radius for interior nested cards ─── */
+.glass-sm {
+  border-radius: var(--radius-xl);
 }
 
 .glass:hover {
@@ -94,6 +111,49 @@ body {
 @keyframes dot-wave {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-5px); }
+}
+
+/* ─── Answer feedback ─── */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 50%, 90% { transform: translateX(-5px); }
+  30%, 70% { transform: translateX(5px); }
+}
+
+@keyframes correct-glow {
+  0% { box-shadow: 0 0 0 0 rgba(100, 200, 150, 0.5); }
+  100% { box-shadow: 0 0 0 20px rgba(100, 200, 150, 0); }
+}
+
+/* ─── Streaming text fade-in-up ─── */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+    filter: blur(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* ─── Breathing glow for mastered/accent nodes ─── */
+@keyframes breathe-glow {
+  0%, 100% {
+    box-shadow: 0 0 6px var(--breathe-color, rgba(100, 200, 150, 0.2));
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 18px var(--breathe-color, rgba(100, 200, 150, 0.5));
+    transform: scale(1.06);
+  }
+}
+
+/* ─── Flow-light: directional dash travel for SVG connectors ─── */
+@keyframes flow-light {
+  to { stroke-dashoffset: -24; }
 }
 
 .gradient-text {

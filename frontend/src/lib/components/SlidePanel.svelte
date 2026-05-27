@@ -2,12 +2,19 @@
   import { chat } from '$lib/stores/chat';
   import PersonaAvatar from './PersonaAvatar.svelte';
   import { page } from '$app/stores';
-  import { fly, fade } from 'svelte/transition';
-  import { quintOut } from 'svelte/easing';
+  import { spring } from 'svelte/motion';
   import { tick } from 'svelte';
 
   let inputText = '';
   let messagesContainer: HTMLDivElement;
+  let panelEl: HTMLDivElement;
+
+  // Spring physics: stiffness and damping tuned for glass-panel elasticity
+  const panelX = spring(420, { stiffness: 0.08, damping: 0.6 });
+  $: panelX.set($chat.isOpen ? 0 : 420);
+
+  // Overlay fade tied to panel position
+  $: overlayAlpha = 1 - Math.abs($panelX) / 420;
 
   function getContextPage(): string {
     const pathname = $page.url.pathname;
@@ -45,11 +52,19 @@
   }
 </script>
 
-{#if $chat.isOpen}
+{#if $chat.isOpen || $panelX < 419}
+  <!-- Backdrop overlay -->
   <div
+    class="panel-backdrop"
+    style:opacity={overlayAlpha}
+    style:pointer-events={$chat.isOpen ? 'auto' : 'none'}
+    on:click={chat.close}
+  ></div>
+
+  <div
+    bind:this={panelEl}
     class="slide-panel"
-    in:fly={{ x: 420, duration: 450, easing: quintOut }}
-    out:fly={{ x: 420, duration: 300, easing: quintOut }}
+    style:transform="translateX({$panelX}px)"
   >
     <div class="panel-header glass">
       <PersonaAvatar personaId={$chat.personaId} name={$chat.personaName} />
@@ -62,19 +77,18 @@
           class="message"
           class:user={msg.role === 'user'}
           class:assistant={msg.role === 'assistant'}
-          in:fly={{ y: 12, duration: 350, easing: quintOut }}
         >
           {#if msg.role === 'assistant' && msg.personaName}
             <span class="persona-tag">{msg.personaName}</span>
           {/if}
           <div class="msg-bubble glass">
-            {msg.content}
+            <span class="stream-chunk">{msg.content}</span>
           </div>
         </div>
       {/each}
 
       {#if $chat.isLoading}
-        <div class="message assistant" in:fade={{ duration: 150 }}>
+        <div class="message assistant">
           <div class="msg-bubble glass typing">
             <span class="dot"></span><span class="dot"></span><span class="dot"></span>
           </div>
@@ -98,6 +112,14 @@
 {/if}
 
 <style>
+  .panel-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(5, 8, 20, 0.45);
+    z-index: 999;
+    transition: opacity 0.3s ease;
+  }
+
   .slide-panel {
     position: fixed;
     top: 0;
@@ -107,8 +129,9 @@
     z-index: 1000;
     display: flex;
     flex-direction: column;
-    background: #0d1222;
+    background: var(--morandi-bg-card);
     box-shadow: -10px 0 40px rgba(0, 0, 0, 0.4);
+    will-change: transform;
   }
   .panel-header {
     display: flex;
@@ -156,12 +179,17 @@
 
   .msg-bubble {
     padding: 12px 16px;
-    border-radius: 14px;
+    border-radius: var(--radius-xl);
     font-size: 13.5px;
     line-height: 1.6;
     word-break: break-word;
     transition: height 0.25s var(--ease-spring-snappy);
     will-change: height;
+  }
+
+  /* ─── Streaming text: each new chunk fades in smoothly ─── */
+  .stream-chunk {
+    animation: fade-in-up 0.3s var(--ease-spring-snappy) both;
   }
 
   .message.user .msg-bubble {
@@ -221,7 +249,7 @@
     padding: 8px 18px;
     background: var(--morandi-blue);
     border: none;
-    border-radius: 8px;
+    border-radius: var(--radius-lg);
     color: #0b0f19;
     font-weight: 600;
     cursor: pointer;

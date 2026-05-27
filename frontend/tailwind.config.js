@@ -15,6 +15,13 @@ export default {
         'accent-green': '#64c896',
         'accent-gold': '#ffb464'
       },
+      borderRadius: {
+        '3xl': '24px',
+        '2xl': '16px',
+        'xl': '12px',
+        'lg': '8px',
+        'md': '6px'
+      },
       backdropBlur: {
         'glass': '20px'
       },
